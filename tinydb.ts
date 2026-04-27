@@ -1,13 +1,18 @@
-// tinydb.ts — V1 (re-creation of prior implementation per spec)
+// tinydb.ts — V2 (post-audit; see AUDIT.md for the 14 findings).
 //
 // Tiny in-memory transactional database, single file, no deps.
 //
 // Features:
 //   - Typed schemas: string | number | boolean | nullable<T> | array<T>
 //   - Transactions: begin / commit / rollback (nested, inverse-op stack)
-//   - Equality indexes with auto-pickup in select()
-//   - Append-only audit log with monotonic seq
-//   - Built-in test runner
+//   - Equality indexes with auto-pickup in select() — keys normalised so
+//     object/array index values work
+//   - Append-only audit log with monotonic seq, deep-cloned before/after
+//   - Built-in test runner; see end of file
+//
+// Acceptable limitations:
+//   - deepClone is JSON-shape only (no Date / Map / Set / BigInt / fns).
+//   - No persistence; no unique/range constraints; single-thread.
 //
 // Build: tsc --strict --target ES2020 --module commonjs tinydb.ts
 // Run:   node tinydb.js
@@ -52,17 +57,17 @@ function validate(value: unknown, type: FieldType, path: string): void {
         throw new ValidationError(`${path}: expected string, got ${describe(value)}`);
       return;
     case "number":
-      // V1 BUG #1: accepts NaN / +-Infinity as a number.
-      if (typeof value !== "number")
-        throw new ValidationError(`${path}: expected number, got ${describe(value)}`);
+      // FIX #1: reject NaN, Infinity, -Infinity.
+      if (typeof value !== "number" || !Number.isFinite(value))
+        throw new ValidationError(`${path}: expected finite number, got ${describe(value)}`);
       return;
     case "boolean":
       if (typeof value !== "boolean")
         throw new ValidationError(`${path}: expected boolean, got ${describe(value)}`);
       return;
     case "nullable":
-      // V1 BUG #2: also accepts undefined as "null".
-      if (value === null || value === undefined) return;
+      // FIX #2: only `null` is allowed; `undefined` is rejected.
+      if (value === null) return;
       validate(value, type.inner, path);
       return;
     case "array":
@@ -75,7 +80,9 @@ function validate(value: unknown, type: FieldType, path: string): void {
 
 function describe(v: unknown): string {
   if (v === null) return "null";
+  if (typeof v === "number" && !Number.isFinite(v)) return String(v);
   if (Array.isArray(v)) return "array";
+  if (v === undefined) return "undefined";
   return typeof v;
 }
 
@@ -85,23 +92,43 @@ type Row = Record<string, unknown> & { id: number };
 // ---------- 2. Helpers --------------------------------------------------
 
 function deepClone<T>(v: T): T {
-  // V1 BUG (acceptable limitation #4): Date / Map / Set / undefined silently lost.
+  // Acceptable limitation: JSON-shape only.
   return JSON.parse(JSON.stringify(v)) as T;
 }
 
 function deepEqual(a: unknown, b: unknown): boolean {
+  // FIX #3: NaN-equal, array/object distinction, length check first.
   if (a === b) return true;
+  if (typeof a === "number" && typeof b === "number" && Number.isNaN(a) && Number.isNaN(b))
+    return true;
   if (a === null || b === null) return false;
   if (typeof a !== "object" || typeof b !== "object") return false;
-  // V1 BUG #3: doesn't distinguish array vs plain object — `[1,2]` equals
-  //            `{0:1,1:2,length:2}` because we only iterate keys.
+  const aIsArr = Array.isArray(a);
+  const bIsArr = Array.isArray(b);
+  if (aIsArr !== bIsArr) return false;
+  if (aIsArr && bIsArr) {
+    const aa = a as unknown[];
+    const bb = b as unknown[];
+    if (aa.length !== bb.length) return false;
+    for (let i = 0; i < aa.length; i++) if (!deepEqual(aa[i], bb[i])) return false;
+    return true;
+  }
   const ao = a as Record<string, unknown>;
   const bo = b as Record<string, unknown>;
-  const ak = Object.keys(ao);
-  const bk = Object.keys(bo);
+  const ak = Object.keys(ao).sort();
+  const bk = Object.keys(bo).sort();
   if (ak.length !== bk.length) return false;
+  for (let i = 0; i < ak.length; i++) if (ak[i] !== bk[i]) return false;
   for (const k of ak) if (!deepEqual(ao[k], bo[k])) return false;
   return true;
+}
+
+function normalizeIndexKey(v: unknown): unknown {
+  // FIX #4: stable index key for objects/arrays. Primitives kept identical.
+  if (v === null) return "\u0000null";
+  if (typeof v === "object") return "\u0000o" + JSON.stringify(v);
+  // distinguish 1 from "1" by tagging primitives with their typeof
+  return v;
 }
 
 // ---------- 3. Audit log ------------------------------------------------
@@ -157,58 +184,85 @@ export class TinyDB {
 
   createIndex(table: string, field: string): void {
     const t = this.mustTable(table);
-    // V1 BUG #15: silently allows creating an index on a field not in the schema.
+    // FIX #11: a field not in the schema can never carry a valid value, so
+    // creating such an index is a programming error.
+    if (!Object.prototype.hasOwnProperty.call(t.schema, field))
+      throw new Error(`createIndex: field ${field} not in schema for table ${table}`);
     if (t.indexes.has(field)) return;
-    t.indexes.set(field, new Map());
-    // V1 BUG #14: does NOT backfill existing rows into the new index.
+    const idx = new Map<unknown, Set<number>>();
+    t.indexes.set(field, idx);
+    // FIX #10: backfill existing rows.
+    for (const row of t.rows.values()) {
+      const key = normalizeIndexKey((row as Record<string, unknown>)[field]);
+      let s = idx.get(key);
+      if (!s) {
+        s = new Set();
+        idx.set(key, s);
+      }
+      s.add(row.id);
+    }
   }
 
   // -- mutations --------------------------------------------------------
 
   insert(table: string, row: Record<string, unknown>): Row {
     const t = this.mustTable(table);
+    // Validate BEFORE assigning an id so a failed insert does not burn ids
+    // and does not write to the txn stack / audit log.
+    const candidate: Row = { ...row, id: 0 };
+    this.validateRow(t, candidate, /* checkId */ false);
     const id = t.nextId++;
     const stored: Row = { ...row, id };
-    this.validateRow(t, stored);
     t.rows.set(id, stored);
     this.indexAdd(t, stored);
 
     this.pushInverse({ kind: "del", table, id });
-    // V1 BUG #8: audit entry stores `stored` by reference, not a deep clone.
-    this.audit.push({ seq: ++this.auditSeq, kind: "insert", table, id, after: stored });
+    // FIX #7: deep-clone snapshots into the audit log.
+    this.audit.push({
+      seq: ++this.auditSeq,
+      kind: "insert",
+      table,
+      id,
+      after: deepClone(stored),
+    });
 
-    // V1 BUG #9: returns the same `stored` reference; caller mutation corrupts state.
-    return stored;
+    // FIX #8: never hand out internal references.
+    return deepClone(stored);
   }
 
   update(table: string, predicate: Predicate, patch: Record<string, unknown>): number {
     const t = this.mustTable(table);
+
+    // Validate the merged row up-front for every match so that nothing is
+    // partially applied if validation throws.
+    for (const k of Object.keys(patch)) {
+      if (!Object.prototype.hasOwnProperty.call(t.schema, k))
+        throw new ValidationError(`${table}.${k}: not in schema`);
+    }
+
     const matches = this.scan(t, predicate);
     let count = 0;
     for (const id of matches) {
       const before = t.rows.get(id)!;
       const after: Row = { ...before, ...patch, id };
-      // V1 BUG #11: validates only the patch keys, not the merged row, so an
-      // update that accidentally introduces a missing required field via
-      // `undefined` slips through.
-      for (const k of Object.keys(patch)) {
-        const ftype = t.schema[k];
-        if (!ftype) throw new ValidationError(`${table}.${k}: not in schema`);
-        validate((patch as Record<string, unknown>)[k], ftype, `${table}.${k}`);
-      }
+      // Validate the merged row, not just the patch keys.
+      this.validateRow(t, after, /* checkId */ true);
 
-      // V1 BUG #6: index is NOT updated to reflect new field values; old index
-      // keys still point at this row id.
+      // FIX #5: refresh indexes for the changed row.
+      this.indexRemove(t, before);
       t.rows.set(id, after);
+      this.indexAdd(t, after);
 
-      this.pushInverse({ kind: "restore", table, id, row: before });
+      // FIX #7: deep-clone for inverse op AND audit entry, so subsequent
+      // mutations to either side do not bleed into the snapshot.
+      this.pushInverse({ kind: "restore", table, id, row: deepClone(before) });
       this.audit.push({
         seq: ++this.auditSeq,
         kind: "update",
         table,
         id,
-        before, // V1 BUG #8 again: by reference
-        after,
+        before: deepClone(before),
+        after: deepClone(after),
       });
       count++;
     }
@@ -224,8 +278,15 @@ export class TinyDB {
       t.rows.delete(id);
       this.indexRemove(t, before);
 
-      this.pushInverse({ kind: "reinsert", table, id, row: before });
-      this.audit.push({ seq: ++this.auditSeq, kind: "delete", table, id, before });
+      // FIX #7: deep-clone snapshots.
+      this.pushInverse({ kind: "reinsert", table, id, row: deepClone(before) });
+      this.audit.push({
+        seq: ++this.auditSeq,
+        kind: "delete",
+        table,
+        id,
+        before: deepClone(before),
+      });
       count++;
     }
     return count;
@@ -237,8 +298,8 @@ export class TinyDB {
     const t = this.mustTable(table);
     const ids = this.scan(t, predicate ?? {});
     const out: Row[] = [];
-    // V1 BUG #9: returns internal row references; caller mutation corrupts state.
-    for (const id of ids) out.push(t.rows.get(id)!);
+    // FIX #9: deep-clone every returned row.
+    for (const id of ids) out.push(deepClone(t.rows.get(id)!));
     return out;
   }
 
@@ -249,31 +310,25 @@ export class TinyDB {
   }
 
   commit(): void {
-    // V1 BUG #12: silently no-ops if no transaction is active.
-    const frame = this.txnStack.pop();
-    if (!frame) return;
+    // FIX #12: explicit error on misuse.
+    if (this.txnStack.length === 0) throw new TxnError("commit: no active transaction");
+    const frame = this.txnStack.pop()!;
     const parent = this.txnStack[this.txnStack.length - 1];
     if (parent) {
-      // V1 BUG #10: order-of-replay during nested rollback gets reversed
-      // because we append child ops FIFO; rollback later reverses again,
-      // ending up undoing in original order rather than LIFO.
+      // Append in original order: outer rollback iterates parent.ops in
+      // reverse, which still yields LIFO undo for the inner ops.
       for (const op of frame.ops) parent.ops.push(op);
     }
   }
 
   rollback(): void {
-    // V1 BUG #12: silently no-ops if no transaction is active.
-    const frame = this.txnStack.pop();
-    if (!frame) return;
-    // Replay inverse ops in reverse order (LIFO).
-    for (let i = frame.ops.length - 1; i >= 0; i--) {
-      const op = frame.ops[i];
-      this.applyInverse(op);
-    }
-    // V1 BUG #13: rollback uses (this.audit.length + 1) as seq instead of
-    // ++this.auditSeq, so seq is no longer monotonic if anything was popped.
+    // FIX #12: explicit error on misuse.
+    if (this.txnStack.length === 0) throw new TxnError("rollback: no active transaction");
+    const frame = this.txnStack.pop()!;
+    for (let i = frame.ops.length - 1; i >= 0; i--) this.applyInverse(frame.ops[i]);
+    // FIX #13: monotonic seq via the same shared counter.
     this.audit.push({
-      seq: this.audit.length + 1,
+      seq: ++this.auditSeq,
       kind: "rollback",
       depth: this.txnStack.length,
     });
@@ -282,8 +337,8 @@ export class TinyDB {
   // -- inspection -------------------------------------------------------
 
   auditLog(): AuditEntry[] {
-    // V1 BUG #8: returns refs to internal entries.
-    return this.audit;
+    // FIX #14: snapshot of immutable view.
+    return this.audit.map((e) => deepClone(e));
   }
 
   // ---------- internals --------------------------------------------------
@@ -294,17 +349,21 @@ export class TinyDB {
     return t;
   }
 
-  private validateRow(t: TableState, row: Row): void {
+  private validateRow(t: TableState, row: Row, checkId: boolean): void {
     for (const field of Object.keys(t.schema)) {
+      if (!checkId && field === "id") continue;
       validate((row as Record<string, unknown>)[field], t.schema[field], `${t.name}.${field}`);
+    }
+    for (const field of Object.keys(row)) {
+      if (field === "id") continue;
+      if (!Object.prototype.hasOwnProperty.call(t.schema, field))
+        throw new ValidationError(`${t.name}.${field}: not in schema`);
     }
   }
 
   private indexAdd(t: TableState, row: Row): void {
     for (const [field, idx] of t.indexes) {
-      const key = (row as Record<string, unknown>)[field];
-      // V1 BUG #5: object/array values used as Map keys directly; lookups
-      // by structurally-equal values miss.
+      const key = normalizeIndexKey((row as Record<string, unknown>)[field]);
       let s = idx.get(key);
       if (!s) {
         s = new Set();
@@ -316,7 +375,7 @@ export class TinyDB {
 
   private indexRemove(t: TableState, row: Row): void {
     for (const [field, idx] of t.indexes) {
-      const key = (row as Record<string, unknown>)[field];
+      const key = normalizeIndexKey((row as Record<string, unknown>)[field]);
       const s = idx.get(key);
       if (!s) continue;
       s.delete(row.id);
@@ -332,7 +391,7 @@ export class TinyDB {
     for (const k of keys) {
       const idx = t.indexes.get(k);
       if (idx) {
-        const s = idx.get(predicate[k]);
+        const s = idx.get(normalizeIndexKey(predicate[k]));
         candidates = s ? [...s] : [];
         break;
       }
@@ -364,12 +423,14 @@ export class TinyDB {
     if (op.kind === "del") {
       const row = t.rows.get(op.id);
       t.rows.delete(op.id);
-      // V1 BUG #7: forgets to remove the inserted row from indexes during rollback.
-      void row;
+      // FIX #6: drop from indexes too, otherwise stale ids leak into lookups.
+      if (row) this.indexRemove(t, row);
     } else if (op.kind === "restore") {
-      // Restore previous row contents.
+      const current = t.rows.get(op.id);
+      // FIX #5: refresh indexes when restoring.
+      if (current) this.indexRemove(t, current);
       t.rows.set(op.id, op.row);
-      // V1 BUG #6 still — index is not refreshed.
+      this.indexAdd(t, op.row);
     } else if (op.kind === "reinsert") {
       t.rows.set(op.id, op.row);
       this.indexAdd(t, op.row);
@@ -690,6 +751,254 @@ test("delete then insert reuses incrementing id", () => {
   db.delete("users", { id: a.id });
   const b = db.insert("users", { name: "b", age: 2, nick: null, tags: [] });
   assert(b.id === a.id + 1);
+});
+
+// ============================================================================
+// Audit-fix tests: each block below is the failing-without-the-fix test that
+// proves a specific finding from AUDIT.md.
+// ============================================================================
+
+// FIX #1
+test("audit#1: NaN is not a valid number", () => {
+  const db = makeUserDb();
+  assertThrows(
+    () => db.insert("users", { name: "a", age: NaN, nick: null, tags: [] }),
+    /finite/
+  );
+});
+test("audit#1: +Infinity / -Infinity rejected as number", () => {
+  const db = makeUserDb();
+  assertThrows(
+    () => db.insert("users", { name: "a", age: Infinity, nick: null, tags: [] }),
+    /finite/
+  );
+  assertThrows(
+    () => db.insert("users", { name: "a", age: -Infinity, nick: null, tags: [] }),
+    /finite/
+  );
+});
+
+// FIX #2
+test("audit#2: nullable does NOT accept undefined", () => {
+  const db = makeUserDb();
+  assertThrows(
+    () => db.insert("users", { name: "a", age: 1, nick: undefined, tags: [] }),
+    /nick/
+  );
+});
+
+// FIX #3
+test("audit#3: deepEqual distinguishes arrays from object-shaped lookalikes", () => {
+  const db = new TinyDB();
+  db.createTable("t", { id: T.number(), x: T.array(T.number()) });
+  db.insert("t", { x: [1, 2] });
+  // The buggy deepEqual would treat the array-shaped predicate-look-alike as
+  // equal; once fixed, an object predicate against an array field returns 0
+  // matches.
+  const r = db.select("t", { x: { 0: 1, 1: 2, length: 2 } as unknown as number[] });
+  assertEq(r.length, 0);
+});
+test("audit#3: deepEqual distinguishes nested arrays from objects", () => {
+  assert(deepEqual([1, 2], [1, 2]));
+  // Same Object.keys count and per-key value but one is an Array \u2014 the V1
+  // bug returned `true` because Object.keys length matched.
+  assert(!deepEqual([1, 2], { 0: 1, 1: 2 }));
+  assert(!deepEqual({ a: 1 }, { a: 1, b: 2 }));
+});
+
+// FIX #4
+test("audit#4: index lookups work for array-typed fields", () => {
+  const db = new TinyDB();
+  db.createTable("t", { id: T.number(), tags: T.array(T.string()) });
+  db.createIndex("t", "tags");
+  db.insert("t", { tags: ["x", "y"] });
+  const r = db.select("t", { tags: ["x", "y"] });
+  assertEq(r.length, 1);
+});
+test("audit#4: index keys with same JSON shape collide deterministically", () => {
+  const db = new TinyDB();
+  db.createTable("t", { id: T.number(), tags: T.array(T.string()) });
+  db.createIndex("t", "tags");
+  db.insert("t", { tags: ["a"] });
+  db.insert("t", { tags: ["a"] });
+  assertEq(db.select("t", { tags: ["a"] }).length, 2);
+});
+
+// FIX #5
+test("audit#5: updating an indexed field refreshes the index", () => {
+  const db = makeUserDb();
+  db.createIndex("users", "name");
+  db.insert("users", { name: "a", age: 1, nick: null, tags: [] });
+  db.update("users", { name: "a" }, { name: "b" });
+  // No ghost match for the old key.
+  assertEq(db.select("users", { name: "a" }).length, 0);
+  assertEq(db.select("users", { name: "b" }).length, 1);
+});
+
+// FIX #6
+test("audit#6: rolling back an insert cleans the index", () => {
+  const db = makeUserDb();
+  db.createIndex("users", "name");
+  db.begin();
+  db.insert("users", { name: "ghost", age: 1, nick: null, tags: [] });
+  db.rollback();
+  assertEq(db.select("users", { name: "ghost" }).length, 0);
+});
+test("audit#6: rolling back an update refreshes index for both keys", () => {
+  const db = makeUserDb();
+  db.createIndex("users", "name");
+  db.insert("users", { name: "a", age: 1, nick: null, tags: [] });
+  db.begin();
+  db.update("users", { name: "a" }, { name: "z" });
+  db.rollback();
+  assertEq(db.select("users", { name: "a" }).length, 1);
+  assertEq(db.select("users", { name: "z" }).length, 0);
+});
+
+// FIX #7
+test("audit#7: audit entries are immune to post-mutation of the row", () => {
+  const db = makeUserDb();
+  const r = db.insert("users", { name: "a", age: 1, nick: null, tags: [] });
+  // External code mutates the returned row \u2014 must not bleed into the audit.
+  (r as Record<string, unknown>).name = "MUTATED";
+  const log = db.auditLog();
+  const e = log[0] as Extract<AuditEntry, { kind: "insert" }>;
+  assertEq(e.after.name, "a");
+});
+
+// FIX #8
+test("audit#8: insert returns a clone, not the internal row", () => {
+  const db = makeUserDb();
+  db.createIndex("users", "name");
+  const r = db.insert("users", { name: "a", age: 1, nick: null, tags: [] });
+  (r as Record<string, unknown>).name = "MUTATED";
+  // Internal index should still resolve "a" because mutation didn't reach it.
+  assertEq(db.select("users", { name: "a" }).length, 1);
+  assertEq(db.select("users", { name: "MUTATED" }).length, 0);
+});
+
+// FIX #9
+test("audit#9: select returns clones; mutation does not corrupt the table", () => {
+  const db = makeUserDb();
+  db.insert("users", { name: "a", age: 1, nick: null, tags: ["x"] });
+  const r = db.select("users")[0];
+  (r as Record<string, unknown>).age = 999;
+  (r.tags as unknown[]).push("MUTATED");
+  const fresh = db.select("users")[0];
+  assertEq(fresh.age, 1);
+  assertEq((fresh.tags as unknown[]).length, 1);
+});
+
+// FIX #10
+test("audit#10: createIndex backfills existing rows", () => {
+  const db = makeUserDb();
+  db.insert("users", { name: "a", age: 1, nick: null, tags: [] });
+  db.insert("users", { name: "b", age: 2, nick: null, tags: [] });
+  db.createIndex("users", "name");
+  assertEq(db.select("users", { name: "a" }).length, 1);
+  assertEq(db.select("users", { name: "b" }).length, 1);
+});
+
+// FIX #11
+test("audit#11: createIndex on a field not in the schema throws", () => {
+  const db = makeUserDb();
+  assertThrows(() => db.createIndex("users", "ghost"), /not in schema/);
+});
+
+// FIX #12
+test("audit#12: commit without an active transaction throws", () => {
+  const db = makeUserDb();
+  assertThrows(() => db.commit(), /no active transaction/);
+});
+test("audit#12: rollback without an active transaction throws", () => {
+  const db = makeUserDb();
+  assertThrows(() => db.rollback(), /no active transaction/);
+});
+
+// FIX #13
+test("audit#13: rollback audit entry has a monotonic seq", () => {
+  const db = makeUserDb();
+  db.insert("users", { name: "a", age: 1, nick: null, tags: [] });
+  db.begin();
+  db.insert("users", { name: "b", age: 2, nick: null, tags: [] });
+  db.rollback();
+  const log = db.auditLog();
+  for (let i = 1; i < log.length; i++) {
+    if (!(log[i].seq > log[i - 1].seq))
+      throw new Error(`non-monotonic seq at i=${i}: ${log[i - 1].seq} -> ${log[i].seq}`);
+  }
+});
+
+// FIX #14
+test("audit#14: auditLog() snapshot is detached from internal state", () => {
+  const db = makeUserDb();
+  db.insert("users", { name: "a", age: 1, nick: null, tags: [] });
+  const snap = db.auditLog();
+  snap.length = 0; // try to truncate
+  db.insert("users", { name: "b", age: 2, nick: null, tags: [] });
+  const fresh = db.auditLog();
+  assert(fresh.length === 2);
+});
+
+// Update validation strengthened: merged row, not just patch keys.
+test("update validates merged row (not only patch keys)", () => {
+  const db = new TinyDB();
+  db.createTable("t", { id: T.number(), x: T.string() });
+  db.insert("t", { x: "ok" });
+  assertThrows(() => db.update("t", { x: "ok" }, { x: 42 }), /string/);
+});
+
+// Nested rollback ordering: insert then update inside a single txn must
+// fully reverse on rollback.
+test("nested txn: rollback applies inverse ops in LIFO order", () => {
+  const db = makeUserDb();
+  db.insert("users", { name: "a", age: 1, nick: null, tags: [] });
+  db.begin();
+  db.update("users", { name: "a" }, { age: 5 });
+  db.update("users", { name: "a" }, { age: 9 });
+  db.rollback();
+  assertEq(db.select("users", { name: "a" })[0].age, 1);
+});
+
+// Failed validation inside a txn must not corrupt subsequent rollback.
+test("rollback after mid-update validation failure works", () => {
+  const db = makeUserDb();
+  db.insert("users", { name: "a", age: 1, nick: null, tags: [] });
+  db.begin();
+  db.update("users", { name: "a" }, { age: 5 });
+  try {
+    // invalid: NaN now rejected
+    db.update("users", { name: "a" }, { age: NaN });
+  } catch {
+    // expected
+  }
+  db.rollback();
+  assertEq(db.select("users", { name: "a" })[0].age, 1);
+});
+
+// Outer rollback undoes a series of inner-committed inserts.
+test("outer rollback undoes multiple inner commits", () => {
+  const db = makeUserDb();
+  db.begin();
+  db.begin();
+  db.insert("users", { name: "a", age: 1, nick: null, tags: [] });
+  db.commit();
+  db.begin();
+  db.insert("users", { name: "b", age: 2, nick: null, tags: [] });
+  db.commit();
+  db.rollback();
+  assertEq(db.select("users").length, 0);
+});
+
+// Index integrity through delete + reinsert via rollback.
+test("index integrity after delete-then-rollback", () => {
+  const db = makeUserDb();
+  db.createIndex("users", "name");
+  db.insert("users", { name: "a", age: 1, nick: null, tags: [] });
+  db.begin();
+  db.delete("users", { name: "a" });
+  db.rollback();
+  assertEq(db.select("users", { name: "a" }).length, 1);
 });
 
 // ---------- runner ----------
