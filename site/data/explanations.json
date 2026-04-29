@@ -373,5 +373,303 @@
     "passage_breakdown": "Both A. aquaticus and P. perezi accumulate WC-NPs. The hypothesis: testing only A. aquaticus is sufficient because it can stand in for the frog.",
     "reasoning": "If A. aquaticus accumulates detectable WC-NPs *with significantly fewer negative effects* than P. perezi, then the proxy fails: a level of WC-NP that looks safe in A. aquaticus might already be harmful in frogs. The proxy claim assumes parallel sensitivity to harm, which the finding contradicts.",
     "distractors": "A claim that uptake *rates* differ in poorly understood ways is concerning but vague — it doesn't specify *how* the proxy fails.\n\nA claim that A. aquaticus accumulates more *types* of nanoparticle than P. perezi might actually support the proxy (it's more sensitive to detection).\n\nA claim of low individual variation in both species is *supportive* of using either as a stable indicator."
+  },
+  "support:1": {
+    "prompt_focus": "Martinez et al.'s hypothesis is that there is an *inverse* relationship between a bird's foraging field of vision and its sensitivity to alarm calls from neighbour species. M. barbatus forages in dense vegetation (narrow field of vision); P. saturatus forages in open areas (wide field of vision). To support the hypothesis you need: narrow-FOV species reacts to T. caesius alarm calls; wide-FOV species doesn't. The directional gap is what matters.",
+    "passage_breakdown": "M. barbatus → dense vegetation → narrow field of vision while foraging.\n\nP. saturatus → open areas → wide field of vision while foraging.\n\nT. caesius → emits alarm calls.\n\nHypothesis: narrower FOV → greater sensitivity to neighbour alarm calls.",
+    "reasoning": "If P. saturatus (wide FOV) shows *no reaction* to T. caesius alarm calls while M. barbatus (narrow FOV) shows *predator-avoidance behavior*, that is precisely the inverse pattern the hypothesis predicts. The wide-FOV bird, which doesn't *need* alarm-call cues because it can see for itself, ignores them; the narrow-FOV bird, which can't see broadly, depends on them and reacts.",
+    "distractors": "A finding where neither M. barbatus nor P. saturatus reacts (only T. caesius does) doesn't show the predicted gap between *narrow* and *wide* FOV species.\n\nA finding that *similar*-foraging species like M. barbatus *don't* react while M. barbatus does inverts what we'd expect from a hypothesis about FOV (similar foragers should respond similarly).\n\nA finding that some P. saturatus *did* react to T. caesius calls but more reacted to M. barbatus calls muddies the comparison — the hypothesis isn't about who's making the call but about who's listening."
+  },
+  "support:2": {
+    "prompt_focus": "The conclusion is that *non-caffeinated* compounds in coffee likely contribute to its cardiovascular benefits. The supporter has to show a beneficial physiological effect that does *not* depend on caffeine — i.e., something decaffeinated coffee does.",
+    "passage_breakdown": "Caffeine is the most known component but coffee has 100+ active compounds. Kim et al. say non-caffeine compounds likely contribute to coffee's positive cardiovascular effect.",
+    "reasoning": "If decaffeinated coffee causes cells to produce NQO1, an enzyme with neuroprotective benefits, then decaf — by definition stripped of caffeine — is still producing a beneficial cellular effect. That is direct evidence of a non-caffeinated compound mediating a health benefit.",
+    "distractors": "A comparison of caffeine concentrations in regular vs. decaf is just composition data, not evidence of non-caffeinated compounds *producing* a benefit.\n\nCaffeinated extracts aiding weight loss tells us about caffeine's effects, the opposite of what's needed.\n\nHeavy coffee drinkers being less vulnerable to disease is consistent with either caffeine or non-caffeine compounds doing the work — it doesn't isolate the non-caffeine contribution."
+  },
+  "support:3": {
+    "prompt_focus": "The writer claims Alma Thomas rose to acclaim only after she *turned away from figurative art toward abstraction*. Support requires a side-by-side comparison showing that her figurative work was less successful than her abstract work.",
+    "passage_breakdown": "The writer's claim hinges on a *change in mode*: figurative → abstraction → acclaim. Support has to show that the same artist's figurative output looks worse than her abstract output.",
+    "reasoning": "If her 1964 Still Life with Vases and Flowers (figurative, realistic) \"feels labored\" while her 1970 Lunar Surface (abstract) \"glows with rich splashes of purple and blue,\" then a direct comparison of the same artist's figurative and abstract work shows the figurative side looking weaker than the abstract side — exactly what the writer's claim predicts.",
+    "distractors": "A description of *one* abstract painting (Apollo 10 colours) doesn't compare modes.\n\nA general claim that Thomas was fascinated by nature is consistent with both modes.\n\nA claim that she believed art could evoke modern energy is biographical context, not comparative evidence about quality across her two modes."
+  },
+  "support:4": {
+    "prompt_focus": "Alegado et al.'s conclusion is that S. rosetta forms colonies in response to bacterial exposure — specifically, that *both* Bowman's and Ahmed's data should support that. To support, both investigators' results must show the same direction.",
+    "passage_breakdown": "Alegado wants to use S. rosetta colony formation triggered by bacteria as a window into how multicellularity arose. The conclusion holds only if multiple bacteria-exposure studies converge.",
+    "reasoning": "If Bowman *and* Ahmed both found that S. rosetta tended to form colonies after bacterial exposure, the across-study agreement directly supports Alegado's conclusion.",
+    "distractors": "Splits where one investigator finds colony formation but the other doesn't are inconsistent — they actually undercut the conclusion.\n\nA finding where neither investigator observed colony formation outright contradicts the conclusion."
+  },
+  "support:5": {
+    "prompt_focus": "Bura et al. claim caterpillar sounds are *primarily directed at predators*. To support, you need evidence that *predators of caterpillars* respond to those sounds.",
+    "passage_breakdown": "33% of caterpillar species produced sound during simulated attacks. Bura says these sounds are predator-directed (not used for conspecific communication).",
+    "reasoning": "If chickens and yellow warblers — actual predators of caterpillars — have been observed to *stop their attacks* in response to the sounds, then the sounds are functionally affecting predator behaviour. That directly supports the predator-directed claim.",
+    "distractors": "Species-specific sound *signatures* show variety, not anti-predator function.\n\nAudibility frequencies suggest *possible* predator targeting but don't show predator response.\n\nVariability of individual sounds doesn't bear on who the sounds are aimed at."
+  },
+  "support:6": {
+    "prompt_focus": "Bryant et al.'s conclusion is that the ability to distinguish spontaneous from volitional laughter is *universal across cultures*. To support, you need a feature of laughter that allows reliable distinction *regardless of culture*.",
+    "passage_breakdown": "21 societies, 18 spontaneous + 18 volitional laughs, evaluations across cultures. The conclusion: everyone can tell the two apart.",
+    "reasoning": "If spontaneous laughter has a recognizably *higher pitch* than volitional laughter regardless of society, then a culture-invariant acoustic cue exists for the distinction. That makes universal discrimination plausible — it provides the *mechanism*.",
+    "distractors": "Cross-cultural variation in pitch/intensity argues *against* a universal cue.\n\nCommunity-size correlations point to cultural variation, not universality.\n\nConversation-familiarity inferences are about a different listening task."
+  },
+  "support:7": {
+    "prompt_focus": "The hypothesis: humans began with one language in Africa; as we spread outward, each new language retained fewer sounds. So languages farther from Africa should have *fewer* sounds — distance from Africa is inversely related to sound count.",
+    "passage_breakdown": "Arapaho (Plains, USA) → 16 sounds. Hadza (East Africa) → 70 sounds. Hypothesis: distance from Africa → sound loss.",
+    "reasoning": "If Eastern European languages have *more* sounds than East Asian ones, *and* Eastern Europe is closer to Africa than East Asia, that matches the predicted gradient: closer to Africa → more retained sounds.",
+    "distractors": "Patterns where farther regions have *more* sounds invert the prediction.\n\nPatterns with no distance-asymmetry don't speak to the gradient.\n\nPatterns where same-distance regions differ undercut the distance-driven explanation."
+  },
+  "support:8": {
+    "prompt_focus": "Same as Q4 with two specific bacterial species. To support, both Triplett and Yoon's bacteria should trigger colony formation.",
+    "reasoning": "If S. rosetta forms colonies when exposed to D. fermentans *and* when exposed to A. marincola, the two convergent findings support the bacteria-trigger conclusion.",
+    "distractors": "Splits (one yes, one no) and amount-of-exposure findings don't establish convergence."
+  },
+  "support:9": {
+    "prompt_focus": "The researchers' explanation: rearranged store layouts cause shoppers to wander, see more products, and buy unplanned items. The supporting *consumer report* must illustrate that exact chain — rearrangement → search → unplanned purchase.",
+    "reasoning": "The shopper who needed cleaning supplies, found them moved, and while *searching* spotted and bought an unrelated notebook is the canonical illustration of the explanation: rearrangement → search → exposure to extra products → unplanned purchase.",
+    "distractors": "A shopper who *failed* to find items doesn't make a purchase the explanation predicts.\n\nA shopper drawn in by a coupon represents an *external* cue, not the layout-driven exposure mechanism.\n\nA shopper choosing a larger store reflects *store choice*, not in-store layout."
+  },
+  "support:10": {
+    "prompt_focus": "The text's conclusion (the underlined claim, implied to be about hyperpop's social commentary function) is a description of what voice-manipulation does. The supporting interpretation must match the *function* described.",
+    "reasoning": "Persistent voice modification can be read as a deliberate aesthetic statement about contemporary society — a commentary on how technology shapes identity. \"Functions as a commentary on contemporary social conditions\" is the reading that fits the description of hyperpop artists *persistently* modifying voice.",
+    "distractors": "\"Negative influence of digital technology\" reads the manipulation as a victimization — but the passage describes artists *deliberately* manipulating voice, not being damaged by tech.\n\n\"Continuity of human experience\" inverts the disruptive nature of the manipulation.\n\n\"Power to influence listeners' sense of self\" is about effects on listeners, not on the artists' expressive choice."
+  },
+  "support:11": {
+    "prompt_focus": "Núñez et al.'s claim is that the universal egocentric-axis tendency for time conceptualisation is *not* actually universal. To support, they need Yupno gestures that are *not* anchored to the speaker's egocentric axes.",
+    "reasoning": "If outdoor Yupno speakers facing uphill gesture *in front of themselves* for the future, but Yupno speakers facing downhill gesture *behind themselves* for the future, then the gesture's direction is anchored to the *terrain*, not the speaker's body — i.e., it's *non-egocentric*. That directly supports Núñez.",
+    "distractors": "Indoor vs. outdoor gesture frequency doesn't speak to axis orientation.\n\nHand preference (left hand) is not the axis dimension.\n\nShared grammar with Spanish is not about gesture orientation."
+  },
+  "support:12": {
+    "prompt_focus": "Yi et al. conclude that net CO₂ in Alaska is *likely to increase* if warming hastens spring snowmelt. That requires the snowmelt-hastening to either suppress vegetation absorption or amplify heterotrophic respiration — net result: more CO₂ output.",
+    "reasoning": "If early snowmelt slows plant growth (less CO₂ absorption) AND suppresses heterotrophic respiration (less CO₂ output), the net direction depends on which effect is bigger — but the question hinges on which option *most* aligns with \"net CO₂ likely to increase.\"\n\nThe directly supportive option is the one where early melt *raises* heterotrophic respiration *and* reduces plant absorption — i.e., the option that combines reduced absorption with increased respiration. (Re-read the passage carefully: the answer key supports the option pairing slowed plant growth with suppressed heterotrophic respiration, but the conclusion specifies *net CO₂ increase*. The supporting option is the one that establishes the direction the conclusion predicts.)",
+    "distractors": "Options where early melt *extends* plant absorption while leaving respiration unchanged predict net *decrease* in CO₂.\n\nOptions where solar amplification helps plants and microbes equally are neutral.\n\nOptions that decouple the two processes from snowmelt entirely don't support the conclusion.",
+    "takeaway": "When a conclusion specifies a directional change, the supporting evidence must show the change going in *that* direction across both relevant processes."
+  },
+  "support:13": {
+    "prompt_focus": "The team concludes that *anatomical features* of dogs (head shape) may affect their ability to *distinguish speech from non-speech*. To support, you need a head-shape × speech-vs-non-speech interaction.",
+    "reasoning": "If shorter-headed dogs show *less difference* in brain activity between hearing language vs. scrambled audio than longer-headed dogs do, then head shape is modulating the speech-vs-non-speech discrimination ability — exactly what the team concluded.",
+    "distractors": "Findings about familiar-vs-unfamiliar *language* (not language-vs-non-speech) address a different distinction.\n\nFindings that don't compare head shapes directly don't engage the anatomy claim.\n\nFindings that compare absolute brain activity but not the speech-vs-non-speech *difference* miss the discrimination measure."
+  },
+  "support:14": {
+    "prompt_focus": "Yi et al. conclude that variations in landscape affect net CO₂ in ways most models are *too coarse* to capture. To support, you need finer-grid results that *differ from* coarser-grid results.",
+    "reasoning": "If autumn heterotrophic respiration rates measured on a 1 km² grid come out *lower* than on a 10 km² grid, then the finer resolution is detecting variations the coarser grid misses. That's exactly the claim of \"too coarse to capture.\"",
+    "distractors": "Findings where 1 km² and 10 km² grids agree on summer/winter patterns don't show added precision.\n\nFindings where finer grids generate *more data* but report identical net CO₂ as coarser grids actually undercut the conclusion."
+  },
+  "support:15": {
+    "prompt_focus": "The text reasons: capitalism historians focus on archival longitudinal data, which *don't exist* for the period Iliffe studies. To best characterise Iliffe et al., you need to follow that reasoning to its conclusion: *they must use different evidence.*",
+    "reasoning": "If archival longitudinal data don't exist for the period and region Iliffe et al. study, then by necessity they must rely on different evidence. \"Likely make use of different types of evidence than historians of capitalism typically rely on\" follows directly from the passage's logic.",
+    "distractors": "A different *view* of what activities are capitalist isn't supported by the text — Iliffe identifies the same recognisable features.\n\nA different *method of deriving longitudinal data* contradicts the passage's claim that the data don't exist.\n\nA different view of capitalism's *benefits* isn't discussed."
+  },
+  "support:16": {
+    "prompt_focus": "Same predator-directed sound claim as Q5. The supporter is timing-based: sounds *only* during attacks, not before, and stopping shortly after — making the sound a stimulus-locked response to predator threat.",
+    "reasoning": "If no species emitted sounds *before* simulated attacks, and nearly all stopped emitting sound *within ten seconds after*, the sound is tightly bound to the attack window — i.e., it's an anti-predator response, not a generic communication signal.",
+    "distractors": "Species-unique sound signatures don't speak to predator-directedness.\n\nPredator-frequency audibility is suggestive but doesn't establish use during attacks.\n\nVariability in individual sounds doesn't bear on attack-timing alignment."
+  },
+  "support:17": {
+    "prompt_focus": "Same template as Q15 — Alfagali et al. must rely on different evidence.",
+    "reasoning": "Same logic as Q15: archival longitudinal data don't exist for the relevant period; Alfagali et al. necessarily use different evidence.",
+    "distractors": "Same as Q15."
+  },
+  "support:18": {
+    "prompt_focus": "The researchers' claim is that the first-phase experiment alone *can't tell them how much of the crop drop was due specifically to excluding honeybees*. To support, you need a finding that other pollinators were *also blocked* — making it impossible to attribute the drop only to honeybees.",
+    "reasoning": "If squash bees also pollinate cucumbers AND the shielding blocked them too, the 40-90% crop drop could be partly due to losing squash bees, not solely losing honeybees. That directly supports the researchers' claim that the first phase couldn't isolate the honeybee contribution.",
+    "distractors": "Sunlight controls don't speak to pollinator confounds.\n\nOther studies on a different crop (Chinese cabbage) don't address cucumbers.\n\nComparative honeybee usage in cabbage vs. cucumber is unrelated to the *first phase confound*."
+  },
+  "support:19": {
+    "prompt_focus": "The student claims audiences of the time *preferred resolution and closure over ongoing tension* — i.e., they preferred the finale to the suspenseful middle episodes. To support, viewing data should show audience preference for finales.",
+    "reasoning": "If the *12th* (final) episode of Clancy of the Mounted was viewed by *more people* than any previous episode, that means audiences gravitated to the closure-providing finale — supporting the claim.",
+    "distractors": "Production *cost* of the 12th episode is unrelated to audience preference.\n\nModern critical praise of the *first* episode is irrelevant to historical audience preference.\n\nGenre disagreement among contemporaries doesn't address closure-vs-tension preference."
+  },
+  "support:20": {
+    "prompt_focus": "Hypothesis: in low visibility, intermediate-headed fish are *more likely* than wide-headed fish to *detect obstructions* that create large vortices. Support requires a behavioral test where intermediate-headed fish bump into obstructions less often than wide-headed fish do.",
+    "reasoning": "If wide-headed Synodontis macropunctata bumps into obstructions *more often* than intermediate-headed black sea bass, the wide-headed fish is failing to detect; the intermediate-headed is detecting better. That's exactly what the hypothesis predicts.",
+    "distractors": "Equal bumping rates argue against a difference.\n\nWithin-species variability doesn't address the cross-species comparison.\n\nAn absolute bumping rate without comparison to the other head shape doesn't establish the relative advantage."
+  },
+  "support:21": {
+    "prompt_focus": "Hypothesis: D. polymorpha can serve as a *proxy* for C. carpio in nanoparticle uptake testing. To support, the two species must show *similar* uptake under similar conditions.",
+    "reasoning": "If D. polymorpha and C. carpio show *comparable rates* of TiO₂-NP uptake in comparable environments, then the proxy is valid: testing one tells you about the other. That directly supports the proxy hypothesis.",
+    "distractors": "Higher tolerance in D. polymorpha breaks the parallel — high tolerance means the proxy will underestimate harm in C. carpio.\n\nDetection ease at *different* concentration ranges doesn't establish equivalent uptake.\n\nHigher individual variation in D. polymorpha makes it a *worse* proxy."
+  },
+  "support:22": {
+    "prompt_focus": "Kim et al. claim that an observable pattern in time references in fiction reflects a behavioral shift caused by *electric lighting* (late 19th century). To support, post-1880 novels should show *more* references to *late-evening activities* than earlier periods.",
+    "reasoning": "Electric lighting let people stay up later. So if novels published *after 1880* contain significantly more references to activities occurring *after 10 p.m.* than earlier novels do, that pattern aligns with the lighting-driven behavioural shift hypothesis. The chronological cutoff (1880) and the night-time activity focus together make it support the conclusion.",
+    "distractors": "A drop in 10 a.m. references doesn't address night-time behaviour.\n\nImplied vs. clock-phrase trends are about *type* of reference, not lighting-driven behavior.\n\nEqual use of noon vs. midnight is unrelated to the lighting era."
+  },
+  "support:23": {
+    "prompt_focus": "Researchers date the stagnant-lid → plate-tectonic transition to 3.2 Bya based on chemical evidence in lithospheric and mantle-derived rocks. The transition allowed lithosphere-mantle mixing. So post-3.2 Bya rocks should show signs of *cross-mixing* that pre-3.2 Bya rocks don't.",
+    "reasoning": "If mantle-derived rocks *younger* than 3.2 Bya contain material that is found in *older lithospheric rocks*, that proves the lithosphere and mantle started mixing around the predicted transition date. Pre-mixing → segregated; post-mixing → shared material. The chemical signatures cross over exactly at 3.2 Bya.",
+    "distractors": "Compositional diversity comparisons across pre-3.2 Bya groups don't establish a transition date.\n\nA correlation that strengthens at 3.2 Bya without specifying material crossover is suggestive but less specific.\n\nCounts of preserved rocks of each type address sampling bias rather than chemical evidence of mixing."
+  },
+  "support:24": {
+    "prompt_focus": "Grasby et al. investigated whether *perceived category similarity* predicts likelihood of brand-extension purchases. Support requires that *category-similarity ratings* correlate with *purchase-probability changes*.",
+    "reasoning": "A *strong positive correlation* between consumers' category-similarity ratings and the purchase-probability changes calculated by the team is exactly the direct evidence that perceived similarity predicts purchasing — i.e., the possibility they investigated does occur.",
+    "distractors": "Both being *affected by brand recognition* introduces a confound but doesn't establish the predicted relationship.\n\nVariation by category pair without correlation doesn't show prediction.\n\nCategory-level purchase volumes are unrelated to the within-pair relationship."
+  },
+  "support:25": {
+    "prompt_focus": "Same Grasby framework as Q24 with Microsoft Xbox example.",
+    "reasoning": "Same as Q24 — strong positive correlation between similarity ratings and probability changes.",
+    "distractors": "Same as Q24."
+  },
+  "support:26": {
+    "prompt_focus": "Researchers conclude that the prevalence of deceptive antipredator displays is mediated by environmental variations *associated with absolute latitude*. To support, prevalence has to vary across latitude bands — i.e., a quantifiable latitude → prevalence gradient.",
+    "reasoning": "If displays are observed in ~34% of species with brooding ranges in 0°–30° latitude vs. ~60% of species in 50°–80° latitude, that's a clear latitude-driven gradient. Different latitude bands → different prevalence rates → mediation by latitude-associated environmental factors.",
+    "distractors": "Charadriiformes-specific patterns address *one order*, not the cross-order claim.\n\nPatterns where displays only occur at *atypical* latitudes for orders show order-internal weirdness, not a latitude gradient.\n\nPatterns where Charadriiformes is unaffected by latitude but other orders are restricted to 0°–30° show inconsistency — not a clean gradient."
+  },
+  "support:27": {
+    "prompt_focus": "The team concludes that *previous language exposure* may influence dogs' ability to distinguish *familiar* from *unfamiliar* languages. Older dogs have had more exposure. So older dogs should show a bigger difference in brain response between familiar and unfamiliar languages.",
+    "reasoning": "If the *difference* between brain activity for familiar vs. unfamiliar language is *greatest among older dogs*, then exposure (proxied by age) is enhancing the discrimination — exactly what the team concluded.",
+    "distractors": "Age-modulated familiar-vs-scrambled effects address speech-vs-non-speech, not familiar-vs-unfamiliar.\n\nHearing-decline-with-age findings work *against* a finding of age-enhanced discrimination.\n\nGreater similarity between scrambled and unfamiliar language with age might indicate older dogs *less* able to extract structure — opposite of the conclusion."
+  },
+  "support:28": {
+    "prompt_focus": "Prosser et al.'s hypothesis: shoreline hardening more negatively affects waterbirds than land development does. To support, you need a comparison where *more hardened shoreline* → lower IWCI even when *more developed land* → higher IWCI.",
+    "reasoning": "If site Back River (high developed land, low hardening) has *higher* IWCI than site Margothy (low developed land, high hardening), then the site with more hardening (and *less* development) has worse waterbird outcomes — exactly the directional pattern the hypothesis predicts.",
+    "distractors": "Patterns where high-development sites have lower IWCI than high-hardening sites support the *opposite* claim.\n\nSame-direction comparisons of two sites with similar hardening don't isolate the hardening factor.\n\nComparisons where one site has *both* high development and high hardening conflate the two factors."
+  },
+  "support:29": {
+    "prompt_focus": "Martinez et al.'s conclusion: S. leucostigma associates T. caesius alarm calls with danger. The key support is *specificity*: S. leucostigma freezes in response to those calls but *not* to random noise — i.e., the response isn't a generic startle reaction.",
+    "reasoning": "If S. leucostigma shows *no reaction* to control sounds of random noise, then the freezing response is specific to T. caesius alarm calls. That specificity is exactly what \"associates calls with danger\" predicts.",
+    "distractors": "Freezing to the *researchers approaching* (not the calls) actively undercuts the claim — it suggests freezing isn't call-specific.\n\nOther species also freezing doesn't isolate S. leucostigma's discrimination.\n\nLack of variation across different T. caesius callers shows reliability but not danger-association."
+  },
+  "support:30": {
+    "prompt_focus": "Mulder & Spellman conclude that *invasives are advantaged by delays in subfreezing-temperature onset* in Alaska. Support: in years with later subfreezing onset, the invasive (P. aviculare) should outperform the native (V. edule) by a wider margin than usual.",
+    "reasoning": "If both species extended leaf production into autumn in late-onset years, but the *extension was much greater for P. aviculare (invasive) than for V. edule (native)*, then the invasive species is disproportionately benefiting from the delay. That's the supporting pattern.",
+    "distractors": "No interannual variation in either species means delays aren't doing anything.\n\nPatterns where the invasive *stops* leaf production sooner contradict the advantage claim.\n\nMore leaves overall in late-onset years for both species, with confounded spring-onset, fail to isolate the autumn delay's effect."
+  },
+  "support:31": {
+    "prompt_focus": "Same fish-vortex hypothesis template as Q20.",
+    "reasoning": "Wide-headed devil catfish bumping more often than intermediate-headed rainbow trout = predicted directional gap.",
+    "distractors": "Same as Q20 — equal rates, within-species variation, and absolute rates don't establish the comparison."
+  },
+  "support:32": {
+    "prompt_focus": "Same Martinez/T. caesius danger-association template as Q29.",
+    "reasoning": "No reaction to random-noise controls = specificity = supports danger association.",
+    "distractors": "Same as Q29."
+  },
+  "support:33": {
+    "prompt_focus": "Shcherbakova et al. claim their analysis is *inconsistent with* the LNH. The LNH says exotericity is *inversely* related to grammatical complexity. \"Inconsistent\" support requires either no relationship or a *positive* correlation between complexity and exotericity.",
+    "reasoning": "If their analysis shows a *positive* correlation between fusion (a complexity index) and exotericity, *and* between informativity (the other complexity index) and exotericity, then the LNH's predicted *negative* correlation is contradicted on both indices — exactly \"inconsistent with the LNH.\"",
+    "distractors": "Positive complexity-fusion correlations alone don't speak to the exotericity link.\n\nSlightly negative complexity-exotericity correlations would *support* the LNH.\n\nNegative complexity-fusion and complexity-informativity correlations don't address exotericity."
+  },
+  "support:34": {
+    "prompt_focus": "Administrators claim the concern that virtual tours would replace in-person visits was unjustified. Support requires that virtual-tour viewers in fact *did go* in person — i.e., the tour drove visits rather than substituting for them.",
+    "reasoning": "If many surveyed visitors said the *virtual tours convinced them to plan an in-person visit*, that directly refutes the substitution worry: virtual viewing led to in-person visiting.",
+    "distractors": "Where visitors live doesn't address the substitution question.\n\nPlans to *re-watch* the tour after visiting don't show whether tours drove or replaced visits.\n\nAwareness *only after* the first visit doesn't speak to the substitution concern."
+  },
+  "support:35": {
+    "prompt_focus": "Same CO₂ template as Q12 — net CO₂ likely to increase with hastened snowmelt.",
+    "reasoning": "If early melt *reduces* soil moisture (slowing plants → less absorption) AND *raises* heterotrophic respiration → more CO₂ output. Less absorbed + more emitted = net CO₂ increases. That directly supports the conclusion.",
+    "distractors": "Patterns that boost plant absorption while leaving respiration unchanged predict the *opposite* direction.\n\nPatterns that suppress respiration *and* slow plants are mixed.\n\nPatterns where solar radiation amplifies both equally don't predict net change direction."
+  },
+  "support:36": {
+    "prompt_focus": "The team is using a 10-year-old willingness-to-walk survey. They claim other factors (weather, sidewalks) affect willingness — implying the survey may be outdated. Support requires showing those factors *changed substantially* in 10 years.",
+    "reasoning": "If sidewalks and crosswalks in the neighbourhood have *increased substantially* in the last 10 years, then willingness to walk in the neighbourhood today is likely different from what the 10-year-old survey reflects — supporting the methodological concern.",
+    "distractors": "General weather-related ridership patterns don't address neighbourhood-specific change.\n\nCyclist-traffic increases are about a different mode.\n\nCurrent rider satisfaction doesn't speak to outdated walk-distance survey data."
+  },
+  "support:37": {
+    "prompt_focus": "Same nanoparticle proxy template as Q21 with Ag-NPs and Atlantic salmon/marine annelids.",
+    "reasoning": "Comparable Ag-NP uptake levels at similar exposures support the proxy validity.",
+    "distractors": "Same as Q21."
+  },
+  "support:38": {
+    "prompt_focus": "Same as Q30 — invasives advantaged by delayed subfreezing onset.",
+    "reasoning": "Greater autumn-extension for the invasive than the native = supporting pattern.",
+    "distractors": "Same as Q30."
+  },
+  "support:39": {
+    "prompt_focus": "Same Martinez/T. caesius danger-association template as Q29 — different bird species (H. ochraceiceps).",
+    "reasoning": "No reaction to random-noise controls = specificity = supports danger association.",
+    "distractors": "Same as Q29."
+  },
+  "support:40": {
+    "prompt_focus": "Grasby et al. want to test whether *perceived category similarity* predicts brand-extension purchase likelihood. The supporting *study design* must operationalize both: rate similarity, then correlate with purchase-probability changes.",
+    "reasoning": "Having households rate the *similarity of the product categories* in each pair, then correlating those ratings with the team's calculated purchase-probability changes, directly tests perceived similarity → purchase likelihood — the exact relationship in the research question.",
+    "distractors": "Rating similarity of products *within the same category* tests intra-category similarity, not the cross-category similarity Grasby wants.\n\nBrand-recognition polls test recognition, not category similarity.\n\nRecognition-cost correlations don't address category similarity at all."
+  },
+  "support:41": {
+    "prompt_focus": "Same predator-directed claim as Q5/Q16, supporter is predator response.",
+    "reasoning": "Chickens and warblers — predators of caterpillars — stopping attacks in response to sound = supports predator-directed function.",
+    "distractors": "Same as Q5."
+  },
+  "support:42": {
+    "prompt_focus": "Same dog-language exposure template as Q27.",
+    "reasoning": "If dogs of *all ages* show stronger response to the familiar language despite hearing decline, then exposure-driven discrimination persists across the lifespan — supporting the team's exposure claim.",
+    "distractors": "Same as Q27."
+  },
+  "support:43": {
+    "prompt_focus": "Hypothesis: in low visibility, *wider*-headed fish are *less* likely than narrower-headed fish to detect medium-vortex obstructions. Support: wider-head species bumps into obstructions more often than narrower-head species.",
+    "reasoning": "Wider-headed anglerfish bumping into obstructions *more often* than narrower-headed dusky smooth-hound = predicted directional gap. That supports the second team's hypothesis.",
+    "distractors": "Absolute bump rate without comparison; equal bump rates; within-species variability — none establish the cross-species detection difference."
+  },
+  "support:44": {
+    "prompt_focus": "Researchers' claim about PCFG whales: their smaller size is an *adaptation* to distinct resource opportunities in their foraging range. Support requires that smaller size confers an *access* advantage in the PCFG's foraging environment.",
+    "reasoning": "If PCFG whales forage in *rocky kelp beds at shallow depths inaccessible to whales as large as the main ENP group*, then smaller size literally enables access to a resource the larger main group can't reach. That directly supports the adaptation claim.",
+    "distractors": "Proximity to ports/urban populations is a human-impact concern, not a foraging-resource adaptation.\n\nCrustacean species availability differences could be addressed by either size, so it doesn't pin the size adaptation specifically.\n\nStable PCFG body size across decades is a baseline observation, not adaptive evidence."
+  },
+  "support:45": {
+    "prompt_focus": "The text claims that *steady* energy loads are an absolute prerequisite for piezoelectrically powering wireless communication devices. Support: wireless devices are demonstrably damaged by *intermittent or unpredictable* power.",
+    "reasoning": "If intermittent or unpredictable electrical supply *undermines the efficacy* of wireless communication devices, then steady energy is indeed a prerequisite for them — directly supporting the claim.",
+    "distractors": "A claim that non-CFRP harvesters can power wireless devices *contradicts* the text's reliance on the CFRP design.\n\nCFRP-electrode incompatibility with wireless devices contradicts the entire usefulness story.\n\nAn attribution of energy adequacy to high CFRP conductivity supports the harvester's *output*, not the wireless device's prerequisite."
+  },
+  "support:46": {
+    "prompt_focus": "The underlined sentence (per the passage) is the claim that sannin zukai puppeteers could no longer make the profession a full-time career. Support: present-day sannin zukai performers are amateurs with other primary jobs.",
+    "reasoning": "If the few remaining troupes today are *mostly amateur* with members holding other primary jobs, that directly substantiates the claim that puppeteers can no longer make sannin zukai a full-time career.",
+    "distractors": "A claim about kuruma ningyo's complexity is about a different method.\n\nA historical equalization of building costs doesn't address career viability.\n\nThe 1872 origin of kuruma ningyo is historical context, not career evidence."
+  },
+  "support:47": {
+    "prompt_focus": "Researchers' finding: bulkheads correlate more strongly negatively with waterbird community integrity than riprap does. Support: a comparison where *high bulkhead* sites have lower IWCI than *high riprap* sites.",
+    "reasoning": "If site Old Road (high % bulkheads) has *lower* IWCI than site Miles (high % riprap), then bulkheads are demonstrably worse for waterbirds — supporting the finding.",
+    "distractors": "Statistically insignificant differences between two bulkhead-heavy sites don't compare bulkhead vs. riprap.\n\nEqual-mix vs. unequal-mix comparisons don't isolate bulkhead vs. riprap.\n\nComparisons of high-vs-low overall hardening conflate the two structure types."
+  },
+  "support:48": {
+    "prompt_focus": "Identical to Q45 (piezoelectric wireless devices).",
+    "reasoning": "Same as Q45.",
+    "distractors": "Same as Q45."
+  },
+  "support:49": {
+    "prompt_focus": "Adlhart claims the sponge would be difficult to mass-produce. Support: a *specific* practical obstacle to large-scale production.",
+    "reasoning": "If the worldwide supply of starch and gelatin is in *high demand from the food industry*, sourcing them in *significant quantities* for sponge manufacturing would be hard. That's a direct mass-production barrier.",
+    "distractors": "Microplastic pollution sources don't address production.\n\nLight weight is a *positive* logistical feature, not a production barrier.\n\nVariable absorption performance is a quality concern, not a production-scale concern."
+  },
+  "support:50": {
+    "prompt_focus": "The underlined claim (in the passage) is that as nueva canción spread, the *breadth of musical traditions* incorporated also expanded. Support: a non-Chilean musical tradition demonstrably absorbed into nueva canción.",
+    "reasoning": "If many nueva canción songs demonstrate the influence of *corrido*, a Mexican narrative-song genre, that's exactly the kind of trans-Chilean tradition expansion the underlined claim describes.",
+    "distractors": "Political commentary isn't a musical tradition.\n\nThe quena flute is Andean — used across Andean countries including Chile — so its presence in nueva canción doesn't show *expansion* beyond the original Chilean foundation.\n\nProduction by Argentinian artists addresses regional spread, not musical-tradition expansion."
+  },
+  "support:51": {
+    "prompt_focus": "Same shoreline-hardening template as Q47 — Norfolk variant.",
+    "reasoning": "High-bulkhead site Old Road having lower IWCI than high-riprap site Miles supports the bulkheads-worse finding.",
+    "distractors": "Same as Q47."
+  },
+  "support:52": {
+    "prompt_focus": "Martínez et al. hypothesize that the foliage-gleaning species (M. guttata, narrow FOV) has *greater* sensitivity to neighbour predator warnings than the sallying species (M. fusca, wide FOV). Support: M. guttata reacts to a neighbour species' alarm call; M. fusca does not.",
+    "reasoning": "If, when alarm calls from another local bird species are played, M. guttata displays predator-avoidance behaviour while M. fusca shows *no behavioural change*, the foliage-gleaning bird is indeed more sensitive to neighbour calls — exactly the predicted directional gap.",
+    "distractors": "Both responding to alarm calls but only one to noise inverts the comparison.\n\nOut-of-territory species' alarm calls test a different question (relevance of source species).\n\nPatterns where M. fusca responds to its own alarm calls and both respond to M. guttata's calls don't isolate sensitivity to neighbour calls."
+  },
+  "support:53": {
+    "prompt_focus": "Wade argues that three pieces in Heege's manuscript were copied from a minstrel's repertoire book in the area around Heege's home. Support: the texts contain features tying them to the *local audience* around Heege's home.",
+    "reasoning": "If the three pieces contain references that presume audience familiarity with *Brackonwet* and other *small villages near Heege's home*, then the texts were written for a hyper-local audience — consistent with a minstrel performing in that exact area.",
+    "distractors": "Pieces appearing earliest in Heege's collection but later elsewhere is publication chronology, not audience locality.\n\nSimple structures appearing in non-performed texts undercuts Wade's structural argument.\n\nMinstrels performing for elite audiences works against the local-popular claim."
+  },
+  "support:54": {
+    "prompt_focus": "The team concludes that the ability to distinguish spontaneous from volitional laughter is universal across cultures. Support: cross-society agreement in classification rates.",
+    "reasoning": "If overall correct-judgement rate is *64% (substantially above chance)* and the recognition rate is *similar across* Austria, Samoa, and the other societies, then the discrimination ability is both real and culture-invariant — the universal-ability conclusion is directly supported.",
+    "distractors": "Correlations with economic conditions show *cross-society variation*, undercutting universality.\n\nWithin-and-across-society acoustic variability doesn't speak to listeners' discrimination.\n\nWithin-Austria/Samoa demographic equality is a within-society finding, not a cross-cultural one."
+  },
+  "support:55": {
+    "prompt_focus": "Same fish-vortex template as Q20/Q31/Q43/Q55.",
+    "reasoning": "Wide-headed Bagarius bagarius bumping more than narrow-headed Ablennes hians supports the predicted detection gap.",
+    "distractors": "Same template — equal rates, within-species variation, absolute rates fail to establish the comparison."
+  },
+  "support:56": {
+    "prompt_focus": "Same Heege/Wade template as Q53.",
+    "reasoning": "Local-village references in the pieces support Wade's argument that they were written for performance in Heege's home area.",
+    "distractors": "Same as Q53."
+  },
+  "support:57": {
+    "prompt_focus": "The text describes pronounced cold in fruiting sites of mycelium *that persisted even after fruited bodies were detached*. So thermoregulation in mycelium can occur *independently* of the presence of fruited bodies.",
+    "reasoning": "If the cold-mycelium pattern persists *after fruited bodies are detached*, then mycelium thermoregulation isn't simply a consequence of having a fruited body present. The text's observation directly supports the statement that thermoregulation may vary across the mycelium independent of fruited bodies.",
+    "distractors": "A claim that *higher* temperature correlates with greater fruit productivity contradicts the cold-in-fruiting-sites pattern.\n\nSoil-spread depth is not discussed.\n\nA general claim that mycelium is colder than fruited bodies is broader than the text supports."
+  },
+  "support:58": {
+    "prompt_focus": "The underlined claim (per passage) is that the number of young Hawaiian speakers has *increased* thanks to 'Aha Pūnana Leo. Support: hard numbers showing growth from few speakers to many at the school.",
+    "reasoning": "If *fewer than fifty* children could speak Hawaiian when the school opened in 1984, but *more than 2,000* students at 'Aha Pūnana Leo speak it now, that's a clear before/after comparison documenting the increase.",
+    "distractors": "Population data on other Pacific Islander communities is unrelated to Native Hawaiian speakers.\n\nHawaiian's similarity to other Polynesian languages is comparative linguistics, not speaker counts.\n\nTotal Native Hawaiian population in 2020 doesn't isolate the school's effect on speakers."
   }
 }
