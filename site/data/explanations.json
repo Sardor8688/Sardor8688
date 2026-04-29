@@ -264,5 +264,114 @@
     "reasoning": "The passage explicitly identifies two things: (1) Drelichman and Voth's place in the wider field, and (2) what makes their work distinctive — the new dataset and what it reveals about Philip II. The main idea must combine both: they advanced the field by assembling a novel collection of evidence that gave them insight into Philip II's debt defaults.",
     "distractors": "An option that contrasts Drelichman/Voth with Hoffman/Norberg by claiming the latter contains no analysis of early sovereign-state records misreads the passage; Hoffman/Norberg are mentioned as related work, not as a foil.\n\nAn option that ruling Spain and Belgium caused short-term cash problems explains the *empirical finding* of the study but ignores the methodological achievement (the new dataset).\n\nAn option that Drelichman/Voth's work simply builds on Hoffman/Norberg with added nuance under-credits the unique reconstruction the passage explicitly highlights.",
     "takeaway": "When a passage names one researcher's *unique contribution* to a field, the main idea must mention both the field context and the contribution."
+  },
+  "weaken:1": {
+    "prompt_focus": "The critic claims that the lullaby didn't relax the infants — it *attracted their attention*. Bainbridge's team measured pupil size precisely because pupils typically *enlarge* when a stimulus captures attention. So a finding that weakens the critic's claim is one showing pupil-size data going the *opposite* way of attention.",
+    "passage_breakdown": "Bainbridge's team played a Scottish Gaelic lullaby and a Seri non-lullaby; infants' heart rates dropped more during the lullaby; the team called this relaxation. The critic counters with a known fact: heart rate also drops when something *captures attention*. The team anticipated this and added pupil size as a tiebreaker — pupils dilate with attention, contract with relaxation.",
+    "reasoning": "To weaken \"the lullaby grabbed attention,\" you need pupil data going *against* the attention reading — i.e., pupils that did *not* dilate during the lullaby (or that contracted). A finding that infants' pupils were *smaller* during lullabies than non-lullabies tells us attention was *not* what the lullaby produced; it tells us something more like calm/relaxation. That directly contradicts the critic's claim.",
+    "distractors": "A finding about blinking frequency being equal in both songs tells us nothing about whether the lullaby raised attention more than the non-lullaby — equal blinking is consistent with either reading.\n\nA finding about the songs being unfamiliar to infants doesn't speak to attention vs. relaxation at all; novelty cuts both ways.\n\nA finding that parents would *choose* the lullaby to calm a child is about adult preference, not about what was actually happening in the infants' bodies — it doesn't engage the critic's mechanism claim.",
+    "takeaway": "In Weaken questions about competing mechanisms (relaxation vs. attention), the right answer is whichever option supplies the *physiological signal* that distinguishes the two."
+  },
+  "weaken:2": {
+    "prompt_focus": "The paleontologists' claim is that high metabolic rates are why birds, but *not* non-avian dinosaurs, survived the extinction. To weaken this, you need a finding showing that high metabolic rate did *not* in fact correlate with surviving — i.e., that some non-avian dinosaurs *also* had high metabolism (and still went extinct).",
+    "passage_breakdown": "Background: high metabolic rate is generally argued to help in mass extinctions. The paleontologists use this to explain why birds survived while non-avian dinosaurs did not — they say the birds had *increased* metabolic capacity. The implicit assumption: non-avian dinosaurs had *lower* metabolism.",
+    "reasoning": "If non-avian dinosaurs *also* had high metabolic rates (because, e.g., some moved fast, and fast movement requires high metabolism), then the metabolism explanation cannot account for why one group died and the other lived — both groups would have had the trait the paleontologists say protected birds. The right weakener is therefore evidence that some non-avian dinosaurs likely had high metabolic rates.",
+    "distractors": "A claim that non-avian dinosaur metabolism *decreased over time* is too vague — without a comparison to birds at the moment of extinction, it doesn't bear on the claim.\n\nA claim that birds today have very high metabolism *supports* the paleontologists, not weakens them.\n\nA claim that many high-metabolism dinosaurs went extinct *might* weaken the claim, but in the Weaken answer it depends on whether *non-avian* high-metabolism dinosaurs went extinct; the more directly the answer ties high metabolism to non-avian dinosaurs, the stronger it is."
+  },
+  "weaken:3": {
+    "prompt_focus": "Same critic, same setup as Q1, but with the lullaby/non-lullaby pair from a different language pair. And this time the team's data already shows pupils *and* heart rate decreased during the lullaby. The weakener has to make pupil-decrease incompatible with the critic's \"it grabbed attention\" reading.",
+    "passage_breakdown": "The team finds heart rate *and* pupil size both decreased during the lullaby. The critic says heart rate decrease can also be due to attention. To rebut the critic on the pupil side, you need the premise that links attention and pupil dilation.",
+    "reasoning": "If \"increased attention to a stimulus is usually accompanied by an *increase* in pupil size,\" then the observed *decrease* in pupil size during lullabies is the opposite of what we'd see if attention had been heightened. That directly contradicts the critic. The weakener supplies the missing rule that makes the team's pupil data devastating to the critic.",
+    "distractors": "A finding that *blinking* is also a marker of attention adds a different attention measure but doesn't tell us whether the observed pupil decrease points to attention or relaxation.\n\nA finding that parents prefer the Luk Saami lullaby is about adult preference, irrelevant.\n\nA finding that infants had no familiarity with either song doesn't help adjudicate between the relaxation and attention readings."
+  },
+  "weaken:4": {
+    "prompt_focus": "The second team's conclusion is about *whose methodology was better*, ranked by traceability and consistency. To weaken that conclusion you have to show that the actual ratings don't fall the way the second team claims they do — i.e., the very ratings the second team relied on contradict their verdict.",
+    "passage_breakdown": "The Babbitt team rated other studies on traceability (clarity of procedures) and consistency (category alignment). A second team draws conclusions from these ratings — for example, ranking Huisman's study above Oguchi's, or vice versa. Whichever direction they ranked, the weakener is the *opposite* directional finding on at least one rating dimension.",
+    "reasoning": "If the second team concluded one study had a *better* methodology than another, a finding that the supposedly-better study had a *lower* traceability rating than the supposedly-worse study directly contradicts that judgment. Because the second team is *only* using these two metrics, even one directional contradiction is fatal.",
+    "distractors": "A finding that one study had high consistency *and* high traceability is consistent with that study being good; it doesn't undercut the comparison.\n\nA finding that one study had a *lower* consistency rating could either weaken or strengthen depending on which way the second team ranked them — the cleanest weakener is the directional traceability contradiction.\n\nA finding that one study had low ratings on both metrics doesn't speak to whether the *other* study was rated higher."
+  },
+  "weaken:5": {
+    "prompt_focus": "The student's claim is that *ego-based* (i.e., relative-to-self, like left/right or front/back) conceptualisations of time are *universal*. To weaken \"universal,\" you need an example of a culture doing it *non*-egocentrically.",
+    "passage_breakdown": "The Yupno study found Yupno speakers gesture along *terrain-based* axes (uphill/downhill) when discussing time, regardless of which way they are facing. Spanish speakers, by comparison, use the left/right axis (egocentric). The student's claim is that the Spanish-style egocentric mapping is universal.",
+    "reasoning": "If outdoors Yupno speakers point *uphill* for the future regardless of body orientation, then their time mapping is anchored to the landscape, not to themselves — the very *opposite* of egocentric. That single counterexample is enough to weaken \"universal.\"",
+    "distractors": "A finding that a Yupno speaker points in opposite directions for past vs. future is consistent with an egocentric front/back axis and would *strengthen* the student.\n\nShared grammatical structures with Spanish are about language, not gesture orientation — irrelevant.\n\nA finding that Yupno speakers gesture less often than Spanish speakers is about quantity, not orientation — also irrelevant to the egocentric vs. non-egocentric distinction."
+  },
+  "weaken:6": {
+    "prompt_focus": "Same template as Q4 but with Kozak/Keoleian and Streicher-Porte. The weakener is whichever finding shows the supposedly-better study had a *lower* traceability rating than the supposedly-worse one.",
+    "passage_breakdown": "Same Babbitt traceability/consistency framework. The second team has drawn a comparative methodology verdict between Kozak/Keoleian and Streicher-Porte; the weakener flips the directional rating.",
+    "reasoning": "Identical structure to Q4: a directional reversal on traceability is enough to undercut the second team's conclusion.",
+    "distractors": "Findings that confirm the second team's directional ranking, or that supply ratings on only one study without comparison, do not weaken the conclusion."
+  },
+  "weaken:7": {
+    "prompt_focus": "Same Yupno template as Q5, with English (rather than Spanish) named as the egocentric example. The student again claims egocentric conceptualisations are universal; the weakener is again terrain-anchored Yupno gestures.",
+    "passage_breakdown": "English speakers use front/back axes (egocentric). The student claims this is universal. Yupno speakers' outdoor gestures, anchored to *uphill/downhill*, would falsify universality.",
+    "reasoning": "If Yupno speakers outdoors point *downhill* for the past regardless of body orientation, the gesture is anchored to terrain rather than to the speaker's body. That is the directly non-egocentric counterexample the student's claim cannot survive.",
+    "distractors": "Shared grammar with English doesn't address orientation. Pointing in opposite directions for past vs. future is itself egocentric. Frequency of gesturing is irrelevant to orientation."
+  },
+  "weaken:8": {
+    "prompt_focus": "The student's claim is that all small-bodied dog breeds (e.g., Havaneses) must share a *single* IGF-1 gene variant that suppresses production. The weakener has to produce a small-bodied breed with a *different* IGF-1 variant.",
+    "passage_breakdown": "Ostrander et al. found multiple IGF-1 variants and that breeds are internally consistent for variant (all members of one breed share a variant). The student leaps from \"breed-internal consistency\" to \"all small breeds must share *the* repressing variant.\"",
+    "reasoning": "If some small breeds with low IGF-1 concentrations have a *different* IGF-1 variant from toy poodles (another small breed), then small-bodied breeds do *not* all share one repressing variant. That directly falsifies the student's hypothesis.",
+    "distractors": "A claim that the *majority* of prevalent breeds have low IGF-1 activity speaks to a different population (most breeds, not just small ones).\n\nA claim about other size-influencing genes muddies the picture but doesn't refute the IGF-1 claim directly.\n\nA claim about overall dog size variation is unrelated to whether one IGF-1 variant is shared by small breeds."
+  },
+  "weaken:9": {
+    "prompt_focus": "The students' conclusion is that variation in cataract frequency is *solely* attributable to variation in Aasdh expression. \"Solely\" is the load-bearing word — to weaken, you need a counterexample where cataract frequency moves *independently* of Aasdh expression.",
+    "passage_breakdown": "Knockout mice (with Aasdh deactivated) developed more cataracts than wild-type mice in the lab. The students conclude Aasdh expression is the *sole* explanation for cataract differences in nature.",
+    "reasoning": "If wild-type mice with similar cataract frequency to the knockouts showed *wide variation* in Aasdh expression, then mice can have very similar cataract frequencies despite quite different Aasdh levels. That is exactly the kind of decoupling that contradicts \"solely attributable.\"",
+    "distractors": "A claim about Aasdh affecting other genes is consistent with the students' story.\n\nA claim that wild mice differ in Aasdh expression is consistent too — it doesn't link the differences to cataracts.\n\nA claim that the experimental knockouts differ from wild-type *only* in cataract frequency *supports* the students."
+  },
+  "weaken:10": {
+    "prompt_focus": "Same Yupno egocentric-universality claim. The weakener is again outdoor Yupno terrain-anchored gestures.",
+    "passage_breakdown": "Same setup as Q5/Q7.",
+    "reasoning": "If Yupno speakers outdoors point *uphill* for the future regardless of body orientation, then their gesture is landscape-anchored — non-egocentric. That falsifies the universal claim.",
+    "distractors": "Shared grammar (irrelevant to gesture orientation), opposite-direction gestures (egocentric), and gesture frequency (unrelated) all fail to weaken the universal claim."
+  },
+  "weaken:11": {
+    "prompt_focus": "The student concludes that variation in IGF-1 gene must account for *the observed variance in body size* among dog breeds. The weakener is a quotation pointing out IGF-1 is *only one of several* size-affecting genes — i.e., it's not enough alone to account for the variance.",
+    "passage_breakdown": "Many IGF-1 variants exist; IGF-1 promotes growth. The student concludes IGF-1 variation explains body-size variation across breeds.",
+    "reasoning": "If IGF-1 is one of *multiple* genes known to affect dog size, then IGF-1 variation cannot be the sole explanation for size variance — other genes also contribute. That directly undercuts the student's leap from \"IGF-1 has variants\" to \"IGF-1 explains body-size variance.\"",
+    "distractors": "A claim that IGF-1 conclusions might not extend to other species is irrelevant to dog-internal variance.\n\nA finding that only one third of breeds carry the same variant is partially supportive (variation exists) and doesn't undercut IGF-1's role.\n\nA claim that IGF-1 variations *do* result in substantial variance *strengthens* the student."
+  },
+  "weaken:12": {
+    "prompt_focus": "The second team hypothesizes that fish are *more likely to avoid* obstructions when pressure fluctuations at the snout are *greater*. The earlier study showed pressure fluctuations are greater for narrow- and intermediate-headed fish than wide-headed ones. So a weakener has to break the predicted pressure→avoidance link.",
+    "passage_breakdown": "Greater pressure fluctuations at the snout are predicted to mean better avoidance. Wide heads → low pressure → predicted to bump into obstructions. Intermediate heads → higher pressure → predicted to avoid better.",
+    "reasoning": "If, in low-visibility tests with large vortices, intermediate-headed fish bumped into obstructions *just as often* as wide-headed fish, then the predicted advantage of larger pressure fluctuations didn't materialize. That breaks the hypothesised mapping from pressure-fluctuation magnitude to avoidance success.",
+    "distractors": "A finding that wide-headed fish bumped into less than half of obstructions doesn't directly compare the head-shape groups in the predicted direction.\n\nA finding that wide-headed fish bumped *more* than intermediate-headed *strengthens* the hypothesis.\n\nA finding of within-group variation among intermediate-headed fish doesn't address the cross-group comparison."
+  },
+  "weaken:13": {
+    "prompt_focus": "The second team claims caterpillars use sounds *primarily to communicate with conspecifics* (other members of their own species). The weakener has to show the sounds aren't being deployed in social contexts but rather as anti-predator responses.",
+    "passage_breakdown": "33% of tested caterpillar species produced sound during simulated attacks. The second team says these sounds primarily serve intra-species communication.",
+    "reasoning": "If sound-producing caterpillars only produce sound *during* attacks, not before — and never in the minute prior — then the sound is firmly tied to attack response, not ongoing communication with conspecifics. That directly undercuts the \"primarily communication\" claim.",
+    "distractors": "A finding that *non-sound-producing* species produce sound during conspecific encounters is about a different group and doesn't speak to the sound-producing species' usage.\n\nA finding that the species are solitary and were tested in isolation suggests they don't *normally* have conspecifics to communicate with — but doesn't directly bear on what the sound is *for*.\n\nA finding about predator-audibility is suggestive but doesn't address conspecific communication."
+  },
+  "weaken:14": {
+    "prompt_focus": "Same template as Q11 — IGF-1 variation, body-size variance. Same weakener: IGF-1 is only one among several size-affecting genes.",
+    "passage_breakdown": "Same template as Q11.",
+    "reasoning": "Same reasoning as Q11.",
+    "distractors": "Same as Q11."
+  },
+  "weaken:15": {
+    "prompt_focus": "Same Bainbridge template as Q1/Q3 with a different language pair. With both heart rate *and* pupil size already decreasing during the lullaby, the weakener of the critic's \"it grabbed attention\" claim is the rule: pupil size *increases* with attention.",
+    "passage_breakdown": "Heart rate and pupil size both fell during the Western Nahuatl lullaby. The critic argues the lullaby captured attention. To weaken, supply the rule that makes shrinking pupils incompatible with attention.",
+    "reasoning": "If pupil size typically *increases* when a stimulus captures attention, then the observed decrease in pupil size during the lullaby is the opposite of what attention would predict — directly weakening the critic.",
+    "distractors": "Adult preference, prior unfamiliarity, and blinking-as-attention are all peripheral to the pupil-size-vs-attention argument."
+  },
+  "weaken:16": {
+    "prompt_focus": "Schober's claim is that the Calusa watercourts were also *intended to foster conch* (not just trap fish). The weakener has to show that the watercourts' design or contents are *not* conducive to conch cultivation.",
+    "passage_breakdown": "Calusa watercourts are documented as fish traps. Schober adds that they were also designed to foster conch, citing conch's nutritional/material value to the Calusa.",
+    "reasoning": "If radar surveys show watercourt dimensions are well-matched to local fish but *not* to the shallow seagrass habitats sea snails need, then the very design of the watercourts argues against conch cultivation as an intended purpose. That directly undercuts Schober.",
+    "distractors": "A finding of *more* sea-snail diversity inside watercourts than at food-prep sites would *support* Schober.\n\nPopulation-size estimates of fish/snails in open water don't bear on watercourt purpose.\n\nA finding that conch shells aren't the majority of recovered remains is consistent with watercourts being primarily for fish but doesn't address whether they were *also* intended for conch — Schober's claim is about *intent*, not *primary use*."
+  },
+  "weaken:17": {
+    "prompt_focus": "The student's hypothesis is that, because water temperature decreases with depth, the New Caledonia egg-laying depth (140 m) implies warmer water than Fijian egg-laying depth (170 m). The weakener has to show that this depth-temperature mapping doesn't apply when comparing the two regions.",
+    "passage_breakdown": "F02 (a New Caledonian egg sample) was laid at 140 m. Fijian nautilids lay at ≥170 m. The student infers New Caledonian eggs are laid in warmer water, since 140 m < 170 m and \"water temperature decreases as\" depth increases — but this assumes the same depth-temperature curve in both places.",
+    "reasoning": "If the temperature at a *given* depth tends to be higher near Fiji than near New Caledonia, then the Fijian 170-m water might actually be warmer than the New Caledonian 140-m water — flipping the student's inference. That directly weakens the hypothesis.",
+    "distractors": "A migration pattern after hatching doesn't address egg-laying-depth temperature.\n\nA claim that there aren't enough deep hatching areas in New Caledonia explains the depth choice but doesn't undercut the temperature inference.\n\nA claim that Fijian water is *colder* at a given depth would *strengthen* the student."
+  },
+  "weaken:18": {
+    "prompt_focus": "The hypothesis is that A. aquaticus could serve as a *proxy* for P. perezi (frogs) in nanoparticle bioaccumulation testing — making frog testing unnecessary. To weaken, you need a finding that the two species don't respond similarly enough for substitution.",
+    "passage_breakdown": "Both A. aquaticus and P. perezi accumulate WC-NPs. The hypothesis: testing only A. aquaticus is sufficient because it can stand in for the frog.",
+    "reasoning": "If A. aquaticus accumulates detectable WC-NPs *with significantly fewer negative effects* than P. perezi, then the proxy fails: a level of WC-NP that looks safe in A. aquaticus might already be harmful in frogs. The proxy claim assumes parallel sensitivity to harm, which the finding contradicts.",
+    "distractors": "A claim that uptake *rates* differ in poorly understood ways is concerning but vague — it doesn't specify *how* the proxy fails.\n\nA claim that A. aquaticus accumulates more *types* of nanoparticle than P. perezi might actually support the proxy (it's more sensitive to detection).\n\nA claim of low individual variation in both species is *supportive* of using either as a stable indicator."
   }
 }
