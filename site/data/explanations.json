@@ -671,5 +671,358 @@
     "prompt_focus": "The underlined claim (per passage) is that the number of young Hawaiian speakers has *increased* thanks to 'Aha Pūnana Leo. Support: hard numbers showing growth from few speakers to many at the school.",
     "reasoning": "If *fewer than fifty* children could speak Hawaiian when the school opened in 1984, but *more than 2,000* students at 'Aha Pūnana Leo speak it now, that's a clear before/after comparison documenting the increase.",
     "distractors": "Population data on other Pacific Islander communities is unrelated to Native Hawaiian speakers.\n\nHawaiian's similarity to other Polynesian languages is comparative linguistics, not speaker counts.\n\nTotal Native Hawaiian population in 2020 doesn't isolate the school's effect on speakers."
+  },
+  "details:1": {
+    "prompt_focus": "A Details question asks you to identify which option literally matches what the text says — not what's implied beyond the passage. Here, the prompt asks what point the text makes about the difference in park-use proportions between Panama City and Fortaleza.",
+    "passage_breakdown": "Two raw numbers: 53.5% of Panama City respondents use parks vs. 35.7% of Fortaleza respondents. The author then notes: \"the percentage of Panama City respondents who reported living within a 10-minute walk of a park was much lower than that reported by Fortaleza respondents.\"\n\nThe conclusion: \"greater proximity alone can't explain the difference in park use.\"",
+    "reasoning": "Panama City has a smaller share of close-to-park residents but a *higher* park-use rate. So distance doesn't drive the gap — something else does. The text's point about the difference is that it is *caused by something other than the parks' proximity to the residents*.",
+    "distractors": "Researchers' expectations are never mentioned.\n\nSurvey *inaccuracy* is never raised — the text takes the percentages at face value.\n\nSources predating the survey are unrelated.",
+    "takeaway": "When a passage explicitly rules out one explanation (\"can't explain\"), the supporting detail is the one that *also* rules out that explanation."
+  },
+  "details:2": {
+    "prompt_focus": "Asks what can be reasonably concluded about krill consumption *between* the two whales. The text gives a maximum-mass figure for the minke whale (4,000 kg) and an explicit krill quantity for the fin whale (24,000 kg/day) plus the fact that minke is *smaller*.",
+    "passage_breakdown": "Minke max mass: 4,000 kg. Fin whale: 80,000 kg, eats up to 24,000 kg of krill/day. The 30% rule applies to both. Minke at 30% of 4,000 kg = 1,200 kg/day max.",
+    "reasoning": "Plug into the 30% rule: a 4,000-kg minke can eat at most 1,200 kg/day; the fin whale is reported to eat up to 24,000 kg/day. The fin whale therefore eats *more* krill per day than the minke whale.",
+    "distractors": "\"Both can eat 24,000 kg/day\" is impossible — minke max is much lower.\n\n\"Fin whale's consumption made it hard for minke whales\" introduces a competition claim the text never makes.\n\n\"Minke is less likely to include krill\" reverses the text — both are baleen, both eat krill."
+  },
+  "details:3": {
+    "prompt_focus": "What change *coincided* with Don becoming a patron of the theater?",
+    "passage_breakdown": "After his play won \"nothing but hisses,\" Don \"ceased to write plays and assumed instead the nobler role of a patron.\"",
+    "reasoning": "The text directly couples the two transitions: ceasing to write plays AND becoming a patron. So the change that coincided with patronage is *stopping writing plays*.",
+    "distractors": "An essay achieving recognition is never mentioned.\n\nBecoming a critic is never mentioned.\n\nMoving outside Madrid contradicts the text — youths *come to Madrid* to find him."
+  },
+  "details:4": {
+    "prompt_focus": "Why the team employed a clustering algorithm.",
+    "passage_breakdown": "Text: \"How we define a neighborhood and its boundaries is subjective, so the team used a clustering algorithm to locate dense groupings of amenities that represent human-identified neighborhoods like Boston's Harvard Square.\"",
+    "reasoning": "The motivating clause begins with \"is subjective\" and is solved by the algorithm. The algorithm *objectively* identifies neighbourhood groupings. The reason is *objectivity in identifying neighborhoods*.",
+    "distractors": "Business-closure analysis isn't mentioned.\n\nConsumer-awareness pathways aren't discussed.\n\nPredicting *successful* businesses is the *outcome* of the model, not the role of the clustering step."
+  },
+  "details:5": {
+    "prompt_focus": "What point the text makes about the O'odham word *gogogs*.",
+    "passage_breakdown": "Text: \"the element 'go' in gogs gets repeated in gogogs.\"",
+    "reasoning": "Gogogs is presented specifically as an *example* of reduplication: the 'go' element from gogs is repeated. That's the point.",
+    "distractors": "\"No clear English equivalent\" — never said.\n\n\"The only word in O'odham using reduplication\" — text says there are *many* such examples.\n\n\"Identical in meaning to other words\" — never said."
+  },
+  "details:6": {
+    "prompt_focus": "What the narrator mainly *remembers* about being chanted to.",
+    "passage_breakdown": "The narrator is dozing on the \"clouds of Farsi\" — Farsi as a soothing, dream-like sound. The Farsi-from-the-front-seat reminds him of his mother chanting him to bed.",
+    "reasoning": "The connection is via the *calming* quality of the sound — the Farsi from the front seat is calming enough to make him doze, and *that* triggers the memory of his mother chanting at bedtime. What he remembers is that the chanting was calming.",
+    "distractors": "Story characters — never mentioned.\n\nBackground music — never mentioned.\n\nMother *not usually* chanting at night — opposite of \"every night before bedtime.\""
+  },
+  "details:7": {
+    "prompt_focus": "One potential drawback of the team's method.",
+    "passage_breakdown": "Text: \"data from Places API tend to be restricted to places that are customer facing.\"",
+    "reasoning": "If only customer-facing places appear in the dataset, the model will miss back-end or non-consumer-facing amenities. That means conclusions may not reflect *all* the amenities in a neighborhood.",
+    "distractors": "Outdated data — not mentioned.\n\nCross-field advancements — not mentioned.\n\nInaccurate boundary identification — not mentioned (boundaries are handled by the clustering algorithm)."
+  },
+  "details:8": {
+    "prompt_focus": "How Hooks and Ward initially met.",
+    "passage_breakdown": "Text: cofounders \"had met while performing in a 1960 touring production of Lorraine Hansberry's play A Raisin in the Sun.\"",
+    "reasoning": "Both were actors in A Raisin in the Sun.",
+    "distractors": "NEC was *cofounded* by them — they didn't first meet at an NEC workshop.\n\nHarrison-introduction at MacDaddy is invented.\n\nAttending the same MacDaddy performance is invented."
+  },
+  "details:9": {
+    "prompt_focus": "Krill consumption between Antarctic minke and bowhead whales.",
+    "passage_breakdown": "Antarctic minke max: 10,000 kg → 30% = 3,000 kg krill/day. Bowhead: 66,000 kg, eats up to 19,800 kg/day.",
+    "reasoning": "3,000 < 19,800 — bowhead eats more krill per day.",
+    "distractors": "Both at 19,800 — impossible (minke max is 3,000).\n\nBowhead consumption hurting minke — never said.\n\nMinke less likely to eat krill — opposite of text."
+  },
+  "details:10": {
+    "prompt_focus": "Why the team employed a clustering algorithm.",
+    "reasoning": "Same as Q4 — to provide an *objective* way to identify neighborhoods, given that boundaries are inherently subjective.",
+    "distractors": "Same as Q4."
+  },
+  "details:11": {
+    "prompt_focus": "What is true about the aria 'I Got Plenty of Nuthin'.",
+    "passage_breakdown": "Text: \"They omitted parts, such as the aria 'I Got Plenty of Nuthin',' and sometimes made only brief gestures toward Gershwin's melodies.\"",
+    "reasoning": "It's listed as a *part of the original Gershwin opera* that Davis/Evans omitted. So the aria is in the Gershwin opera.",
+    "distractors": "\"Brief quotation in Davis/Evans\" — text says it was *omitted*.\n\n\"Listeners disliked it\" — not mentioned.\n\n\"Adapted on Milestones\" — Milestones isn't this Gershwin adaptation."
+  },
+  "details:12": {
+    "prompt_focus": "Krill consumption between Antarctic minke and southern right whales.",
+    "reasoning": "10,000 kg minke at 30% → 3,000 kg/day. 80,000 kg southern right at 30% → 24,000 kg/day. The southern right eats more krill per day than the minke.",
+    "distractors": "\"Iron decline causing population declines\" — text says iron *cycling supports* phytoplankton; doesn't claim iron decline drove population decline.\n\nKrill-shifting between species — never said.\n\n\"Only minke can subsist on phytoplankton\" — text doesn't say minke subsists on phytoplankton."
+  },
+  "details:13": {
+    "prompt_focus": "The author's point about the *Spanish language* specifically.",
+    "passage_breakdown": "Cocoa: Nahuatl → Spanish → English. Puma: Quechua → Spanish → English. Spanish is the *intermediary* in both cases.",
+    "reasoning": "Spanish acted as the channel through which Indigenous-origin words reached English — \"served as a medium through which Indigenous languages have influenced English.\"",
+    "distractors": "Volume comparisons of Spanish vs. Indigenous contributions — not in text.\n\nEqual Nahuatl/Quechua adoption — not in text.\n\nSpanish *contributing back to* Indigenous languages — not in text."
+  },
+  "details:14": {
+    "prompt_focus": "What the author would *agree* with about household income's role in fuel choice. The author's stance: the energy-ladder view (income alone) is reductive.",
+    "reasoning": "If income alone is *reductive*, then income explains *some but not all* of the variation. The author isn't saying income is irrelevant — just that it's incomplete.",
+    "distractors": "\"Often said to influence but actually doesn't\" overstates the rebuttal.\n\n\"For different reasons than the model assumes\" introduces an alt-mechanism not present in the text.\n\n\"Constrains amount but not type\" is invented."
+  },
+  "details:15": {
+    "prompt_focus": "Why was the unchanged microorganism community composition important.",
+    "passage_breakdown": "Text: \"microorganism community composition was unchanged, allowing Kaštovská et al. to attribute the acceleration to temperature-induced increases in microorganism activity.\"",
+    "reasoning": "If composition had changed, the acceleration could have been blamed on different microbes. Same microbes → can't blame composition → must be temperature-driven *activity*. The unchanged composition *ruled out* an alternative explanation.",
+    "distractors": "Preliminary evidence of acceleration — backwards.\n\nEffects at high elevations — not discussed.\n\nActivity varying by community composition — opposite of unchanged composition."
+  },
+  "details:16": {
+    "prompt_focus": "What the text supports about hDNA.",
+    "passage_breakdown": "Text: \"this approach offers unique benefits, such as access to genomic data from extirpated populations.\"",
+    "reasoning": "\"Unique benefits\" → insights other genomic data can't yield (e.g., extirpated populations are gone and so unavailable to standard sampling).",
+    "distractors": "Pathogen-only utility — not stated.\n\nUnderuse due to *controversial status* — text says due to degradation/limits, not controversy.\n\nMore degraded *than other DNA of comparable age* — not stated."
+  },
+  "details:17": {
+    "prompt_focus": "What some historians suggest about Maya civilization.",
+    "passage_breakdown": "Text: \"Some historians suggest that Maya mathematicians inherited [zero] from the Olmec civilization.\"",
+    "reasoning": "The suggestion: Maya acquired zero from the Olmec.",
+    "distractors": "Respect comparisons — invented.\n\nSecrecy — invented.\n\nTrying to spread their writing system — invented."
+  },
+  "details:18": {
+    "prompt_focus": "Why the energy ladder is called *reductive*.",
+    "passage_breakdown": "Text: energy ladder = \"household income mediates fuel choice.\" Heltberg's study: heterogeneous, flexible, multiple factors.",
+    "reasoning": "The model attributes choice *primarily to one characteristic* (income); the data show *multiple factors* matter. That mismatch between one-factor model and multi-factor reality is the reductive complaint.",
+    "distractors": "\"Households ignore that characteristic\" — not stated; income still matters partially.\n\n\"Equal-proportion fuel use\" — not stated.\n\n\"Different factors in different countries\" — narrower than the actual critique."
+  },
+  "details:19": {
+    "prompt_focus": "How Hooks and Ward initially met.",
+    "reasoning": "Same as Q8 — both actors in A Raisin in the Sun.",
+    "distractors": "Same as Q8."
+  },
+  "details:20": {
+    "prompt_focus": "What Alfonzo would agree with about studies of decision-making about walking.",
+    "passage_breakdown": "Alfonzo: \"some studies emphasize demographic characteristics, others public transit availability… but walking decisions are made in complex contexts.\"",
+    "reasoning": "Multiple competing single-factor theories + complex contexts → no single factor will reliably predict walking decisions. \"Unlikely to find convincing evidence that any single factor consistently predicts walking decisions.\"",
+    "distractors": "\"Identifying common features of high-walk cities\" — Alfonzo precisely *rejects* this approach.\n\nOverstating individual differences — not the point.\n\n\"Misleading because they ignore the most important factor\" — Alfonzo doesn't single out one factor."
+  },
+  "details:21": {
+    "prompt_focus": "Same as Q7 — restricted-to-customer-facing data → may miss amenities.",
+    "reasoning": "Same as Q7.",
+    "distractors": "Same as Q7."
+  },
+  "details:22": {
+    "prompt_focus": "What did Elangovan and Marimuthu find, and why?",
+    "passage_breakdown": "Finding: high moonlight inhibits short-nosed fruit bat activity. Reason: greater detection by predators outweighs the foraging benefit.",
+    "reasoning": "Bats *reduce* activity during high lunar intensity because predators spot them more easily, and the lunar-intensity foraging benefit doesn't justify the risk.",
+    "distractors": "\"More active under high moonlight\" — opposite.\n\nMongoose-lemur predator detection comparison — not what was tested.\n\nMongoose lemurs facing greater risks — text says lemurs forage *more*; risks are evaluated for the bats."
+  },
+  "details:23": {
+    "prompt_focus": "What the author would *disagree* with about hyperpop voice manipulation.",
+    "passage_breakdown": "Text: voice modification \"functions as a commentary on how digital technology mediates human experience today.\"",
+    "reasoning": "If voice modification is a *social commentary*, then the claim that it has \"little or no social import\" is exactly what the author would reject.",
+    "distractors": "\"Confirms hyperpop's ability to offset negative tech effects\" — also dubious but not directly rejected.\n\n\"Symbol of influence on listeners\" — neutral.\n\n\"Represents tech-driven change in human experience\" — close to what the text endorses."
+  },
+  "details:24": {
+    "prompt_focus": "Same template as Q1 — proximity can't explain the gap.",
+    "reasoning": "Same as Q1.",
+    "distractors": "Same as Q1."
+  },
+  "details:25": {
+    "prompt_focus": "Same as Support Q9 — survey response best illustrating researchers' explanation (search-driven exposure).",
+    "reasoning": "Cleaning supplies moved → looking for them → noticed and bought a notebook = canonical layout-induced unplanned purchase.",
+    "distractors": "Same as Support Q9."
+  },
+  "details:26": {
+    "prompt_focus": "Krill consumption sei vs. bowhead.",
+    "reasoning": "Sei max 25,000 × 30% = 7,500 kg/day. Bowhead 66,000 × 30% allowed → text gives 19,800 kg/day. Bowhead eats more.",
+    "distractors": "Same template as other whale Qs."
+  },
+  "details:27": {
+    "prompt_focus": "A disadvantage of conventional thermal preservation methods.",
+    "passage_breakdown": "Text: conventional methods transfer energy from surface to interior; infrared generates heat *within* the food, *reducing industrial cooking times*.",
+    "reasoning": "Reduced cooking time = improvement → conventional methods have *longer* cooking times. That's the stated disadvantage.",
+    "distractors": "Tech breakdowns — not mentioned.\n\nLightweight-only — not mentioned.\n\nEnergy use — not mentioned."
+  },
+  "details:28": {
+    "prompt_focus": "Same as Q13 — Spanish as medium for Indigenous → English transfer.",
+    "reasoning": "Same as Q13.",
+    "distractors": "Same as Q13."
+  },
+  "details:29": {
+    "prompt_focus": "Same as Q16 — hDNA's unique benefits.",
+    "reasoning": "Unique benefit named: \"ascertain biogeographical origins of organisms.\" That's a kind of insight other genomic data may not provide.",
+    "distractors": "Same as Q16."
+  },
+  "details:30": {
+    "prompt_focus": "Same as Q14 — household income explains some but not all.",
+    "reasoning": "Same as Q14.",
+    "distractors": "Same as Q14."
+  },
+  "details:31": {
+    "prompt_focus": "How Yung perceives New York to have changed 1847 → 1909.",
+    "passage_breakdown": "Text: 250–300k → metropolis rivalling London; \"Manhattan turned into a city of skyscrapers.\"",
+    "reasoning": "Population grew massively; built environment became more developed (skyscrapers).",
+    "distractors": "Architecture less appealing — Yung's description (skyscrapers, churches, palatial residences) is neutral-to-positive.\n\nPolitically active — not mentioned.\n\nDiversity vs. London — not mentioned."
+  },
+  "details:32": {
+    "prompt_focus": "What motivates Tia Ana's behavior.",
+    "passage_breakdown": "Tia Ana \"already came into the room several times to see if these guests had departed yet.\" The front parlor \"had always been her special province, as she used it for her little school.\"",
+    "reasoning": "Tia Ana wants the room back for her *school*. She's anxious for guests to leave so she can prepare the space.",
+    "distractors": "Considering guests uninteresting — not stated.\n\nSeeking patronage from guests — not stated.\n\nNeeding Salomé's help — not stated."
+  },
+  "details:33": {
+    "prompt_focus": "What the text suggests about Rainey's and Smith's songs.",
+    "passage_breakdown": "Davis had to *transcribe* improvised lyrics by *listening repeatedly to vinyl recordings*. That's labor-intensive. Implies no clean transcript existed.",
+    "reasoning": "If Davis had to laboriously transcribe by ear, then few/no reliable transcriptions of those improvised lyrics existed when she started.",
+    "distractors": "Popularity growth — not mentioned.\n\nInnovation comparison — not mentioned.\n\nRecording counts — not mentioned."
+  },
+  "details:34": {
+    "prompt_focus": "A difference in how historians view Lestek vs. Władysław I Herman.",
+    "passage_breakdown": "Władysław I Herman is described as a documented duke (1079–1102). Lestek's \"historical actuality is *disputed*\" and his record relies on *oral tradition*.",
+    "reasoning": "Historians agree Władysław existed; they disagree about whether Lestek existed. That's the key asymmetry.",
+    "distractors": "Gesta evidence comparing the two — backwards.\n\nTime-of-rule comparison — not the asymmetry.\n\nOral evidence about Władysław — backwards."
+  },
+  "details:35": {
+    "prompt_focus": "What Jack believes about Bartley.",
+    "passage_breakdown": "Bartley claims it will rain on him; Jack quips that even if it didn't, Bartley would carry a leaky pail on his head so he'd \"not be without some cause of complaining.\"",
+    "reasoning": "Jack's joke: Bartley would *invent* a problem if none existed. Jack believes Bartley finds fault with any situation.",
+    "distractors": "Helping with hay — opposite tone.\n\nBartley concerned about *Jack's* preparedness — Bartley is complaining about himself.\n\nBartley a poor weather judge — Jack is mocking his disposition, not his forecasting accuracy."
+  },
+  "details:36": {
+    "prompt_focus": "Same as Support Q15 — Iliffe et al. likely use different evidence.",
+    "reasoning": "Same as Support Q15.",
+    "distractors": "Same as Support Q15."
+  },
+  "details:37": {
+    "prompt_focus": "What the text suggests about Pimentel et al.'s conclusion. The four answer options each propose a characterization; the text directly criticizes the *small sample size* increasing bias and *exaggerated effects*.",
+    "reasoning": "The text's specific implication is that the small sample size makes Pimentel's conclusion vulnerable to bias and exaggeration. None of options A, B, or D match that nuance — A claims the same sample size as earlier studies (not in the text), B claims broad implications (not in the text), D claims invalidation by similar studies (not in the text). The correct option captures the bias/exaggeration warning.",
+    "distractors": "Same sample size as earlier — fabricated.\n\nBroad implications — fabricated.\n\nInvalidated by similar studies — fabricated."
+  },
+  "details:38": {
+    "prompt_focus": "A conclusion drawn from the food-delivery-app study.",
+    "passage_breakdown": "Text: \"this and other small changes to the app could reduce plastic waste in China by as much as 3.26 million metric tons per year.\"",
+    "reasoning": "Small changes → big plastic-waste reduction. That is the conclusion.",
+    "distractors": "Increase in production — not in text.\n\nCutlery-blocking apps' popularity — not in text.\n\nCustomer understanding driving choices — not in text (customers' choice was driven by the *default*, not understanding)."
+  },
+  "details:39": {
+    "prompt_focus": "Percentage of field mustard seeds that sprouted.",
+    "reasoning": "The text supplies a 30% figure for field mustard.",
+    "distractors": "The other percentages are simply not the number the text gives."
+  },
+  "details:40": {
+    "prompt_focus": "What happened when oil was added.",
+    "passage_breakdown": "Text: \"Friction between pieces of graphene is generally extremely low, and when the researchers added a drop of oil as lubrication, that friction nearly vanished.\"",
+    "reasoning": "Already-low friction became even lower.",
+    "distractors": "Graphene migrating to one surface — not stated.\n\nNanotubes fracturing further — already happened *before* oil.\n\nNo noticeable change — opposite of the text."
+  },
+  "details:41": {
+    "prompt_focus": "Claim about petroleum demand.",
+    "passage_breakdown": "Text: \"as social attitudes increasingly favor using less carbon-intensive sources of energy, demand for petroleum falls.\"",
+    "reasoning": "Societal preference for low-carbon → falling petroleum demand. Society's preferences are a factor.",
+    "distractors": "Companies unaffected — opposite (they accumulate liabilities).\n\nAnnual cycle — not stated.\n\nCompanies benefiting from decline — opposite (drilling becomes a liability)."
+  },
+  "details:42": {
+    "prompt_focus": "Trait researchers think contributes to the flat-headed cat's purring.",
+    "passage_breakdown": "Text: flat-headed cats have a *rigid hyoid* that rumbles when the larynx vibrates → purr.",
+    "reasoning": "The rigid hyoid is the explicit purr-enabling trait.",
+    "distractors": "Larynx shape — never specified as a contributor.\n\nStretchy ligament — text says flat-headed cats *lack* this; it's a roar-enabling trait in jaguars.\n\nBody-throat size ratio — not stated."
+  },
+  "details:43": {
+    "prompt_focus": "Factors linked to butterfly behavior in Herzel et al.",
+    "passage_breakdown": "Title clue: study of how butterfly *color* and *weather* relate to behavior. Both are studied factors.",
+    "reasoning": "Both color and weather are linked.",
+    "distractors": "Each \"only one\" or \"neither\" option contradicts the explicit subject of the study."
+  },
+  "details:44": {
+    "prompt_focus": "Same as Q13/Q28 — Spanish as Indigenous→English medium.",
+    "reasoning": "Same as Q13.",
+    "distractors": "Same as Q13."
+  },
+  "details:45": {
+    "prompt_focus": "What the text suggests about natural-history-collection specimens.",
+    "passage_breakdown": "Text: archival specimens are sometimes stored in ways that compromise DNA quality. While they offer unique benefits, this is \"not easily remediable.\"",
+    "reasoning": "If some specimens have compromised DNA, then *not all of them* will yield usable hDNA, even though some will.",
+    "distractors": "Mainly used for major-evolutionary-change studies — not in text.\n\nTime-consuming extraction — not the focus.\n\n\"Generally marginal value\" — overstates; text emphasizes unique benefits."
+  },
+  "details:46": {
+    "prompt_focus": "What did Gloria Richardson lead?",
+    "passage_breakdown": "Text: \"She was also the leader of what became known as the Cambridge movement.\"",
+    "reasoning": "The Cambridge movement.",
+    "distractors": "Business, environmental protests, daughter's school — none mentioned."
+  },
+  "details:47": {
+    "prompt_focus": "Material Villasana uses.",
+    "passage_breakdown": "Text: \"using her unique method of applying colorful yarn to photographs of people.\"",
+    "reasoning": "Yarn.",
+    "distractors": "Stone, chalk, paint — not mentioned."
+  },
+  "details:48": {
+    "prompt_focus": "The value of Drelichman & Voth's research.",
+    "passage_breakdown": "Text: their unique contribution = reconstruction of earliest annual fiscal records, demonstrating Philip's defaults caused by *short-term liquidity crises, not long-term unsustainable debts*.",
+    "reasoning": "They used new evidence to *eliminate* one cause (long-term debt) and *affirm* another (liquidity crisis).",
+    "distractors": "Defaults exacerbating liquidity crises — backwards causal direction.\n\nCorrecting earlier work — text says they *build on*, not *correct*.\n\nSupporting Hoffman/Norberg's hypothesis on debt defaults — not stated; Hoffman/Norberg studied state finance and political development, not debt defaults."
+  },
+  "details:49": {
+    "prompt_focus": "Same as Support Q40 — study design rating category similarity, correlating with probability changes.",
+    "reasoning": "Same as Support Q40.",
+    "distractors": "Same as Support Q40."
+  },
+  "details:50": {
+    "prompt_focus": "Same as Q18 — energy ladder reductive because it attributes choice to one characteristic when many factors matter.",
+    "reasoning": "Same as Q18.",
+    "distractors": "Same as Q18."
+  },
+  "details:51": {
+    "prompt_focus": "Same as Q8/Q19 — Hooks and Ward met as actors in A Raisin in the Sun.",
+    "reasoning": "Same as Q8.",
+    "distractors": "Same as Q8."
+  },
+  "details:52": {
+    "prompt_focus": "Why Miguel accompanies his brother.",
+    "passage_breakdown": "Text: Miguel \"was an aspiring poet, and he had heard from his brother that the Ureña girls\" — and their father is a famous poet.",
+    "reasoning": "Miguel hopes to meet the girls *and* their famous-poet father. \"Anticipates being introduced to both the sisters and their father\" matches.",
+    "distractors": "Wanting tutoring from sisters — not stated.\n\nWanting *father as mentor* — closer but the option overstates ambition vs. introduction.\n\nWanting to recite poems — not stated."
+  },
+  "details:53": {
+    "prompt_focus": "Inference about Ancient Language.",
+    "passage_breakdown": "Land art \"often install[s] large-scale pieces outdoors, often in surprising locations.\" Ancient Language is in the Atacama Desert.",
+    "reasoning": "A desert is a 'surprising location' per the text — so Ancient Language's location may be considered surprising.",
+    "distractors": "Popularity-shift marker — not in text.\n\nCommercial success comparison — text says land art *rejects commercialization*.\n\nEarly-career marker — not in text."
+  },
+  "details:54": {
+    "prompt_focus": "Curtis et al.'s finding on mongoose lemurs.",
+    "passage_breakdown": "Text: lunar intensity \"positively associated with foraging by mongoose lemurs.\"",
+    "reasoning": "As lunar intensity rises, lemurs forage more.",
+    "distractors": "Mongoose-lemur > mice benefit comparison — not the literal finding.\n\nIncreased reliance on vision — not stated.\n\nMice reducing foraging — that's *Brown's* finding, not Curtis's."
+  },
+  "details:55": {
+    "prompt_focus": "What the text suggests about Hans Castorp's story.",
+    "passage_breakdown": "Story is told for the *story's* sake; Hans Castorp is \"perfectly ordinary, if engaging\"; story is covered with the patina of history.",
+    "reasoning": "Remarkable story, unremarkable person, with the value of the story potentially conferring some interest onto the person.",
+    "distractors": "\"All people are unique\" overgeneralizes.\n\nPerson of *no particular importance* with story-importance signals — close but understates the ordinary/remarkable contrast.\n\n\"All inconsequential people's stories must be related a particular way\" overgeneralizes."
+  },
+  "details:56": {
+    "prompt_focus": "Same as Support Q40/Q49 — design correlating category similarity with probability change.",
+    "reasoning": "Same as Support Q40.",
+    "distractors": "Same."
+  },
+  "details:57": {
+    "prompt_focus": "One way The Crown of Columbus differs from most Erdrich.",
+    "passage_breakdown": "Text: Erdrich's writing usually focuses on Ojibwe communities; some novels (like a 1991 one) have fantastical plots and *take place outside Ojibwe communities*.",
+    "reasoning": "The Crown of Columbus is the example of Erdrich's outside-Ojibwe-community novel — so it isn't set in a rural Ojibwe community.",
+    "distractors": "Movie adaptation — not stated.\n\nLittle dialogue — not stated.\n\nOjibwe main characters — opposite of \"outside Ojibwe communities.\""
+  },
+  "details:58": {
+    "prompt_focus": "Inference about Ramchand.",
+    "passage_breakdown": "Ramchand notices, *guiltily*, that other shop assistants are already in place — he is arriving later.",
+    "reasoning": "\"Remorseful about arriving later than other shop assistants\" matches the *guilty* observation.",
+    "distractors": "Mesmerized by jalebi — overreads.\n\nOverwhelmed by chaos — text doesn't describe chaos.\n\nHappy at work — opposite of guilt."
+  },
+  "details:59": {
+    "prompt_focus": "What Zucman's research suggests about Japanese investors.",
+    "passage_breakdown": "Tax havens \"are rarely used by investors living in Japan, while many investors who utilize tax havens reside in Saudi Arabia or Greece.\" Singapore is named as a tax haven.",
+    "reasoning": "Japanese investors *rarely* use tax havens; Saudi Arabian investors *often* do. So Japanese investors are *less likely* than Saudi Arabian investors to store wealth in Singapore (a tax haven).",
+    "distractors": "Robeyns *disapproves* of tax-haven use — wouldn't acknowledge benefit.\n\nHigher-risk investment strategies — not in text.\n\nMore likely than Greeks to do tax avoidance — opposite (Greeks use havens more)."
+  },
+  "details:60": {
+    "prompt_focus": "Same as Support Q57 — mycelium thermoregulation independent of fruited bodies.",
+    "reasoning": "Same as Support Q57.",
+    "distractors": "Same as Support Q57."
+  },
+  "details:61": {
+    "prompt_focus": "What the text supports about hummingbird preferences.",
+    "passage_breakdown": "Text: visit frequencies *not* influenced by nectar traits but by physical compatibility of corollas and bills.",
+    "reasoning": "Since visits are driven by trait-matching, not nectar quality, hummingbirds may visit physically-compatible flowers *even if* those flowers' nectar rewards are low.",
+    "distractors": "\"Consistently prefer low-reward compatible flowers\" overgeneralizes.\n\n\"Trait-matching primary, nectar secondary\" — text rejects nectar's role.\n\n\"Trait-matching becomes important when uncertain\" — fabricated."
+  },
+  "details:62": {
+    "prompt_focus": "What the text suggests about southern sea otters in environments with snails, mussels, and clams.",
+    "passage_breakdown": "Tool-using otters: high-quality, hard-shelled prey (mussels/clams). Non-tool-users: abundant, energy-poor, easily extractable prey (snails).",
+    "reasoning": "Energy-poor prey → need *more of it* to meet energy needs. Non-tool-users will need to process *larger amounts* of prey to meet their energy requirements than tool-users.",
+    "distractors": "Snail-eaters with less tooth damage — possibly true but not the *suggestion* — text emphasises tool-users avoiding tooth damage; the question targets *amount* of prey processing.\n\nNon-tool-users having more robust health — opposite of energy-resource access.\n\nLess foraging time — opposite (more low-energy prey = more foraging)."
   }
 }
