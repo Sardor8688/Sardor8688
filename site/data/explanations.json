@@ -1056,365 +1056,436 @@
     "takeaway": "Matnda aniq mexanizmni topib, uni oddiy energiya hisobiga aylantiring."
   },
   "quotation:1": {
-    "prompt_focus": "A Quotation question gives you a *claim* about a text and asks which of four quoted lines from that text actually demonstrates the claim. The right quote must literally enact the claim — not merely be from the same text or be near the relevant passage. Claim: Winnemucca \"directly addresses the reader\" to establish her *authority and credibility*. We need a line that (a) speaks to the reader and (b) asserts she knows what she's talking about.",
-    "reasoning": "The line beginning \"My dear reader, I have not lived in this world for over thirty or forty years for nothing, and I know what I am talking about\" addresses \"my dear reader\" directly and explicitly asserts experiential authority — exactly the two halves of the claim.",
-    "distractors": "The line about her birth date addresses no one and asserts uncertainty, not authority.\n\nThe Muddy Lake line speaks to readers but reports an event — no credibility claim.\n\nThe \"how can I describe…\" line addresses readers but emphasises *limits* of her description, not authority.",
-    "takeaway": "The quote must check both halves of a compound claim — direct address *and* credibility assertion."
+    "prompt_focus": "Quotation savoli matn haqida *da’vo* beradi va keyin matndan to‘rtta keltirilgan satrdan qaysi biri bu da’voni *bevosita namoyish qiladi* deb so‘raydi. To‘g‘ri keltirilgan satr da’voni *aynan amalga oshirishi* shart — shunchaki bir matndan bo‘lishi yoki kerakli parchaga yaqin bo‘lishi yetarli emas. Da’vo: Winnemucca o‘quvchiga *bevosita murojaat qilib* o‘zining *vakolat va ishonchliligini* o‘rnatadi.",
+    "reasoning": "‘My dear reader, I have not lived in this world for over thirty or forty years for nothing, and I know what I am talking about’ qatori bevosita ‘aziz o‘quvchi’ga murojaat qiladi va aniq tajriba-vakolatini tasdiqlaydi — da’voning ikki yarmiga to‘liq mos.",
+    "distractors": "Tug‘ilgan sana qatori hech kimga murojaat qilmaydi va noaniqlikni emas, vakolatni ifodalamaydi.\n\nMuddy Lake qatori o‘quvchilarga gapiradi, lekin voqeani xabar qiladi — ishonchlilik da’vosi yo‘q.\n\n‘Buni qanday tasvirlay olaman…’ qatori o‘quvchilarga murojaat qiladi, ammo *cheklovni* ta’kidlaydi, vakolatni emas.",
+    "takeaway": "Qo‘shma da’voda ikkala yarmini ham tekshiruvchi qatorni izlash kerak — bevosita murojaat *va* ishonchlilik tasdiqi."
   },
   "quotation:2": {
-    "prompt_focus": "A Quotation question gives you a *claim* about a text and asks which of four quoted lines from that text actually demonstrates the claim. The right quote must literally enact the claim — not merely be from the same text or be near the relevant passage. Claim: Juchipila is depicted as a *striking sight* viewed *from afar*.",
-    "reasoning": "\"Juchipila rose in the distance, white, bathed in sunlight, shining in the midst of a thick forest at the foot of a proud, lofty mountain\" places the town *in the distance* and renders it visually striking (white, bathed in sunlight, shining).",
-    "distractors": "The all-day canyon ride describes the journey, not the town.\n\nThe bell-ringing line is set *inside* the town's streets, not from afar.\n\nThe sierra/opalescent-fog line is about mountains, not Juchipila."
+    "prompt_focus": "Quotation savoli matn haqida *da’vo* beradi va keyin matndan to‘rtta keltirilgan satrdan qaysi biri bu da’voni *bevosita namoyish qiladi* deb so‘raydi. To‘g‘ri keltirilgan satr da’voni *aynan amalga oshirishi* shart — shunchaki bir matndan bo‘lishi yoki kerakli parchaga yaqin bo‘lishi yetarli emas. Da’vo: Juchipila *uzoqdan* qaralganda *taqsimlovchi manzara* sifatida tasvirlangan.",
+    "reasoning": "‘Juchipila rose in the distance, white, bathed in sunlight, shining in the midst of a thick forest at the foot of a proud, lofty mountain’ shaharni *uzoqda* joylashtiradi va vizual ravishda taqsimli qiladi (oq, quyoshda yuvilgan, porlovchi).",
+    "distractors": "Kun bo‘yi kanyon yuborishi sayohat haqida, shahar haqida emas.\n\nQo‘ng‘iroq qatori shahar ichida, uzoqdan emas.\n\nSierra/opal-tuman qatori tog‘lar haqida, Juchipila haqida emas.",
+    "takeaway": "Da’vo geografiyani aytganda, geografik signal mavjud bo‘lgan qatorni tanlang."
   },
   "quotation:3": {
-    "prompt_focus": "A Quotation question gives you a *claim* about a text and asks which of four quoted lines from that text actually demonstrates the claim. The right quote must literally enact the claim — not merely be from the same text or be near the relevant passage. Claim: praises Douglass for *honesty and refusal to be intimidated*.",
-    "reasoning": "\"And he was no soft-tongued apologist; / He spoke straightforward, fearlessly uncowed\" puts both qualities on the page: \"straightforward\" = honesty; \"fearlessly uncowed\" = refusal to be intimidated.",
-    "distractors": "\"No miser in the good he held\" is about generosity, not honesty.\n\n\"A hush is over all the teeming lists\" is scenic — no traits.\n\n\"Champion through direful years\" is about loyalty/persistence, not honesty/courage."
+    "prompt_focus": "Quotation savoli matn haqida *da’vo* beradi va keyin matndan to‘rtta keltirilgan satrdan qaysi biri bu da’voni *bevosita namoyish qiladi* deb so‘raydi. To‘g‘ri keltirilgan satr da’voni *aynan amalga oshirishi* shart — shunchaki bir matndan bo‘lishi yoki kerakli parchaga yaqin bo‘lishi yetarli emas. Da’vo: Duglassni *halollik va qo‘rqitilmaslik* uchun maqtaydi.",
+    "reasoning": "‘And he was no soft-tongued apologist; / He spoke straightforward, fearlessly uncowed’ ikkala xususiyatni varaqqa qo‘yadi: ‘straightforward’ = halollik; ‘fearlessly uncowed’ = qo‘rqitilmaslik.",
+    "distractors": "‘No miser in the good he held’ saxiylik haqida, halollik haqida emas.\n\n‘A hush is over all the teeming lists’ — manzara, xususiyat emas.\n\n‘Champion through direful years’ sodiqlik/sabr haqida, halollik/jasorat haqida emas.",
+    "takeaway": "Ikki sifat da’vosida ikkalasini bir qatorda ko‘rsatuvchi parchani izlang."
   },
   "quotation:4": {
-    "prompt_focus": "A Quotation question gives you a *claim* about a text and asks which of four quoted lines from that text actually demonstrates the claim. The right quote must literally enact the claim — not merely be from the same text or be near the relevant passage. Claim: the main character *struggles to accept her African American race* in the South.",
-    "reasoning": "\"If growing up is painful for the Southern Black girl, being aware of her difference is worse. It is an unnecessary insult\" *names* the painful awareness of difference — the struggle itself.",
-    "distractors": "The light-purple-dress passage is about clothing aesthetics.\n\nThe forgive-us fantasy depicts wishful social reception, not racial-identity struggle.\n\nThe \"long and blonde hair\" line dramatises self-erasure but is *symptom*; the cited line directly *names* the struggle."
+    "prompt_focus": "Quotation savoli matn haqida *da’vo* beradi va keyin matndan to‘rtta keltirilgan satrdan qaysi biri bu da’voni *bevosita namoyish qiladi* deb so‘raydi. To‘g‘ri keltirilgan satr da’voni *aynan amalga oshirishi* shart — shunchaki bir matndan bo‘lishi yoki kerakli parchaga yaqin bo‘lishi yetarli emas. Da’vo: Asosiy qahramon Janubdagi *afro-amerikalik irqini qabul qilishda qiyinchilik tortmoqda*.",
+    "reasoning": "‘If growing up is painful for the Southern Black girl, being aware of her difference is worse. It is an unnecessary insult’ farqning og‘riqli ongini *aniq aytadi* — kurashning o‘zi.",
+    "distractors": "Och-binafsha-ko‘ylak parchasi kiyim estetikasi haqida.\n\nBizni-kechir fantaziyasi ijtimoiy qabul fantaziyasi, irqiy o‘ziga-kurash emas.\n\n‘Long and blonde hair’ qatori o‘zini-yo‘q qilishni dramalashtirardi, lekin u *belgi*; tanlangan qator kurashni bevosita *aytadi*.",
+    "takeaway": "‘Aniq aytish’ vs. ‘belgilash’ savollarida — aniq aytuvchi qator g‘alaba qozonadi."
   },
   "quotation:5": {
-    "prompt_focus": "A Quotation question gives you a *claim* about a text and asks which of four quoted lines from that text actually demonstrates the claim. The right quote must literally enact the claim — not merely be from the same text or be near the relevant passage. Claim: the era often admired for peace/love had a *darker side*.",
-    "reasoning": "The \"bankruptcy notices… casual killings… misplaced children… abandoned homes… vandals…\" line supplies the dark catalogue.",
-    "distractors": "The \"steady market, high GNP, brave hopes\" line states the *expected* bright surface — the opposite of dark.\n\n\"San Francisco where the missing children were gathering\" is a setup, not darkness.\n\nAdolescent drift is melancholic but not concrete dark events."
+    "prompt_focus": "Quotation savoli matn haqida *da’vo* beradi va keyin matndan to‘rtta keltirilgan satrdan qaysi biri bu da’voni *bevosita namoyish qiladi* deb so‘raydi. To‘g‘ri keltirilgan satr da’voni *aynan amalga oshirishi* shart — shunchaki bir matndan bo‘lishi yoki kerakli parchaga yaqin bo‘lishi yetarli emas. Da’vo: Tinchlik/sevgi uchun maqtaladigan davrning *qorong‘i tomoni* bor edi.",
+    "reasoning": "‘bankruptcy notices… casual killings… misplaced children… abandoned homes… vandals…’ qatori qorong‘i katalogni beradi.",
+    "distractors": "‘Steady market, high GNP, brave hopes’ qatori *kutilgan* yorqin yuzni bayon qiladi — qorong‘ining aksi.\n\n‘San Francisco where the missing children were gathering’ — kontekst, qorong‘ilik emas.\n\nYoshlik suzishi melanxolik, ammo aniq qorong‘i voqealar emas.",
+    "takeaway": "‘Qorong‘i tomon’ da’vosi — sof yorqin tomon ma’lumotlarining aksini izlash."
   },
   "quotation:6": {
-    "prompt_focus": "A Quotation question gives you a *claim* about a text and asks which of four quoted lines from that text actually demonstrates the claim. The right quote must literally enact the claim — not merely be from the same text or be near the relevant passage. Claim: contrasts the *narrator's* attitude with *Avey's* attitude.",
-    "reasoning": "\"Avey's indifference to things began to pique me; I was ambitious\" sets her *indifference* against his *ambition* — a direct, two-sided contrast.",
-    "distractors": "The DC dawn line is purely descriptive.\n\n\"Avey was as silent as those great trees\" describes only Avey.\n\n\"Avey slipped her hand in mine\" describes a moment, not contrasting attitudes."
+    "prompt_focus": "Quotation savoli matn haqida *da’vo* beradi va keyin matndan to‘rtta keltirilgan satrdan qaysi biri bu da’voni *bevosita namoyish qiladi* deb so‘raydi. To‘g‘ri keltirilgan satr da’voni *aynan amalga oshirishi* shart — shunchaki bir matndan bo‘lishi yoki kerakli parchaga yaqin bo‘lishi yetarli emas. Da’vo: *Hikoyachining* munosabatini *Avey’ning* munosabatiga qarama-qarshi qo‘yadi.",
+    "reasoning": "‘Avey’s indifference to things began to pique me; I was ambitious’ uning *befarqligi*ni hikoyachining *ambitsiyasi*ga qo‘yadi — bevosita, ikki tomonlama qarama-qarshilik.",
+    "distractors": "DC tongi qatori sof tasviriy.\n\n‘Avey was as silent as those great trees’ faqat Aveyni tasvirlaydi.\n\n‘Avey slipped her hand in mine’ daqiqani tasvirlaydi, qarama-qarshi munosabatlarni emas.",
+    "takeaway": "Qarama-qarshilik da’vosida ikkala tomonni ham bir qatorda nomlovchi parchani izlang."
   },
   "quotation:7": {
-    "prompt_focus": "A Quotation question gives you a *claim* about a text and asks which of four quoted lines from that text actually demonstrates the claim. The right quote must literally enact the claim — not merely be from the same text or be near the relevant passage. Claim: the father typically tends his lawn with *dedication and care*.",
-    "reasoning": "\"Shaving this lawn as if it were a priest's chin… all during the season he had worked at it in the coolness and peace of the evenings after supper\" provides both qualities — meticulous care and season-long dedication.",
-    "distractors": "The peony-discovery line is about the present incident, not typical care.\n\nThe howl-of-machine line describes a pause; nothing about dedication.\n\nThe line where Jim kicks dirt focuses on Jim's misery."
+    "prompt_focus": "Quotation savoli matn haqida *da’vo* beradi va keyin matndan to‘rtta keltirilgan satrdan qaysi biri bu da’voni *bevosita namoyish qiladi* deb so‘raydi. To‘g‘ri keltirilgan satr da’voni *aynan amalga oshirishi* shart — shunchaki bir matndan bo‘lishi yoki kerakli parchaga yaqin bo‘lishi yetarli emas. Da’vo: Otaning yaproqzorga *fidoyilik va g‘amxo‘rlik* bilan qarashi.",
+    "reasoning": "‘Shaving this lawn as if it were a priest’s chin… all during the season he had worked at it in the coolness and peace of the evenings after supper’ ikkala xususiyatni — sinchkov g‘amxo‘rlik va mavsum davomida fidoyilik — beradi.",
+    "distractors": "Pion-topish qatori hozirgi voqea haqida, odatdagi parvarish haqida emas.\n\nMashina-faryod qatori pauzani tasvirlaydi; fidoyilik haqida hech narsa.\n\nJim tuproqni tepayotgan qator Jimning g‘amiga e’tibor qaratadi.",
+    "takeaway": "Tipik xulq da’vosida — vaqt davomiyligini ham, sifatni ham bayon qiluvchi qator kerak."
   },
   "quotation:8": {
-    "prompt_focus": "A Quotation question gives you a *claim* about a text and asks which of four quoted lines from that text actually demonstrates the claim. The right quote must literally enact the claim — not merely be from the same text or be near the relevant passage. Claim: designers for modern Midsummer Night's Dream productions sometimes *unintentionally* include contemporary elements.",
-    "reasoning": "\"In the 1980s I was costuming a Midsummer… looking back I can clearly see the influence of 1980s fashion in my designs\" supplies *unintentional* contemporary influence (the designer didn't see it until later).",
-    "distractors": "Carefully-attending-to-accessories conveys intent, not unintended influence.\n\n\"Some flexibility is required\" is intentional flexibility.\n\nThe third option says costumes *must* reflect the period — opposite stance."
+    "prompt_focus": "Quotation savoli matn haqida *da’vo* beradi va keyin matndan to‘rtta keltirilgan satrdan qaysi biri bu da’voni *bevosita namoyish qiladi* deb so‘raydi. To‘g‘ri keltirilgan satr da’voni *aynan amalga oshirishi* shart — shunchaki bir matndan bo‘lishi yoki kerakli parchaga yaqin bo‘lishi yetarli emas. Da’vo: Zamonaviy Midsummer Night’s Dream ijrolari uchun dizaynerlar ba’zan *beixtiyor* zamonaviy elementlarni kiritadi.",
+    "reasoning": "‘In the 1980s I was costuming a Midsummer… looking back I can clearly see the influence of 1980s fashion in my designs’ — *beixtiyor* zamonaviy ta’sir (dizayner uni keyinchalik ko‘rmaguncha sezmagan).",
+    "distractors": "Aksessuarlarga ehtiyotkorlik — niyatlik, beixtiyor ta’sir emas.\n\n‘Some flexibility is required’ — qasddan moslashuvchanlik.\n\nUchinchi variant kostyumlar davrni aks ettirishi *shart* — qarama-qarshi pozitsiya.",
+    "takeaway": "‘Beixtiyor’ va ‘qasddan’ farqi — vaqt belgilarini izlang (‘keyinchalik ko‘rdim’ vs. ‘ataylab tanladim’)."
   },
   "quotation:9": {
-    "prompt_focus": "A Quotation question gives you a *claim* about a text and asks which of four quoted lines from that text actually demonstrates the claim. The right quote must literally enact the claim — not merely be from the same text or be near the relevant passage. Claim: soldiers' mood is *strongly affected* by the *strenuous* canyon journey.",
-    "reasoning": "\"The sun, beating down upon them, dulled their minds and bodies and presently they were silent\" links physical hardship (sun beating) to mood change (dulled, silent).",
-    "distractors": "The sierra-fog line is purely descriptive.\n\nOther landscape lines describe the canyon but don't connect it to mood."
+    "prompt_focus": "Quotation savoli matn haqida *da’vo* beradi va keyin matndan to‘rtta keltirilgan satrdan qaysi biri bu da’voni *bevosita namoyish qiladi* deb so‘raydi. To‘g‘ri keltirilgan satr da’voni *aynan amalga oshirishi* shart — shunchaki bir matndan bo‘lishi yoki kerakli parchaga yaqin bo‘lishi yetarli emas. Da’vo: Askarlar kayfiyati *og‘ir kanyon sayohati* tomonidan *kuchli ta’sir qiladi*.",
+    "reasoning": "‘The sun, beating down upon them, dulled their minds and bodies and presently they were silent’ jismoniy qiyinchilikni (quyosh urishi) kayfiyat o‘zgarishi (xira, jim) bilan bog‘laydi.",
+    "distractors": "Sierra-tuman qatori sof tasviriy.\n\nBoshqa landshaft qatorlari kanyonni tasvirlaydi, lekin uni kayfiyatga bog‘lamaydi.",
+    "takeaway": "Sabab-natija da’vosida ikkala uchni ham bog‘laydigan qatorni izlang."
   },
   "quotation:10": {
-    "prompt_focus": "A Quotation question gives you a *claim* about a text and asks which of four quoted lines from that text actually demonstrates the claim. The right quote must literally enact the claim — not merely be from the same text or be near the relevant passage. Claim: the speaker *criticizes activists* who champion *foreign* humanitarian causes while *ignoring local* ones.",
-    "reasoning": "\"When ye plead for the wrecked and fallen, / The exile from far-distant shores, / Remember that men are still wasting / Life's crimson around your own doors\" directly contrasts foreign concern with neglect of local suffering.",
-    "distractors": "Other quoted lines don't address the foreign-vs-local activist contrast."
+    "prompt_focus": "Quotation savoli matn haqida *da’vo* beradi va keyin matndan to‘rtta keltirilgan satrdan qaysi biri bu da’voni *bevosita namoyish qiladi* deb so‘raydi. To‘g‘ri keltirilgan satr da’voni *aynan amalga oshirishi* shart — shunchaki bir matndan bo‘lishi yoki kerakli parchaga yaqin bo‘lishi yetarli emas. Da’vo: Notiq *mahalliy* odamlarni e’tiborsiz qoldirib *xorijiy* gumanitar sabablarni qo‘llab-quvvatlovchi *faollarni tanqid qiladi*.",
+    "reasoning": "‘When ye plead for the wrecked and fallen, / The exile from far-distant shores, / Remember that men are still wasting / Life’s crimson around your own doors’ xorijiy tashvishni mahalliy azob-uqubatni e’tiborsiz qoldirish bilan bevosita qarama-qarshi qo‘yadi.",
+    "distractors": "Boshqa keltirilgan qatorlar xorijiy-vs-mahalliy faollik qarama-qarshiligiga taalluqli emas.",
+    "takeaway": "Qarama-qarshilik tanqidlari — ikkala mintaqa yoki guruhni nomlovchi qatorni izlash bilan tanlanadi."
   },
   "quotation:11": {
-    "prompt_focus": "A Quotation question gives you a *claim* about a text and asks which of four quoted lines from that text actually demonstrates the claim. The right quote must literally enact the claim — not merely be from the same text or be near the relevant passage. Claim: a painting marks a *significant change* in the artist's development.",
-    "reasoning": "\"The paintings that John produced before Mère Poussepin can be thought of as belonging to her earlier style, to which she never returned\" explicitly sets a before/after divide — i.e., a change.",
-    "distractors": "Lines praising the painting's quality, popularity, or pioneering status don't establish a stylistic *break*."
+    "prompt_focus": "Quotation savoli matn haqida *da’vo* beradi va keyin matndan to‘rtta keltirilgan satrdan qaysi biri bu da’voni *bevosita namoyish qiladi* deb so‘raydi. To‘g‘ri keltirilgan satr da’voni *aynan amalga oshirishi* shart — shunchaki bir matndan bo‘lishi yoki kerakli parchaga yaqin bo‘lishi yetarli emas. Da’vo: Rasm rassom rivojlanishida *muhim o‘zgarishni* belgilaydi.",
+    "reasoning": "‘The paintings that John produced before Mère Poussepin can be thought of as belonging to her earlier style, to which she never returned’ aniq oldindan/keyin chegarani — ya’ni o‘zgarishni — o‘rnatadi.",
+    "distractors": "Rasmning sifati, mashhurligi yoki yetakchiligini maqtaydigan qatorlar uslubiy *tanaffusni* o‘rnatmaydi.",
+    "takeaway": "‘O‘zgarish’ da’vosida vaqtga taalluqli sezgini (‘oldin/keyin’, ‘qaytmadi’) izlang."
   },
   "quotation:12": {
-    "prompt_focus": "A Quotation question gives you a *claim* about a text and asks which of four quoted lines from that text actually demonstrates the claim. The right quote must literally enact the claim — not merely be from the same text or be near the relevant passage. Claim: *figurative language* connects DC and the rural South.",
-    "reasoning": "\"And when the wind is from the South, soil of my homeland falls like a fertile shower upon the lean streets of [Washington, DC]\" uses a *simile* (\"like a fertile shower\") to fuse southern soil with DC streets — figurative language linking the two settings.",
-    "distractors": "Literal descriptions of trees, ghost ships, and train whistles don't connect DC and the rural South."
+    "prompt_focus": "Quotation savoli matn haqida *da’vo* beradi va keyin matndan to‘rtta keltirilgan satrdan qaysi biri bu da’voni *bevosita namoyish qiladi* deb so‘raydi. To‘g‘ri keltirilgan satr da’voni *aynan amalga oshirishi* shart — shunchaki bir matndan bo‘lishi yoki kerakli parchaga yaqin bo‘lishi yetarli emas. Da’vo: *Ko‘chma til* DC va qishloq Janubni bog‘laydi.",
+    "reasoning": "‘And when the wind is from the South, soil of my homeland falls like a fertile shower upon the lean streets of [Washington, DC]’ — *o‘xshatishni* (‘like a fertile shower’) ishlatib, janub tuprog‘ini DC ko‘chalari bilan birlashtiradi.",
+    "distractors": "Daraxtlar, sharpa kemalari va poyezd hushtaklarining tom ma’nodagi tasvirlari DC va Janubni bog‘lamaydi.",
+    "takeaway": "Ko‘chma til da’vosida o‘xshatish/metaforaga e’tibor qiling."
   },
   "quotation:13": {
-    "prompt_focus": "A Quotation question gives you a *claim* about a text and asks which of four quoted lines from that text actually demonstrates the claim. The right quote must literally enact the claim — not merely be from the same text or be near the relevant passage. Same claim as Q11 — significant artistic change. Same template.",
-    "reasoning": "Same as Q11 — the \"earlier style, to which she never returned\" line marks the change.",
-    "distractors": "Same as Q11."
+    "prompt_focus": "Quotation savoli matn haqida *da’vo* beradi va keyin matndan to‘rtta keltirilgan satrdan qaysi biri bu da’voni *bevosita namoyish qiladi* deb so‘raydi. To‘g‘ri keltirilgan satr da’voni *aynan amalga oshirishi* shart — shunchaki bir matndan bo‘lishi yoki kerakli parchaga yaqin bo‘lishi yetarli emas. Da’vo: Q11 bilan bir xil — rassom rivojlanishidagi muhim o‘zgarish.",
+    "reasoning": "Q11 bilan bir xil — ‘oldingi uslub, hech qachon qaytmagan’ qatori.",
+    "distractors": "Q11 bilan bir xil.",
+    "takeaway": "Q11 bilan bir xil dars."
   },
   "quotation:14": {
-    "prompt_focus": "A Quotation question gives you a *claim* about a text and asks which of four quoted lines from that text actually demonstrates the claim. The right quote must literally enact the claim — not merely be from the same text or be near the relevant passage. Claim: the poem expresses *ambivalence* — both merits and displeasure.",
-    "reasoning": "\"Reading [poetry], however, with a perfect contempt for it, one discovers that there is in / it after all, a place for the genuine\" carries *both* halves: \"perfect contempt\" (displeasure) and \"a place for the genuine\" (merit).",
-    "distractors": "Other quoted lines criticise *bad* poetry or *half-poets* — they show one side, not both."
+    "prompt_focus": "Quotation savoli matn haqida *da’vo* beradi va keyin matndan to‘rtta keltirilgan satrdan qaysi biri bu da’voni *bevosita namoyish qiladi* deb so‘raydi. To‘g‘ri keltirilgan satr da’voni *aynan amalga oshirishi* shart — shunchaki bir matndan bo‘lishi yoki kerakli parchaga yaqin bo‘lishi yetarli emas. Da’vo: She’r *ambivalentlikni* ifodalaydi — ham yutuq, ham norozilik.",
+    "reasoning": "‘Reading [poetry], however, with a perfect contempt for it, one discovers that there is in / it after all, a place for the genuine’ ikkala yarmini ko‘taradi: ‘perfect contempt’ (norozilik) va ‘a place for the genuine’ (yutuq).",
+    "distractors": "Boshqa qatorlar yomon she’rlarni yoki yarim-shoirlarni tanqid qiladi — bir tomonni ko‘rsatadi, ikkalasini emas.",
+    "takeaway": "Ambivalentlik da’vosida ikkala qutbni bir gapda ko‘rsatuvchi qator g‘alaba qozonadi."
   },
   "quotation:15": {
-    "prompt_focus": "A Quotation question gives you a *claim* about a text and asks which of four quoted lines from that text actually demonstrates the claim. The right quote must literally enact the claim — not merely be from the same text or be near the relevant passage. Claim: the banker is *very upset*.",
-    "reasoning": "\"He lay on his bed, but his tears and emotion kept him for hours from sleeping\" displays tears, emotion, and sleeplessness — concrete signs of being deeply upset.",
-    "distractors": "Other lines describe the banker's actions (broke seals, listened) or his earlier delight — none demonstrate *upset*."
+    "prompt_focus": "Quotation savoli matn haqida *da’vo* beradi va keyin matndan to‘rtta keltirilgan satrdan qaysi biri bu da’voni *bevosita namoyish qiladi* deb so‘raydi. To‘g‘ri keltirilgan satr da’voni *aynan amalga oshirishi* shart — shunchaki bir matndan bo‘lishi yoki kerakli parchaga yaqin bo‘lishi yetarli emas. Da’vo: Bankir *juda xafa*.",
+    "reasoning": "‘He lay on his bed, but his tears and emotion kept him for hours from sleeping’ ko‘zyosh, his va uyqusizlikni — chuqur xafa bo‘lganlikning aniq belgilarini — ko‘rsatadi.",
+    "distractors": "Boshqa qatorlar bankirning harakatlarini (muhrlarni sindirgan, tinglagan) yoki avvalgi xursandligini tasvirlaydi — hech biri xafalikni ko‘rsatmaydi.",
+    "takeaway": "Hissiyot da’vosida hissiyotning aniq jismoniy belgilarini izlang."
   },
   "quotation:16": {
-    "prompt_focus": "A Quotation question gives you a *claim* about a text and asks which of four quoted lines from that text actually demonstrates the claim. The right quote must literally enact the claim — not merely be from the same text or be near the relevant passage. Claim: experiencing both pleasant *and* sad thoughts on a spring day.",
-    "reasoning": "\"In that sweet mood when pleasant thoughts / Bring sad thoughts to the mind\" places pleasant and sad thoughts side by side, with one calling up the other.",
-    "distractors": "Other lines either describe sound or motion alone, not the joint pleasant/sad mood."
+    "prompt_focus": "Quotation savoli matn haqida *da’vo* beradi va keyin matndan to‘rtta keltirilgan satrdan qaysi biri bu da’voni *bevosita namoyish qiladi* deb so‘raydi. To‘g‘ri keltirilgan satr da’voni *aynan amalga oshirishi* shart — shunchaki bir matndan bo‘lishi yoki kerakli parchaga yaqin bo‘lishi yetarli emas. Da’vo: Bahor kunida *yoqimli va g‘amgin* fikrlarni birgalikda boshdan kechirish.",
+    "reasoning": "‘In that sweet mood when pleasant thoughts / Bring sad thoughts to the mind’ yoqimli va g‘amgin fikrlarni yonma-yon, biri ikkinchisini chaqirib turgan holda joylashtiradi.",
+    "distractors": "Boshqa qatorlar yo ovozni yoki harakatni alohida tasvirlaydi, ikki kayfiyatni emas.",
+    "takeaway": "Aralash kayfiyat — ikkalasini bevosita bog‘lovchi qatorni izlash kerak."
   },
   "quotation:17": {
-    "prompt_focus": "A Quotation question gives you a *claim* about a text and asks which of four quoted lines from that text actually demonstrates the claim. The right quote must literally enact the claim — not merely be from the same text or be near the relevant passage. Claim: narrator has *mixed* feelings about her surroundings.",
-    "reasoning": "\"I'm really getting quite fond of the big room, all but that horrid wallpaper\" pairs fondness with aversion in a single sentence — the textbook \"mixed feelings.\"",
-    "distractors": "Lines that praise or condemn her surroundings alone don't show *mixed* feelings."
+    "prompt_focus": "Quotation savoli matn haqida *da’vo* beradi va keyin matndan to‘rtta keltirilgan satrdan qaysi biri bu da’voni *bevosita namoyish qiladi* deb so‘raydi. To‘g‘ri keltirilgan satr da’voni *aynan amalga oshirishi* shart — shunchaki bir matndan bo‘lishi yoki kerakli parchaga yaqin bo‘lishi yetarli emas. Da’vo: Hikoyachining muhitiga *aralash* his-tuyg‘ulari bor.",
+    "reasoning": "‘I’m really getting quite fond of the big room, all but that horrid wallpaper’ bir gapda mehrni nafrat bilan birga keltiradi — qo‘llanma ‘aralash hislar’.",
+    "distractors": "Faqat maqtovchi yoki faqat qoralovchi qatorlar *aralash* hisni ko‘rsatmaydi.",
+    "takeaway": "Q14 bilan bir xil dars — qarama-qarshi qutblar bir qatorda."
   },
   "quotation:18": {
-    "prompt_focus": "A Quotation question gives you a *claim* about a text and asks which of four quoted lines from that text actually demonstrates the claim. The right quote must literally enact the claim — not merely be from the same text or be near the relevant passage. Same as Q11 — significant artistic change.",
-    "reasoning": "Same template — \"earlier style, never returned\" line.",
-    "distractors": "Same."
+    "prompt_focus": "Quotation savoli matn haqida *da’vo* beradi va keyin matndan to‘rtta keltirilgan satrdan qaysi biri bu da’voni *bevosita namoyish qiladi* deb so‘raydi. To‘g‘ri keltirilgan satr da’voni *aynan amalga oshirishi* shart — shunchaki bir matndan bo‘lishi yoki kerakli parchaga yaqin bo‘lishi yetarli emas. Da’vo: Q11 bilan bir xil — muhim badiiy o‘zgarish.",
+    "reasoning": "Q11 bilan bir xil shablon — ‘oldingi uslub, qaytmagan’ qatori.",
+    "distractors": "Q11 bilan bir xil.",
+    "takeaway": "Q11 bilan bir xil dars."
   },
   "quotation:19": {
-    "prompt_focus": "A Quotation question gives you a *claim* about a text and asks which of four quoted lines from that text actually demonstrates the claim. The right quote must literally enact the claim — not merely be from the same text or be near the relevant passage. Claim: Mrs. Sommers experiences a *shift in self* by putting on new clothes.",
-    "reasoning": "\"Her stockings and boots and well-fitting gloves had worked marvels in her bearing — had given her a feeling of assurance, a sense of belonging to the well-dressed multitude\" links the clothes *directly* to a new sense of self.",
-    "distractors": "Other lines describe the items themselves or the act of buying them, not a self-shift."
+    "prompt_focus": "Quotation savoli matn haqida *da’vo* beradi va keyin matndan to‘rtta keltirilgan satrdan qaysi biri bu da’voni *bevosita namoyish qiladi* deb so‘raydi. To‘g‘ri keltirilgan satr da’voni *aynan amalga oshirishi* shart — shunchaki bir matndan bo‘lishi yoki kerakli parchaga yaqin bo‘lishi yetarli emas. Da’vo: Mrs. Sommers yangi kiyim kiyish orqali *o‘zlikning o‘zgarishini* boshdan kechiradi.",
+    "reasoning": "‘Her stockings and boots and well-fitting gloves had worked marvels in her bearing — had given her a feeling of assurance, a sense of belonging to the well-dressed multitude’ kiyimni *bevosita* yangi o‘zlik tuyg‘usiga bog‘laydi.",
+    "distractors": "Boshqa qatorlar buyumlarni yoki sotib olish aktini tasvirlaydi, o‘zlikning o‘zgarishini emas.",
+    "takeaway": "Sabab-natija da’vosida — sabab (kiyim) va natija (o‘zlikning shifti) bir qatorda bog‘langan bo‘lishi kerak."
   },
   "quotation:20": {
-    "prompt_focus": "A Quotation question gives you a *claim* about a text and asks which of four quoted lines from that text actually demonstrates the claim. The right quote must literally enact the claim — not merely be from the same text or be near the relevant passage. Claim: Helena urges Vanya to *make peace* with Serebrakoff.",
-    "reasoning": "\"It is your duty to make peace [with Professor Serebrakoff], and not to growl at every little thing\" is exactly that exhortation to peace-making.",
-    "distractors": "Other lines (Serebrakoff dismissing Vanya, Vanya bitter, Vanya recalling unrewarded work) don't encourage peace."
+    "prompt_focus": "Quotation savoli matn haqida *da’vo* beradi va keyin matndan to‘rtta keltirilgan satrdan qaysi biri bu da’voni *bevosita namoyish qiladi* deb so‘raydi. To‘g‘ri keltirilgan satr da’voni *aynan amalga oshirishi* shart — shunchaki bir matndan bo‘lishi yoki kerakli parchaga yaqin bo‘lishi yetarli emas. Da’vo: Helena Vanyani Serebrakoff bilan *yarashishga* da’vat qiladi.",
+    "reasoning": "‘It is your duty to make peace [with Professor Serebrakoff], and not to growl at every little thing’ — aynan yarashish da’vati.",
+    "distractors": "Boshqa qatorlar (Serebrakoff Vanyani rad etadi, Vanya achchiqlanadi, mukofotlanmagan ishini eslaydi) tinchlikni rag‘batlantirmaydi.",
+    "takeaway": "Da’vat (so‘zlovchi → tinglovchi) da’vosida — buyruq yoki maslahat fe’lini izlash kerak."
   },
   "quotation:21": {
-    "prompt_focus": "A Quotation question gives you a *claim* about a text and asks which of four quoted lines from that text actually demonstrates the claim. The right quote must literally enact the claim — not merely be from the same text or be near the relevant passage. Claim: Vanya is *disillusioned* with Serebrakoff.",
-    "reasoning": "\"I was proud of [Serebrakoff]… now? Now he has retired, and what is the total of his life? A blank! He is absolutely unknown, and his fame has burst like a soap-bubble. I have been deceived\" charts a before/after disillusionment.",
-    "distractors": "Other lines show different relationships, not Vanya's bitter awakening."
+    "prompt_focus": "Quotation savoli matn haqida *da’vo* beradi va keyin matndan to‘rtta keltirilgan satrdan qaysi biri bu da’voni *bevosita namoyish qiladi* deb so‘raydi. To‘g‘ri keltirilgan satr da’voni *aynan amalga oshirishi* shart — shunchaki bir matndan bo‘lishi yoki kerakli parchaga yaqin bo‘lishi yetarli emas. Da’vo: Vanya Serebrakoffdan *hafsalasi pir*.",
+    "reasoning": "‘I was proud of [Serebrakoff]… now? Now he has retired, and what is the total of his life? A blank! He is absolutely unknown, and his fame has burst like a soap-bubble. I have been deceived’ oldingi/keyin hafsala-pir bo‘lishni ko‘rsatadi.",
+    "distractors": "Boshqa qatorlar boshqa munosabatlarni ko‘rsatadi, Vanyaning achchiq uyg‘onishini emas.",
+    "takeaway": "Hafsala-pir da’vosida ‘oldin men ishongan edim, endi yo‘q’ tarzidagi qatorni izlash kerak."
   },
   "quotation:22": {
-    "prompt_focus": "A Quotation question gives you a *claim* about a text and asks which of four quoted lines from that text actually demonstrates the claim. The right quote must literally enact the claim — not merely be from the same text or be near the relevant passage. Claim: Winnemucca creates *suspense* by emphasising her *physical response*.",
-    "reasoning": "\"Oh, how my heart jumped when I heard a noise close by… I thought whoever it was would hear my heart beat\" repeats heart-beat physiology to build suspense around an unknown approaching presence.",
-    "distractors": "Other lines don't link physical sensation to suspenseful uncertainty."
+    "prompt_focus": "Quotation savoli matn haqida *da’vo* beradi va keyin matndan to‘rtta keltirilgan satrdan qaysi biri bu da’voni *bevosita namoyish qiladi* deb so‘raydi. To‘g‘ri keltirilgan satr da’voni *aynan amalga oshirishi* shart — shunchaki bir matndan bo‘lishi yoki kerakli parchaga yaqin bo‘lishi yetarli emas. Da’vo: Winnemucca *jismoniy javobini* ta’kidlash orqali *kuchlanish hosil qiladi*.",
+    "reasoning": "‘Oh, how my heart jumped when I heard a noise close by… I thought whoever it was would hear my heart beat’ noma’lum yaqinlashayotgan borliq atrofida kuchlanish qurish uchun yurak urishi fiziologiyasini takrorlaydi.",
+    "distractors": "Boshqa qatorlar jismoniy sezgini noma’lumlik kuchlanishi bilan bog‘lamaydi.",
+    "takeaway": "Kuchlanish quroli da’vosida jismoniy belgilarni (yurak, nafas, terlash) izlang."
   },
   "quotation:23": {
-    "prompt_focus": "A Quotation question gives you a *claim* about a text and asks which of four quoted lines from that text actually demonstrates the claim. The right quote must literally enact the claim — not merely be from the same text or be near the relevant passage. Student wants to claim that consumers *agree about cultured meat's environmental benefits but won't try it themselves*.",
-    "reasoning": "\"Many consumers… believed that cultured meat would be good for the environment if widely available, but few of those same consumers were willing to try eating cultured meat themselves\" splits belief from behaviour exactly as needed.",
-    "distractors": "Other quoted findings address science or demand, not the belief-vs-willingness gap."
+    "prompt_focus": "Quotation savoli matn haqida *da’vo* beradi va keyin matndan to‘rtta keltirilgan satrdan qaysi biri bu da’voni *bevosita namoyish qiladi* deb so‘raydi. To‘g‘ri keltirilgan satr da’voni *aynan amalga oshirishi* shart — shunchaki bir matndan bo‘lishi yoki kerakli parchaga yaqin bo‘lishi yetarli emas. Da’vo: Iste’molchilar *sun’iy yetishtirilgan go‘shtning ekologik foydalari haqida rozilik bildirsalar-da, o‘zlari sinab ko‘rmaydilar*.",
+    "reasoning": "‘Many consumers… believed that cultured meat would be good for the environment if widely available, but few of those same consumers were willing to try eating cultured meat themselves’ — kerakli yorug‘likda ishonch va xulq-atvorni aniq ravishda ajratadi.",
+    "distractors": "Boshqa keltirilgan topilmalar fan yoki talab haqida, ishonch-vs-istakni ifodalash bo‘yicha emas.",
+    "takeaway": "Ikki holat ajralishi da’volarida ‘lekin’/‘ammo’ konstruktsiyasini izlang."
   },
   "quotation:24": {
-    "prompt_focus": "A Quotation question gives you a *claim* about a text and asks which of four quoted lines from that text actually demonstrates the claim. The right quote must literally enact the claim — not merely be from the same text or be near the relevant passage. Student wants to situate Hume Lake (Fresno County) in California's *humidity gradient*: south = needs irrigation, north = doesn't.",
-    "reasoning": "\"Natural humidity… in the northern reaches of California, gradually decreases toward the sun-scorched but nonetheless fertile valleys of the southern part of the state\" describes the gradient that explains why irrigation is needed in the south.",
-    "distractors": "Other quoted facts don't address California's humidity gradient."
+    "prompt_focus": "Quotation savoli matn haqida *da’vo* beradi va keyin matndan to‘rtta keltirilgan satrdan qaysi biri bu da’voni *bevosita namoyish qiladi* deb so‘raydi. To‘g‘ri keltirilgan satr da’voni *aynan amalga oshirishi* shart — shunchaki bir matndan bo‘lishi yoki kerakli parchaga yaqin bo‘lishi yetarli emas. Da’vo: Talaba Hume Lake (Fresno County)ni Kaliforniya namlik gradientida joylashtirmoqchi: janub = sug‘orish kerak, shimol = kerak emas.",
+    "reasoning": "‘Natural humidity… in the northern reaches of California, gradually decreases toward the sun-scorched but nonetheless fertile valleys of the southern part of the state’ — janubda nima uchun sug‘orish kerakligini tushuntiruvchi gradientni tasvirlaydi.",
+    "distractors": "Boshqa keltirilgan faktlar Kaliforniya namlik gradientiga taalluqli emas.",
+    "takeaway": "Geografik gradient da’volarida ‘shimol vs. janub’ farqlarini ifodalovchi qatorni izlang."
   },
   "quotation:25": {
-    "prompt_focus": "A Quotation question gives you a *claim* about a text and asks which of four quoted lines from that text actually demonstrates the claim. The right quote must literally enact the claim — not merely be from the same text or be near the relevant passage. Claim: child narrator *frightened* by the sailor.",
-    "reasoning": "\"How [the sailor] haunted my dreams… I would see him in a thousand forms, and with a thousand diabolical expressions\" displays sustained fear (haunting dreams, diabolical visions).",
-    "distractors": "Other lines describe events factually, not the narrator's fear."
+    "prompt_focus": "Quotation savoli matn haqida *da’vo* beradi va keyin matndan to‘rtta keltirilgan satrdan qaysi biri bu da’voni *bevosita namoyish qiladi* deb so‘raydi. To‘g‘ri keltirilgan satr da’voni *aynan amalga oshirishi* shart — shunchaki bir matndan bo‘lishi yoki kerakli parchaga yaqin bo‘lishi yetarli emas. Da’vo: Bola hikoyachi dengizchidan *qo‘rqib ketgan*.",
+    "reasoning": "‘How [the sailor] haunted my dreams… I would see him in a thousand forms, and with a thousand diabolical expressions’ doimiy qo‘rquvni (tushlarda azob, shaytoniy ko‘rinishlar) ko‘rsatadi.",
+    "distractors": "Boshqa qatorlar voqealarni tom ma’noda tasvirlaydi, hikoyachining qo‘rquvini emas.",
+    "takeaway": "Hissiyot da’volarida hissiyotning ifodali tilini (tush, ko‘rish) izlang."
   },
   "quotation:26": {
-    "prompt_focus": "A Quotation question gives you a *claim* about a text and asks which of four quoted lines from that text actually demonstrates the claim. The right quote must literally enact the claim — not merely be from the same text or be near the relevant passage. Claim: speaker wants to make art with *universal* appeal *across generations*.",
-    "reasoning": "\"Let me make the songs for the people, / Songs for the old and young\" names both the breadth (\"the people\") and generational scope (\"old and young\").",
-    "distractors": "Other lines from Harper don't include the cross-generational scope."
+    "prompt_focus": "Quotation savoli matn haqida *da’vo* beradi va keyin matndan to‘rtta keltirilgan satrdan qaysi biri bu da’voni *bevosita namoyish qiladi* deb so‘raydi. To‘g‘ri keltirilgan satr da’voni *aynan amalga oshirishi* shart — shunchaki bir matndan bo‘lishi yoki kerakli parchaga yaqin bo‘lishi yetarli emas. Da’vo: Notiq *avlodlar bo‘ylab universal* murojaatga ega san’at yaratmoqchi.",
+    "reasoning": "‘Let me make the songs for the people, / Songs for the old and young’ — ham kenglikni (‘the people’), ham avlodli ko‘lamni (‘old and young’) nomlaydi.",
+    "distractors": "Boshqa Harper qatorlari avlodlar oraliq ko‘lamni o‘z ichiga olmaydi.",
+    "takeaway": "Universallik da’vosida turli guruhlarni nomlovchi qatorni izlang."
   },
   "quotation:27": {
-    "prompt_focus": "A Quotation question gives you a *claim* about a text and asks which of four quoted lines from that text actually demonstrates the claim. The right quote must literally enact the claim — not merely be from the same text or be near the relevant passage. Claim: soldiers feel *renewed sense of agency and authority* as they set out.",
-    "reasoning": "\"They spurred their horses to a gallop as if in that mad race they laid claims of possession to the earth\" makes the agency-of-possession explicit.",
-    "distractors": "Other lines describe weariness, scenery, or town arrival, not renewed agency."
+    "prompt_focus": "Quotation savoli matn haqida *da’vo* beradi va keyin matndan to‘rtta keltirilgan satrdan qaysi biri bu da’voni *bevosita namoyish qiladi* deb so‘raydi. To‘g‘ri keltirilgan satr da’voni *aynan amalga oshirishi* shart — shunchaki bir matndan bo‘lishi yoki kerakli parchaga yaqin bo‘lishi yetarli emas. Da’vo: Askarlar yo‘lga chiqayotganda *yangilangan agentlik va vakolat* tuyg‘usini his qiladi.",
+    "reasoning": "‘They spurred their horses to a gallop as if in that mad race they laid claims of possession to the earth’ egalik agentligini aniq qiladi.",
+    "distractors": "Boshqa qatorlar charchoq, manzara yoki shaharga kirishni tasvirlaydi, yangilangan agentlikni emas.",
+    "takeaway": "‘Yangilangan’ da’vosida harakat-egalikni nomlovchi qatorni izlang."
   },
   "quotation:28": {
-    "prompt_focus": "A Quotation question gives you a *claim* about a text and asks which of four quoted lines from that text actually demonstrates the claim. The right quote must literally enact the claim — not merely be from the same text or be near the relevant passage. Claim: Newland imagines a *future* with May.",
-    "reasoning": "\"Already [Newland's] imagination, leaping ahead of the engagement ring, the betrothal kiss and the [wedding] march from Lohengrin, pictured [May] at his side\" *names* his forward-imagining.",
-    "distractors": "Other lines describe the present opera scene, not future imagination."
+    "prompt_focus": "Quotation savoli matn haqida *da’vo* beradi va keyin matndan to‘rtta keltirilgan satrdan qaysi biri bu da’voni *bevosita namoyish qiladi* deb so‘raydi. To‘g‘ri keltirilgan satr da’voni *aynan amalga oshirishi* shart — shunchaki bir matndan bo‘lishi yoki kerakli parchaga yaqin bo‘lishi yetarli emas. Da’vo: Newland May bilan *kelajakni* tasavvur qiladi.",
+    "reasoning": "‘Already [Newland’s] imagination, leaping ahead of the engagement ring, the betrothal kiss and the [wedding] march from Lohengrin, pictured [May] at his side’ — uning oldinga-tasavvurini *aniq aytadi*.",
+    "distractors": "Boshqa qatorlar hozirgi opera sahnasini tasvirlaydi, kelajak tasavvurini emas.",
+    "takeaway": "Tasavvur/oldinga-fikrlash da’volarida ‘leaping ahead’/‘pictured’ kabi fe’llarni izlang."
   },
   "quotation:29": {
-    "prompt_focus": "A Quotation question gives you a *claim* about a text and asks which of four quoted lines from that text actually demonstrates the claim. The right quote must literally enact the claim — not merely be from the same text or be near the relevant passage. Claim: Dixie Pike has a *deep connection to a faraway place*.",
-    "reasoning": "\"The Dixie Pike has grown from a goat path in Africa\" supplies the connection: a Georgia road's ancestry traced to *Africa* — about as faraway as it gets.",
-    "distractors": "Other lines about the road don't reach beyond the rural South."
+    "prompt_focus": "Quotation savoli matn haqida *da’vo* beradi va keyin matndan to‘rtta keltirilgan satrdan qaysi biri bu da’voni *bevosita namoyish qiladi* deb so‘raydi. To‘g‘ri keltirilgan satr da’voni *aynan amalga oshirishi* shart — shunchaki bir matndan bo‘lishi yoki kerakli parchaga yaqin bo‘lishi yetarli emas. Da’vo: Dixie Pike *uzoq joy* bilan *chuqur aloqaga* ega.",
+    "reasoning": "‘The Dixie Pike has grown from a goat path in Africa’ — Gruziya yo‘lining nasl-nasabini *Afrikaga* — eng uzoq joyga — qaytadi.",
+    "distractors": "Yo‘l haqidagi boshqa qatorlar qishloq Janubdan tashqariga chiqmaydi.",
+    "takeaway": "‘Uzoq joy’ da’vosida geografik nomlardan eng uzoqdagisini izlang."
   },
   "quotation:30": {
-    "prompt_focus": "A Quotation question gives you a *claim* about a text and asks which of four quoted lines from that text actually demonstrates the claim. The right quote must literally enact the claim — not merely be from the same text or be near the relevant passage. Claim: Newland's lateness reflects *enjoying anticipation more than realisation*.",
-    "reasoning": "\"Thinking over a pleasure to come often gave [Newland] a subtler satisfaction than its realisation\" is the principle put plainly.",
-    "distractors": "Other lines describe the opera scene, not Newland's principle of delayed pleasure."
+    "prompt_focus": "Quotation savoli matn haqida *da’vo* beradi va keyin matndan to‘rtta keltirilgan satrdan qaysi biri bu da’voni *bevosita namoyish qiladi* deb so‘raydi. To‘g‘ri keltirilgan satr da’voni *aynan amalga oshirishi* shart — shunchaki bir matndan bo‘lishi yoki kerakli parchaga yaqin bo‘lishi yetarli emas. Da’vo: Newlandning kechikishi *kutishni amalga oshirishdan ko‘proq zavqlanishini* aks ettiradi.",
+    "reasoning": "‘Thinking over a pleasure to come often gave [Newland] a subtler satisfaction than its realisation’ — printsipni aniq qoldiradi.",
+    "distractors": "Boshqa qatorlar opera sahnasini tasvirlaydi, Newlandning kechiktirilgan zavq printsipini emas.",
+    "takeaway": "Mavhum printsip da’volarida printsipni umumiy ifodada bayon qiluvchi qatorni izlang."
   },
   "quotation:31": {
-    "prompt_focus": "A Quotation question gives you a *claim* about a text and asks which of four quoted lines from that text actually demonstrates the claim. The right quote must literally enact the claim — not merely be from the same text or be near the relevant passage. Same as Q15 — banker is very upset.",
-    "reasoning": "Same — tears/emotion preventing sleep is the upset display.",
-    "distractors": "Same."
+    "prompt_focus": "Quotation savoli matn haqida *da’vo* beradi va keyin matndan to‘rtta keltirilgan satrdan qaysi biri bu da’voni *bevosita namoyish qiladi* deb so‘raydi. To‘g‘ri keltirilgan satr da’voni *aynan amalga oshirishi* shart — shunchaki bir matndan bo‘lishi yoki kerakli parchaga yaqin bo‘lishi yetarli emas. Da’vo: Q15 bilan bir xil — bankir juda xafa.",
+    "reasoning": "Q15 bilan bir xil — ko‘zyosh/his uyqusizlikni keltirib chiqaradi.",
+    "distractors": "Q15 bilan bir xil.",
+    "takeaway": "Q15 bilan bir xil dars."
   },
   "quotation:32": {
-    "prompt_focus": "A Quotation question gives you a *claim* about a text and asks which of four quoted lines from that text actually demonstrates the claim. The right quote must literally enact the claim — not merely be from the same text or be near the relevant passage. Claim: Mrs. Sommers is *engrossed in deciding* how to spend money.",
-    "reasoning": "\"The question of investment was one that occupied her greatly… absorbed in speculation and calculation\" names the engrossment in decision-making.",
-    "distractors": "Other lines describe the spending or its emotional outcome, not the deliberation."
+    "prompt_focus": "Quotation savoli matn haqida *da’vo* beradi va keyin matndan to‘rtta keltirilgan satrdan qaysi biri bu da’voni *bevosita namoyish qiladi* deb so‘raydi. To‘g‘ri keltirilgan satr da’voni *aynan amalga oshirishi* shart — shunchaki bir matndan bo‘lishi yoki kerakli parchaga yaqin bo‘lishi yetarli emas. Da’vo: Mrs. Sommers pulni qanday sarflashda *o‘ylab qarorga olishda yutiqqan*.",
+    "reasoning": "‘The question of investment was one that occupied her greatly… absorbed in speculation and calculation’ — qaror qabul qilishdagi yutiqqanini nomlaydi.",
+    "distractors": "Boshqa qatorlar sarflashni yoki uning emotsional natijasini tasvirlaydi, mulohazani emas.",
+    "takeaway": "‘O‘ylab qarorga olishda yutiqqan’ da’vosida fikrlash fe’llarini (occupied, absorbed) izlang."
   },
   "quotation:33": {
-    "prompt_focus": "A Quotation question gives you a *claim* about a text and asks which of four quoted lines from that text actually demonstrates the claim. The right quote must literally enact the claim — not merely be from the same text or be near the relevant passage. Claim: Strepsiades wants to learn rhetorical techniques to be *deceitful in lawsuits*.",
-    "reasoning": "Strepsiades says he wants to become \"a fabricator of falsehoods… a practiced knave in lawsuits… a fox, a sharper, a slippery knave, a dissembler, a slippery fellow, an impostor.\" Every word names deception aimed at lawsuits.",
-    "distractors": "Other lines describe sophists' broader teachings, not Strepsiades's own deceit-seeking."
+    "prompt_focus": "Quotation savoli matn haqida *da’vo* beradi va keyin matndan to‘rtta keltirilgan satrdan qaysi biri bu da’voni *bevosita namoyish qiladi* deb so‘raydi. To‘g‘ri keltirilgan satr da’voni *aynan amalga oshirishi* shart — shunchaki bir matndan bo‘lishi yoki kerakli parchaga yaqin bo‘lishi yetarli emas. Da’vo: Strepsiades retorik usullarni *sud da’volarida aldash uchun* o‘rganmoqchi.",
+    "reasoning": "Strepsiades aytadi: u ‘a fabricator of falsehoods… a practiced knave in lawsuits… a fox, a sharper, a slippery knave, a dissembler, a slippery fellow, an impostor’ bo‘lmoqchi. Har bir so‘z sud da’volariga qaratilgan aldovni nomlaydi.",
+    "distractors": "Boshqa qatorlar sofistlarning kengroq ta’limotini tasvirlaydi, Strepsiadesning shaxsiy aldash izlanishini emas.",
+    "takeaway": "Niyat da’vosida xarakter o‘zi nima istayotganini aytuvchi qatorni izlang."
   },
   "quotation:34": {
-    "prompt_focus": "A Quotation question gives you a *claim* about a text and asks which of four quoted lines from that text actually demonstrates the claim. The right quote must literally enact the claim — not merely be from the same text or be near the relevant passage. Claim: people *naturally have an emotional attachment to home*, regardless of station.",
-    "reasoning": "\"Home is home, to the lowly as well as the great; and no rank, or color, destroys its sacred character, its power over the mind, and the affections\" makes the universal-attachment claim verbatim.",
-    "distractors": "Other quoted lines from Eldridge/Whipple don't make this universal claim."
+    "prompt_focus": "Quotation savoli matn haqida *da’vo* beradi va keyin matndan to‘rtta keltirilgan satrdan qaysi biri bu da’voni *bevosita namoyish qiladi* deb so‘raydi. To‘g‘ri keltirilgan satr da’voni *aynan amalga oshirishi* shart — shunchaki bir matndan bo‘lishi yoki kerakli parchaga yaqin bo‘lishi yetarli emas. Da’vo: Odamlar *uy-joyga tabiiy hissiy bog‘liqlikka* ega, mavqedan qat’i nazar.",
+    "reasoning": "‘Home is home, to the lowly as well as the great; and no rank, or color, destroys its sacred character, its power over the mind, and the affections’ universal-bog‘liqlik da’vosini so‘zma-so‘z aytadi.",
+    "distractors": "Eldridge/Whipple’dan boshqa keltirilgan qatorlar bu universal da’voni ifoda etmaydi.",
+    "takeaway": "Universallik da’vosida ‘kim bo‘lishidan qat’i nazar’ tarzidagi qatorni izlang."
   },
   "quotation:35": {
-    "prompt_focus": "A Quotation question gives you a *claim* about a text and asks which of four quoted lines from that text actually demonstrates the claim. The right quote must literally enact the claim — not merely be from the same text or be near the relevant passage. Claim: streaming-service social features change *how users choose music* (not just what they hear).",
-    "reasoning": "\"I often pick songs that I think the friends who are following me might be interested in listening to, rather than what I might actually prefer\" testifies that social presence changes selection behaviour.",
-    "distractors": "Other testimonies might describe sharing or following but don't show *choice* shifting."
+    "prompt_focus": "Quotation savoli matn haqida *da’vo* beradi va keyin matndan to‘rtta keltirilgan satrdan qaysi biri bu da’voni *bevosita namoyish qiladi* deb so‘raydi. To‘g‘ri keltirilgan satr da’voni *aynan amalga oshirishi* shart — shunchaki bir matndan bo‘lishi yoki kerakli parchaga yaqin bo‘lishi yetarli emas. Da’vo: Streaming-xizmati ijtimoiy xususiyatlari foydalanuvchilarning musiqani *qanday tanlashini* o‘zgartiradi (faqat eshitganini emas).",
+    "reasoning": "‘I often pick songs that I think the friends who are following me might be interested in listening to, rather than what I might actually prefer’ — ijtimoiy mavjudlik tanlov xulqini o‘zgartirishini guvohlaydi.",
+    "distractors": "Boshqa guvohliklar baham ko‘rish yoki kuzatishni tasvirlashi mumkin, lekin tanlov o‘zgarishini emas.",
+    "takeaway": "Xulq o‘zgarishi da’vosida tanlov-fe’lini (‘pick’, ‘choose’) izlang."
   },
   "quotation:36": {
-    "prompt_focus": "A Quotation question gives you a *claim* about a text and asks which of four quoted lines from that text actually demonstrates the claim. The right quote must literally enact the claim — not merely be from the same text or be near the relevant passage. Student wants to argue that ancient irrigation systems used *engineering principles still in use today*.",
-    "reasoning": "\"The irrigation system developed by the Hohokam people in… central Arizona in the 7th century CE was simple but made use of hydraulic engineering design principles that are still utilized by today's engineers\" makes the claim verbatim.",
-    "distractors": "Other historical facts about Searsville Lake don't connect ancient principles to modern use."
+    "prompt_focus": "Quotation savoli matn haqida *da’vo* beradi va keyin matndan to‘rtta keltirilgan satrdan qaysi biri bu da’voni *bevosita namoyish qiladi* deb so‘raydi. To‘g‘ri keltirilgan satr da’voni *aynan amalga oshirishi* shart — shunchaki bir matndan bo‘lishi yoki kerakli parchaga yaqin bo‘lishi yetarli emas. Da’vo: Talaba qadimgi sug‘orish tizimlari *bugungi kunda hali ham qo‘llaniladigan muhandislik printsiplaridan* foydalangan deb da’vo qilmoqchi.",
+    "reasoning": "‘The irrigation system developed by the Hohokam people in… central Arizona in the 7th century CE was simple but made use of hydraulic engineering design principles that are still utilized by today’s engineers’ da’voni so‘zma-so‘z qiladi.",
+    "distractors": "Searsville Lake haqidagi boshqa tarixiy faktlar qadimgi printsiplarni zamonaviy foydalanish bilan bog‘lamaydi.",
+    "takeaway": "Davomiylik da’volarida ‘still’/‘even today’ kabi vaqtga oid signallarni izlang."
   },
   "quotation:37": {
-    "prompt_focus": "A Quotation question gives you a *claim* about a text and asks which of four quoted lines from that text actually demonstrates the claim. The right quote must literally enact the claim — not merely be from the same text or be near the relevant passage. Claim: sophists *taught customers rhetorical techniques* (paid speaking instruction).",
-    "reasoning": "Strepsiades describes a sophist business: \"There dwell men… These men teach, if one give them money, to conquer in speaking, right or wrong\" — exactly paid teaching of rhetoric.",
-    "distractors": "Other lines describe Strepsiades's *desires*; the asked claim is about the teaching itself."
+    "prompt_focus": "Quotation savoli matn haqida *da’vo* beradi va keyin matndan to‘rtta keltirilgan satrdan qaysi biri bu da’voni *bevosita namoyish qiladi* deb so‘raydi. To‘g‘ri keltirilgan satr da’voni *aynan amalga oshirishi* shart — shunchaki bir matndan bo‘lishi yoki kerakli parchaga yaqin bo‘lishi yetarli emas. Da’vo: Sofistlar *mijozlarga retorik usullarni o‘rgatgan* (haq evaziga gapirish darslari).",
+    "reasoning": "Strepsiades sofistlarning biznesini tasvirlaydi: ‘There dwell men… These men teach, if one give them money, to conquer in speaking, right or wrong’ — aynan haqli retorika o‘rgatish.",
+    "distractors": "Boshqa qatorlar Strepsiadesning *istaklarini* tasvirlaydi; so‘ralayotgan da’vo o‘qitishning o‘zi haqida.",
+    "takeaway": "Faoliyat da’volarida fe’l-yuklamasini izlang (‘teach’, ‘train’)."
   },
   "quotation:38": {
-    "prompt_focus": "A Quotation question gives you a *claim* about a text and asks which of four quoted lines from that text actually demonstrates the claim. The right quote must literally enact the claim — not merely be from the same text or be near the relevant passage. Claim: Price used *African instruments* in a composition.",
-    "reasoning": "\"In her composition Symphony no. 1, Price included African drums\" names an African instrument in a specific composition.",
-    "distractors": "Other quoted facts about Price don't list African instruments specifically."
+    "prompt_focus": "Quotation savoli matn haqida *da’vo* beradi va keyin matndan to‘rtta keltirilgan satrdan qaysi biri bu da’voni *bevosita namoyish qiladi* deb so‘raydi. To‘g‘ri keltirilgan satr da’voni *aynan amalga oshirishi* shart — shunchaki bir matndan bo‘lishi yoki kerakli parchaga yaqin bo‘lishi yetarli emas. Da’vo: Price *Afrika asboblarini* kompozitsiyada ishlatgan.",
+    "reasoning": "‘In her composition Symphony no. 1, Price included African drums’ — aniq kompozitsiyada Afrika asbobini nomlaydi.",
+    "distractors": "Price haqidagi boshqa keltirilgan faktlar aniq Afrika asboblarini sanab o‘tmaydi.",
+    "takeaway": "Aniq element da’volarida elementni nomlovchi qatorni izlang."
   },
   "quotation:39": {
-    "prompt_focus": "A Quotation question gives you a *claim* about a text and asks which of four quoted lines from that text actually demonstrates the claim. The right quote must literally enact the claim — not merely be from the same text or be near the relevant passage. Claim: Jim *accidentally damaged* a peony.",
-    "reasoning": "\"Finally Jim went to the peony and tried to stand it on its pins, resuscitated, but the spine of it was hurt, and it could only hang limply from his hand\" is the flower's damage made literal.",
-    "distractors": "Other lines describe Jim's play or his father's reaction, not the damage event."
+    "prompt_focus": "Quotation savoli matn haqida *da’vo* beradi va keyin matndan to‘rtta keltirilgan satrdan qaysi biri bu da’voni *bevosita namoyish qiladi* deb so‘raydi. To‘g‘ri keltirilgan satr da’voni *aynan amalga oshirishi* shart — shunchaki bir matndan bo‘lishi yoki kerakli parchaga yaqin bo‘lishi yetarli emas. Da’vo: Jim *tasodifan* pionni shikastladi.",
+    "reasoning": "‘Finally Jim went to the peony and tried to stand it on its pins, resuscitated, but the spine of it was hurt, and it could only hang limply from his hand’ — gulning shikastlanishini tom ma’noda qiladi.",
+    "distractors": "Boshqa qatorlar Jimning o‘yinini yoki otasining reaksiyasini tasvirlaydi, shikastlanish voqeasini emas.",
+    "takeaway": "Voqea da’volarida voqeaning bevosita tasvirini izlang."
   },
   "quotation:40": {
-    "prompt_focus": "A Quotation question gives you a *claim* about a text and asks which of four quoted lines from that text actually demonstrates the claim. The right quote must literally enact the claim — not merely be from the same text or be near the relevant passage. Claim: speaker *encourages John to pursue someone else*.",
-    "reasoning": "\"I dare say Meg or Moll would take / Pity upon you, if you'd ask. / And pray don't remain single for my sake\" hands him alternative partners and forbids him from pining.",
-    "distractors": "Other quoted lines reject John but don't *redirect* him."
+    "prompt_focus": "Quotation savoli matn haqida *da’vo* beradi va keyin matndan to‘rtta keltirilgan satrdan qaysi biri bu da’voni *bevosita namoyish qiladi* deb so‘raydi. To‘g‘ri keltirilgan satr da’voni *aynan amalga oshirishi* shart — shunchaki bir matndan bo‘lishi yoki kerakli parchaga yaqin bo‘lishi yetarli emas. Da’vo: Notiq Jonni *birovni boshqasini topishga* rag‘batlantiradi.",
+    "reasoning": "‘I dare say Meg or Moll would take / Pity upon you, if you’d ask. / And pray don’t remain single for my sake’ — unga muqobil sheriklar beradi va u uchun yolg‘iz qolishini taqiqlaydi.",
+    "distractors": "Boshqa qatorlar Jonni rad etadi, lekin uni *boshqaga yo‘naltirmaydi*.",
+    "takeaway": "‘Yo‘naltirish’ da’volarida muqobilni nomlovchi qatorni izlang."
   },
   "quotation:41": {
-    "prompt_focus": "A Quotation question gives you a *claim* about a text and asks which of four quoted lines from that text actually demonstrates the claim. The right quote must literally enact the claim — not merely be from the same text or be near the relevant passage. Student wants to claim *demand for meat is rising*.",
-    "reasoning": "\"A growing population that is including significantly more meat in its diet will contribute to an increasing demand for meat products in the 21st century\" states rising demand directly.",
-    "distractors": "Other quoted facts cover acceptance or science of cultured meat, not demand growth."
+    "prompt_focus": "Quotation savoli matn haqida *da’vo* beradi va keyin matndan to‘rtta keltirilgan satrdan qaysi biri bu da’voni *bevosita namoyish qiladi* deb so‘raydi. To‘g‘ri keltirilgan satr da’voni *aynan amalga oshirishi* shart — shunchaki bir matndan bo‘lishi yoki kerakli parchaga yaqin bo‘lishi yetarli emas. Da’vo: Talaba *go‘sht talabi oshib bormoqda* deb da’vo qilmoqchi.",
+    "reasoning": "‘A growing population that is including significantly more meat in its diet will contribute to an increasing demand for meat products in the 21st century’ talabning oshishini bevosita aytadi.",
+    "distractors": "Boshqa keltirilgan faktlar sun’iy go‘shtning qabuli yoki fanini qamrab oladi, talabning o‘sishini emas.",
+    "takeaway": "Trend da’volarida ‘growing’/‘increasing’ kabi yo‘nalishli fe’llarni izlang."
   },
   "quotation:42": {
-    "prompt_focus": "A Quotation question gives you a *claim* about a text and asks which of four quoted lines from that text actually demonstrates the claim. The right quote must literally enact the claim — not merely be from the same text or be near the relevant passage. Same as Q10 — foreign-vs-local-activist criticism.",
-    "reasoning": "Same — \"when ye plead for the exile from far-distant shores… remember men wasting life around your own doors.\"",
-    "distractors": "Same."
+    "prompt_focus": "Quotation savoli matn haqida *da’vo* beradi va keyin matndan to‘rtta keltirilgan satrdan qaysi biri bu da’voni *bevosita namoyish qiladi* deb so‘raydi. To‘g‘ri keltirilgan satr da’voni *aynan amalga oshirishi* shart — shunchaki bir matndan bo‘lishi yoki kerakli parchaga yaqin bo‘lishi yetarli emas. Da’vo: Q10 bilan bir xil — xorijiy-vs-mahalliy faollik tanqidi.",
+    "reasoning": "Q10 bilan bir xil — ‘when ye plead for the exile from far-distant shores… remember men wasting life around your own doors.’",
+    "distractors": "Q10 bilan bir xil.",
+    "takeaway": "Q10 bilan bir xil dars."
   },
   "quotation:43": {
-    "prompt_focus": "A Quotation question gives you a *claim* about a text and asks which of four quoted lines from that text actually demonstrates the claim. The right quote must literally enact the claim — not merely be from the same text or be near the relevant passage. Same as Q11/13/18 — significant artistic change.",
-    "reasoning": "Same — \"earlier style, never returned\" line.",
-    "distractors": "Same."
+    "prompt_focus": "Quotation savoli matn haqida *da’vo* beradi va keyin matndan to‘rtta keltirilgan satrdan qaysi biri bu da’voni *bevosita namoyish qiladi* deb so‘raydi. To‘g‘ri keltirilgan satr da’voni *aynan amalga oshirishi* shart — shunchaki bir matndan bo‘lishi yoki kerakli parchaga yaqin bo‘lishi yetarli emas. Da’vo: Q11/13/18 bilan bir xil — muhim badiiy o‘zgarish.",
+    "reasoning": "Q11 bilan bir xil — ‘oldingi uslub, qaytmagan’ qatori.",
+    "distractors": "Q11 bilan bir xil.",
+    "takeaway": "Q11 bilan bir xil dars."
   },
   "quotation:44": {
-    "prompt_focus": "A Quotation question gives you a *claim* about a text and asks which of four quoted lines from that text actually demonstrates the claim. The right quote must literally enact the claim — not merely be from the same text or be near the relevant passage. Same as Q14 — ambivalence (merit + displeasure).",
-    "reasoning": "Same — \"perfect contempt… place for the genuine.\"",
-    "distractors": "Same."
+    "prompt_focus": "Quotation savoli matn haqida *da’vo* beradi va keyin matndan to‘rtta keltirilgan satrdan qaysi biri bu da’voni *bevosita namoyish qiladi* deb so‘raydi. To‘g‘ri keltirilgan satr da’voni *aynan amalga oshirishi* shart — shunchaki bir matndan bo‘lishi yoki kerakli parchaga yaqin bo‘lishi yetarli emas. Da’vo: Q14 bilan bir xil — ambivalentlik (yutuq + norozilik).",
+    "reasoning": "Q14 bilan bir xil — ‘perfect contempt… place for the genuine.’",
+    "distractors": "Q14 bilan bir xil.",
+    "takeaway": "Q14 bilan bir xil dars."
   },
   "quotation:45": {
-    "prompt_focus": "A Quotation question gives you a *claim* about a text and asks which of four quoted lines from that text actually demonstrates the claim. The right quote must literally enact the claim — not merely be from the same text or be near the relevant passage. Same as Q12 — figurative language linking DC and rural South.",
-    "reasoning": "Same — \"soil of my homeland falls like a fertile shower upon the lean streets of Washington, DC.\"",
-    "distractors": "Same."
+    "prompt_focus": "Quotation savoli matn haqida *da’vo* beradi va keyin matndan to‘rtta keltirilgan satrdan qaysi biri bu da’voni *bevosita namoyish qiladi* deb so‘raydi. To‘g‘ri keltirilgan satr da’voni *aynan amalga oshirishi* shart — shunchaki bir matndan bo‘lishi yoki kerakli parchaga yaqin bo‘lishi yetarli emas. Da’vo: Q12 bilan bir xil — ko‘chma tilning DC va qishloq Janubni bog‘lashi.",
+    "reasoning": "Q12 bilan bir xil — ‘soil of my homeland falls like a fertile shower upon the lean streets of Washington, DC.’",
+    "distractors": "Q12 bilan bir xil.",
+    "takeaway": "Q12 bilan bir xil dars."
   },
   "quotation:46": {
-    "prompt_focus": "A Quotation question gives you a *claim* about a text and asks which of four quoted lines from that text actually demonstrates the claim. The right quote must literally enact the claim — not merely be from the same text or be near the relevant passage. Claim: when scolded, Jimmie *seeks comfort from Henry*.",
-    "reasoning": "\"Henry would sometimes choose to absolutely repudiate [Jimmie's behavior]… preaching with assurance the precepts of [Jimmie's father's] creed\" describes Jimmie *coming to* Henry; it depicts the comfort-seeking interaction even when Henry plays the disciplinarian.",
-    "distractors": "Other lines describe Jim's outdoor play or his father's reaction, not Jim turning to Henry."
+    "prompt_focus": "Quotation savoli matn haqida *da’vo* beradi va keyin matndan to‘rtta keltirilgan satrdan qaysi biri bu da’voni *bevosita namoyish qiladi* deb so‘raydi. To‘g‘ri keltirilgan satr da’voni *aynan amalga oshirishi* shart — shunchaki bir matndan bo‘lishi yoki kerakli parchaga yaqin bo‘lishi yetarli emas. Da’vo: Tanbeh berilganda, Jimmie Henrydan *taskin izlaydi*.",
+    "reasoning": "‘Henry would sometimes choose to absolutely repudiate [Jimmie’s behavior]… preaching with assurance the precepts of [Jimmie’s father’s] creed’ — Jimmiening Henryga *kelishini* tasvirlaydi; Henry intizomchi rolida bo‘lsa ham, taskin izlovchi muloqotni ko‘rsatadi.",
+    "distractors": "Boshqa qatorlar Jimning tashqi o‘yinini yoki otasining reaksiyasini tasvirlaydi, Jimning Henryga murojaatini emas.",
+    "takeaway": "Munosabat da’vosida ikkala qatnashchini bir parchada ko‘rsatuvchi qatorni izlang."
   },
   "quotation:47": {
-    "prompt_focus": "A Quotation question gives you a *claim* about a text and asks which of four quoted lines from that text actually demonstrates the claim. The right quote must literally enact the claim — not merely be from the same text or be near the relevant passage. Claim: Winnemucca addresses the reader to *explain her people's terms of endearment*.",
-    "reasoning": "\"Now, my dear reader, there is no word so endearing as the word father, and that is why [my people] call all good people father or mother\" addresses readers and explains the endearment usage.",
-    "distractors": "Other lines address readers without explaining the endearment system."
+    "prompt_focus": "Quotation savoli matn haqida *da’vo* beradi va keyin matndan to‘rtta keltirilgan satrdan qaysi biri bu da’voni *bevosita namoyish qiladi* deb so‘raydi. To‘g‘ri keltirilgan satr da’voni *aynan amalga oshirishi* shart — shunchaki bir matndan bo‘lishi yoki kerakli parchaga yaqin bo‘lishi yetarli emas. Da’vo: Winnemucca o‘quvchiga *o‘z xalqining mehr-muhabbat atamalarini* tushuntirish uchun murojaat qiladi.",
+    "reasoning": "‘Now, my dear reader, there is no word so endearing as the word father, and that is why [my people] call all good people father or mother’ — o‘quvchilarga murojaat qiladi va atamani tushuntiradi.",
+    "distractors": "Boshqa qatorlar o‘quvchilarga murojaat qiladi, lekin atama tizimini tushuntirmaydi.",
+    "takeaway": "‘Tushuntiradi’ da’vosida tushuntiruvchi-bog‘lovchini (‘that is why’) izlang."
   },
   "quotation:48": {
-    "prompt_focus": "A Quotation question gives you a *claim* about a text and asks which of four quoted lines from that text actually demonstrates the claim. The right quote must literally enact the claim — not merely be from the same text or be near the relevant passage. Claim: a character's house has become *very faded* over time.",
-    "reasoning": "\"Once the house had been painted, but the sun blistered the paint and the rains washed it away, and now the house was as dull and gray as everything else\" tracks the loss of color over time — the fading.",
-    "distractors": "Other passages don't track color loss specifically."
+    "prompt_focus": "Quotation savoli matn haqida *da’vo* beradi va keyin matndan to‘rtta keltirilgan satrdan qaysi biri bu da’voni *bevosita namoyish qiladi* deb so‘raydi. To‘g‘ri keltirilgan satr da’voni *aynan amalga oshirishi* shart — shunchaki bir matndan bo‘lishi yoki kerakli parchaga yaqin bo‘lishi yetarli emas. Da’vo: Qahramonning uyi vaqt o‘tishi bilan *juda xira* bo‘lib qolgan.",
+    "reasoning": "‘Once the house had been painted, but the sun blistered the paint and the rains washed it away, and now the house was as dull and gray as everything else’ — vaqt davomida rangning yo‘qolishini, ya’ni xiralashishni kuzatadi.",
+    "distractors": "Boshqa parchalar rangning yo‘qolishini aynan kuzatmaydi.",
+    "takeaway": "Vaqt davomidagi o‘zgarish da’volarida ‘once… now’ konstruktsiyasini izlang."
   },
   "quotation:49": {
-    "prompt_focus": "A Quotation question gives you a *claim* about a text and asks which of four quoted lines from that text actually demonstrates the claim. The right quote must literally enact the claim — not merely be from the same text or be near the relevant passage. Same as Q47 — endearment terms.",
-    "reasoning": "Same — \"no word so endearing as the word father.\"",
-    "distractors": "Same."
+    "prompt_focus": "Quotation savoli matn haqida *da’vo* beradi va keyin matndan to‘rtta keltirilgan satrdan qaysi biri bu da’voni *bevosita namoyish qiladi* deb so‘raydi. To‘g‘ri keltirilgan satr da’voni *aynan amalga oshirishi* shart — shunchaki bir matndan bo‘lishi yoki kerakli parchaga yaqin bo‘lishi yetarli emas. Da’vo: Q47 bilan bir xil — mehr-muhabbat atamalari.",
+    "reasoning": "Q47 bilan bir xil — ‘no word so endearing as the word father.’",
+    "distractors": "Q47 bilan bir xil.",
+    "takeaway": "Q47 bilan bir xil dars."
   },
   "quotation:50": {
-    "prompt_focus": "A Quotation question gives you a *claim* about a text and asks which of four quoted lines from that text actually demonstrates the claim. The right quote must literally enact the claim — not merely be from the same text or be near the relevant passage. Claim: Aunt Sue's stories come from her *own life*.",
-    "reasoning": "The child \"knows that Aunt Sue / Never got her stories out of any book at all. / But that they came / Right out of her own life\" states the autobiographical source.",
-    "distractors": "Other lines describe the storytelling scene without sourcing the stories."
+    "prompt_focus": "Quotation savoli matn haqida *da’vo* beradi va keyin matndan to‘rtta keltirilgan satrdan qaysi biri bu da’voni *bevosita namoyish qiladi* deb so‘raydi. To‘g‘ri keltirilgan satr da’voni *aynan amalga oshirishi* shart — shunchaki bir matndan bo‘lishi yoki kerakli parchaga yaqin bo‘lishi yetarli emas. Da’vo: Aunt Sue’ning hikoyalari uning *o‘z hayotidan* keladi.",
+    "reasoning": "Bola ‘knows that Aunt Sue / Never got her stories out of any book at all. / But that they came / Right out of her own life’ — avtobiografik manbani aytadi.",
+    "distractors": "Boshqa qatorlar hikoya aytish sahnasini tasvirlaydi, hikoyaning manbasini emas.",
+    "takeaway": "Manba da’volarida ‘from’/‘out of’ kabi manba ko‘rsatkichlarini izlang."
   },
   "quotation:51": {
-    "prompt_focus": "A Quotation question gives you a *claim* about a text and asks which of four quoted lines from that text actually demonstrates the claim. The right quote must literally enact the claim — not merely be from the same text or be near the relevant passage. Same humidity-gradient claim as Q24, slightly differently worded.",
-    "reasoning": "\"While the low humidity of Southern California's desert areas makes irrigation a requirement… the relatively high humidity in the northern parts of the state makes such practices less necessary\" — exactly the gradient.",
-    "distractors": "Other quoted facts don't connect humidity to irrigation regional necessity."
+    "prompt_focus": "Quotation savoli matn haqida *da’vo* beradi va keyin matndan to‘rtta keltirilgan satrdan qaysi biri bu da’voni *bevosita namoyish qiladi* deb so‘raydi. To‘g‘ri keltirilgan satr da’voni *aynan amalga oshirishi* shart — shunchaki bir matndan bo‘lishi yoki kerakli parchaga yaqin bo‘lishi yetarli emas. Da’vo: Q24 bilan bir xil namlik gradienti da’vosi, biroz boshqacha ifodalangan.",
+    "reasoning": "‘While the low humidity of Southern California’s desert areas makes irrigation a requirement… the relatively high humidity in the northern parts of the state makes such practices less necessary’ — aynan gradient.",
+    "distractors": "Boshqa keltirilgan faktlar namlikni mintaqaviy sug‘orish zaruriyati bilan bog‘lamaydi.",
+    "takeaway": "Q24 bilan bir xil dars."
   },
   "quotation:52": {
-    "prompt_focus": "A Quotation question gives you a *claim* about a text and asks which of four quoted lines from that text actually demonstrates the claim. The right quote must literally enact the claim — not merely be from the same text or be near the relevant passage. Claim: Serebrakoff *asks Vanya to leave the room* (using a former-friendship appeal).",
-    "reasoning": "Serebrakoff: \"For the sake of our former friendship do not protest against going. We will talk some other time.\" Direct request to leave; explicit appeal to past friendship.",
-    "distractors": "Other quoted lines depict different exchanges that don't include this request."
+    "prompt_focus": "Quotation savoli matn haqida *da’vo* beradi va keyin matndan to‘rtta keltirilgan satrdan qaysi biri bu da’voni *bevosita namoyish qiladi* deb so‘raydi. To‘g‘ri keltirilgan satr da’voni *aynan amalga oshirishi* shart — shunchaki bir matndan bo‘lishi yoki kerakli parchaga yaqin bo‘lishi yetarli emas. Da’vo: Serebrakoff *Vanyani xonadan chiqib ketishini so‘raydi* (avvalgi do‘stlik nomidan).",
+    "reasoning": "Serebrakoff: ‘For the sake of our former friendship do not protest against going. We will talk some other time.’ — chiqishga bevosita so‘rov; o‘tmish do‘stlikka aniq murojaat.",
+    "distractors": "Boshqa keltirilgan qatorlar bu so‘rovni o‘z ichiga olmaydigan boshqa muloqotlarni tasvirlaydi.",
+    "takeaway": "So‘rov da’volarida buyruq fe’li va asosni nomlovchi qatorni izlang."
   },
   "quotation:53": {
-    "prompt_focus": "A Quotation question gives you a *claim* about a text and asks which of four quoted lines from that text actually demonstrates the claim. The right quote must literally enact the claim — not merely be from the same text or be near the relevant passage. Same as Q34 — universal home attachment.",
-    "reasoning": "Same — \"home is home, to the lowly as well as the great…\"",
-    "distractors": "Same."
+    "prompt_focus": "Quotation savoli matn haqida *da’vo* beradi va keyin matndan to‘rtta keltirilgan satrdan qaysi biri bu da’voni *bevosita namoyish qiladi* deb so‘raydi. To‘g‘ri keltirilgan satr da’voni *aynan amalga oshirishi* shart — shunchaki bir matndan bo‘lishi yoki kerakli parchaga yaqin bo‘lishi yetarli emas. Da’vo: Q34 bilan bir xil — universal uyga bog‘liqlik.",
+    "reasoning": "Q34 bilan bir xil — ‘home is home, to the lowly as well as the great…’",
+    "distractors": "Q34 bilan bir xil.",
+    "takeaway": "Q34 bilan bir xil dars."
   },
   "quotation:54": {
-    "prompt_focus": "A Quotation question gives you a *claim* about a text and asks which of four quoted lines from that text actually demonstrates the claim. The right quote must literally enact the claim — not merely be from the same text or be near the relevant passage. Same as Q35 — social features change choice behavior.",
-    "reasoning": "Same — testifying that choices are warped to please followers.",
-    "distractors": "Same."
+    "prompt_focus": "Quotation savoli matn haqida *da’vo* beradi va keyin matndan to‘rtta keltirilgan satrdan qaysi biri bu da’voni *bevosita namoyish qiladi* deb so‘raydi. To‘g‘ri keltirilgan satr da’voni *aynan amalga oshirishi* shart — shunchaki bir matndan bo‘lishi yoki kerakli parchaga yaqin bo‘lishi yetarli emas. Da’vo: Q35 bilan bir xil — ijtimoiy xususiyatlar tanlov xulqini o‘zgartiradi.",
+    "reasoning": "Q35 bilan bir xil — kuzatuvchilarni xursand qilish uchun tanlovning o‘zgarishi.",
+    "distractors": "Q35 bilan bir xil.",
+    "takeaway": "Q35 bilan bir xil dars."
   },
   "quotation:55": {
-    "prompt_focus": "A Quotation question gives you a *claim* about a text and asks which of four quoted lines from that text actually demonstrates the claim. The right quote must literally enact the claim — not merely be from the same text or be near the relevant passage. Same as Q36 — Hohokam principles still in use today.",
-    "reasoning": "Same — \"7th-century… principles still utilized by today's engineers.\"",
-    "distractors": "Same."
+    "prompt_focus": "Quotation savoli matn haqida *da’vo* beradi va keyin matndan to‘rtta keltirilgan satrdan qaysi biri bu da’voni *bevosita namoyish qiladi* deb so‘raydi. To‘g‘ri keltirilgan satr da’voni *aynan amalga oshirishi* shart — shunchaki bir matndan bo‘lishi yoki kerakli parchaga yaqin bo‘lishi yetarli emas. Da’vo: Q36 bilan bir xil — Hohokam printsiplari bugungi kunda hali ham ishlatiladi.",
+    "reasoning": "Q36 bilan bir xil — ‘7th-century… principles still utilized by today’s engineers.’",
+    "distractors": "Q36 bilan bir xil.",
+    "takeaway": "Q36 bilan bir xil dars."
   },
   "quotation:56": {
-    "prompt_focus": "A Quotation question gives you a *claim* about a text and asks which of four quoted lines from that text actually demonstrates the claim. The right quote must literally enact the claim — not merely be from the same text or be near the relevant passage. Same as Q37 — sophists teaching paid rhetoric.",
-    "reasoning": "Same — \"these men teach, if one give them money, to conquer in speaking, right or wrong.\"",
-    "distractors": "Same."
+    "prompt_focus": "Quotation savoli matn haqida *da’vo* beradi va keyin matndan to‘rtta keltirilgan satrdan qaysi biri bu da’voni *bevosita namoyish qiladi* deb so‘raydi. To‘g‘ri keltirilgan satr da’voni *aynan amalga oshirishi* shart — shunchaki bir matndan bo‘lishi yoki kerakli parchaga yaqin bo‘lishi yetarli emas. Da’vo: Q37 bilan bir xil — sofistlar haqli retorika o‘rgatish.",
+    "reasoning": "Q37 bilan bir xil — ‘these men teach, if one give them money, to conquer in speaking, right or wrong.’",
+    "distractors": "Q37 bilan bir xil.",
+    "takeaway": "Q37 bilan bir xil dars."
   },
   "quotation:57": {
-    "prompt_focus": "A Quotation question gives you a *claim* about a text and asks which of four quoted lines from that text actually demonstrates the claim. The right quote must literally enact the claim — not merely be from the same text or be near the relevant passage. Same as Q38 — Price using African instruments.",
-    "reasoning": "Same — \"In Symphony no. 1, Price included African drums.\"",
-    "distractors": "Same."
+    "prompt_focus": "Quotation savoli matn haqida *da’vo* beradi va keyin matndan to‘rtta keltirilgan satrdan qaysi biri bu da’voni *bevosita namoyish qiladi* deb so‘raydi. To‘g‘ri keltirilgan satr da’voni *aynan amalga oshirishi* shart — shunchaki bir matndan bo‘lishi yoki kerakli parchaga yaqin bo‘lishi yetarli emas. Da’vo: Q38 bilan bir xil — Price Afrika asboblarini ishlatish.",
+    "reasoning": "Q38 bilan bir xil — ‘In Symphony no. 1, Price included African drums.’",
+    "distractors": "Q38 bilan bir xil.",
+    "takeaway": "Q38 bilan bir xil dars."
   },
   "quotation:58": {
-    "prompt_focus": "A Quotation question gives you a *claim* about a text and asks which of four quoted lines from that text actually demonstrates the claim. The right quote must literally enact the claim — not merely be from the same text or be near the relevant passage. Claim: Jim was *playing* (engrossed in pretend) when he accidentally damaged the peony.",
-    "reasoning": "\"Little Jim was, for the time, engine Number 36, and he was making the run between Syracuse and Rochester. He was fourteen minutes behind time, and the throttle was wide open\" depicts immersed, fast pretend-play — context for the accident.",
-    "distractors": "Other quoted lines depict the damage itself or the father's reaction, not Jim's absorbed play."
+    "prompt_focus": "Quotation savoli matn haqida *da’vo* beradi va keyin matndan to‘rtta keltirilgan satrdan qaysi biri bu da’voni *bevosita namoyish qiladi* deb so‘raydi. To‘g‘ri keltirilgan satr da’voni *aynan amalga oshirishi* shart — shunchaki bir matndan bo‘lishi yoki kerakli parchaga yaqin bo‘lishi yetarli emas. Da’vo: Jim pionni tasodifan shikastlaganda *o‘yinda yutiqqan* edi.",
+    "reasoning": "‘Little Jim was, for the time, engine Number 36, and he was making the run between Syracuse and Rochester. He was fourteen minutes behind time, and the throttle was wide open’ — chuqur, tez tasavvuriy o‘yinni — voqea konteksti — tasvirlaydi.",
+    "distractors": "Boshqa keltirilgan qatorlar shikastlanishni yoki otaning reaksiyasini ko‘rsatadi, Jimning yutiqqan o‘yinini emas.",
+    "takeaway": "‘Yutiqqan/cho‘mgan’ da’vosida xarakter o‘yiniga botishini ko‘rsatuvchi tasvirlovchi qatorni izlang."
   },
   "quotation:59": {
-    "prompt_focus": "A Quotation question gives you a *claim* about a text and asks which of four quoted lines from that text actually demonstrates the claim. The right quote must literally enact the claim — not merely be from the same text or be near the relevant passage. Same as Q40 — speaker redirecting John.",
-    "reasoning": "Same — \"Meg or Moll would take pity… don't remain single for my sake.\"",
-    "distractors": "Same."
+    "prompt_focus": "Quotation savoli matn haqida *da’vo* beradi va keyin matndan to‘rtta keltirilgan satrdan qaysi biri bu da’voni *bevosita namoyish qiladi* deb so‘raydi. To‘g‘ri keltirilgan satr da’voni *aynan amalga oshirishi* shart — shunchaki bir matndan bo‘lishi yoki kerakli parchaga yaqin bo‘lishi yetarli emas. Da’vo: Q40 bilan bir xil — notiq Jonni boshqasiga yo‘naltiradi.",
+    "reasoning": "Q40 bilan bir xil — ‘Meg or Moll would take pity… don’t remain single for my sake.’",
+    "distractors": "Q40 bilan bir xil.",
+    "takeaway": "Q40 bilan bir xil dars."
   },
   "quotation:60": {
-    "prompt_focus": "A Quotation question gives you a *claim* about a text and asks which of four quoted lines from that text actually demonstrates the claim. The right quote must literally enact the claim — not merely be from the same text or be near the relevant passage. Same as Q41 — rising meat demand.",
-    "reasoning": "Same — \"growing population… increasing demand for meat products in the 21st century.\"",
-    "distractors": "Same."
+    "prompt_focus": "Quotation savoli matn haqida *da’vo* beradi va keyin matndan to‘rtta keltirilgan satrdan qaysi biri bu da’voni *bevosita namoyish qiladi* deb so‘raydi. To‘g‘ri keltirilgan satr da’voni *aynan amalga oshirishi* shart — shunchaki bir matndan bo‘lishi yoki kerakli parchaga yaqin bo‘lishi yetarli emas. Da’vo: Q41 bilan bir xil — go‘sht talabining oshishi.",
+    "reasoning": "Q41 bilan bir xil — ‘growing population… increasing demand for meat products in the 21st century.’",
+    "distractors": "Q41 bilan bir xil.",
+    "takeaway": "Q41 bilan bir xil dars."
   },
   "quotation:61": {
-    "prompt_focus": "A Quotation question gives you a *claim* about a text and asks which of four quoted lines from that text actually demonstrates the claim. The right quote must literally enact the claim — not merely be from the same text or be near the relevant passage. Same as Q10/42 — foreign-vs-local activist criticism.",
-    "reasoning": "Same.",
-    "distractors": "Same."
+    "prompt_focus": "Quotation savoli matn haqida *da’vo* beradi va keyin matndan to‘rtta keltirilgan satrdan qaysi biri bu da’voni *bevosita namoyish qiladi* deb so‘raydi. To‘g‘ri keltirilgan satr da’voni *aynan amalga oshirishi* shart — shunchaki bir matndan bo‘lishi yoki kerakli parchaga yaqin bo‘lishi yetarli emas. Da’vo: Q10/42 bilan bir xil — xorijiy-vs-mahalliy faollik tanqidi.",
+    "reasoning": "Q10 bilan bir xil.",
+    "distractors": "Q10 bilan bir xil.",
+    "takeaway": "Q10 bilan bir xil dars."
   },
   "quotation:62": {
-    "prompt_focus": "A Quotation question gives you a *claim* about a text and asks which of four quoted lines from that text actually demonstrates the claim. The right quote must literally enact the claim — not merely be from the same text or be near the relevant passage. Same as Q11/13/18/43 — significant artistic change.",
-    "reasoning": "Same.",
-    "distractors": "Same."
+    "prompt_focus": "Quotation savoli matn haqida *da’vo* beradi va keyin matndan to‘rtta keltirilgan satrdan qaysi biri bu da’voni *bevosita namoyish qiladi* deb so‘raydi. To‘g‘ri keltirilgan satr da’voni *aynan amalga oshirishi* shart — shunchaki bir matndan bo‘lishi yoki kerakli parchaga yaqin bo‘lishi yetarli emas. Da’vo: Q11/13/18/43 bilan bir xil — muhim badiiy o‘zgarish.",
+    "reasoning": "Q11 bilan bir xil.",
+    "distractors": "Q11 bilan bir xil.",
+    "takeaway": "Q11 bilan bir xil dars."
   },
   "quotation:63": {
-    "prompt_focus": "A Quotation question gives you a *claim* about a text and asks which of four quoted lines from that text actually demonstrates the claim. The right quote must literally enact the claim — not merely be from the same text or be near the relevant passage. Same as Q14/44 — ambivalence (merit + displeasure).",
-    "reasoning": "Same.",
-    "distractors": "Same."
+    "prompt_focus": "Quotation savoli matn haqida *da’vo* beradi va keyin matndan to‘rtta keltirilgan satrdan qaysi biri bu da’voni *bevosita namoyish qiladi* deb so‘raydi. To‘g‘ri keltirilgan satr da’voni *aynan amalga oshirishi* shart — shunchaki bir matndan bo‘lishi yoki kerakli parchaga yaqin bo‘lishi yetarli emas. Da’vo: Q14/44 bilan bir xil — ambivalentlik (yutuq + norozilik).",
+    "reasoning": "Q14 bilan bir xil.",
+    "distractors": "Q14 bilan bir xil.",
+    "takeaway": "Q14 bilan bir xil dars."
   },
   "quotation:64": {
-    "prompt_focus": "A Quotation question gives you a *claim* about a text and asks which of four quoted lines from that text actually demonstrates the claim. The right quote must literally enact the claim — not merely be from the same text or be near the relevant passage. Same as Q12/45 — figurative connection of DC and rural South.",
-    "reasoning": "Same.",
-    "distractors": "Same."
+    "prompt_focus": "Quotation savoli matn haqida *da’vo* beradi va keyin matndan to‘rtta keltirilgan satrdan qaysi biri bu da’voni *bevosita namoyish qiladi* deb so‘raydi. To‘g‘ri keltirilgan satr da’voni *aynan amalga oshirishi* shart — shunchaki bir matndan bo‘lishi yoki kerakli parchaga yaqin bo‘lishi yetarli emas. Da’vo: Q12/45 bilan bir xil — DC va qishloq Janubning ko‘chma bog‘lanishi.",
+    "reasoning": "Q12 bilan bir xil.",
+    "distractors": "Q12 bilan bir xil.",
+    "takeaway": "Q12 bilan bir xil dars."
   },
   "quotation:65": {
-    "prompt_focus": "A Quotation question gives you a *claim* about a text and asks which of four quoted lines from that text actually demonstrates the claim. The right quote must literally enact the claim — not merely be from the same text or be near the relevant passage. Same as Q47/49 — endearment terms.",
-    "reasoning": "Same.",
-    "distractors": "Same."
+    "prompt_focus": "Quotation savoli matn haqida *da’vo* beradi va keyin matndan to‘rtta keltirilgan satrdan qaysi biri bu da’voni *bevosita namoyish qiladi* deb so‘raydi. To‘g‘ri keltirilgan satr da’voni *aynan amalga oshirishi* shart — shunchaki bir matndan bo‘lishi yoki kerakli parchaga yaqin bo‘lishi yetarli emas. Da’vo: Q47/49 bilan bir xil — mehr-muhabbat atamalari.",
+    "reasoning": "Q47 bilan bir xil.",
+    "distractors": "Q47 bilan bir xil.",
+    "takeaway": "Q47 bilan bir xil dars."
   },
   "quotation:66": {
-    "prompt_focus": "A Quotation question gives you a *claim* about a text and asks which of four quoted lines from that text actually demonstrates the claim. The right quote must literally enact the claim — not merely be from the same text or be near the relevant passage. Same as Q48 — faded house.",
-    "reasoning": "Same.",
-    "distractors": "Same."
+    "prompt_focus": "Quotation savoli matn haqida *da’vo* beradi va keyin matndan to‘rtta keltirilgan satrdan qaysi biri bu da’voni *bevosita namoyish qiladi* deb so‘raydi. To‘g‘ri keltirilgan satr da’voni *aynan amalga oshirishi* shart — shunchaki bir matndan bo‘lishi yoki kerakli parchaga yaqin bo‘lishi yetarli emas. Da’vo: Q48 bilan bir xil — xira uy.",
+    "reasoning": "Q48 bilan bir xil.",
+    "distractors": "Q48 bilan bir xil.",
+    "takeaway": "Q48 bilan bir xil dars."
   },
   "quotation:67": {
-    "prompt_focus": "A Quotation question gives you a *claim* about a text and asks which of four quoted lines from that text actually demonstrates the claim. The right quote must literally enact the claim — not merely be from the same text or be near the relevant passage. Same as Q46 — Jimmie seeking comfort from Henry.",
-    "reasoning": "Same.",
-    "distractors": "Same."
+    "prompt_focus": "Quotation savoli matn haqida *da’vo* beradi va keyin matndan to‘rtta keltirilgan satrdan qaysi biri bu da’voni *bevosita namoyish qiladi* deb so‘raydi. To‘g‘ri keltirilgan satr da’voni *aynan amalga oshirishi* shart — shunchaki bir matndan bo‘lishi yoki kerakli parchaga yaqin bo‘lishi yetarli emas. Da’vo: Q46 bilan bir xil — Jimmie Henrydan taskin izlash.",
+    "reasoning": "Q46 bilan bir xil.",
+    "distractors": "Q46 bilan bir xil.",
+    "takeaway": "Q46 bilan bir xil dars."
   },
   "quotation:68": {
-    "prompt_focus": "A Quotation question gives you a *claim* about a text and asks which of four quoted lines from that text actually demonstrates the claim. The right quote must literally enact the claim — not merely be from the same text or be near the relevant passage. Same as Q50 — Aunt Sue's stories from her life.",
-    "reasoning": "Same.",
-    "distractors": "Same."
+    "prompt_focus": "Quotation savoli matn haqida *da’vo* beradi va keyin matndan to‘rtta keltirilgan satrdan qaysi biri bu da’voni *bevosita namoyish qiladi* deb so‘raydi. To‘g‘ri keltirilgan satr da’voni *aynan amalga oshirishi* shart — shunchaki bir matndan bo‘lishi yoki kerakli parchaga yaqin bo‘lishi yetarli emas. Da’vo: Q50 bilan bir xil — Aunt Sue hikoyalari hayotidan.",
+    "reasoning": "Q50 bilan bir xil.",
+    "distractors": "Q50 bilan bir xil.",
+    "takeaway": "Q50 bilan bir xil dars."
   },
   "quotation:69": {
-    "prompt_focus": "A Quotation question gives you a *claim* about a text and asks which of four quoted lines from that text actually demonstrates the claim. The right quote must literally enact the claim — not merely be from the same text or be near the relevant passage. Student situating Bear River Reservoir in a *larger context of water-scarcity-driven irrigation innovation*.",
-    "reasoning": "\"Competition for water as a scarce economic resource inspired the development of sprinkler irrigation systems… reduction of water used for irrigation in the United States to 45% of total water usage\" connects scarcity to irrigation tech evolution.",
-    "distractors": "Other quoted lines treat humidity gradients or ancient systems, not modern scarcity-driven innovation."
+    "prompt_focus": "Quotation savoli matn haqida *da’vo* beradi va keyin matndan to‘rtta keltirilgan satrdan qaysi biri bu da’voni *bevosita namoyish qiladi* deb so‘raydi. To‘g‘ri keltirilgan satr da’voni *aynan amalga oshirishi* shart — shunchaki bir matndan bo‘lishi yoki kerakli parchaga yaqin bo‘lishi yetarli emas. Da’vo: Talaba Bear River suv omborini *suv tanqisligi tomonidan haydaladigan sug‘orish innovatsiyasining kengroq kontekstida* joylashtirmoqda.",
+    "reasoning": "‘Competition for water as a scarce economic resource inspired the development of sprinkler irrigation systems… reduction of water used for irrigation in the United States to 45% of total water usage’ — tanqislikni sug‘orish texnologiyasi evolyutsiyasi bilan bog‘laydi.",
+    "distractors": "Boshqa keltirilgan qatorlar namlik gradientlari yoki qadimgi tizimlar haqida, zamonaviy tanqislik-haydagan innovatsiya emas.",
+    "takeaway": "Innovatsiya konteksti da’vosida sabab (tanqislik) va innovatsiyani bevosita bog‘lovchi qatorni izlang."
   },
   "quotation:70": {
-    "prompt_focus": "A Quotation question gives you a *claim* about a text and asks which of four quoted lines from that text actually demonstrates the claim. The right quote must literally enact the claim — not merely be from the same text or be near the relevant passage. Same as Q52 — Serebrakoff asking Vanya to leave (former-friendship plea).",
-    "reasoning": "Same.",
-    "distractors": "Same."
+    "prompt_focus": "Quotation savoli matn haqida *da’vo* beradi va keyin matndan to‘rtta keltirilgan satrdan qaysi biri bu da’voni *bevosita namoyish qiladi* deb so‘raydi. To‘g‘ri keltirilgan satr da’voni *aynan amalga oshirishi* shart — shunchaki bir matndan bo‘lishi yoki kerakli parchaga yaqin bo‘lishi yetarli emas. Da’vo: Q52 bilan bir xil — Serebrakoff Vanyadan chiqishini so‘raydi (avvalgi-do‘stlik murojaati).",
+    "reasoning": "Q52 bilan bir xil.",
+    "distractors": "Q52 bilan bir xil.",
+    "takeaway": "Q52 bilan bir xil dars."
   },
   "quotation:71": {
-    "prompt_focus": "A Quotation question gives you a *claim* about a text and asks which of four quoted lines from that text actually demonstrates the claim. The right quote must literally enact the claim — not merely be from the same text or be near the relevant passage. Claim: Dorothy's *Kansas* environment is *flat, gray, treeless* — context for going to Oz.",
-    "reasoning": "\"In Kansas, when Dorothy stood in the doorway and looked around, she could see nothing but the great gray prairie on every side. Not a tree nor a house broke the broad sweep of flat country\" supplies all three: gray, flat, and treeless.",
-    "distractors": "Other quoted lines describe Oz or Dorothy's mood, not Kansas's drabness."
+    "prompt_focus": "Quotation savoli matn haqida *da’vo* beradi va keyin matndan to‘rtta keltirilgan satrdan qaysi biri bu da’voni *bevosita namoyish qiladi* deb so‘raydi. To‘g‘ri keltirilgan satr da’voni *aynan amalga oshirishi* shart — shunchaki bir matndan bo‘lishi yoki kerakli parchaga yaqin bo‘lishi yetarli emas. Da’vo: Dorothining *Kanzas* muhiti *tekis, kulrang, daraxtsiz* — Oz ga borishning konteksti.",
+    "reasoning": "‘In Kansas, when Dorothy stood in the doorway and looked around, she could see nothing but the great gray prairie on every side. Not a tree nor a house broke the broad sweep of flat country’ — uchchalasini ham beradi: kulrang, tekis, daraxtsiz.",
+    "distractors": "Boshqa keltirilgan qatorlar Oz yoki Dorothining kayfiyatini tasvirlaydi, Kanzasning xiraligini emas.",
+    "takeaway": "Bir nechta sifat da’vosida — barcha sifatlarni qamrab oladigan qatorni izlang."
   },
   "quotation:72": {
-    "prompt_focus": "A Quotation question gives you a *claim* about a text and asks which of four quoted lines from that text actually demonstrates the claim. The right quote must literally enact the claim — not merely be from the same text or be near the relevant passage. Claim: Vanya complains he has worked *25 years* managing the estate without *thanks* from Serebrakoff.",
-    "reasoning": "Vanya to Serebrakoff: \"For twenty-five years I have managed this place… you have never given me one single word of thanks\" — both numerical duration and lack of thanks named.",
-    "distractors": "Other lines from the play don't combine the duration and the lack-of-thanks."
+    "prompt_focus": "Quotation savoli matn haqida *da’vo* beradi va keyin matndan to‘rtta keltirilgan satrdan qaysi biri bu da’voni *bevosita namoyish qiladi* deb so‘raydi. To‘g‘ri keltirilgan satr da’voni *aynan amalga oshirishi* shart — shunchaki bir matndan bo‘lishi yoki kerakli parchaga yaqin bo‘lishi yetarli emas. Da’vo: Vanya Serebrakoffdan minnatdorlik *bo‘lmagan holda 25 yil* boshqarganini shikoyat qiladi.",
+    "reasoning": "Vanya Serebrakoffga: ‘For twenty-five years I have managed this place… you have never given me one single word of thanks’ — ham raqamli muddat, ham minnatdorlik yo‘qligi nomlangan.",
+    "distractors": "Spektaklning boshqa qatorlari muddat va minnatdorlik yo‘qligini birlashtirmaydi.",
+    "takeaway": "Ikki qismli da’volarda ikkala qismni ham bir gapda nomlovchi qatorni izlang."
   },
   "graphs:1": {
     "prompt_focus": "A Graphs / Quantitative-Evidence question pairs a textual claim with a chart or table and asks which answer correctly *uses the data* to complete the claim. The right option must (a) be literally readable off the chart and (b) actually support the specific claim — not just any neighboring fact. Claim asks how long ago Tikal Temple IV was built. Pure lookup in the table.",
