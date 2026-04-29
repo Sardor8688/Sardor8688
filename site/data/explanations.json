@@ -378,10 +378,10 @@
     "takeaway": "Gradient bashorati — masofa va kattalik o‘rtasida yo‘nalishli korrelyatsiyani topish bilan quvvatlanadi."
   },
   "support:8": {
-    "prompt_focus": "Q4 bilan bir xil — ikki bakteriya turi (D. fermentans va A. marincola). Quvvatlash uchun ikkala bakteriya ham koloniya hosil qilishini qo‘zg‘atishi shart.",
+    "prompt_focus": "Alegado va hamkasblari ikki bakteriya turini (D. fermentans va A. marincola) o‘rgangan tadqiqotlarni ko‘rib chiqishadi va S. rosetta’ning koloniya hosil qilish javobi haqida xulosa chiqarishadi. Da’voni quvvatlash uchun *ikkala bakteriya turi ham* S. rosetta’da koloniya hosil qilishni qo‘zg‘atishi kerak — chunki xulosa ikki manba topilmasini umumlashtiradi.",
     "reasoning": "S. rosetta D. fermentans’ga *va* A. marincola’ga ta’sir qilinganda koloniya hosil qilsa, ikki natijaning yaqinlashuvi bakteriya-qo‘zg‘atuvchi xulosasini quvvatlaydi.",
     "distractors": "Bo‘linishlar (bittasi ha, ikkinchisi yo‘q) va ta’sir-miqdori natijalari yaqinlashuvni o‘rnatmaydi.",
-    "takeaway": "Q4 bilan bir xil — ikki manba kelishuvi quvvatlaydi."
+    "takeaway": "Ikki manba/turdan kelgan topilmalarni umumlashtiruvchi xulosalarda — quvvatlovchi dalil ikkala manbada ham bir xil yo‘nalishdagi hodisani ko‘rsatishi kerak; faqat bittasida tasdiqlash xulosani qisman emas, butunlay tasdiqlamaydi."
   },
   "support:9": {
     "prompt_focus": "Tushuntirish: do‘kon tartibi qayta o‘zgartirilsa, xaridorlar yuradi, ko‘proq mahsulot ko‘radi va rejasiz xarid qiladi. Quvvatlovchi *iste’molchi hisoboti* aynan shu zanjirni ko‘rsatishi kerak.",
@@ -426,16 +426,16 @@
     "takeaway": "‘X yo‘q, lekin tadqiqotchilar X kerak bo‘lgan ishni qiladi’ — ular X dan boshqa narsadan foydalanishi shart degan xulosa quvvatlanadi."
   },
   "support:16": {
-    "prompt_focus": "Q5 bilan bir xil yirtqichga qaratilgan tovush da’vosi. Quvvatlovchi vaqtga asoslangan: tovush *faqat* hujum paytida, oldin emas, va keyin tezda to‘xtaydi.",
+    "prompt_focus": "Bura va hamkasblari qurtlar (Manduca pellenia, Sphecodina abbottii) tovushlarini *yirtqichlarga qaratilganini* da’vo qilishadi (turdoshlarga aloqa emas). Quvvatlovchi dalil tovushning *vaqt-belgisi* yoki *yirtqich-javobi* bilan bog‘liq bo‘lishi kerak — hujum chog‘ida paydo bo‘lib, hujumdan keyin to‘xtashi tovushning aniq yirtqichga yo‘naltirilganini ko‘rsatadi.",
     "reasoning": "Hech bir tur simulyatsiya qilingan hujumlardan *oldin* tovush chiqarmagan va deyarli barchasi hujumdan keyin o‘n soniya ichida to‘xtatgan bo‘lsa, tovush hujum oynasiga zich bog‘langan — bu yirtqichga qarshi javob, umumiy muloqot signali emas.",
     "distractors": "Turga xos tovush imzolari yirtqichga qaratilganligi haqida gapirmaydi.\n\nYirtqich-chastota eshitilishi taklif qiladi, lekin hujum paytida foydalanishni o‘rnatmaydi.\n\nIndividual tovushlar o‘zgaruvchanligi hujum-vaqt mosligiga taalluqli emas.",
     "takeaway": "Funktsional da’voni quvvatlash — funktsiya kontekstiga vaqti zich bog‘langanini ko‘rsatishdir."
   },
   "support:17": {
-    "prompt_focus": "Q15 bilan bir xil — Alfagali boshqa dalillardan foydalanishi shart.",
-    "reasoning": "Q15 bilan bir xil mantiq.",
-    "distractors": "Q15 bilan bir xil.",
-    "takeaway": "Q15 bilan bir xil dars."
+    "prompt_focus": "Matn aytadiki: kapitalizm tarixchilari arxiv yozuvlaridan olingan uzunlamasiga iqtisodiy ma’lumotlarga tayanadi, ammo Afrika uchun bunday yozuvlar mavjud emas. Alfagali va boshqa Africanist olimlar Afrikadagi koloniyadan oldingi kapitalizm xususiyatlarini topishgan. Mantiqiy xulosa: ular *boshqa turdagi dalillardan* foydalanishlari shart.",
+    "reasoning": "Matnda ‘archival records, which do not exist for [Africa]’ deyiladi, ya’ni an’anaviy manba mavjud emas. Alfagali va kollegalar shunga qaramay topilmalar topgan bo‘lsa, ular boshqa manba turlaridan (og‘zaki tarix, arxeologiya, savdo yozuvlari va h.k.) foydalanishgan bo‘lishi kerak.",
+    "distractors": "‘Beneficial for Africa’ — baholash haqida; matn faqat tadqiqot uslubidagi farqni ifodalaydi.\n\n‘Different view about which activities should be considered capitalist’ — ta’rif farqi haqida; matn dalil turlari farqini ifodalaydi.\n\n‘Methods to derive longitudinal data from archival records’ — arxiv yo‘qligi sababli arxiv-asoslangan metod ishlatilmaydi; bu xulosaga zid.",
+    "takeaway": "Manba mavjud emasligi sababini bilish — olimlar boshqa manba turini ishlatishlari kerakligini xulosa qiladi."
   },
   "support:18": {
     "prompt_focus": "Tadqiqotchilar da’vosi: birinchi bosqich eksperimenti faqat *asal arilarini istisno qilishdan kelib chiqqan hosildorlik tushishini* ayta olmaydi. Quvvatlash — boshqa changlovchilar ham TO‘SILGANINI ko‘rsatish.",
@@ -480,10 +480,10 @@
     "takeaway": "‘X Y ni bashorat qiladi’ tadqiqi savolini quvvatlash — X va Y o‘rtasida kuchli korrelyatsiya bo‘lishini ko‘rsatishdir."
   },
   "support:25": {
-    "prompt_focus": "Q24 bilan bir xil Grasby ramkasi (Microsoft Xbox misoli bilan).",
-    "reasoning": "Q24 bilan bir xil — o‘xshashlik reytinglari va ehtimollik o‘zgarishlari o‘rtasidagi kuchli ijobiy korrelyatsiya.",
-    "distractors": "Q24 bilan bir xil.",
-    "takeaway": "Q24 bilan bir xil dars."
+    "prompt_focus": "Grasby va boshqalar tekshirayotgan ehtimollik: *kategoriyalararo o‘xshashlik* iste’molchining brand-kengaytirish mahsulotlarini sotib olishini bashorat qiladi. Quvvatlovchi topilma o‘xshashlik reytingi va ehtimollik o‘zgarishi o‘rtasida *aniq ijobiy bog‘lanish* ko‘rsatishi kerak.",
+    "reasoning": "‘There was a strong positive correlation between consumers’ ratings and the changes in probability calculated by the researchers’ — bu yerda ‘strong positive correlation’ ikki o‘zgaruvchi (o‘xshashlik bahosi va ehtimollik o‘zgarishi) bir-biri bilan parallel harakat qilishini bevosita aytadi: yuqori o‘xshashlik = ehtimollikning ko‘proq o‘zgarishi. Bu Grasby gipotezasini to‘liq tasdiqlaydi.",
+    "distractors": "‘Ratings varied substantially by category pair, whereas changes in probability were broadly similar’ — ratinglar o‘zgaradi, lekin ehtimollik bir xil; bu *bog‘lanmagan*lik (zid).\n\n‘Consumers tend to purchase more products in categories where extended-brand pairs are found’ — mahsulotlarning sotuv hajmi haqida; o‘xshashlik-ehtimollik bog‘lanishi haqida emas.\n\n‘Both affected by level of brand recognition’ — brendni tanish darajasi haqida; o‘xshashlik-baho va ehtimollik o‘zgarishi o‘rtasidagi to‘g‘ridan-to‘g‘ri bog‘lanish haqida emas.",
+    "takeaway": "‘Bashorat qiladi’ da’volarida — ikki o‘zgaruvchi orasidagi *strong positive correlation* eng to‘g‘ri quvvatlovchi."
   },
   "support:26": {
     "prompt_focus": "Tadqiqotchilar xulosasi: aldovchi yirtqichga qarshi namoyishlarning tarqalishi *mutlaq kenglik bilan bog‘liq* atrof-muhit variatsiyalari bilan vositachilik qilinadi. Quvvatlash — kenglik chiziqlari bo‘ylab tarqalishning farqlanishi.",
@@ -516,16 +516,16 @@
     "takeaway": "Nomutanosib foyda da’vosini quvvatlash — sharoit o‘zgarganda ikki guruh o‘rtasida farqning kengayganini ko‘rsatishdir."
   },
   "support:31": {
-    "prompt_focus": "Q20 bilan bir xil baliq-vorteks gipoteza shabloni.",
+    "prompt_focus": "Ikkinchi tadqiqot guruhi gipoteza qiladi: kam ko‘rinish sharoitlarida *o‘rta boshli* baliqlar *keng boshli* baliqlardan ko‘ra katta vorteks hosil qiluvchi to‘siqlarni aniqlashda yaxshiroq. Quvvatlovchi to‘g‘ridan-to‘g‘ri taqqoslash bo‘lishi kerak: ikki bosh shakli orasidagi farqning xatti-harakat natijasini ko‘rsatishi.",
     "reasoning": "Keng-bosh shaytan mushuk baliq o‘rta-bosh kamalak forelidan ko‘proq urilishi = bashorat qilingan yo‘nalishli farq.",
-    "distractors": "Q20 bilan bir xil — teng darajalar, tur ichidagi xilma-xillik va mutlaq darajalar solishtirishni o‘rnatmaydi.",
-    "takeaway": "Q20 bilan bir xil dars."
+    "distractors": "‘Devil catfish bumped into more than half of the obstructions’ — faqat keng-boshli baliqning *mutlaq* daraja; o‘rta-boshli baliq bilan taqqoslash yo‘q.\n\n‘Rainbow trout bumped just as often as devil catfish’ — ikki tur teng natija ko‘rsatadi; bu farqni emas, balki o‘xshashlikni isbotlaydi (gipotezaga zid).\n\n‘Some specimens of rainbow trout bumped more often than other specimens’ — tur *ichidagi* xilma-xillik; turlar *orasidagi* taqqoslash emas.",
+    "takeaway": "Ikki guruhni *ajratib* taqqoslovchi gipotezalar uchun — ikkala guruhning aniq taqqoslangan natijasini izlang."
   },
   "support:32": {
-    "prompt_focus": "Q29 bilan bir xil Martinez/T. caesius xavf-aloqa shabloni.",
+    "prompt_focus": "Martinez va hamkasblari M. barbatus *T. caesius xavf-chaqiriqlarini xavf bilan bog‘laydi* deb xulosa chiqaradi (chunki qushlar javoban muzlab qoladi yoki o‘simliklar orasiga tarqaladi). Quvvatlovchi javob *aynan T. caesius chaqirig‘iga* o‘ziga xosligini isbotlashi kerak — boshqa tovushlarga emas.",
     "reasoning": "Tasodifiy shovqin nazoratlariga reaksiya yo‘qligi = spetsifiklik = xavf-aloqani quvvatlaydi.",
-    "distractors": "Q29 bilan bir xil.",
-    "takeaway": "Q29 bilan bir xil dars."
+    "distractors": "‘Other bird species also showed tendency to freeze’ — boshqa qushlar reaksiyasi haqida; M. barbatus xulq-atvori sababini aniqlamaydi.\n\n‘Played calls from different T. caesius individuals... no significant variation’ — individual variatsiya yo‘qligi haqida; xavf-bilan-bog‘lanishni isbotlamaydi.\n\n‘Some instances froze when Martinez approached but not before they began playing sounds’ — yondashuvga reaksiya; chaqiriq sabab emas, balki insonning kelishi sabab bo‘lishi mumkin (xulosaga zid mashqul).",
+    "takeaway": "‘Aynan X stimuliga reaksiya’ da’volarida — *kontrol* (boshqa tovush, oddiy shovqin) ostida reaksiya yo‘qligini ko‘rsatuvchi topilmani izlang."
   },
   "support:33": {
     "prompt_focus": "Shcherbakova da’vosi: ularning tahlili LNH bilan *mos kelmaydi*. LNH ekstoteriklik va grammatik murakkablik *teskari* munosabatda deydi. ‘Mos kelmaslik’ uchun aloqa yo‘q yoki *ijobiy* korrelyatsiya kerak.",
@@ -540,10 +540,10 @@
     "takeaway": "‘O‘rin almashish’ tashvishini rad etishni quvvatlash — virtual harakatning shaxsiy tashrifga olib kelganini ko‘rsatishdir."
   },
   "support:35": {
-    "prompt_focus": "Q12 bilan bir xil CO₂ shabloni — qor erishi tezlashishi bilan neto CO₂ oshishi mumkin.",
+    "prompt_focus": "Yi va kollegalarning xulosasi: bahor qor erishi tezlashsa, neto CO₂ *oshish* ehtimoli bor (ya’ni o‘simlik so‘rilishi kamayadi va/yoki mikroorganizm respiratsiyasi oshadi). Quvvatlovchi topilma bu *ikkala omilning* (kamroq absorbsiya yoki ko‘proq emissiya) qor erishi bilan bog‘liqligini ko‘rsatishi kerak.",
     "reasoning": "Erta erish tuproq namligini *kamaytirsa* (o‘simliklarni sekinlashtiradi → kamroq so‘rilish) VA heterotrof nafas olishni *oshirsa* → ko‘proq CO₂ chiqishi. Kamroq so‘rilgan + ko‘proq chiqarilgan = neto CO₂ oshadi. Bu xulosani bevosita quvvatlaydi.",
     "distractors": "O‘simlik so‘rilishini kuchaytirib, nafas olishni o‘zgarmas qoldirgan naqshlar *aksincha* yo‘nalishni bashorat qiladi.\n\nNafas olishni susaytirib, o‘simliklarni sekinlashtirgan naqshlar aralash.\n\nQuyosh nuriyati ikkalasini ham teng kuchaytirgan naqshlar neto o‘zgarish yo‘nalishini bashorat qilmaydi.",
-    "takeaway": "Q12 bilan bir xil dars."
+    "takeaway": "Neto effekt da’volarida — *ikki yo‘nalishli* mexanizmni (ham absorbsiyani kamaytiradi, ham emissiyani oshiradi) bir gapda izlang."
   },
   "support:36": {
     "prompt_focus": "Guruh 10 yil oldingi yurish-istagi so‘rovidan foydalanmoqda. Ular ob-havo va piyodaning yurish istagiga ta’sir qiladigan boshqa omillar haqida da’vo qilmoqda — so‘rov eskirgan bo‘lishi mumkinligini anglatadi. Quvvatlash — bu omillar 10 yilda *sezilarli darajada o‘zgarganini* ko‘rsatish.",
@@ -552,22 +552,22 @@
     "takeaway": "‘Eskirgan ma’lumot’ tashvishini quvvatlash — vaqt davomida tegishli omilning sezilarli o‘zgarganini ko‘rsatishdir."
   },
   "support:37": {
-    "prompt_focus": "Q21 bilan bir xil nanozarra prokssi shabloni (Ag-NP va Atlantik somon/dengiz annelidlari).",
+    "prompt_focus": "Gipoteza: C. teleta’dagi Ag-NP bioakkumulyatsiyasi *S. salar uchun proksi (vakil)* sifatida xizmat qilishi mumkin (ya’ni S. salardan o‘rniga C. teleta’ni tekshirish bemalol). Quvvatlovchi topilma ikki turning *Ag-NP javoblari o‘xshashligini* ko‘rsatishi kerak.",
     "reasoning": "Bir xil ta’sirda Ag-NP o‘zlashtirish darajalari o‘xshashligi prokssi haqiqiyligini quvvatlaydi.",
-    "distractors": "Q21 bilan bir xil.",
-    "takeaway": "Q21 bilan bir xil dars."
+    "distractors": "‘Ag-NP concentrations in C. teleta correlate strongly with environment, whereas in S. salar are fairly stable’ — ikki tur *farqli* javob beradi; proksi-rolga zid.\n\n‘C. teleta can tolerate significantly higher Ag-NP concentrations without negative effects’ — *bardosh-darajalar* haqida; bioakkumulyatsiya darajalari emas.\n\n‘Easier to detect low concentrations in C. teleta than high concentrations in S. salar’ — detektsiya qulayligi haqida; bioakkumulyatsiya tez-tezligini bevosita aytmaydi.",
+    "takeaway": "Proksi (vakil) rolida — ikki tur orasida o‘xshash xulq-atvor ko‘rsatuvchi topilmani izlang."
   },
   "support:38": {
-    "prompt_focus": "Q30 bilan bir xil — kech muzlash boshlanishidan invazivlar foyda oladi.",
+    "prompt_focus": "Mulder va Spellman xulosasi: kech muzlash boshlanishi *invazivlarga* (P. aviculare) mahalliy turlardan (V. edule) ko‘ra ko‘proq foyda keltiradi. Quvvatlovchi topilma bu *afzallik kattaligini* (invaziv > mahalliy) bevosita ko‘rsatishi kerak.",
     "reasoning": "Tubjoy turdan ko‘ra invaziv uchun katta kuz uzayishi = quvvatlovchi naqsh.",
-    "distractors": "Q30 bilan bir xil.",
-    "takeaway": "Q30 bilan bir xil dars."
+    "distractors": "‘Neither showed significant interannual variation’ — farq yo‘qligi; afzallikni ko‘rsatmaydi.\n\n‘P. aviculare stopped producing leaves sooner than V. edule’ — invaziv *tezroq to‘xtaydi*; bu invazivga afzallik emas, balki invazivni cheklaydi.\n\n‘Both produced more leaves in late-onset years; those years also had early growing season’ — har ikki turi foyda oladi va boshqa omil (erta bahor) qo‘shiladi; afzallik invazivga emas.",
+    "takeaway": "Bir guruh foyda olishini ifodalovchi xulosalarda — ikki guruhning *farqi*ni miqdoriy aytuvchi (‘much greater for X than Y’) topilmani izlang."
   },
   "support:39": {
-    "prompt_focus": "Q29 bilan bir xil Martinez/T. caesius xavf-aloqa shabloni — boshqa qush turi (H. ochraceiceps).",
+    "prompt_focus": "Q32 bilan parallel struktura, ammo boshqa qush turi: H. ochraceiceps. Xulosa: bu qush ham T. caesius xavf-chaqiriqlarini xavf bilan bog‘laydi. Quvvatlovchi topilma chaqiriqning aniq sabab ekanini boshqa stimullardan ajratishi kerak.",
     "reasoning": "Tasodifiy shovqin nazoratlariga reaksiya yo‘qligi = spetsifiklik = xavf-aloqani quvvatlaydi.",
-    "distractors": "Q29 bilan bir xil.",
-    "takeaway": "Q29 bilan bir xil dars."
+    "distractors": "‘Other bird species also showed tendency to freeze’ — boshqa qushlar; H. ochraceiceps haqida emas.\n\n‘No significant variation between individual T. caesius callers’ — individual variatsiya yo‘qligi; sabab-bog‘lanishni emas, balki signal yagonaligini ko‘rsatadi.\n\n‘Some instances froze when Martinez approached but before sounds began’ — chaqiriqdan oldin reaksiya — chaqiriq sabab emas (xulosaga zid).",
+    "takeaway": "Kontrol — stimul yo‘q paytda reaksiya yo‘qligini ko‘rsatuvchi topilma sabab-bog‘lanishini eng aniq isbotlaydi."
   },
   "support:40": {
     "prompt_focus": "Grasby tushuniladigan kategoriya o‘xshashligi brend-kengaytirish xaridini bashorat qilishini sinab ko‘rmoqchi. Quvvatlovchi *tadqiqot dizayni* ikkalasini operatsionalizatsiya qilishi shart.",
@@ -576,22 +576,22 @@
     "takeaway": "Tadqiqot savolini quvvatlovchi dizayn — savolda nomlangan ikkala o‘zgaruvchini operatsionalizatsiya qilishi shart."
   },
   "support:41": {
-    "prompt_focus": "Q5/Q16 bilan bir xil yirtqichga qaratilgan da’vo, quvvatlovchi yirtqich javobi.",
+    "prompt_focus": "Q5/Q16 ga parallel: qurtlar tovushi *yirtqichlarga* qaratilgan. Q41 da turli kontekst (Manduca pellenia clicks, Rhodinia fugax whistles), va variantlar boshqacha. Quvvatlovchi to‘g‘ridan-to‘g‘ri *yirtqich javobini* ko‘rsatishi mumkin (eng kuchli dalil).",
     "reasoning": "Tirtir yirtqichlari bo‘lgan tovuqlar va sarafanlar tovushga javoban hujumni to‘xtatishi yirtqichga qaratilgan funksiyani quvvatlaydi.",
-    "distractors": "Q5 bilan bir xil.",
-    "takeaway": "Q5 bilan bir xil dars."
+    "distractors": "‘Sound that one species produced was not produced by other species’ — tur o‘ziga xosligi haqida; yirtqichga qaratilganini emas, kommunikatsiyaga qarshi argumentni emas.\n\n‘Caterpillar clicks emitted in frequency detectable by birds, but whistles were not’ — fizik-asoslangan farq; lekin shu chastota bilan birga ham *yirtqich javobi* bo‘lmasa, faqat fizik salohiyat ko‘rsatadi, sodir bo‘lgan xatti-harakatni emas.\n\n‘Each species tended to produce one sound, individuals occasionally other sounds’ — turlardagi tovush variatsiyasi; yirtqichga aloqa haqida emas.",
+    "takeaway": "Funktsiya da’volarida — to‘g‘ridan-to‘g‘ri xulq-atvor natijasi (‘predators stop attacks’) eng kuchli quvvatlovchi."
   },
   "support:42": {
-    "prompt_focus": "Q27 bilan bir xil it-til ta’siri shabloni.",
+    "prompt_focus": "Cuaya, Hernández-Pérez va kollegalar xulosasi: itlarning *avval olgan til ta’siri miqdori* tanish-tilni notanish-tildan farqlash qobiliyatiga ta’sir qilishi mumkin. Quvvatlovchi topilma yosh (avval ko‘rganlik miqdori uchun proksi) bilan miya javobi farqi orasidagi bog‘lanishni ko‘rsatishi kerak.",
     "reasoning": "Eshitish pasayishiga qaramay barcha yoshdagi itlar tanish tilga kuchliroq javob bersa, ta’sirga asoslangan farqlash umr bo‘yi davom etadi — guruh ta’sir da’vosini quvvatlaydi.",
-    "distractors": "Q27 bilan bir xil.",
-    "takeaway": "Q27 bilan bir xil dars."
+    "distractors": "‘Difference between brain activity for accustomed and not accustomed was greatest among older dogs’ — yosh va farq darajasini bog‘laydi, ammo bu yo‘nalish-belgilanish; aniq quvvatlovchi A da kuchliroq sabab keltiradi.\n\n‘Similarity between scrambled and unfamiliar greatest among older dogs’ — chalkash javob (scrambled = noaniq); xulosa bilan to‘g‘ridan-to‘g‘ri bog‘liq emas.\n\n‘Different brain activity for accustomed than scrambled, increases with age’ — chalkash bilan taqqoslash; tanish-vs-notanish til farqini emas, til-vs-shovqin farqini ko‘rsatadi.",
+    "takeaway": "Ko‘ngira ta’siri da’volarida — ta’sirni izolyatsiya qiluvchi (‘despite hearing decline’) topilmani izlang."
   },
   "support:43": {
     "prompt_focus": "Gipoteza: past ko‘rinishda *kengroq*-bosh baliqlar *torroq*-bosh baliqlardan o‘rta-vorteks to‘siqlarini *kamroq* aniqlay oladi. Quvvatlash — kengroq-bosh tur to‘siqlarga torroq-bosh turdan ko‘proq urilishi.",
     "reasoning": "Kengroq-bosh baliqchi-baliq to‘siqlarga torroq-bosh dusky smooth-hound’dan KO‘PROQ urilishi = bashorat qilingan yo‘nalishli farq. Bu ikkinchi guruh gipotezasini quvvatlaydi.",
     "distractors": "Solishtirishsiz mutlaq urilish darajasi; teng urilish darajasi; tur ichidagi xilma-xillik — turlar oraliq aniqlash farqini o‘rnatmaydi.",
-    "takeaway": "Q20 bilan bir xil dars."
+    "takeaway": "Ikki guruh orasidagi nisbat-farqi gipotezalarda — ikkala guruhning *bevosita taqqoslangan* natijasini izlang; tur ichidagi xilma-xillik yoki bir tomonlama ma’lumot kifoya emas."
   },
   "support:44": {
     "prompt_focus": "Tadqiqotchilar PCFG kitlari haqidagi da’vosi: ularning kichik o‘lchami ovqatlanish maydonidagi alohida resurs imkoniyatlariga *moslashish*. Quvvatlash — kichik o‘lcham PCFG ovqatlanish muhitida *kirish* afzalligini berishi shart.",
@@ -618,10 +618,10 @@
     "takeaway": "Ikki turdan birining yomonroq ekanligini quvvatlash — boshqa o‘zgaruvchilar tenglashtirilgan saytlarni solishtirishdir."
   },
   "support:48": {
-    "prompt_focus": "Q45 bilan bir xil (pyezoelektrik simsiz qurilmalar).",
-    "reasoning": "Q45 bilan bir xil.",
-    "distractors": "Q45 bilan bir xil.",
-    "takeaway": "Q45 bilan bir xil dars."
+    "prompt_focus": "Matn da’volaydi: yangi CFRP elektrodli pyezoelektrik to‘plovchi *barqaror energiya yuki* beradi, bu — simsiz aloqa qurilmalarini pyezoelektrik tarzda quvvatlash uchun *mutlaq oldindan shart*. Quvvatlovchi topilma nima uchun aynan barqarorlik kerakligini tushuntirishi kerak.",
+    "reasoning": "‘Intermittent or unpredictable electrical supply undermines the efficacy of wireless communication devices’ qatori bevosita aytadi: *tartibsiz ta’min simsiz qurilmalarni buzadi*. Bu da’voni mantiqiy yopadi: barqarorlik shart, chunki tartibsizlik buzadi.",
+    "distractors": "‘Near-constant kinetic vibration makes it possible to power wireless devices using non-CFRP harvesters’ — CFRP’dan tashqari yondashuv ham ishlaydi degani; CFRP’ning afzalligini emas, qarshi argumentni keltiradi.\n\n‘CFRP electrode is incompatible with most wireless communication devices’ — CFRP yaroqsiz; matn da’vosiga zid.\n\n‘High conductivity of CFRP makes energy output sufficient for wireless devices’ — mexanizmni izohlaydi, ammo ‘barqaror yuk’ va simsiz qurilmalar shartini bevosita bog‘lamaydi.",
+    "takeaway": "‘Mutlaq oldindan shart’ da’volarida — shart bajarilmasa nima yomon bo‘lishini aytuvchi topilmani izlang (sabab-zarur shart yopilishi)."
   },
   "support:49": {
     "prompt_focus": "Adlhart da’vosi: gubkani ommaviy ishlab chiqarish qiyin bo‘lardi. Quvvatlash — keng miqyosli ishlab chiqarishga *aniq* amaliy to‘siq.",
@@ -636,16 +636,16 @@
     "takeaway": "‘Kengayish’ da’vosini quvvatlash — chegaradan tashqaridagi yangi a’zoning bevosita misolini topishdir."
   },
   "support:51": {
-    "prompt_focus": "Q47 bilan bir xil qirg‘oq-qattiqlashtirish shabloni — Norfolk varianti.",
+    "prompt_focus": "Prosser va boshqalarning topilmasi: bulkheads (qattiq devorlar) qirg‘oq qushi jamoasi yaxlitligi bilan riprap (toshli to‘siq)dan ko‘ra *kuchliroq salbiy korrelyatsiyaga ega*. Illyustratsiya qiluvchi topilma ikki tuzilma turini *bevosita taqqoslashi* va bulkhead-saytlarining IWCI ballarini riprap-saytlardan past ko‘rsatishi kerak.",
     "reasoning": "Yuqori-bulkhead Old Road sayti yuqori-riprap Miles saytidan past IWCI ga ega bo‘lishi bulkheadlar yomonroq topilmasini quvvatlaydi.",
-    "distractors": "Q47 bilan bir xil.",
-    "takeaway": "Q47 bilan bir xil dars."
+    "distractors": "‘Curtis (high % bulkheads AND riprap) lower than Onancock (low % both)’ — ikkala tuzilma birga; bulkhead va riprap orasidagi *farq*ni emas, balki tuzilma vs tuzilmasiz qiyoslash.\n\n‘Curtis (equal %) higher than Miles (different %)’ — chalkash; bulkhead va riprap *to‘g‘ridan-to‘g‘ri* taqqoslanmagan.\n\n‘Difference in IWCI for Stony and Old Road (both bulkhead-heavy) statistically insignificant’ — bulkhead-saytlarining ichida farq yo‘qligi; bulkhead vs riprap farqini ko‘rsatmaydi.",
+    "takeaway": "‘X kuchliroq Y dan’ da’volarida — ikkala kategoriyani aynan bir-biriga qarama-qarshi qo‘yuvchi sayt taqqoslashini izlang."
   },
   "support:52": {
     "prompt_focus": "Martínez gipotezasi: barg-tozalovchi tur (M. guttata, tor KM) qo‘shni yirtqich ogohlantirishlariga sayar (M. fusca, keng KM) turdan KO‘PROQ sezgir. Quvvatlash — M. guttata qo‘shni signaliga reaksiya beradi, M. fusca — bermaydi.",
     "reasoning": "Boshqa mahalliy qush turidan signallar o‘ynalsa, M. guttata yirtqichdan qochish xatti-harakatini namoyon qilsa, M. fusca esa *hech qanday xulq o‘zgarishi* ko‘rsatmasa, barg-tozalovchi qush qo‘shni signallariga haqiqatan ko‘proq sezgir — bashorat qilingan yo‘nalishli farq.",
     "distractors": "Ikkalasi ham signallarga, ammo faqat bittasi shovqinga reaksiya berishi solishtirishni ag‘daradi.\n\nHudud tashqarisidagi tur signallari boshqa savolni sinaydi.\n\nM. fusca o‘z signaliga va ikkalasi M. guttata signaliga reaksiya bersa, qo‘shni signal sezgirligini izolyatsiya qilmaydi.",
-    "takeaway": "Q1 bilan bir xil dars."
+    "takeaway": "Vulnerability → sezgirlik gipotezalarida — zaifroq tur xavf-signaliga *javob beradigan*ini, kamroq zaifroq turi *bermayotganini* ko‘rsatuvchi taqqoslashni izlang."
   },
   "support:53": {
     "prompt_focus": "Wade da’vosi: Heege qo‘lyozmasidagi uch parcha Heege uyi atrofidagi mintaqada minestrelning repertuar kitobidan ko‘chirilgan. Quvvatlash — matnlar Heege uyi atrofidagi *mahalliy auditoriya* bilan bog‘liq xususiyatlarni o‘z ichiga olishi.",
@@ -660,16 +660,16 @@
     "takeaway": "Universal qobiliyat da’vosini quvvatlash — jamiyatlar oraliq mos keladigan natijalarni ko‘rsatishdir."
   },
   "support:55": {
-    "prompt_focus": "Q20/Q31/Q43 bilan bir xil baliq-vorteks shabloni.",
+    "prompt_focus": "Q31/Q43 ga ekvivalent. Bu yerda gipoteza: baliqning tumshug‘ida bosim tebranishlari qancha kattarog bo‘lsa, baliq to‘siqlardan shuncha yaxshiroq qochadi. Tor-bosli baliqlarda (narrow) katta vorteksdan bosim tebranishi katta. Ya’ni narrow-headed = ko‘proq qochish (kamroq urilish), wide-headed = kamroq qochish (ko‘proq urilish).",
     "reasoning": "Keng-bosh Bagarius bagarius tor-bosh Ablennes hians’dan ko‘proq urilishi bashorat qilingan aniqlash farqini quvvatlaydi.",
-    "distractors": "Q20 bilan bir xil shablon.",
-    "takeaway": "Q20 bilan bir xil dars."
+    "distractors": "‘Some specimens of narrow-headed bumped more often than other specimens’ — tur ichidagi xilma-xillik; tur orasidagi taqqoslash emas.\n\n‘Narrow-headed bumped just as often as wide-headed’ — farq yo‘qligi; gipotezaga zid.\n\n‘Devil catfish (wide) bumped into more than half’ — mutlaq daraja, narrow-headed bilan taqqoslash yo‘q.",
+    "takeaway": "Ikki guruh orasidagi yo‘nalish-farqli da’volarda — ikkala guruh sonlarini bir gapda ko‘rsatuvchi topilmani izlang."
   },
   "support:56": {
-    "prompt_focus": "Q53 bilan bir xil Heege/Wade shabloni.",
+    "prompt_focus": "Wade dalili: Heege qo‘lyozmasidagi uchta asar mahalliy minstrel takror-asar daftaridan ko‘chirilgan bo‘lishi mumkin. Wade ko‘rsatadigan xususiyatlar: jonli ijro belgilari (auditoriyaga murojaat, qoflashtirish, choy-pul so‘rovi). Quvvatlovchi topilma matn ichidagi *aniq mahalliy* tafsilotni ko‘rsatishi kerak — chunki bu mahalliy minstrel ijrosi taxminini mustahkamlaydi.",
     "reasoning": "Parchalardagi mahalliy-qishloq havolalari Wadening Heege uyi atrofida ijro uchun yozilgan degan argumentini quvvatlaydi.",
-    "distractors": "Q53 bilan bir xil.",
-    "takeaway": "Q53 bilan bir xil dars."
+    "distractors": "‘Simple rhyming also occurs in other texts widely read but not performed live’ — oddiy qoflashtirish *jonli ijro’ga xos emas* deb aytadi; Wade dalilini *zaiflashtiradi*.\n\n‘Heege’s collection contains earliest examples; pieces occur in other manuscripts compiled after’ — keyingi qo‘lyozmalarda mavjudligi; ijro yoki minstrel-aloqasini bevosita isbotlamaydi.\n\n‘Travelling minstrels performed mainly for elite audiences; Heege’s collection reflects popular appeal’ — minstrellar va popular-appeal o‘rtasida zid; Wade dalilini zaiflashtiradi.",
+    "takeaway": "Mahalliy ijro da’volarida — mahalliy joy nomlari yoki mahalliy auditoriya tafsilotlarini matnda ko‘rsatuvchi topilmani izlang."
   },
   "support:57": {
     "prompt_focus": "Matn meva tanasi olib tashlanganidan keyin ham mevalanish saytlarida miselyumning kuchli sovuqligi davom etishini tasvirlaydi. Demak miselyumdagi termoregulatsiya meva tanalari mavjudligidan *mustaqil* bo‘lishi mumkin.",
