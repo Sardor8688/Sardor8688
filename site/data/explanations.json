@@ -1385,5 +1385,545 @@
     "prompt_focus": "A Quotation question gives you a *claim* about a text and asks which of four quoted lines from that text actually demonstrates the claim. The right quote must literally enact the claim — not merely be from the same text or be near the relevant passage. Claim: Vanya complains he has worked *25 years* managing the estate without *thanks* from Serebrakoff.",
     "reasoning": "Vanya to Serebrakoff: \"For twenty-five years I have managed this place… you have never given me one single word of thanks\" — both numerical duration and lack of thanks named.",
     "distractors": "Other lines from the play don't combine the duration and the lack-of-thanks."
+  },
+  "graphs:1": {
+    "prompt_focus": "A Graphs / Quantitative-Evidence question pairs a textual claim with a chart or table and asks which answer correctly *uses the data* to complete the claim. The right option must (a) be literally readable off the chart and (b) actually support the specific claim — not just any neighboring fact. Claim asks how long ago Tikal Temple IV was built. Pure lookup in the table.",
+    "reasoning": "The age column for Tikal Temple IV reads 1,300 years. So the completion is '1,300 years ago.'",
+    "distractors": "1,900–2,300 and 4,500–4,600 belong to other pyramids in the table.\n\n3,800–4,000 also belongs to a different row."
+  },
+  "graphs:2": {
+    "prompt_focus": "A Graphs / Quantitative-Evidence question pairs a textual claim with a chart or table and asks which answer correctly *uses the data* to complete the claim. The right option must (a) be literally readable off the chart and (b) actually support the specific claim — not just any neighboring fact. Claim: example of a country where women-judge counts decreased OR remained unchanged from 2009 → 2013.",
+    "reasoning": "Dominican Republic: lower in 2013 than 2009 (decrease). Finland: same in both years (unchanged). Together they instantiate both halves of the claim.",
+    "distractors": "Slovenia *increased* — opposite of the claim's direction.\n\nOther options pair an *increase* with the same/decrease — they don't match \"decreased or unchanged.\""
+  },
+  "graphs:3": {
+    "prompt_focus": "A Graphs / Quantitative-Evidence question pairs a textual claim with a chart or table and asks which answer correctly *uses the data* to complete the claim. The right option must (a) be literally readable off the chart and (b) actually support the specific claim — not just any neighboring fact. Claim: some studies of *other crops* found the *opposite* effect of tilling (i.e., no-till did better).",
+    "reasoning": "Min Huang's rice study reported a *larger positive effect of no tilling* — explicitly the opposite direction.",
+    "distractors": "Acharya's soybean study showing a *similar* association — same direction, not opposite.\n\nYield ranges and within-wheat comparisons don't address other crops or directionality."
+  },
+  "graphs:4": {
+    "prompt_focus": "A Graphs / Quantitative-Evidence question pairs a textual claim with a chart or table and asks which answer correctly *uses the data* to complete the claim. The right option must (a) be literally readable off the chart and (b) actually support the specific claim — not just any neighboring fact. Claim: UN estimates likely included people *outside* the city proper.",
+    "reasoning": "Bogotá's UN estimate (10,574,000) is much larger than its city-proper count (7,963,000) — implying inclusion of metropolitan residents.",
+    "distractors": "Bangkok's metropolitan area size — about geography, not population inclusion.\n\nComparisons of city-proper populations across cities don't speak to UN inclusion criteria.\n\nAll city-proper areas being below 3,000 km² also doesn't speak to UN inclusion."
+  },
+  "graphs:5": {
+    "prompt_focus": "A Graphs / Quantitative-Evidence question pairs a textual claim with a chart or table and asks which answer correctly *uses the data* to complete the claim. The right option must (a) be literally readable off the chart and (b) actually support the specific claim — not just any neighboring fact. Claim: smaller areas had *less* delay than NYC but delay still *worsened over time* in them.",
+    "reasoning": "The chart line for Allentown-Bethlehem stays below NYC throughout the 1990s but rises across the decade — exactly \"lower than NYC but rising over time.\"",
+    "distractors": "Other options either flip the direction or compare wrong cities."
+  },
+  "graphs:6": {
+    "prompt_focus": "A Graphs / Quantitative-Evidence question pairs a textual claim with a chart or table and asks which answer correctly *uses the data* to complete the claim. The right option must (a) be literally readable off the chart and (b) actually support the specific claim — not just any neighboring fact. Coral with the *greatest range* between min and max depths.",
+    "reasoning": "Subtract min from max for each row; Agaricia fragilis has the largest difference.",
+    "distractors": "Other species have smaller min-max spans."
+  },
+  "graphs:7": {
+    "prompt_focus": "A Graphs / Quantitative-Evidence question pairs a textual claim with a chart or table and asks which answer correctly *uses the data* to complete the claim. The right option must (a) be literally readable off the chart and (b) actually support the specific claim — not just any neighboring fact. Claim: peaking plants can generate *more annual MWh* than some run-of-river plants.",
+    "reasoning": "Great Falls (peaking) has annual MWh higher than every run-of-river plant in the table — exactly demonstrating that peaking can exceed run-of-river.",
+    "distractors": "Other options don't make a peaking-vs-run-of-river comparison favorable to peaking."
+  },
+  "graphs:8": {
+    "prompt_focus": "A Graphs / Quantitative-Evidence question pairs a textual claim with a chart or table and asks which answer correctly *uses the data* to complete the claim. The right option must (a) be literally readable off the chart and (b) actually support the specific claim — not just any neighboring fact. Where does $141k+ per employee from tribal economic activity *rank* relative to the three other listed industries?",
+    "reasoning": "Compare $141k+ to wholesale trade (higher), professional service (lower), administration/waste (lower) → tribal sits *below wholesale, above the other two.*",
+    "distractors": "Other rankings misread the table values."
+  },
+  "graphs:9": {
+    "prompt_focus": "A Graphs / Quantitative-Evidence question pairs a textual claim with a chart or table and asks which answer correctly *uses the data* to complete the claim. The right option must (a) be literally readable off the chart and (b) actually support the specific claim — not just any neighboring fact. Claim: post-mid-1980s natural forest regrowth — evidenced by what?",
+    "reasoning": "Forest cover area increases for *all classes* from 1979 → 2000, illustrating regrowth across categories.",
+    "distractors": "Patch-size or density-only metrics don't show overall *regrowth*."
+  },
+  "graphs:10": {
+    "prompt_focus": "A Graphs / Quantitative-Evidence question pairs a textual claim with a chart or table and asks which answer correctly *uses the data* to complete the claim. The right option must (a) be literally readable off the chart and (b) actually support the specific claim — not just any neighboring fact. Same as Q7 — peaking plant exceeding run-of-river plants in annual MWh.",
+    "reasoning": "Richard B. Russell's annual MWh exceeds every run-of-river plant listed.",
+    "distractors": "Same as Q7."
+  },
+  "graphs:11": {
+    "prompt_focus": "A Graphs / Quantitative-Evidence question pairs a textual claim with a chart or table and asks which answer correctly *uses the data* to complete the claim. The right option must (a) be literally readable off the chart and (b) actually support the specific claim — not just any neighboring fact. Climate claim: some lakes have seen a *decline* in ice-duration days from early-1980s → mid-2000s.",
+    "reasoning": "Kalmarinjärvi: fewer ice days in 2005-06 than in 1980-81 — fits the decline claim.",
+    "distractors": "Other options either show *increase* or no clear decade-decline pattern."
+  },
+  "graphs:12": {
+    "prompt_focus": "A Graphs / Quantitative-Evidence question pairs a textual claim with a chart or table and asks which answer correctly *uses the data* to complete the claim. The right option must (a) be literally readable off the chart and (b) actually support the specific claim — not just any neighboring fact. Direct lookup: Pyramid of Djoser's height.",
+    "reasoning": "Table row for Djoser reads 60 m. (Plus the age check 4,600–4,700 confirms the right row.)",
+    "distractors": "Other heights belong to other rows."
+  },
+  "graphs:13": {
+    "prompt_focus": "A Graphs / Quantitative-Evidence question pairs a textual claim with a chart or table and asks which answer correctly *uses the data* to complete the claim. The right option must (a) be literally readable off the chart and (b) actually support the specific claim — not just any neighboring fact. Claim: warmer-month Drosophila have *longer life span* — evidence: wing-centroid size larger in warmer months.",
+    "reasoning": "Average male wing centroid size is larger in *July* than in *October* (warmer than cooler).",
+    "distractors": "Comparisons mismatching warm/cool months won't illustrate the warm→large correlation."
+  },
+  "graphs:14": {
+    "prompt_focus": "A Graphs / Quantitative-Evidence question pairs a textual claim with a chart or table and asks which answer correctly *uses the data* to complete the claim. The right option must (a) be literally readable off the chart and (b) actually support the specific claim — not just any neighboring fact. Lookup: bear with the *lowest weight*.",
+    "reasoning": "Smallest weight value in the bears column — read off the table.",
+    "distractors": "Larger weights misread the row."
+  },
+  "graphs:15": {
+    "prompt_focus": "A Graphs / Quantitative-Evidence question pairs a textual claim with a chart or table and asks which answer correctly *uses the data* to complete the claim. The right option must (a) be literally readable off the chart and (b) actually support the specific claim — not just any neighboring fact. Direct lookup: streaky-rockskipper count for the relevant year.",
+    "reasoning": "Table cell reads 610 streaky rockskippers.",
+    "distractors": "Other counts pertain to other species or years."
+  },
+  "graphs:16": {
+    "prompt_focus": "A Graphs / Quantitative-Evidence question pairs a textual claim with a chart or table and asks which answer correctly *uses the data* to complete the claim. The right option must (a) be literally readable off the chart and (b) actually support the specific claim — not just any neighboring fact. Largest 1993 Girl Scout category.",
+    "reasoning": "Highest column value in 1993 row → Ambassadors.",
+    "distractors": "Other categories had smaller 1993 totals."
+  },
+  "graphs:17": {
+    "prompt_focus": "A Graphs / Quantitative-Evidence question pairs a textual claim with a chart or table and asks which answer correctly *uses the data* to complete the claim. The right option must (a) be literally readable off the chart and (b) actually support the specific claim — not just any neighboring fact. Claim: Ecuador hosts *several different types* of volcanoes — must list distinct types.",
+    "reasoning": "Table assigns each volcano a *different type*: Darwin (shield), Reventador (stratovolcano), Imbabura (compound), Pululahua (caldera) — four distinct types.",
+    "distractors": "Other options assign duplicate types or use the wrong year/age fields."
+  },
+  "graphs:18": {
+    "prompt_focus": "A Graphs / Quantitative-Evidence question pairs a textual claim with a chart or table and asks which answer correctly *uses the data* to complete the claim. The right option must (a) be literally readable off the chart and (b) actually support the specific claim — not just any neighboring fact. Claim: weak correlation between agricultural employment and rural residence (i.e., similar agriculture % despite different urban %).",
+    "reasoning": "Belize and El Salvador have similar agricultural-sector percentages but Belize has a lower urban %, breaking the expected correlation.",
+    "distractors": "Other comparisons either *strengthen* the correlation or compare irrelevant variables."
+  },
+  "graphs:19": {
+    "prompt_focus": "A Graphs / Quantitative-Evidence question pairs a textual claim with a chart or table and asks which answer correctly *uses the data* to complete the claim. The right option must (a) be literally readable off the chart and (b) actually support the specific claim — not just any neighboring fact. Claim: more medicine/health submissions in 2019 than any other year.",
+    "reasoning": "2019's roughly 285 submissions exceed every other year's bar in the graph.",
+    "distractors": "Other options cite peaks in different topics or wrong years."
+  },
+  "graphs:20": {
+    "prompt_focus": "A Graphs / Quantitative-Evidence question pairs a textual claim with a chart or table and asks which answer correctly *uses the data* to complete the claim. The right option must (a) be literally readable off the chart and (b) actually support the specific claim — not just any neighboring fact. Coral *least suited* for a full migration to the *mesophotic zone* (30–150 m).",
+    "reasoning": "Porites nodifera's max depth is only 15 m — *furthest from* the 30 m threshold of the mesophotic zone.",
+    "distractors": "Species reaching deeper depths are closer to mesophotic; they would migrate more easily."
+  },
+  "graphs:21": {
+    "prompt_focus": "A Graphs / Quantitative-Evidence question pairs a textual claim with a chart or table and asks which answer correctly *uses the data* to complete the claim. The right option must (a) be literally readable off the chart and (b) actually support the specific claim — not just any neighboring fact. 1910 → 1925: cars *increased* but companies *decreased*.",
+    "reasoning": "The two trend lines run opposite directions: production rises, company count falls.",
+    "distractors": "Options reversing the directions or pairing same-direction trends fail."
+  },
+  "graphs:22": {
+    "prompt_focus": "A Graphs / Quantitative-Evidence question pairs a textual claim with a chart or table and asks which answer correctly *uses the data* to complete the claim. The right option must (a) be literally readable off the chart and (b) actually support the specific claim — not just any neighboring fact. Lookup: total area of the Leech Lake Band of Ojibwe.",
+    "reasoning": "Table reads 1,311 sq mi.",
+    "distractors": "Other values belong to other rows."
+  },
+  "graphs:23": {
+    "prompt_focus": "A Graphs / Quantitative-Evidence question pairs a textual claim with a chart or table and asks which answer correctly *uses the data* to complete the claim. The right option must (a) be literally readable off the chart and (b) actually support the specific claim — not just any neighboring fact. Significance of Chang'e 5 lunar samples vs. Apollo samples.",
+    "reasoning": "Their dated ages are *much younger* than Apollo samples — that's the significance.",
+    "distractors": "Other options compare irrelevant attributes."
+  },
+  "graphs:24": {
+    "prompt_focus": "A Graphs / Quantitative-Evidence question pairs a textual claim with a chart or table and asks which answer correctly *uses the data* to complete the claim. The right option must (a) be literally readable off the chart and (b) actually support the specific claim — not just any neighboring fact. Claim: lizards avoid full speed even when *escaping*.",
+    "reasoning": "Multiple species' average escape speeds are *under 90% of maximal* — evidence they don't push to full capacity.",
+    "distractors": "Other options state speeds at or above 90%, undermining the claim."
+  },
+  "graphs:25": {
+    "prompt_focus": "A Graphs / Quantitative-Evidence question pairs a textual claim with a chart or table and asks which answer correctly *uses the data* to complete the claim. The right option must (a) be literally readable off the chart and (b) actually support the specific claim — not just any neighboring fact. Where does $141k+ rank among the *new* set of comparison industries?",
+    "reasoning": "Below transportation/warehousing, above construction and admin/waste — exact ordering from the table.",
+    "distractors": "Other rankings misread the comparison columns."
+  },
+  "graphs:26": {
+    "prompt_focus": "A Graphs / Quantitative-Evidence question pairs a textual claim with a chart or table and asks which answer correctly *uses the data* to complete the claim. The right option must (a) be literally readable off the chart and (b) actually support the specific claim — not just any neighboring fact. Lookup: el Castillo's height given its age range.",
+    "reasoning": "Row matching 1,100–1,400 years → 40 m.",
+    "distractors": "Other heights belong to other pyramids."
+  },
+  "graphs:27": {
+    "prompt_focus": "A Graphs / Quantitative-Evidence question pairs a textual claim with a chart or table and asks which answer correctly *uses the data* to complete the claim. The right option must (a) be literally readable off the chart and (b) actually support the specific claim — not just any neighboring fact. Claim: increase-in-yield finding is NOT specific to one crop — i.e., other studies on other crops show a *similar* (positive) association.",
+    "reasoning": "Botta and colleagues found the same association using soybeans — generalising the result.",
+    "distractors": "Options describing *opposite* effects or non-replications fail the claim."
+  },
+  "graphs:28": {
+    "prompt_focus": "A Graphs / Quantitative-Evidence question pairs a textual claim with a chart or table and asks which answer correctly *uses the data* to complete the claim. The right option must (a) be literally readable off the chart and (b) actually support the specific claim — not just any neighboring fact. Lookup: total area of the Colville Tribes.",
+    "reasoning": "Table cell reads 2,185 sq mi.",
+    "distractors": "Other values belong to other rows."
+  },
+  "graphs:29": {
+    "prompt_focus": "A Graphs / Quantitative-Evidence question pairs a textual claim with a chart or table and asks which answer correctly *uses the data* to complete the claim. The right option must (a) be literally readable off the chart and (b) actually support the specific claim — not just any neighboring fact. Identify the country that mined 0.55 Mt in 2020 — and report its 1995 mining quantity.",
+    "reasoning": "Locate the row whose 2020 value is 0.55; the same row's 1995 value is 0.26 Mt.",
+    "distractors": "Other 1995 values come from different countries' rows."
+  },
+  "graphs:30": {
+    "prompt_focus": "A Graphs / Quantitative-Evidence question pairs a textual claim with a chart or table and asks which answer correctly *uses the data* to complete the claim. The right option must (a) be literally readable off the chart and (b) actually support the specific claim — not just any neighboring fact. Compare Argentina's working-hours decline percent against Ireland, UK, and Mexico.",
+    "reasoning": "Argentina's % decrease is *less than* Ireland's and UK's, but *greater than* Mexico's — exactly that ordering from the table.",
+    "distractors": "Options that misorder the four countries fail."
+  },
+  "graphs:31": {
+    "prompt_focus": "A Graphs / Quantitative-Evidence question pairs a textual claim with a chart or table and asks which answer correctly *uses the data* to complete the claim. The right option must (a) be literally readable off the chart and (b) actually support the specific claim — not just any neighboring fact. Lookup: total area of Pueblo of Tesuque.",
+    "reasoning": "Row reads 26.9 sq mi.",
+    "distractors": "Other rows have other values."
+  },
+  "graphs:32": {
+    "prompt_focus": "A Graphs / Quantitative-Evidence question pairs a textual claim with a chart or table and asks which answer correctly *uses the data* to complete the claim. The right option must (a) be literally readable off the chart and (b) actually support the specific claim — not just any neighboring fact. Claim: lakes with declining ice-duration days. Need a specific lake with 1980-81 vs. 2005-06 numbers.",
+    "reasoning": "Näckten dropped from ~175 days (1980-81) to ~135 days (2005-06) — declining duration.",
+    "distractors": "Other options describe *different* lakes or don't show decline."
+  },
+  "graphs:33": {
+    "prompt_focus": "A Graphs / Quantitative-Evidence question pairs a textual claim with a chart or table and asks which answer correctly *uses the data* to complete the claim. The right option must (a) be literally readable off the chart and (b) actually support the specific claim — not just any neighboring fact. Claim: Oscar recognition can *boost lifetime earnings* even with a modest opening weekend.",
+    "reasoning": "Pan's Labyrinth (Oscar-recognized) had lower opening but *higher lifetime* earnings than the non-recognized comparator — exactly illustrating the claim.",
+    "distractors": "Other comparisons either both have/lack Oscars, or they reverse the opening/lifetime relationship."
+  },
+  "graphs:34": {
+    "prompt_focus": "A Graphs / Quantitative-Evidence question pairs a textual claim with a chart or table and asks which answer correctly *uses the data* to complete the claim. The right option must (a) be literally readable off the chart and (b) actually support the specific claim — not just any neighboring fact. Lookup: developer of Frogger.",
+    "reasoning": "Row reads Konami.",
+    "distractors": "Other rows belong to other games."
+  },
+  "graphs:35": {
+    "prompt_focus": "A Graphs / Quantitative-Evidence question pairs a textual claim with a chart or table and asks which answer correctly *uses the data* to complete the claim. The right option must (a) be literally readable off the chart and (b) actually support the specific claim — not just any neighboring fact. Claim: higher latitude → more days per winter with measurable ice.",
+    "reasoning": "Näckten (higher latitude) typically has *more* ice days than Lake Kegonsa — exactly the predicted direction.",
+    "distractors": "Other options don't show the latitude-vs-ice-duration correlation."
+  },
+  "graphs:36": {
+    "prompt_focus": "A Graphs / Quantitative-Evidence question pairs a textual claim with a chart or table and asks which answer correctly *uses the data* to complete the claim. The right option must (a) be literally readable off the chart and (b) actually support the specific claim — not just any neighboring fact. Claim: hypothesis confirmed — managers reflecting on *learning-mistakes* exhibit more humility.",
+    "reasoning": "The bar/line for that group's humility is the highest of the three — exactly confirming the hypothesis.",
+    "distractors": "Other options don't show the predicted ordering of group humility scores."
+  },
+  "graphs:37": {
+    "prompt_focus": "A Graphs / Quantitative-Evidence question pairs a textual claim with a chart or table and asks which answer correctly *uses the data* to complete the claim. The right option must (a) be literally readable off the chart and (b) actually support the specific claim — not just any neighboring fact. Claim: hoard discoveries persist into the 2000s.",
+    "reasoning": "Carrick-on-Suir Hoard discovered in 2013 — a 2000s-era find.",
+    "distractors": "Other hoards' discovery dates are pre-2000s."
+  },
+  "graphs:38": {
+    "prompt_focus": "A Graphs / Quantitative-Evidence question pairs a textual claim with a chart or table and asks which answer correctly *uses the data* to complete the claim. The right option must (a) be literally readable off the chart and (b) actually support the specific claim — not just any neighboring fact. Claim: many countries had *more* than 2 women on high courts in 2010 than in 1980.",
+    "reasoning": "In 2010, Peru, Philippines, and Mexico each had 3 women — exceeding the 1980 cap of 2 across all listed countries.",
+    "distractors": "Other options misreport 2010 numbers or compare wrong countries."
+  },
+  "graphs:39": {
+    "prompt_focus": "A Graphs / Quantitative-Evidence question pairs a textual claim with a chart or table and asks which answer correctly *uses the data* to complete the claim. The right option must (a) be literally readable off the chart and (b) actually support the specific claim — not just any neighboring fact. Lookup: 14–17-year-old Girl Scouts in 1995 (in thousands).",
+    "reasoning": "Cell reads 52 (thousand).",
+    "distractors": "Other numbers come from different years or age categories."
+  },
+  "graphs:40": {
+    "prompt_focus": "A Graphs / Quantitative-Evidence question pairs a textual claim with a chart or table and asks which answer correctly *uses the data* to complete the claim. The right option must (a) be literally readable off the chart and (b) actually support the specific claim — not just any neighboring fact. Claim about Argentina's 2012/13 maize-export percentage.",
+    "reasoning": "Argentina decreased from previous year *but* still highest among the three countries.",
+    "distractors": "Other options pick wrong country or misread direction."
+  },
+  "graphs:41": {
+    "prompt_focus": "A Graphs / Quantitative-Evidence question pairs a textual claim with a chart or table and asks which answer correctly *uses the data* to complete the claim. The right option must (a) be literally readable off the chart and (b) actually support the specific claim — not just any neighboring fact. Claim: paired leaves more often have *opposite-side* orientations than same-side.",
+    "reasoning": "Across maple-leaf grape, frost grape, and July grape, the bars for opposite orientation exceed same-side — confirming the hypothesis.",
+    "distractors": "Options that point to species with reversed ratios or to species not tested fail."
+  },
+  "graphs:42": {
+    "prompt_focus": "A Graphs / Quantitative-Evidence question pairs a textual claim with a chart or table and asks which answer correctly *uses the data* to complete the claim. The right option must (a) be literally readable off the chart and (b) actually support the specific claim — not just any neighboring fact. Same template as Q27 — replication on a different crop.",
+    "reasoning": "Behnke and colleagues found a *similar* association in soybeans.",
+    "distractors": "Same template as Q27."
+  },
+  "graphs:43": {
+    "prompt_focus": "A Graphs / Quantitative-Evidence question pairs a textual claim with a chart or table and asks which answer correctly *uses the data* to complete the claim. The right option must (a) be literally readable off the chart and (b) actually support the specific claim — not just any neighboring fact. Identify a *neighboring species with a negative effect* value.",
+    "reasoning": "Leafy spurge has a negative effect value in the table.",
+    "distractors": "Other species' effect values are positive or neutral."
+  },
+  "graphs:44": {
+    "prompt_focus": "A Graphs / Quantitative-Evidence question pairs a textual claim with a chart or table and asks which answer correctly *uses the data* to complete the claim. The right option must (a) be literally readable off the chart and (b) actually support the specific claim — not just any neighboring fact. Same as Q26.",
+    "reasoning": "Same — el Castillo at 40 m, age 1,100–1,400.",
+    "distractors": "Same."
+  },
+  "graphs:45": {
+    "prompt_focus": "A Graphs / Quantitative-Evidence question pairs a textual claim with a chart or table and asks which answer correctly *uses the data* to complete the claim. The right option must (a) be literally readable off the chart and (b) actually support the specific claim — not just any neighboring fact. Lookup: area of Yakama Nation.",
+    "reasoning": "Table reads 2,188 sq mi.",
+    "distractors": "Other rows."
+  },
+  "graphs:46": {
+    "prompt_focus": "A Graphs / Quantitative-Evidence question pairs a textual claim with a chart or table and asks which answer correctly *uses the data* to complete the claim. The right option must (a) be literally readable off the chart and (b) actually support the specific claim — not just any neighboring fact. Claim: Poland has greater *insect species* count than Italy and Finland.",
+    "reasoning": "Poland's bar at 105 exceeds the bars for the other two countries.",
+    "distractors": "Options swapping fungi for insects or wrong totals fail."
+  },
+  "graphs:47": {
+    "prompt_focus": "A Graphs / Quantitative-Evidence question pairs a textual claim with a chart or table and asks which answer correctly *uses the data* to complete the claim. The right option must (a) be literally readable off the chart and (b) actually support the specific claim — not just any neighboring fact. Lookup: per-employee economic contribution from wholesale trade in Oklahoma 2017.",
+    "reasoning": "Table reads $183,790.",
+    "distractors": "Other dollar amounts belong to different industries."
+  },
+  "graphs:48": {
+    "prompt_focus": "A Graphs / Quantitative-Evidence question pairs a textual claim with a chart or table and asks which answer correctly *uses the data* to complete the claim. The right option must (a) be literally readable off the chart and (b) actually support the specific claim — not just any neighboring fact. Smallest *maximum depth* in the table — locate it.",
+    "reasoning": "The smallest max depth is in *Indo-Pacific waters, shallow zone*.",
+    "distractors": "Other location/zone combinations don't have the minimum."
+  },
+  "graphs:49": {
+    "prompt_focus": "A Graphs / Quantitative-Evidence question pairs a textual claim with a chart or table and asks which answer correctly *uses the data* to complete the claim. The right option must (a) be literally readable off the chart and (b) actually support the specific claim — not just any neighboring fact. Same as Q5 (alt phrasing) — smaller cities had less delay than NYC but still worsened.",
+    "reasoning": "Same as Q5.",
+    "distractors": "Same."
+  },
+  "graphs:50": {
+    "prompt_focus": "A Graphs / Quantitative-Evidence question pairs a textual claim with a chart or table and asks which answer correctly *uses the data* to complete the claim. The right option must (a) be literally readable off the chart and (b) actually support the specific claim — not just any neighboring fact. Lookup: Zelda II release year.",
+    "reasoning": "Table cell reads 1987.",
+    "distractors": "Other years belong to other titles."
+  },
+  "graphs:51": {
+    "prompt_focus": "A Graphs / Quantitative-Evidence question pairs a textual claim with a chart or table and asks which answer correctly *uses the data* to complete the claim. The right option must (a) be literally readable off the chart and (b) actually support the specific claim — not just any neighboring fact. Lookup: total area of White Earth Nation.",
+    "reasoning": "Table reads 1,167 sq mi.",
+    "distractors": "Other rows."
+  },
+  "graphs:52": {
+    "prompt_focus": "A Graphs / Quantitative-Evidence question pairs a textual claim with a chart or table and asks which answer correctly *uses the data* to complete the claim. The right option must (a) be literally readable off the chart and (b) actually support the specific claim — not just any neighboring fact. Lookup: el Castillo's age.",
+    "reasoning": "Row reads 1,100–1,400 years.",
+    "distractors": "Other age ranges belong to other pyramids."
+  },
+  "graphs:53": {
+    "prompt_focus": "A Graphs / Quantitative-Evidence question pairs a textual claim with a chart or table and asks which answer correctly *uses the data* to complete the claim. The right option must (a) be literally readable off the chart and (b) actually support the specific claim — not just any neighboring fact. Identify RRAT with *shortest* period (time between pulses).",
+    "reasoning": "J0614-03 has the smallest period value.",
+    "distractors": "Other RRATs have larger periods."
+  },
+  "graphs:54": {
+    "prompt_focus": "A Graphs / Quantitative-Evidence question pairs a textual claim with a chart or table and asks which answer correctly *uses the data* to complete the claim. The right option must (a) be literally readable off the chart and (b) actually support the specific claim — not just any neighboring fact. Compare Nicaragua's post-1960-active volcanoes vs. Tanzania's.",
+    "reasoning": "Nicaragua has more post-1960-active volcanoes than Tanzania.",
+    "distractors": "Other options compare wrong countries or wrong time windows."
+  },
+  "graphs:55": {
+    "prompt_focus": "A Graphs / Quantitative-Evidence question pairs a textual claim with a chart or table and asks which answer correctly *uses the data* to complete the claim. The right option must (a) be literally readable off the chart and (b) actually support the specific claim — not just any neighboring fact. Two countries: one increased, one decreased women-justice counts 2009→2013.",
+    "reasoning": "Sri Lanka increased; Uruguay decreased — both shown in graph.",
+    "distractors": "Other pairs don't show the increase/decrease split."
+  },
+  "graphs:56": {
+    "prompt_focus": "A Graphs / Quantitative-Evidence question pairs a textual claim with a chart or table and asks which answer correctly *uses the data* to complete the claim. The right option must (a) be literally readable off the chart and (b) actually support the specific claim — not just any neighboring fact. Claim: warmer-month Drosophila have *greater reproductive fitness* — illustrated via female wing centroid size.",
+    "reasoning": "Female wing centroid larger in *July* than in *May* — warmer to cooler-warmer comparison correctly illustrates.",
+    "distractors": "Comparisons mismatching warm/cool months fail."
+  },
+  "graphs:57": {
+    "prompt_focus": "A Graphs / Quantitative-Evidence question pairs a textual claim with a chart or table and asks which answer correctly *uses the data* to complete the claim. The right option must (a) be literally readable off the chart and (b) actually support the specific claim — not just any neighboring fact. Compare resolution-making behavior between 50–64 and 30–49 age brackets.",
+    "reasoning": "50–64-year-olds: more relationship-related, fewer finance-related resolutions than 30–49-year-olds — directly readable from the row percentages.",
+    "distractors": "Other options pick wrong age brackets or reverse the comparison direction."
+  },
+  "graphs:58": {
+    "prompt_focus": "A Graphs / Quantitative-Evidence question pairs a textual claim with a chart or table and asks which answer correctly *uses the data* to complete the claim. The right option must (a) be literally readable off the chart and (b) actually support the specific claim — not just any neighboring fact. Same as Q33 — Oscar recognition boosting lifetime earnings despite weaker opening.",
+    "reasoning": "Amélie (Oscar-recognized) had lower opening than Girl-Who-Played-with-Fire but higher lifetime earnings.",
+    "distractors": "Same as Q33."
+  },
+  "graphs:59": {
+    "prompt_focus": "A Graphs / Quantitative-Evidence question pairs a textual claim with a chart or table and asks which answer correctly *uses the data* to complete the claim. The right option must (a) be literally readable off the chart and (b) actually support the specific claim — not just any neighboring fact. Lookup: Peru's 2020 copper production.",
+    "reasoning": "Cell reads 2.15 Mt.",
+    "distractors": "Other Mt values belong to other countries or years."
+  },
+  "graphs:60": {
+    "prompt_focus": "A Graphs / Quantitative-Evidence question pairs a textual claim with a chart or table and asks which answer correctly *uses the data* to complete the claim. The right option must (a) be literally readable off the chart and (b) actually support the specific claim — not just any neighboring fact. Claim: model predicts P6's abstract vs. cubist ratings *would differ* (despite participant giving equal ratings).",
+    "reasoning": "The graph plots model-predicted points for abstract and cubist that are *not equal* for P6 — so the model expected a difference.",
+    "distractors": "Options claiming the model predicted equal ratings or didn't make a prediction misread."
+  },
+  "graphs:61": {
+    "prompt_focus": "A Graphs / Quantitative-Evidence question pairs a textual claim with a chart or table and asks which answer correctly *uses the data* to complete the claim. The right option must (a) be literally readable off the chart and (b) actually support the specific claim — not just any neighboring fact. Counterexample to the FTA-boosts-growth claim.",
+    "reasoning": "Morocco's agricultural-export *growth rate* was higher *before* MAFTA than after — directly counters the FTA-growth claim.",
+    "distractors": "Other countries either show post-FTA acceleration or are off-topic."
+  },
+  "graphs:62": {
+    "prompt_focus": "A Graphs / Quantitative-Evidence question pairs a textual claim with a chart or table and asks which answer correctly *uses the data* to complete the claim. The right option must (a) be literally readable off the chart and (b) actually support the specific claim — not just any neighboring fact. Same as Q60 with P1, impressionist vs. color-field.",
+    "reasoning": "Model-predicted points differ for P1 — predicted differential rating.",
+    "distractors": "Same as Q60."
+  },
+  "graphs:63": {
+    "prompt_focus": "A Graphs / Quantitative-Evidence question pairs a textual claim with a chart or table and asks which answer correctly *uses the data* to complete the claim. The right option must (a) be literally readable off the chart and (b) actually support the specific claim — not just any neighboring fact. Claim about iris-color and dog interaction: participants prefer dogs perceived as *less mature*.",
+    "reasoning": "Images 2 and 11 (rated less mature) are the *favored* images, vs. images 20 and 16 (more mature).",
+    "distractors": "Options reversing the maturity/preference correlation fail."
+  },
+  "graphs:64": {
+    "prompt_focus": "A Graphs / Quantitative-Evidence question pairs a textual claim with a chart or table and asks which answer correctly *uses the data* to complete the claim. The right option must (a) be literally readable off the chart and (b) actually support the specific claim — not just any neighboring fact. Same as Q13 — warmer-month → larger wing centroid.",
+    "reasoning": "Same — July > October.",
+    "distractors": "Same."
+  },
+  "graphs:65": {
+    "prompt_focus": "A Graphs / Quantitative-Evidence question pairs a textual claim with a chart or table and asks which answer correctly *uses the data* to complete the claim. The right option must (a) be literally readable off the chart and (b) actually support the specific claim — not just any neighboring fact. Same template as Q60/62 — model-predicted ratings differ from one another for the relevant participant.",
+    "reasoning": "The model's predicted points for the two genres are not equal for that participant.",
+    "distractors": "Options claiming equal predictions misread the model output."
+  },
+  "graphs:66": {
+    "prompt_focus": "A Graphs / Quantitative-Evidence question pairs a textual claim with a chart or table and asks which answer correctly *uses the data* to complete the claim. The right option must (a) be literally readable off the chart and (b) actually support the specific claim — not just any neighboring fact. Same template as Q60/62 — model-predicted ratings differ from one another for the relevant participant.",
+    "reasoning": "The model's predicted points for the two genres are not equal for that participant.",
+    "distractors": "Options claiming equal predictions misread the model output."
+  },
+  "graphs:75": {
+    "prompt_focus": "A Graphs / Quantitative-Evidence question pairs a textual claim with a chart or table and asks which answer correctly *uses the data* to complete the claim. The right option must (a) be literally readable off the chart and (b) actually support the specific claim — not just any neighboring fact. Same template as Q60/62 — model-predicted ratings differ from one another for the relevant participant.",
+    "reasoning": "The model's predicted points for the two genres are not equal for that participant.",
+    "distractors": "Options claiming equal predictions misread the model output."
+  },
+  "graphs:82": {
+    "prompt_focus": "A Graphs / Quantitative-Evidence question pairs a textual claim with a chart or table and asks which answer correctly *uses the data* to complete the claim. The right option must (a) be literally readable off the chart and (b) actually support the specific claim — not just any neighboring fact. Same template as Q60/62 — model-predicted ratings differ from one another for the relevant participant.",
+    "reasoning": "The model's predicted points for the two genres are not equal for that participant.",
+    "distractors": "Options claiming equal predictions misread the model output."
+  },
+  "graphs:88": {
+    "prompt_focus": "A Graphs / Quantitative-Evidence question pairs a textual claim with a chart or table and asks which answer correctly *uses the data* to complete the claim. The right option must (a) be literally readable off the chart and (b) actually support the specific claim — not just any neighboring fact. Same template as Q60/62 — model-predicted ratings differ from one another for the relevant participant.",
+    "reasoning": "The model's predicted points for the two genres are not equal for that participant.",
+    "distractors": "Options claiming equal predictions misread the model output."
+  },
+  "graphs:100": {
+    "prompt_focus": "A Graphs / Quantitative-Evidence question pairs a textual claim with a chart or table and asks which answer correctly *uses the data* to complete the claim. The right option must (a) be literally readable off the chart and (b) actually support the specific claim — not just any neighboring fact. Same template as Q60/62 — model-predicted ratings differ from one another for the relevant participant.",
+    "reasoning": "The model's predicted points for the two genres are not equal for that participant.",
+    "distractors": "Options claiming equal predictions misread the model output."
+  },
+  "graphs:67": {
+    "prompt_focus": "A Graphs / Quantitative-Evidence question pairs a textual claim with a chart or table and asks which answer correctly *uses the data* to complete the claim. The right option must (a) be literally readable off the chart and (b) actually support the specific claim — not just any neighboring fact. Conclusion: which traits are *more strongly associated* with broken-wing display.",
+    "reasoning": "Incubation duration and capacity for multiple broods are more strongly associated than the number of parental incubators is — readable from the magnitude of correlation values.",
+    "distractors": "Options claiming equal association or different orderings misread."
+  },
+  "graphs:68": {
+    "prompt_focus": "A Graphs / Quantitative-Evidence question pairs a textual claim with a chart or table and asks which answer correctly *uses the data* to complete the claim. The right option must (a) be literally readable off the chart and (b) actually support the specific claim — not just any neighboring fact. Conclusion student draws from beehive structure data.",
+    "reasoning": "The student's tallies show that capacity for multiple broods, number of parental incubators, and incubation duration appear *equally* associated with broken-wing display use across the three species.",
+    "distractors": "Options ranking the traits unequally don't match the equal-tally pattern."
+  },
+  "graphs:69": {
+    "prompt_focus": "A Graphs / Quantitative-Evidence question pairs a textual claim with a chart or table and asks which answer correctly *uses the data* to complete the claim. The right option must (a) be literally readable off the chart and (b) actually support the specific claim — not just any neighboring fact. Possibility regarding Region 1 governments' efficiency.",
+    "reasoning": "If GDP-per-capita matters more as governments are more efficient, and Region 1 shows the opposite trend post-2000, then Region 1 governments became *less* efficient 2000–2014 vs. 1970–2000.",
+    "distractors": "Options about other regions or other variables don't fit the model's logic."
+  },
+  "graphs:70": {
+    "prompt_focus": "A Graphs / Quantitative-Evidence question pairs a textual claim with a chart or table and asks which answer correctly *uses the data* to complete the claim. The right option must (a) be literally readable off the chart and (b) actually support the specific claim — not just any neighboring fact. Claim: cooler-month Drosophila → shorter life span — illustrated by smaller centroid in May vs. July.",
+    "reasoning": "Average male wing centroid was 1.98 mm in May (cooler) vs. 2.31 mm in July (warmer).",
+    "distractors": "Other options compare wrong months or sexes."
+  },
+  "graphs:71": {
+    "prompt_focus": "A Graphs / Quantitative-Evidence question pairs a textual claim with a chart or table and asks which answer correctly *uses the data* to complete the claim. The right option must (a) be literally readable off the chart and (b) actually support the specific claim — not just any neighboring fact. Counter-example: lake with *increased* ice duration over decades.",
+    "reasoning": "Lake Baikal had *more* ice days in 2005-06 than in 1980-81.",
+    "distractors": "Other lakes show declines (which would support the trend, not the counter-example)."
+  },
+  "graphs:72": {
+    "prompt_focus": "A Graphs / Quantitative-Evidence question pairs a textual claim with a chart or table and asks which answer correctly *uses the data* to complete the claim. The right option must (a) be literally readable off the chart and (b) actually support the specific claim — not just any neighboring fact. Service rated *lowest* relative to global biodiversity — i.e., even less than that.",
+    "reasoning": "Project leaders rated urban agriculture's contribution to *improving local microclimate* as lower than to global biodiversity.",
+    "distractors": "Other services either tie or are rated higher."
+  },
+  "graphs:73": {
+    "prompt_focus": "A Graphs / Quantitative-Evidence question pairs a textual claim with a chart or table and asks which answer correctly *uses the data* to complete the claim. The right option must (a) be literally readable off the chart and (b) actually support the specific claim — not just any neighboring fact. Lookup: MSX (ASCII) units sold worldwide.",
+    "reasoning": "Bar reads ~4,000,000 units.",
+    "distractors": "Other unit totals belong to other consoles."
+  },
+  "graphs:74": {
+    "prompt_focus": "A Graphs / Quantitative-Evidence question pairs a textual claim with a chart or table and asks which answer correctly *uses the data* to complete the claim. The right option must (a) be literally readable off the chart and (b) actually support the specific claim — not just any neighboring fact. Country whose copper mining *decreased* despite global increase.",
+    "reasoning": "The United States mined less in 2020 than in 1995 — a decrease against the global trend.",
+    "distractors": "Other countries' rows show increases."
+  },
+  "graphs:76": {
+    "prompt_focus": "A Graphs / Quantitative-Evidence question pairs a textual claim with a chart or table and asks which answer correctly *uses the data* to complete the claim. The right option must (a) be literally readable off the chart and (b) actually support the specific claim — not just any neighboring fact. Most extreme opposite:same ratio listed.",
+    "reasoning": "4.33:1 in Vitis x champinii is the highest opposite-vs-same ratio shown.",
+    "distractors": "Other ratios are lower."
+  },
+  "graphs:77": {
+    "prompt_focus": "A Graphs / Quantitative-Evidence question pairs a textual claim with a chart or table and asks which answer correctly *uses the data* to complete the claim. The right option must (a) be literally readable off the chart and (b) actually support the specific claim — not just any neighboring fact. Same as Q72 — service rated less than global biodiversity contribution.",
+    "reasoning": "Providing medicinal plants is rated lower than global biodiversity contribution.",
+    "distractors": "Same as Q72."
+  },
+  "graphs:78": {
+    "prompt_focus": "A Graphs / Quantitative-Evidence question pairs a textual claim with a chart or table and asks which answer correctly *uses the data* to complete the claim. The right option must (a) be literally readable off the chart and (b) actually support the specific claim — not just any neighboring fact. Cooler-month Drosophila → lower (...metric) — illustrated by smaller female wing centroid in cooler month.",
+    "reasoning": "Female centroid was smaller in May (cooler) than in July.",
+    "distractors": "Other comparisons reverse direction."
+  },
+  "graphs:79": {
+    "prompt_focus": "A Graphs / Quantitative-Evidence question pairs a textual claim with a chart or table and asks which answer correctly *uses the data* to complete the claim. The right option must (a) be literally readable off the chart and (b) actually support the specific claim — not just any neighboring fact. Lookup: total area of Nanakuli.",
+    "reasoning": "Cell reads 3.61 sq mi.",
+    "distractors": "Other home lands have different areas."
+  },
+  "graphs:80": {
+    "prompt_focus": "A Graphs / Quantitative-Evidence question pairs a textual claim with a chart or table and asks which answer correctly *uses the data* to complete the claim. The right option must (a) be literally readable off the chart and (b) actually support the specific claim — not just any neighboring fact. Claim: large-population countries can be less densely populated than small-population ones.",
+    "reasoning": "Mali (17.6 M, 14.2/km²) is less dense than Lesotho (smaller population, higher density) — fits the claim.",
+    "distractors": "Other comparisons either don't reverse population/density or compare wrong countries."
+  },
+  "graphs:81": {
+    "prompt_focus": "A Graphs / Quantitative-Evidence question pairs a textual claim with a chart or table and asks which answer correctly *uses the data* to complete the claim. The right option must (a) be literally readable off the chart and (b) actually support the specific claim — not just any neighboring fact. Claim student is making is that scat-detecting dogs yield the *narrowest* range. Need a finding that *undercuts* or contextualises the claim — actually the question asks which study supports/contests it.",
+    "reasoning": "Davidson et al. reported a density range *greater* than some studies using other methods — meaning scat-dog precision wasn't always tightest. (This is the contextualizing data the claim cites.)",
+    "distractors": "Other findings don't bear on the precision-of-scat-dogs comparison."
+  },
+  "graphs:83": {
+    "prompt_focus": "A Graphs / Quantitative-Evidence question pairs a textual claim with a chart or table and asks which answer correctly *uses the data* to complete the claim. The right option must (a) be literally readable off the chart and (b) actually support the specific claim — not just any neighboring fact. Two snakes that behaved similarly in sound trials.",
+    "reasoning": "Glory and Boss both moved *away* from the sound — same direction, hence similar.",
+    "distractors": "Other pairs split direction or include the third snake."
+  },
+  "graphs:84": {
+    "prompt_focus": "A Graphs / Quantitative-Evidence question pairs a textual claim with a chart or table and asks which answer correctly *uses the data* to complete the claim. The right option must (a) be literally readable off the chart and (b) actually support the specific claim — not just any neighboring fact. Same as Q13 — warmer-month → longer life span via centroid size.",
+    "reasoning": "Average male wing centroid was larger in July than in May.",
+    "distractors": "Same template."
+  },
+  "graphs:85": {
+    "prompt_focus": "A Graphs / Quantitative-Evidence question pairs a textual claim with a chart or table and asks which answer correctly *uses the data* to complete the claim. The right option must (a) be literally readable off the chart and (b) actually support the specific claim — not just any neighboring fact. If foraging honeybees exceed the threshold, then which other bee can *also* attract stamens?",
+    "reasoning": "Red mason bees similarly exceed the positive-charge threshold per the team's chart, so they can attract stamens.",
+    "distractors": "Bees not above the threshold don't fit the implication."
+  },
+  "graphs:86": {
+    "prompt_focus": "A Graphs / Quantitative-Evidence question pairs a textual claim with a chart or table and asks which answer correctly *uses the data* to complete the claim. The right option must (a) be literally readable off the chart and (b) actually support the specific claim — not just any neighboring fact. Two species with *negative* effect values.",
+    "reasoning": "Leafy spurge and prickly pear both show negative effect values.",
+    "distractors": "Other pairs include species with positive values."
+  },
+  "graphs:87": {
+    "prompt_focus": "A Graphs / Quantitative-Evidence question pairs a textual claim with a chart or table and asks which answer correctly *uses the data* to complete the claim. The right option must (a) be literally readable off the chart and (b) actually support the specific claim — not just any neighboring fact. Claim: cobalt% does *not* monotonically predict fracture toughness.",
+    "reasoning": "HEA 7 and HEA 95 have the *same* cobalt %, yet differ in toughness — disproving monotonicity.",
+    "distractors": "Other comparisons don't deliver the same-Co/different-toughness counterexample."
+  },
+  "graphs:89": {
+    "prompt_focus": "A Graphs / Quantitative-Evidence question pairs a textual claim with a chart or table and asks which answer correctly *uses the data* to complete the claim. The right option must (a) be literally readable off the chart and (b) actually support the specific claim — not just any neighboring fact. Great Britain has *more* damaging fungus species than Switzerland or Hungary.",
+    "reasoning": "GB's 290 fungus species exceeds the bars for Switzerland and Hungary.",
+    "distractors": "Other options misreport totals or pick wrong countries."
+  },
+  "graphs:90": {
+    "prompt_focus": "A Graphs / Quantitative-Evidence question pairs a textual claim with a chart or table and asks which answer correctly *uses the data* to complete the claim. The right option must (a) be literally readable off the chart and (b) actually support the specific claim — not just any neighboring fact. Numerical example of opposite-vs-same orientations in Amur grape.",
+    "reasoning": "~150 opposite-side pairs vs. ~60 same-side pairs in Amur grape — illustrates the dominance of opposite-side orientation.",
+    "distractors": "Other species or wrong counts fail."
+  },
+  "graphs:91": {
+    "prompt_focus": "A Graphs / Quantitative-Evidence question pairs a textual claim with a chart or table and asks which answer correctly *uses the data* to complete the claim. The right option must (a) be literally readable off the chart and (b) actually support the specific claim — not just any neighboring fact. ColecoVision sold relatively few units — comparator.",
+    "reasoning": "ColecoVision ~2,000,000 vs. Game & Watch ~12,600,000 — ColecoVision low by comparison.",
+    "distractors": "Other consoles' figures don't make the contrast."
+  },
+  "graphs:92": {
+    "prompt_focus": "A Graphs / Quantitative-Evidence question pairs a textual claim with a chart or table and asks which answer correctly *uses the data* to complete the claim. The right option must (a) be literally readable off the chart and (b) actually support the specific claim — not just any neighboring fact. 1995 → 2007 employment trend in agri/hunt/forestry across two countries.",
+    "reasoning": "Czech Republic decreasing; Austria roughly flat — the chart's two trend lines.",
+    "distractors": "Options swapping the two countries or directions fail."
+  },
+  "graphs:93": {
+    "prompt_focus": "A Graphs / Quantitative-Evidence question pairs a textual claim with a chart or table and asks which answer correctly *uses the data* to complete the claim. The right option must (a) be literally readable off the chart and (b) actually support the specific claim — not just any neighboring fact. FTA *redirecting* trade rather than expanding total exports — example.",
+    "reasoning": "Morocco's exports *to the US* rose post-FTA while *total* agricultural exports fell — classic redirection rather than expansion.",
+    "distractors": "Other countries' patterns don't show redirection (US share rises while total falls)."
+  },
+  "graphs:94": {
+    "prompt_focus": "A Graphs / Quantitative-Evidence question pairs a textual claim with a chart or table and asks which answer correctly *uses the data* to complete the claim. The right option must (a) be literally readable off the chart and (b) actually support the specific claim — not just any neighboring fact. Same template as Q17 — distinct types for distinct volcanoes.",
+    "reasoning": "Wolf (shield), Tungurahua (stratovolcano), Imbabura (compound), Chacana (caldera) — four distinct types.",
+    "distractors": "Same template."
+  },
+  "graphs:95": {
+    "prompt_focus": "A Graphs / Quantitative-Evidence question pairs a textual claim with a chart or table and asks which answer correctly *uses the data* to complete the claim. The right option must (a) be literally readable off the chart and (b) actually support the specific claim — not just any neighboring fact. Tidally locked planet: orbital period equals rotational period.",
+    "reasoning": "TRAPPIST-1e: orbital period 6.1 days; rotational period also 6.1 days — equal, hence tidally locked.",
+    "distractors": "Other planet pairs in the table don't have equal orbital/rotational periods."
+  },
+  "graphs:96": {
+    "prompt_focus": "A Graphs / Quantitative-Evidence question pairs a textual claim with a chart or table and asks which answer correctly *uses the data* to complete the claim. The right option must (a) be literally readable off the chart and (b) actually support the specific claim — not just any neighboring fact. Mountain whose elevation *significantly differs* from prominence.",
+    "reasoning": "Nanda Devi: elevation 7,816 m, prominence only 3,139 m — large gap.",
+    "distractors": "Other mountains have closer elevation/prominence values."
+  },
+  "graphs:97": {
+    "prompt_focus": "A Graphs / Quantitative-Evidence question pairs a textual claim with a chart or table and asks which answer correctly *uses the data* to complete the claim. The right option must (a) be literally readable off the chart and (b) actually support the specific claim — not just any neighboring fact. Country that mined *less* in 2020 than 1995.",
+    "reasoning": "The United States: 2020 < 1995 — bucking the trend.",
+    "distractors": "Other countries' values increased."
+  },
+  "graphs:98": {
+    "prompt_focus": "A Graphs / Quantitative-Evidence question pairs a textual claim with a chart or table and asks which answer correctly *uses the data* to complete the claim. The right option must (a) be literally readable off the chart and (b) actually support the specific claim — not just any neighboring fact. Hoards found *before 2000*.",
+    "reasoning": "Coleraine Hoard and Derrynaflan Hoard both found pre-2000.",
+    "distractors": "Hoards listed with 2000s discovery years don't fit."
+  },
+  "graphs:99": {
+    "prompt_focus": "A Graphs / Quantitative-Evidence question pairs a textual claim with a chart or table and asks which answer correctly *uses the data* to complete the claim. The right option must (a) be literally readable off the chart and (b) actually support the specific claim — not just any neighboring fact. Same as Q89 — GB's fungus-species count exceeds the others.",
+    "reasoning": "Same — 290 fungus species exceeds Switzerland and Hungary.",
+    "distractors": "Same."
+  },
+  "graphs:101": {
+    "prompt_focus": "A Graphs / Quantitative-Evidence question pairs a textual claim with a chart or table and asks which answer correctly *uses the data* to complete the claim. The right option must (a) be literally readable off the chart and (b) actually support the specific claim — not just any neighboring fact. Claim: post-1986 forest regrowth — evidenced by *increase in mean forest patch size* across all classes.",
+    "reasoning": "Mean patch size in *all classes* rises after 1986 — directly demonstrates regrowth.",
+    "distractors": "Other options pick metrics that don't track regrowth across all classes."
+  },
+  "graphs:102": {
+    "prompt_focus": "A Graphs / Quantitative-Evidence question pairs a textual claim with a chart or table and asks which answer correctly *uses the data* to complete the claim. The right option must (a) be literally readable off the chart and (b) actually support the specific claim — not just any neighboring fact. Claim: exercise training (EET) was more effective than health promotion (EHP) at restraining productivity loss — but the result took time.",
+    "reasoning": "At 12 weeks, EET ≈ EHP. At 12 months, EHP's loss *increased* and EET's *decreased* — exactly \"took time to become apparent.\"",
+    "distractors": "Options without the time-lag pattern (similar at 12 weeks, divergent at 12 months) fail."
+  },
+  "graphs:103": {
+    "prompt_focus": "A Graphs / Quantitative-Evidence question pairs a textual claim with a chart or table and asks which answer correctly *uses the data* to complete the claim. The right option must (a) be literally readable off the chart and (b) actually support the specific claim — not just any neighboring fact. Same as Q20 with Astreopora expansa.",
+    "reasoning": "Astreopora expansa max depth 15 m — furthest from mesophotic 30 m threshold.",
+    "distractors": "Same template as Q20."
+  },
+  "graphs:104": {
+    "prompt_focus": "A Graphs / Quantitative-Evidence question pairs a textual claim with a chart or table and asks which answer correctly *uses the data* to complete the claim. The right option must (a) be literally readable off the chart and (b) actually support the specific claim — not just any neighboring fact. Mean forest patch size by 1986 (after deforestation peak).",
+    "reasoning": "Bars sit between 0 and 50 hectares for all classes by 1986.",
+    "distractors": "Other ranges don't match the 1986 bars."
+  },
+  "graphs:105": {
+    "prompt_focus": "A Graphs / Quantitative-Evidence question pairs a textual claim with a chart or table and asks which answer correctly *uses the data* to complete the claim. The right option must (a) be literally readable off the chart and (b) actually support the specific claim — not just any neighboring fact. A species that was *entirely absent* at certain times.",
+    "reasoning": "Wavy-lined blenny: zero observations in January, April, and July of 2001.",
+    "distractors": "Other species had at least one observation in those months."
+  },
+  "graphs:106": {
+    "prompt_focus": "A Graphs / Quantitative-Evidence question pairs a textual claim with a chart or table and asks which answer correctly *uses the data* to complete the claim. The right option must (a) be literally readable off the chart and (b) actually support the specific claim — not just any neighboring fact. Same as Q61 — counter to FTA-boosts-growth (Nicaragua/CAFTA-DR).",
+    "reasoning": "Nicaragua's pre-CAFTA-DR growth rate exceeded its post-CAFTA-DR rate — counter to the claim.",
+    "distractors": "Same as Q61."
+  },
+  "graphs:107": {
+    "prompt_focus": "A Graphs / Quantitative-Evidence question pairs a textual claim with a chart or table and asks which answer correctly *uses the data* to complete the claim. The right option must (a) be literally readable off the chart and (b) actually support the specific claim — not just any neighboring fact. Claim: surface temperature would be below a specific threshold given density / model assumption.",
+    "reasoning": "Reading the model curve at the given volume-ratio puts surface temperature *below 2,300 K*.",
+    "distractors": "Other thresholds either fall above the model curve or below the relevant density region."
+  },
+  "graphs:108": {
+    "prompt_focus": "A Graphs / Quantitative-Evidence question pairs a textual claim with a chart or table and asks which answer correctly *uses the data* to complete the claim. The right option must (a) be literally readable off the chart and (b) actually support the specific claim — not just any neighboring fact. Claim: the seagrass coverage increase doesn't necessarily mean ecosystem resilience — what's the supporting cautionary data?",
+    "reasoning": "Water temperatures rose slowly 2012–2018, then spiked unprecedentedly in early 2019 — and only *widgeon grass* among the seagrass species can tolerate such high temps. So the apparent recovery is fragile.",
+    "distractors": "Options that don't combine temperature spike + species tolerance fail."
   }
 }
