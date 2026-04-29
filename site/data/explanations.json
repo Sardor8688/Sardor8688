@@ -1024,5 +1024,366 @@
     "passage_breakdown": "Tool-using otters: high-quality, hard-shelled prey (mussels/clams). Non-tool-users: abundant, energy-poor, easily extractable prey (snails).",
     "reasoning": "Energy-poor prey → need *more of it* to meet energy needs. Non-tool-users will need to process *larger amounts* of prey to meet their energy requirements than tool-users.",
     "distractors": "Snail-eaters with less tooth damage — possibly true but not the *suggestion* — text emphasises tool-users avoiding tooth damage; the question targets *amount* of prey processing.\n\nNon-tool-users having more robust health — opposite of energy-resource access.\n\nLess foraging time — opposite (more low-energy prey = more foraging)."
+  },
+  "quotation:1": {
+    "prompt_focus": "A Quotation question gives you a *claim* about a text and asks which of four quoted lines from that text actually demonstrates the claim. The right quote must literally enact the claim — not merely be from the same text or be near the relevant passage. Claim: Winnemucca \"directly addresses the reader\" to establish her *authority and credibility*. We need a line that (a) speaks to the reader and (b) asserts she knows what she's talking about.",
+    "reasoning": "The line beginning \"My dear reader, I have not lived in this world for over thirty or forty years for nothing, and I know what I am talking about\" addresses \"my dear reader\" directly and explicitly asserts experiential authority — exactly the two halves of the claim.",
+    "distractors": "The line about her birth date addresses no one and asserts uncertainty, not authority.\n\nThe Muddy Lake line speaks to readers but reports an event — no credibility claim.\n\nThe \"how can I describe…\" line addresses readers but emphasises *limits* of her description, not authority.",
+    "takeaway": "The quote must check both halves of a compound claim — direct address *and* credibility assertion."
+  },
+  "quotation:2": {
+    "prompt_focus": "A Quotation question gives you a *claim* about a text and asks which of four quoted lines from that text actually demonstrates the claim. The right quote must literally enact the claim — not merely be from the same text or be near the relevant passage. Claim: Juchipila is depicted as a *striking sight* viewed *from afar*.",
+    "reasoning": "\"Juchipila rose in the distance, white, bathed in sunlight, shining in the midst of a thick forest at the foot of a proud, lofty mountain\" places the town *in the distance* and renders it visually striking (white, bathed in sunlight, shining).",
+    "distractors": "The all-day canyon ride describes the journey, not the town.\n\nThe bell-ringing line is set *inside* the town's streets, not from afar.\n\nThe sierra/opalescent-fog line is about mountains, not Juchipila."
+  },
+  "quotation:3": {
+    "prompt_focus": "A Quotation question gives you a *claim* about a text and asks which of four quoted lines from that text actually demonstrates the claim. The right quote must literally enact the claim — not merely be from the same text or be near the relevant passage. Claim: praises Douglass for *honesty and refusal to be intimidated*.",
+    "reasoning": "\"And he was no soft-tongued apologist; / He spoke straightforward, fearlessly uncowed\" puts both qualities on the page: \"straightforward\" = honesty; \"fearlessly uncowed\" = refusal to be intimidated.",
+    "distractors": "\"No miser in the good he held\" is about generosity, not honesty.\n\n\"A hush is over all the teeming lists\" is scenic — no traits.\n\n\"Champion through direful years\" is about loyalty/persistence, not honesty/courage."
+  },
+  "quotation:4": {
+    "prompt_focus": "A Quotation question gives you a *claim* about a text and asks which of four quoted lines from that text actually demonstrates the claim. The right quote must literally enact the claim — not merely be from the same text or be near the relevant passage. Claim: the main character *struggles to accept her African American race* in the South.",
+    "reasoning": "\"If growing up is painful for the Southern Black girl, being aware of her difference is worse. It is an unnecessary insult\" *names* the painful awareness of difference — the struggle itself.",
+    "distractors": "The light-purple-dress passage is about clothing aesthetics.\n\nThe forgive-us fantasy depicts wishful social reception, not racial-identity struggle.\n\nThe \"long and blonde hair\" line dramatises self-erasure but is *symptom*; the cited line directly *names* the struggle."
+  },
+  "quotation:5": {
+    "prompt_focus": "A Quotation question gives you a *claim* about a text and asks which of four quoted lines from that text actually demonstrates the claim. The right quote must literally enact the claim — not merely be from the same text or be near the relevant passage. Claim: the era often admired for peace/love had a *darker side*.",
+    "reasoning": "The \"bankruptcy notices… casual killings… misplaced children… abandoned homes… vandals…\" line supplies the dark catalogue.",
+    "distractors": "The \"steady market, high GNP, brave hopes\" line states the *expected* bright surface — the opposite of dark.\n\n\"San Francisco where the missing children were gathering\" is a setup, not darkness.\n\nAdolescent drift is melancholic but not concrete dark events."
+  },
+  "quotation:6": {
+    "prompt_focus": "A Quotation question gives you a *claim* about a text and asks which of four quoted lines from that text actually demonstrates the claim. The right quote must literally enact the claim — not merely be from the same text or be near the relevant passage. Claim: contrasts the *narrator's* attitude with *Avey's* attitude.",
+    "reasoning": "\"Avey's indifference to things began to pique me; I was ambitious\" sets her *indifference* against his *ambition* — a direct, two-sided contrast.",
+    "distractors": "The DC dawn line is purely descriptive.\n\n\"Avey was as silent as those great trees\" describes only Avey.\n\n\"Avey slipped her hand in mine\" describes a moment, not contrasting attitudes."
+  },
+  "quotation:7": {
+    "prompt_focus": "A Quotation question gives you a *claim* about a text and asks which of four quoted lines from that text actually demonstrates the claim. The right quote must literally enact the claim — not merely be from the same text or be near the relevant passage. Claim: the father typically tends his lawn with *dedication and care*.",
+    "reasoning": "\"Shaving this lawn as if it were a priest's chin… all during the season he had worked at it in the coolness and peace of the evenings after supper\" provides both qualities — meticulous care and season-long dedication.",
+    "distractors": "The peony-discovery line is about the present incident, not typical care.\n\nThe howl-of-machine line describes a pause; nothing about dedication.\n\nThe line where Jim kicks dirt focuses on Jim's misery."
+  },
+  "quotation:8": {
+    "prompt_focus": "A Quotation question gives you a *claim* about a text and asks which of four quoted lines from that text actually demonstrates the claim. The right quote must literally enact the claim — not merely be from the same text or be near the relevant passage. Claim: designers for modern Midsummer Night's Dream productions sometimes *unintentionally* include contemporary elements.",
+    "reasoning": "\"In the 1980s I was costuming a Midsummer… looking back I can clearly see the influence of 1980s fashion in my designs\" supplies *unintentional* contemporary influence (the designer didn't see it until later).",
+    "distractors": "Carefully-attending-to-accessories conveys intent, not unintended influence.\n\n\"Some flexibility is required\" is intentional flexibility.\n\nThe third option says costumes *must* reflect the period — opposite stance."
+  },
+  "quotation:9": {
+    "prompt_focus": "A Quotation question gives you a *claim* about a text and asks which of four quoted lines from that text actually demonstrates the claim. The right quote must literally enact the claim — not merely be from the same text or be near the relevant passage. Claim: soldiers' mood is *strongly affected* by the *strenuous* canyon journey.",
+    "reasoning": "\"The sun, beating down upon them, dulled their minds and bodies and presently they were silent\" links physical hardship (sun beating) to mood change (dulled, silent).",
+    "distractors": "The sierra-fog line is purely descriptive.\n\nOther landscape lines describe the canyon but don't connect it to mood."
+  },
+  "quotation:10": {
+    "prompt_focus": "A Quotation question gives you a *claim* about a text and asks which of four quoted lines from that text actually demonstrates the claim. The right quote must literally enact the claim — not merely be from the same text or be near the relevant passage. Claim: the speaker *criticizes activists* who champion *foreign* humanitarian causes while *ignoring local* ones.",
+    "reasoning": "\"When ye plead for the wrecked and fallen, / The exile from far-distant shores, / Remember that men are still wasting / Life's crimson around your own doors\" directly contrasts foreign concern with neglect of local suffering.",
+    "distractors": "Other quoted lines don't address the foreign-vs-local activist contrast."
+  },
+  "quotation:11": {
+    "prompt_focus": "A Quotation question gives you a *claim* about a text and asks which of four quoted lines from that text actually demonstrates the claim. The right quote must literally enact the claim — not merely be from the same text or be near the relevant passage. Claim: a painting marks a *significant change* in the artist's development.",
+    "reasoning": "\"The paintings that John produced before Mère Poussepin can be thought of as belonging to her earlier style, to which she never returned\" explicitly sets a before/after divide — i.e., a change.",
+    "distractors": "Lines praising the painting's quality, popularity, or pioneering status don't establish a stylistic *break*."
+  },
+  "quotation:12": {
+    "prompt_focus": "A Quotation question gives you a *claim* about a text and asks which of four quoted lines from that text actually demonstrates the claim. The right quote must literally enact the claim — not merely be from the same text or be near the relevant passage. Claim: *figurative language* connects DC and the rural South.",
+    "reasoning": "\"And when the wind is from the South, soil of my homeland falls like a fertile shower upon the lean streets of [Washington, DC]\" uses a *simile* (\"like a fertile shower\") to fuse southern soil with DC streets — figurative language linking the two settings.",
+    "distractors": "Literal descriptions of trees, ghost ships, and train whistles don't connect DC and the rural South."
+  },
+  "quotation:13": {
+    "prompt_focus": "A Quotation question gives you a *claim* about a text and asks which of four quoted lines from that text actually demonstrates the claim. The right quote must literally enact the claim — not merely be from the same text or be near the relevant passage. Same claim as Q11 — significant artistic change. Same template.",
+    "reasoning": "Same as Q11 — the \"earlier style, to which she never returned\" line marks the change.",
+    "distractors": "Same as Q11."
+  },
+  "quotation:14": {
+    "prompt_focus": "A Quotation question gives you a *claim* about a text and asks which of four quoted lines from that text actually demonstrates the claim. The right quote must literally enact the claim — not merely be from the same text or be near the relevant passage. Claim: the poem expresses *ambivalence* — both merits and displeasure.",
+    "reasoning": "\"Reading [poetry], however, with a perfect contempt for it, one discovers that there is in / it after all, a place for the genuine\" carries *both* halves: \"perfect contempt\" (displeasure) and \"a place for the genuine\" (merit).",
+    "distractors": "Other quoted lines criticise *bad* poetry or *half-poets* — they show one side, not both."
+  },
+  "quotation:15": {
+    "prompt_focus": "A Quotation question gives you a *claim* about a text and asks which of four quoted lines from that text actually demonstrates the claim. The right quote must literally enact the claim — not merely be from the same text or be near the relevant passage. Claim: the banker is *very upset*.",
+    "reasoning": "\"He lay on his bed, but his tears and emotion kept him for hours from sleeping\" displays tears, emotion, and sleeplessness — concrete signs of being deeply upset.",
+    "distractors": "Other lines describe the banker's actions (broke seals, listened) or his earlier delight — none demonstrate *upset*."
+  },
+  "quotation:16": {
+    "prompt_focus": "A Quotation question gives you a *claim* about a text and asks which of four quoted lines from that text actually demonstrates the claim. The right quote must literally enact the claim — not merely be from the same text or be near the relevant passage. Claim: experiencing both pleasant *and* sad thoughts on a spring day.",
+    "reasoning": "\"In that sweet mood when pleasant thoughts / Bring sad thoughts to the mind\" places pleasant and sad thoughts side by side, with one calling up the other.",
+    "distractors": "Other lines either describe sound or motion alone, not the joint pleasant/sad mood."
+  },
+  "quotation:17": {
+    "prompt_focus": "A Quotation question gives you a *claim* about a text and asks which of four quoted lines from that text actually demonstrates the claim. The right quote must literally enact the claim — not merely be from the same text or be near the relevant passage. Claim: narrator has *mixed* feelings about her surroundings.",
+    "reasoning": "\"I'm really getting quite fond of the big room, all but that horrid wallpaper\" pairs fondness with aversion in a single sentence — the textbook \"mixed feelings.\"",
+    "distractors": "Lines that praise or condemn her surroundings alone don't show *mixed* feelings."
+  },
+  "quotation:18": {
+    "prompt_focus": "A Quotation question gives you a *claim* about a text and asks which of four quoted lines from that text actually demonstrates the claim. The right quote must literally enact the claim — not merely be from the same text or be near the relevant passage. Same as Q11 — significant artistic change.",
+    "reasoning": "Same template — \"earlier style, never returned\" line.",
+    "distractors": "Same."
+  },
+  "quotation:19": {
+    "prompt_focus": "A Quotation question gives you a *claim* about a text and asks which of four quoted lines from that text actually demonstrates the claim. The right quote must literally enact the claim — not merely be from the same text or be near the relevant passage. Claim: Mrs. Sommers experiences a *shift in self* by putting on new clothes.",
+    "reasoning": "\"Her stockings and boots and well-fitting gloves had worked marvels in her bearing — had given her a feeling of assurance, a sense of belonging to the well-dressed multitude\" links the clothes *directly* to a new sense of self.",
+    "distractors": "Other lines describe the items themselves or the act of buying them, not a self-shift."
+  },
+  "quotation:20": {
+    "prompt_focus": "A Quotation question gives you a *claim* about a text and asks which of four quoted lines from that text actually demonstrates the claim. The right quote must literally enact the claim — not merely be from the same text or be near the relevant passage. Claim: Helena urges Vanya to *make peace* with Serebrakoff.",
+    "reasoning": "\"It is your duty to make peace [with Professor Serebrakoff], and not to growl at every little thing\" is exactly that exhortation to peace-making.",
+    "distractors": "Other lines (Serebrakoff dismissing Vanya, Vanya bitter, Vanya recalling unrewarded work) don't encourage peace."
+  },
+  "quotation:21": {
+    "prompt_focus": "A Quotation question gives you a *claim* about a text and asks which of four quoted lines from that text actually demonstrates the claim. The right quote must literally enact the claim — not merely be from the same text or be near the relevant passage. Claim: Vanya is *disillusioned* with Serebrakoff.",
+    "reasoning": "\"I was proud of [Serebrakoff]… now? Now he has retired, and what is the total of his life? A blank! He is absolutely unknown, and his fame has burst like a soap-bubble. I have been deceived\" charts a before/after disillusionment.",
+    "distractors": "Other lines show different relationships, not Vanya's bitter awakening."
+  },
+  "quotation:22": {
+    "prompt_focus": "A Quotation question gives you a *claim* about a text and asks which of four quoted lines from that text actually demonstrates the claim. The right quote must literally enact the claim — not merely be from the same text or be near the relevant passage. Claim: Winnemucca creates *suspense* by emphasising her *physical response*.",
+    "reasoning": "\"Oh, how my heart jumped when I heard a noise close by… I thought whoever it was would hear my heart beat\" repeats heart-beat physiology to build suspense around an unknown approaching presence.",
+    "distractors": "Other lines don't link physical sensation to suspenseful uncertainty."
+  },
+  "quotation:23": {
+    "prompt_focus": "A Quotation question gives you a *claim* about a text and asks which of four quoted lines from that text actually demonstrates the claim. The right quote must literally enact the claim — not merely be from the same text or be near the relevant passage. Student wants to claim that consumers *agree about cultured meat's environmental benefits but won't try it themselves*.",
+    "reasoning": "\"Many consumers… believed that cultured meat would be good for the environment if widely available, but few of those same consumers were willing to try eating cultured meat themselves\" splits belief from behaviour exactly as needed.",
+    "distractors": "Other quoted findings address science or demand, not the belief-vs-willingness gap."
+  },
+  "quotation:24": {
+    "prompt_focus": "A Quotation question gives you a *claim* about a text and asks which of four quoted lines from that text actually demonstrates the claim. The right quote must literally enact the claim — not merely be from the same text or be near the relevant passage. Student wants to situate Hume Lake (Fresno County) in California's *humidity gradient*: south = needs irrigation, north = doesn't.",
+    "reasoning": "\"Natural humidity… in the northern reaches of California, gradually decreases toward the sun-scorched but nonetheless fertile valleys of the southern part of the state\" describes the gradient that explains why irrigation is needed in the south.",
+    "distractors": "Other quoted facts don't address California's humidity gradient."
+  },
+  "quotation:25": {
+    "prompt_focus": "A Quotation question gives you a *claim* about a text and asks which of four quoted lines from that text actually demonstrates the claim. The right quote must literally enact the claim — not merely be from the same text or be near the relevant passage. Claim: child narrator *frightened* by the sailor.",
+    "reasoning": "\"How [the sailor] haunted my dreams… I would see him in a thousand forms, and with a thousand diabolical expressions\" displays sustained fear (haunting dreams, diabolical visions).",
+    "distractors": "Other lines describe events factually, not the narrator's fear."
+  },
+  "quotation:26": {
+    "prompt_focus": "A Quotation question gives you a *claim* about a text and asks which of four quoted lines from that text actually demonstrates the claim. The right quote must literally enact the claim — not merely be from the same text or be near the relevant passage. Claim: speaker wants to make art with *universal* appeal *across generations*.",
+    "reasoning": "\"Let me make the songs for the people, / Songs for the old and young\" names both the breadth (\"the people\") and generational scope (\"old and young\").",
+    "distractors": "Other lines from Harper don't include the cross-generational scope."
+  },
+  "quotation:27": {
+    "prompt_focus": "A Quotation question gives you a *claim* about a text and asks which of four quoted lines from that text actually demonstrates the claim. The right quote must literally enact the claim — not merely be from the same text or be near the relevant passage. Claim: soldiers feel *renewed sense of agency and authority* as they set out.",
+    "reasoning": "\"They spurred their horses to a gallop as if in that mad race they laid claims of possession to the earth\" makes the agency-of-possession explicit.",
+    "distractors": "Other lines describe weariness, scenery, or town arrival, not renewed agency."
+  },
+  "quotation:28": {
+    "prompt_focus": "A Quotation question gives you a *claim* about a text and asks which of four quoted lines from that text actually demonstrates the claim. The right quote must literally enact the claim — not merely be from the same text or be near the relevant passage. Claim: Newland imagines a *future* with May.",
+    "reasoning": "\"Already [Newland's] imagination, leaping ahead of the engagement ring, the betrothal kiss and the [wedding] march from Lohengrin, pictured [May] at his side\" *names* his forward-imagining.",
+    "distractors": "Other lines describe the present opera scene, not future imagination."
+  },
+  "quotation:29": {
+    "prompt_focus": "A Quotation question gives you a *claim* about a text and asks which of four quoted lines from that text actually demonstrates the claim. The right quote must literally enact the claim — not merely be from the same text or be near the relevant passage. Claim: Dixie Pike has a *deep connection to a faraway place*.",
+    "reasoning": "\"The Dixie Pike has grown from a goat path in Africa\" supplies the connection: a Georgia road's ancestry traced to *Africa* — about as faraway as it gets.",
+    "distractors": "Other lines about the road don't reach beyond the rural South."
+  },
+  "quotation:30": {
+    "prompt_focus": "A Quotation question gives you a *claim* about a text and asks which of four quoted lines from that text actually demonstrates the claim. The right quote must literally enact the claim — not merely be from the same text or be near the relevant passage. Claim: Newland's lateness reflects *enjoying anticipation more than realisation*.",
+    "reasoning": "\"Thinking over a pleasure to come often gave [Newland] a subtler satisfaction than its realisation\" is the principle put plainly.",
+    "distractors": "Other lines describe the opera scene, not Newland's principle of delayed pleasure."
+  },
+  "quotation:31": {
+    "prompt_focus": "A Quotation question gives you a *claim* about a text and asks which of four quoted lines from that text actually demonstrates the claim. The right quote must literally enact the claim — not merely be from the same text or be near the relevant passage. Same as Q15 — banker is very upset.",
+    "reasoning": "Same — tears/emotion preventing sleep is the upset display.",
+    "distractors": "Same."
+  },
+  "quotation:32": {
+    "prompt_focus": "A Quotation question gives you a *claim* about a text and asks which of four quoted lines from that text actually demonstrates the claim. The right quote must literally enact the claim — not merely be from the same text or be near the relevant passage. Claim: Mrs. Sommers is *engrossed in deciding* how to spend money.",
+    "reasoning": "\"The question of investment was one that occupied her greatly… absorbed in speculation and calculation\" names the engrossment in decision-making.",
+    "distractors": "Other lines describe the spending or its emotional outcome, not the deliberation."
+  },
+  "quotation:33": {
+    "prompt_focus": "A Quotation question gives you a *claim* about a text and asks which of four quoted lines from that text actually demonstrates the claim. The right quote must literally enact the claim — not merely be from the same text or be near the relevant passage. Claim: Strepsiades wants to learn rhetorical techniques to be *deceitful in lawsuits*.",
+    "reasoning": "Strepsiades says he wants to become \"a fabricator of falsehoods… a practiced knave in lawsuits… a fox, a sharper, a slippery knave, a dissembler, a slippery fellow, an impostor.\" Every word names deception aimed at lawsuits.",
+    "distractors": "Other lines describe sophists' broader teachings, not Strepsiades's own deceit-seeking."
+  },
+  "quotation:34": {
+    "prompt_focus": "A Quotation question gives you a *claim* about a text and asks which of four quoted lines from that text actually demonstrates the claim. The right quote must literally enact the claim — not merely be from the same text or be near the relevant passage. Claim: people *naturally have an emotional attachment to home*, regardless of station.",
+    "reasoning": "\"Home is home, to the lowly as well as the great; and no rank, or color, destroys its sacred character, its power over the mind, and the affections\" makes the universal-attachment claim verbatim.",
+    "distractors": "Other quoted lines from Eldridge/Whipple don't make this universal claim."
+  },
+  "quotation:35": {
+    "prompt_focus": "A Quotation question gives you a *claim* about a text and asks which of four quoted lines from that text actually demonstrates the claim. The right quote must literally enact the claim — not merely be from the same text or be near the relevant passage. Claim: streaming-service social features change *how users choose music* (not just what they hear).",
+    "reasoning": "\"I often pick songs that I think the friends who are following me might be interested in listening to, rather than what I might actually prefer\" testifies that social presence changes selection behaviour.",
+    "distractors": "Other testimonies might describe sharing or following but don't show *choice* shifting."
+  },
+  "quotation:36": {
+    "prompt_focus": "A Quotation question gives you a *claim* about a text and asks which of four quoted lines from that text actually demonstrates the claim. The right quote must literally enact the claim — not merely be from the same text or be near the relevant passage. Student wants to argue that ancient irrigation systems used *engineering principles still in use today*.",
+    "reasoning": "\"The irrigation system developed by the Hohokam people in… central Arizona in the 7th century CE was simple but made use of hydraulic engineering design principles that are still utilized by today's engineers\" makes the claim verbatim.",
+    "distractors": "Other historical facts about Searsville Lake don't connect ancient principles to modern use."
+  },
+  "quotation:37": {
+    "prompt_focus": "A Quotation question gives you a *claim* about a text and asks which of four quoted lines from that text actually demonstrates the claim. The right quote must literally enact the claim — not merely be from the same text or be near the relevant passage. Claim: sophists *taught customers rhetorical techniques* (paid speaking instruction).",
+    "reasoning": "Strepsiades describes a sophist business: \"There dwell men… These men teach, if one give them money, to conquer in speaking, right or wrong\" — exactly paid teaching of rhetoric.",
+    "distractors": "Other lines describe Strepsiades's *desires*; the asked claim is about the teaching itself."
+  },
+  "quotation:38": {
+    "prompt_focus": "A Quotation question gives you a *claim* about a text and asks which of four quoted lines from that text actually demonstrates the claim. The right quote must literally enact the claim — not merely be from the same text or be near the relevant passage. Claim: Price used *African instruments* in a composition.",
+    "reasoning": "\"In her composition Symphony no. 1, Price included African drums\" names an African instrument in a specific composition.",
+    "distractors": "Other quoted facts about Price don't list African instruments specifically."
+  },
+  "quotation:39": {
+    "prompt_focus": "A Quotation question gives you a *claim* about a text and asks which of four quoted lines from that text actually demonstrates the claim. The right quote must literally enact the claim — not merely be from the same text or be near the relevant passage. Claim: Jim *accidentally damaged* a peony.",
+    "reasoning": "\"Finally Jim went to the peony and tried to stand it on its pins, resuscitated, but the spine of it was hurt, and it could only hang limply from his hand\" is the flower's damage made literal.",
+    "distractors": "Other lines describe Jim's play or his father's reaction, not the damage event."
+  },
+  "quotation:40": {
+    "prompt_focus": "A Quotation question gives you a *claim* about a text and asks which of four quoted lines from that text actually demonstrates the claim. The right quote must literally enact the claim — not merely be from the same text or be near the relevant passage. Claim: speaker *encourages John to pursue someone else*.",
+    "reasoning": "\"I dare say Meg or Moll would take / Pity upon you, if you'd ask. / And pray don't remain single for my sake\" hands him alternative partners and forbids him from pining.",
+    "distractors": "Other quoted lines reject John but don't *redirect* him."
+  },
+  "quotation:41": {
+    "prompt_focus": "A Quotation question gives you a *claim* about a text and asks which of four quoted lines from that text actually demonstrates the claim. The right quote must literally enact the claim — not merely be from the same text or be near the relevant passage. Student wants to claim *demand for meat is rising*.",
+    "reasoning": "\"A growing population that is including significantly more meat in its diet will contribute to an increasing demand for meat products in the 21st century\" states rising demand directly.",
+    "distractors": "Other quoted facts cover acceptance or science of cultured meat, not demand growth."
+  },
+  "quotation:42": {
+    "prompt_focus": "A Quotation question gives you a *claim* about a text and asks which of four quoted lines from that text actually demonstrates the claim. The right quote must literally enact the claim — not merely be from the same text or be near the relevant passage. Same as Q10 — foreign-vs-local-activist criticism.",
+    "reasoning": "Same — \"when ye plead for the exile from far-distant shores… remember men wasting life around your own doors.\"",
+    "distractors": "Same."
+  },
+  "quotation:43": {
+    "prompt_focus": "A Quotation question gives you a *claim* about a text and asks which of four quoted lines from that text actually demonstrates the claim. The right quote must literally enact the claim — not merely be from the same text or be near the relevant passage. Same as Q11/13/18 — significant artistic change.",
+    "reasoning": "Same — \"earlier style, never returned\" line.",
+    "distractors": "Same."
+  },
+  "quotation:44": {
+    "prompt_focus": "A Quotation question gives you a *claim* about a text and asks which of four quoted lines from that text actually demonstrates the claim. The right quote must literally enact the claim — not merely be from the same text or be near the relevant passage. Same as Q14 — ambivalence (merit + displeasure).",
+    "reasoning": "Same — \"perfect contempt… place for the genuine.\"",
+    "distractors": "Same."
+  },
+  "quotation:45": {
+    "prompt_focus": "A Quotation question gives you a *claim* about a text and asks which of four quoted lines from that text actually demonstrates the claim. The right quote must literally enact the claim — not merely be from the same text or be near the relevant passage. Same as Q12 — figurative language linking DC and rural South.",
+    "reasoning": "Same — \"soil of my homeland falls like a fertile shower upon the lean streets of Washington, DC.\"",
+    "distractors": "Same."
+  },
+  "quotation:46": {
+    "prompt_focus": "A Quotation question gives you a *claim* about a text and asks which of four quoted lines from that text actually demonstrates the claim. The right quote must literally enact the claim — not merely be from the same text or be near the relevant passage. Claim: when scolded, Jimmie *seeks comfort from Henry*.",
+    "reasoning": "\"Henry would sometimes choose to absolutely repudiate [Jimmie's behavior]… preaching with assurance the precepts of [Jimmie's father's] creed\" describes Jimmie *coming to* Henry; it depicts the comfort-seeking interaction even when Henry plays the disciplinarian.",
+    "distractors": "Other lines describe Jim's outdoor play or his father's reaction, not Jim turning to Henry."
+  },
+  "quotation:47": {
+    "prompt_focus": "A Quotation question gives you a *claim* about a text and asks which of four quoted lines from that text actually demonstrates the claim. The right quote must literally enact the claim — not merely be from the same text or be near the relevant passage. Claim: Winnemucca addresses the reader to *explain her people's terms of endearment*.",
+    "reasoning": "\"Now, my dear reader, there is no word so endearing as the word father, and that is why [my people] call all good people father or mother\" addresses readers and explains the endearment usage.",
+    "distractors": "Other lines address readers without explaining the endearment system."
+  },
+  "quotation:48": {
+    "prompt_focus": "A Quotation question gives you a *claim* about a text and asks which of four quoted lines from that text actually demonstrates the claim. The right quote must literally enact the claim — not merely be from the same text or be near the relevant passage. Claim: a character's house has become *very faded* over time.",
+    "reasoning": "\"Once the house had been painted, but the sun blistered the paint and the rains washed it away, and now the house was as dull and gray as everything else\" tracks the loss of color over time — the fading.",
+    "distractors": "Other passages don't track color loss specifically."
+  },
+  "quotation:49": {
+    "prompt_focus": "A Quotation question gives you a *claim* about a text and asks which of four quoted lines from that text actually demonstrates the claim. The right quote must literally enact the claim — not merely be from the same text or be near the relevant passage. Same as Q47 — endearment terms.",
+    "reasoning": "Same — \"no word so endearing as the word father.\"",
+    "distractors": "Same."
+  },
+  "quotation:50": {
+    "prompt_focus": "A Quotation question gives you a *claim* about a text and asks which of four quoted lines from that text actually demonstrates the claim. The right quote must literally enact the claim — not merely be from the same text or be near the relevant passage. Claim: Aunt Sue's stories come from her *own life*.",
+    "reasoning": "The child \"knows that Aunt Sue / Never got her stories out of any book at all. / But that they came / Right out of her own life\" states the autobiographical source.",
+    "distractors": "Other lines describe the storytelling scene without sourcing the stories."
+  },
+  "quotation:51": {
+    "prompt_focus": "A Quotation question gives you a *claim* about a text and asks which of four quoted lines from that text actually demonstrates the claim. The right quote must literally enact the claim — not merely be from the same text or be near the relevant passage. Same humidity-gradient claim as Q24, slightly differently worded.",
+    "reasoning": "\"While the low humidity of Southern California's desert areas makes irrigation a requirement… the relatively high humidity in the northern parts of the state makes such practices less necessary\" — exactly the gradient.",
+    "distractors": "Other quoted facts don't connect humidity to irrigation regional necessity."
+  },
+  "quotation:52": {
+    "prompt_focus": "A Quotation question gives you a *claim* about a text and asks which of four quoted lines from that text actually demonstrates the claim. The right quote must literally enact the claim — not merely be from the same text or be near the relevant passage. Claim: Serebrakoff *asks Vanya to leave the room* (using a former-friendship appeal).",
+    "reasoning": "Serebrakoff: \"For the sake of our former friendship do not protest against going. We will talk some other time.\" Direct request to leave; explicit appeal to past friendship.",
+    "distractors": "Other quoted lines depict different exchanges that don't include this request."
+  },
+  "quotation:53": {
+    "prompt_focus": "A Quotation question gives you a *claim* about a text and asks which of four quoted lines from that text actually demonstrates the claim. The right quote must literally enact the claim — not merely be from the same text or be near the relevant passage. Same as Q34 — universal home attachment.",
+    "reasoning": "Same — \"home is home, to the lowly as well as the great…\"",
+    "distractors": "Same."
+  },
+  "quotation:54": {
+    "prompt_focus": "A Quotation question gives you a *claim* about a text and asks which of four quoted lines from that text actually demonstrates the claim. The right quote must literally enact the claim — not merely be from the same text or be near the relevant passage. Same as Q35 — social features change choice behavior.",
+    "reasoning": "Same — testifying that choices are warped to please followers.",
+    "distractors": "Same."
+  },
+  "quotation:55": {
+    "prompt_focus": "A Quotation question gives you a *claim* about a text and asks which of four quoted lines from that text actually demonstrates the claim. The right quote must literally enact the claim — not merely be from the same text or be near the relevant passage. Same as Q36 — Hohokam principles still in use today.",
+    "reasoning": "Same — \"7th-century… principles still utilized by today's engineers.\"",
+    "distractors": "Same."
+  },
+  "quotation:56": {
+    "prompt_focus": "A Quotation question gives you a *claim* about a text and asks which of four quoted lines from that text actually demonstrates the claim. The right quote must literally enact the claim — not merely be from the same text or be near the relevant passage. Same as Q37 — sophists teaching paid rhetoric.",
+    "reasoning": "Same — \"these men teach, if one give them money, to conquer in speaking, right or wrong.\"",
+    "distractors": "Same."
+  },
+  "quotation:57": {
+    "prompt_focus": "A Quotation question gives you a *claim* about a text and asks which of four quoted lines from that text actually demonstrates the claim. The right quote must literally enact the claim — not merely be from the same text or be near the relevant passage. Same as Q38 — Price using African instruments.",
+    "reasoning": "Same — \"In Symphony no. 1, Price included African drums.\"",
+    "distractors": "Same."
+  },
+  "quotation:58": {
+    "prompt_focus": "A Quotation question gives you a *claim* about a text and asks which of four quoted lines from that text actually demonstrates the claim. The right quote must literally enact the claim — not merely be from the same text or be near the relevant passage. Claim: Jim was *playing* (engrossed in pretend) when he accidentally damaged the peony.",
+    "reasoning": "\"Little Jim was, for the time, engine Number 36, and he was making the run between Syracuse and Rochester. He was fourteen minutes behind time, and the throttle was wide open\" depicts immersed, fast pretend-play — context for the accident.",
+    "distractors": "Other quoted lines depict the damage itself or the father's reaction, not Jim's absorbed play."
+  },
+  "quotation:59": {
+    "prompt_focus": "A Quotation question gives you a *claim* about a text and asks which of four quoted lines from that text actually demonstrates the claim. The right quote must literally enact the claim — not merely be from the same text or be near the relevant passage. Same as Q40 — speaker redirecting John.",
+    "reasoning": "Same — \"Meg or Moll would take pity… don't remain single for my sake.\"",
+    "distractors": "Same."
+  },
+  "quotation:60": {
+    "prompt_focus": "A Quotation question gives you a *claim* about a text and asks which of four quoted lines from that text actually demonstrates the claim. The right quote must literally enact the claim — not merely be from the same text or be near the relevant passage. Same as Q41 — rising meat demand.",
+    "reasoning": "Same — \"growing population… increasing demand for meat products in the 21st century.\"",
+    "distractors": "Same."
+  },
+  "quotation:61": {
+    "prompt_focus": "A Quotation question gives you a *claim* about a text and asks which of four quoted lines from that text actually demonstrates the claim. The right quote must literally enact the claim — not merely be from the same text or be near the relevant passage. Same as Q10/42 — foreign-vs-local activist criticism.",
+    "reasoning": "Same.",
+    "distractors": "Same."
+  },
+  "quotation:62": {
+    "prompt_focus": "A Quotation question gives you a *claim* about a text and asks which of four quoted lines from that text actually demonstrates the claim. The right quote must literally enact the claim — not merely be from the same text or be near the relevant passage. Same as Q11/13/18/43 — significant artistic change.",
+    "reasoning": "Same.",
+    "distractors": "Same."
+  },
+  "quotation:63": {
+    "prompt_focus": "A Quotation question gives you a *claim* about a text and asks which of four quoted lines from that text actually demonstrates the claim. The right quote must literally enact the claim — not merely be from the same text or be near the relevant passage. Same as Q14/44 — ambivalence (merit + displeasure).",
+    "reasoning": "Same.",
+    "distractors": "Same."
+  },
+  "quotation:64": {
+    "prompt_focus": "A Quotation question gives you a *claim* about a text and asks which of four quoted lines from that text actually demonstrates the claim. The right quote must literally enact the claim — not merely be from the same text or be near the relevant passage. Same as Q12/45 — figurative connection of DC and rural South.",
+    "reasoning": "Same.",
+    "distractors": "Same."
+  },
+  "quotation:65": {
+    "prompt_focus": "A Quotation question gives you a *claim* about a text and asks which of four quoted lines from that text actually demonstrates the claim. The right quote must literally enact the claim — not merely be from the same text or be near the relevant passage. Same as Q47/49 — endearment terms.",
+    "reasoning": "Same.",
+    "distractors": "Same."
+  },
+  "quotation:66": {
+    "prompt_focus": "A Quotation question gives you a *claim* about a text and asks which of four quoted lines from that text actually demonstrates the claim. The right quote must literally enact the claim — not merely be from the same text or be near the relevant passage. Same as Q48 — faded house.",
+    "reasoning": "Same.",
+    "distractors": "Same."
+  },
+  "quotation:67": {
+    "prompt_focus": "A Quotation question gives you a *claim* about a text and asks which of four quoted lines from that text actually demonstrates the claim. The right quote must literally enact the claim — not merely be from the same text or be near the relevant passage. Same as Q46 — Jimmie seeking comfort from Henry.",
+    "reasoning": "Same.",
+    "distractors": "Same."
+  },
+  "quotation:68": {
+    "prompt_focus": "A Quotation question gives you a *claim* about a text and asks which of four quoted lines from that text actually demonstrates the claim. The right quote must literally enact the claim — not merely be from the same text or be near the relevant passage. Same as Q50 — Aunt Sue's stories from her life.",
+    "reasoning": "Same.",
+    "distractors": "Same."
+  },
+  "quotation:69": {
+    "prompt_focus": "A Quotation question gives you a *claim* about a text and asks which of four quoted lines from that text actually demonstrates the claim. The right quote must literally enact the claim — not merely be from the same text or be near the relevant passage. Student situating Bear River Reservoir in a *larger context of water-scarcity-driven irrigation innovation*.",
+    "reasoning": "\"Competition for water as a scarce economic resource inspired the development of sprinkler irrigation systems… reduction of water used for irrigation in the United States to 45% of total water usage\" connects scarcity to irrigation tech evolution.",
+    "distractors": "Other quoted lines treat humidity gradients or ancient systems, not modern scarcity-driven innovation."
+  },
+  "quotation:70": {
+    "prompt_focus": "A Quotation question gives you a *claim* about a text and asks which of four quoted lines from that text actually demonstrates the claim. The right quote must literally enact the claim — not merely be from the same text or be near the relevant passage. Same as Q52 — Serebrakoff asking Vanya to leave (former-friendship plea).",
+    "reasoning": "Same.",
+    "distractors": "Same."
+  },
+  "quotation:71": {
+    "prompt_focus": "A Quotation question gives you a *claim* about a text and asks which of four quoted lines from that text actually demonstrates the claim. The right quote must literally enact the claim — not merely be from the same text or be near the relevant passage. Claim: Dorothy's *Kansas* environment is *flat, gray, treeless* — context for going to Oz.",
+    "reasoning": "\"In Kansas, when Dorothy stood in the doorway and looked around, she could see nothing but the great gray prairie on every side. Not a tree nor a house broke the broad sweep of flat country\" supplies all three: gray, flat, and treeless.",
+    "distractors": "Other quoted lines describe Oz or Dorothy's mood, not Kansas's drabness."
+  },
+  "quotation:72": {
+    "prompt_focus": "A Quotation question gives you a *claim* about a text and asks which of four quoted lines from that text actually demonstrates the claim. The right quote must literally enact the claim — not merely be from the same text or be near the relevant passage. Claim: Vanya complains he has worked *25 years* managing the estate without *thanks* from Serebrakoff.",
+    "reasoning": "Vanya to Serebrakoff: \"For twenty-five years I have managed this place… you have never given me one single word of thanks\" — both numerical duration and lack of thanks named.",
+    "distractors": "Other lines from the play don't combine the duration and the lack-of-thanks."
   }
 }
