@@ -684,357 +684,376 @@
     "takeaway": "O‘sish da’vosini quvvatlash — oldin va keyin aniq raqamlarni qarama-qarshi qo‘yishdir."
   },
   "details:1": {
-    "prompt_focus": "A Details question asks you to identify which option literally matches what the text says — not what's implied beyond the passage. Here, the prompt asks what point the text makes about the difference in park-use proportions between Panama City and Fortaleza.",
-    "passage_breakdown": "Two raw numbers: 53.5% of Panama City respondents use parks vs. 35.7% of Fortaleza respondents. The author then notes: \"the percentage of Panama City respondents who reported living within a 10-minute walk of a park was much lower than that reported by Fortaleza respondents.\"\n\nThe conclusion: \"greater proximity alone can't explain the difference in park use.\"",
-    "reasoning": "Panama City has a smaller share of close-to-park residents but a *higher* park-use rate. So distance doesn't drive the gap — something else does. The text's point about the difference is that it is *caused by something other than the parks' proximity to the residents*.",
-    "distractors": "Researchers' expectations are never mentioned.\n\nSurvey *inaccuracy* is never raised — the text takes the percentages at face value.\n\nSources predating the survey are unrelated.",
-    "takeaway": "When a passage explicitly rules out one explanation (\"can't explain\"), the supporting detail is the one that *also* rules out that explanation."
+    "prompt_focus": "Details savoli matnda *ayni* aytilgan narsani tanlashni so‘raydi — kengaytirilgan xulosa emas. Bu yerda Panama City va Fortaleza o‘rtasidagi park-foydalanish nisbatlaridagi farq haqida matn nima nuqta qo‘yganini so‘rayapti.",
+    "reasoning": "Panama City’da parkka yaqin yashovchilar ulushi kichikroq, ammo park-foydalanish darajasi *yuqori*. Demak masofa farqni keltirib chiqarmaydi — boshqa narsa keltiradi. Matnning nuqtasi: bu farq parklarning yaqinligidan boshqa narsadan kelib chiqadi.",
+    "distractors": "Tadqiqotchi kutishlari hech qachon eslatilmagan.\n\nSo‘rovning *noto‘g‘riligi* hech qachon ko‘tarilmagan — matn foizlarni qabul qiladi.\n\nSo‘rovdan oldingi manbalar bog‘liq emas.",
+    "takeaway": "Matn tushuntirishni *ochiq tarzda* istisno qilsa, qo‘llab-quvvatlovchi tafsilot ham xuddi shu tushuntirishni istisno qiluvchi variant."
   },
   "details:2": {
-    "prompt_focus": "Asks what can be reasonably concluded about krill consumption *between* the two whales. The text gives a maximum-mass figure for the minke whale (4,000 kg) and an explicit krill quantity for the fin whale (24,000 kg/day) plus the fact that minke is *smaller*.",
-    "passage_breakdown": "Minke max mass: 4,000 kg. Fin whale: 80,000 kg, eats up to 24,000 kg of krill/day. The 30% rule applies to both. Minke at 30% of 4,000 kg = 1,200 kg/day max.",
-    "reasoning": "Plug into the 30% rule: a 4,000-kg minke can eat at most 1,200 kg/day; the fin whale is reported to eat up to 24,000 kg/day. The fin whale therefore eats *more* krill per day than the minke whale.",
-    "distractors": "\"Both can eat 24,000 kg/day\" is impossible — minke max is much lower.\n\n\"Fin whale's consumption made it hard for minke whales\" introduces a competition claim the text never makes.\n\n\"Minke is less likely to include krill\" reverses the text — both are baleen, both eat krill."
+    "prompt_focus": "Ikki kit o‘rtasidagi krill iste’molini so‘raydi. Matn minke kitining maksimal massasini (4 000 kg) va fin kitining aniq krill miqdorini (24 000 kg/kun) beradi, va minke *kichikroq* ekanligini.",
+    "reasoning": "30% qoidasini qo‘llaymiz: 4 000 kg minke ko‘pi bilan 1 200 kg/kun yeya oladi; fin kit 24 000 kg/kun yeydi deyilgan. Demak fin kit minke kitidan KO‘PROQ krill yeydi.",
+    "distractors": "‘Ikkalasi 24 000 kg/kun yeyishi mumkin’ — imkonsiz; minke maksimumi ancha past.\n\nFin kitining iste’moli minke kitlar uchun qiyin qilgan — matn raqobat da’vosini hech qachon qilmaydi.\n\n‘Minke krillni kamroq qo‘shish ehtimoli kamroq’ — matnga zid; ikkalasi ham balein, ikkalasi ham krill yeydi.",
+    "takeaway": "Raqamli Details savollarda hisob-kitobni qiling — keyin variantlarni hisobga solishtiring."
   },
   "details:3": {
-    "prompt_focus": "What change *coincided* with Don becoming a patron of the theater?",
-    "passage_breakdown": "After his play won \"nothing but hisses,\" Don \"ceased to write plays and assumed instead the nobler role of a patron.\"",
-    "reasoning": "The text directly couples the two transitions: ceasing to write plays AND becoming a patron. So the change that coincided with patronage is *stopping writing plays*.",
-    "distractors": "An essay achieving recognition is never mentioned.\n\nBecoming a critic is never mentioned.\n\nMoving outside Madrid contradicts the text — youths *come to Madrid* to find him."
+    "prompt_focus": "Don teatr homiysiga aylanishi bilan qaysi o‘zgarish *bir vaqtda* sodir bo‘lgan?",
+    "reasoning": "Matn ikki o‘tishni bevosita bog‘laydi: pyesa yozishni to‘xtatish VA homiy bo‘lish. Demak homiylik bilan bir vaqtda sodir bo‘lgan o‘zgarish — *pyesa yozishni to‘xtatish*.",
+    "distractors": "Insho tan olinganligi hech qachon eslatilmagan.\n\nTanqidchi bo‘lishi hech qachon eslatilmagan.\n\nMadriddan ko‘chib ketishi matnga zid — yoshlar Madridga uni topgani keladi.",
+    "takeaway": "Bir vaqtda sodir bo‘lgan o‘zgarishni topish uchun matnda bir-biri bilan bevosita bog‘langan ikki transformatsiyani izlang."
   },
   "details:4": {
-    "prompt_focus": "Why the team employed a clustering algorithm.",
-    "passage_breakdown": "Text: \"How we define a neighborhood and its boundaries is subjective, so the team used a clustering algorithm to locate dense groupings of amenities that represent human-identified neighborhoods like Boston's Harvard Square.\"",
-    "reasoning": "The motivating clause begins with \"is subjective\" and is solved by the algorithm. The algorithm *objectively* identifies neighbourhood groupings. The reason is *objectivity in identifying neighborhoods*.",
-    "distractors": "Business-closure analysis isn't mentioned.\n\nConsumer-awareness pathways aren't discussed.\n\nPredicting *successful* businesses is the *outcome* of the model, not the role of the clustering step."
+    "prompt_focus": "Guruh nima uchun klasterlash algoritmidan foydalandi?",
+    "reasoning": "Motivatsion gap ‘subyektivdir’ deb boshlanib, algoritm bilan hal qilinadi. Algoritm mahalla guruhlarini *obyektiv* tarzda aniqlaydi. Sabab — *mahallalarni aniqlashda obyektivlik*.",
+    "distractors": "Biznes-yopilish tahlili eslatilmagan.\n\nIste’molchi-xabardorlik yo‘llari muhokama qilinmagan.\n\n*Muvaffaqiyatli* bizneslarni bashorat qilish — modelning *natijasi*, klasterlash bosqichining roli emas.",
+    "takeaway": "‘Nima uchun X qilindi’ savoliga matnda X bilan hal qilinadigan muammoga qarang."
   },
   "details:5": {
-    "prompt_focus": "What point the text makes about the O'odham word *gogogs*.",
-    "passage_breakdown": "Text: \"the element 'go' in gogs gets repeated in gogogs.\"",
-    "reasoning": "Gogogs is presented specifically as an *example* of reduplication: the 'go' element from gogs is repeated. That's the point.",
-    "distractors": "\"No clear English equivalent\" — never said.\n\n\"The only word in O'odham using reduplication\" — text says there are *many* such examples.\n\n\"Identical in meaning to other words\" — never said."
+    "prompt_focus": "Matn O‘odxam so‘zi *gogogs* haqida qanday nuqta qo‘yadi?",
+    "reasoning": "Gogogs aynan *takror qo‘shish* (reduplikatsiya) ning misoli sifatida taqdim etiladi: ‘gogs’ dan ‘go’ elementi takrorlanadi. Bu — nuqta.",
+    "distractors": "‘Aniq inglizcha ekvivalenti yo‘q’ — aytilmagan.\n\n‘O‘odxamda reduplikatsiyani ishlatadigan yagona so‘z’ — matn shunday ko‘plab misollar borligini aytadi.\n\n‘Boshqa so‘zlar bilan ma’nosi bir xil’ — aytilmagan.",
+    "takeaway": "Misol-asosli savollarda misolning matnga taqdim etilgan rolini qaytaring."
   },
   "details:6": {
-    "prompt_focus": "What the narrator mainly *remembers* about being chanted to.",
-    "passage_breakdown": "The narrator is dozing on the \"clouds of Farsi\" — Farsi as a soothing, dream-like sound. The Farsi-from-the-front-seat reminds him of his mother chanting him to bed.",
-    "reasoning": "The connection is via the *calming* quality of the sound — the Farsi from the front seat is calming enough to make him doze, and *that* triggers the memory of his mother chanting at bedtime. What he remembers is that the chanting was calming.",
-    "distractors": "Story characters — never mentioned.\n\nBackground music — never mentioned.\n\nMother *not usually* chanting at night — opposite of \"every night before bedtime.\""
+    "prompt_focus": "Hikoyachi unga aytilgan chant haqida asosan nimani *eslaydi*?",
+    "reasoning": "Bog‘lanish ovoz *tinchlantiruvchi* sifatida orqali: oldingi o‘rindiqdagi farsi tili uni mudratish darajasida tinchlantiradi va *bu* uning onasining yotishdan oldin chant qilishi xotirasini qo‘zg‘atadi. U eslab qoladigan narsa — chant tinchlantiruvchi bo‘lganligi.",
+    "distractors": "Hikoya qahramonlari — eslatilmagan.\n\nFon musiqasi — eslatilmagan.\n\nOnasi *odatda* tunda chant qilmasligi — ‘har kuni yotishdan oldin’ ga zid.",
+    "takeaway": "Xotira savollarida xotira bilan hozirgi vaziyat o‘rtasidagi to‘g‘ridan-to‘g‘ri sezgi-bog‘ini izlang."
   },
   "details:7": {
-    "prompt_focus": "One potential drawback of the team's method.",
-    "passage_breakdown": "Text: \"data from Places API tend to be restricted to places that are customer facing.\"",
-    "reasoning": "If only customer-facing places appear in the dataset, the model will miss back-end or non-consumer-facing amenities. That means conclusions may not reflect *all* the amenities in a neighborhood.",
-    "distractors": "Outdated data — not mentioned.\n\nCross-field advancements — not mentioned.\n\nInaccurate boundary identification — not mentioned (boundaries are handled by the clustering algorithm)."
+    "prompt_focus": "Guruh metodining bir mumkin kamchiligi.",
+    "reasoning": "Faqat mijozga qaratilgan joylar ma’lumotlar to‘plamida paydo bo‘lsa, model orqa-tomon yoki noistemolchiga qaratilgan ob’ektlarni o‘tkazib yuboradi. Demak xulosalar mahallaning *barcha* ob’ektlarini aks ettirmasligi mumkin.",
+    "distractors": "Eskirgan ma’lumotlar — eslatilmagan.\n\nSohalar oraliq yutuqlar — eslatilmagan.\n\nNoto‘g‘ri chegara aniqlash — eslatilmagan (chegaralar klasterlash algoritmi tomonidan boshqariladi).",
+    "takeaway": "‘Kamchilik’ savollari — matnda nomlangan ma’lumot manbai cheklovini qaytaradi."
   },
   "details:8": {
-    "prompt_focus": "How Hooks and Ward initially met.",
-    "passage_breakdown": "Text: cofounders \"had met while performing in a 1960 touring production of Lorraine Hansberry's play A Raisin in the Sun.\"",
-    "reasoning": "Both were actors in A Raisin in the Sun.",
-    "distractors": "NEC was *cofounded* by them — they didn't first meet at an NEC workshop.\n\nHarrison-introduction at MacDaddy is invented.\n\nAttending the same MacDaddy performance is invented."
+    "prompt_focus": "Hooks va Ward dastlab qanday tanishgan?",
+    "reasoning": "Ikkalasi ham A Raisin in the Sun pyesasida aktyor edi.",
+    "distractors": "NEC ular tomonidan *birga ta’sis etilgan* — ular birinchi marta NEC ustaxonasida uchrashmagan.\n\nMacDaddy’da Harrison-tanitilishi — to‘qib chiqarilgan.\n\nBir xil MacDaddy ijrosiga qatnashish — to‘qib chiqarilgan.",
+    "takeaway": "‘Tanishish’ savolida matnning bevosita aytgan birinchi-uchrashuv kontekstini topib, qaytaring."
   },
   "details:9": {
-    "prompt_focus": "Krill consumption between Antarctic minke and bowhead whales.",
-    "passage_breakdown": "Antarctic minke max: 10,000 kg → 30% = 3,000 kg krill/day. Bowhead: 66,000 kg, eats up to 19,800 kg/day.",
-    "reasoning": "3,000 < 19,800 — bowhead eats more krill per day.",
-    "distractors": "Both at 19,800 — impossible (minke max is 3,000).\n\nBowhead consumption hurting minke — never said.\n\nMinke less likely to eat krill — opposite of text."
+    "prompt_focus": "Antarktika minke va bowhead kitlari o‘rtasidagi krill iste’moli.",
+    "reasoning": "3 000 < 19 800 — bowhead kuniga ko‘proq krill yeydi.",
+    "distractors": "Ikkalasi 19 800 — imkonsiz (minke maksimumi 3 000).\n\nBowhead iste’moli minkega zarar yetkazadi — aytilmagan.\n\nMinke krillni kamroq yeydi — matnga zid.",
+    "takeaway": "Q2 bilan bir xil dars."
   },
   "details:10": {
-    "prompt_focus": "Why the team employed a clustering algorithm.",
-    "reasoning": "Same as Q4 — to provide an *objective* way to identify neighborhoods, given that boundaries are inherently subjective.",
-    "distractors": "Same as Q4."
+    "prompt_focus": "Q4 bilan bir xil — klasterlash algoritmi nima uchun ishlatildi.",
+    "reasoning": "Q4 bilan bir xil — chegaralar tabiatan subyektiv bo‘lgani uchun mahallalarni *obyektiv* aniqlash usulini berish.",
+    "distractors": "Q4 bilan bir xil.",
+    "takeaway": "Q4 bilan bir xil dars."
   },
   "details:11": {
-    "prompt_focus": "What is true about the aria 'I Got Plenty of Nuthin'.",
-    "passage_breakdown": "Text: \"They omitted parts, such as the aria 'I Got Plenty of Nuthin',' and sometimes made only brief gestures toward Gershwin's melodies.\"",
-    "reasoning": "It's listed as a *part of the original Gershwin opera* that Davis/Evans omitted. So the aria is in the Gershwin opera.",
-    "distractors": "\"Brief quotation in Davis/Evans\" — text says it was *omitted*.\n\n\"Listeners disliked it\" — not mentioned.\n\n\"Adapted on Milestones\" — Milestones isn't this Gershwin adaptation."
+    "prompt_focus": "‘I Got Plenty of Nuthin’ ariyasi haqida nima rost?",
+    "reasoning": "U Davis/Evans tomonidan tushirib qoldirilgan *original Gershwin operasining qismi* sifatida sanab o‘tilgan. Demak ariya Gershwin operasida.",
+    "distractors": "‘Davis/Evans’dagi qisqa iqtibos’ — matn u *tushirib qoldirilganini* aytadi.\n\n‘Tinglovchilarga yoqmagan’ — eslatilmagan.\n\n‘Milestonesda moslashtirilgan’ — Milestones bu Gershwin moslashtirishi emas.",
+    "takeaway": "Bir holatdagi obyekt boshqa holatda bormi-yo‘qmi degan savolda matnning aniq ‘kiritilgan/tushirilgan’ tilini izlang."
   },
   "details:12": {
-    "prompt_focus": "Krill consumption between Antarctic minke and southern right whales.",
-    "reasoning": "10,000 kg minke at 30% → 3,000 kg/day. 80,000 kg southern right at 30% → 24,000 kg/day. The southern right eats more krill per day than the minke.",
-    "distractors": "\"Iron decline causing population declines\" — text says iron *cycling supports* phytoplankton; doesn't claim iron decline drove population decline.\n\nKrill-shifting between species — never said.\n\n\"Only minke can subsist on phytoplankton\" — text doesn't say minke subsists on phytoplankton."
+    "prompt_focus": "Antarktika minke va janubiy o‘ng kitlari o‘rtasidagi krill iste’moli.",
+    "reasoning": "10 000 kg minke × 30% → 3 000 kg/kun. 80 000 kg janubiy o‘ng × 30% → 24 000 kg/kun. Janubiy o‘ng minkedan ko‘proq krill yeydi.",
+    "distractors": "‘Temir kamayishi populyatsiyani kamaytirgan’ — matn temir *aylanishi fitoplankton’ni qo‘llab-quvvatlaydi*, populyatsiyani kamaytirgan deb da’vo qilmaydi.\n\nKrill turlar oraliq surilishi — aytilmagan.\n\n‘Faqat minke fitoplankton’da yashashi mumkin’ — matn aytmagan.",
+    "takeaway": "Q2 bilan bir xil dars — hisoblang, taqqoslang."
   },
   "details:13": {
-    "prompt_focus": "The author's point about the *Spanish language* specifically.",
-    "passage_breakdown": "Cocoa: Nahuatl → Spanish → English. Puma: Quechua → Spanish → English. Spanish is the *intermediary* in both cases.",
-    "reasoning": "Spanish acted as the channel through which Indigenous-origin words reached English — \"served as a medium through which Indigenous languages have influenced English.\"",
-    "distractors": "Volume comparisons of Spanish vs. Indigenous contributions — not in text.\n\nEqual Nahuatl/Quechua adoption — not in text.\n\nSpanish *contributing back to* Indigenous languages — not in text."
+    "prompt_focus": "Muallifning aynan *ispan tili* haqidagi nuqtasi.",
+    "reasoning": "Ispan tili tubjoy kelib chiqishli so‘zlar inglizchaga yetib boruvchi kanal sifatida ishlagan — ‘tubjoy tillar inglizchaga ta’sir qilgan vosita sifatida xizmat qilgan’.",
+    "distractors": "Ispan vs. tubjoy hissalarining hajmiy solishtirishlari — matnda yo‘q.\n\nNahuatl/Quechua tenglik o‘zlashtirilishi — matnda yo‘q.\n\nIspan *tubjoy tillarga qaytarib hissa qo‘shgan* — matnda yo‘q.",
+    "takeaway": "‘Vosita’ savollarida ‘orqali’ yoki ‘medium’ kabi so‘zlarni izlang."
   },
   "details:14": {
-    "prompt_focus": "What the author would *agree* with about household income's role in fuel choice. The author's stance: the energy-ladder view (income alone) is reductive.",
-    "reasoning": "If income alone is *reductive*, then income explains *some but not all* of the variation. The author isn't saying income is irrelevant — just that it's incomplete.",
-    "distractors": "\"Often said to influence but actually doesn't\" overstates the rebuttal.\n\n\"For different reasons than the model assumes\" introduces an alt-mechanism not present in the text.\n\n\"Constrains amount but not type\" is invented."
+    "prompt_focus": "Muallif uy xo‘jaligi daromadining yoqilg‘i tanloviga roli haqida nima bilan *rozi* bo‘ladi? Muallifning fikri: energiya-narvoni qarashi (faqat daromad) reduktiv.",
+    "reasoning": "Daromad o‘zi *reduktiv* bo‘lsa, daromad o‘zgaruvchanlikning *bir qismi*ni tushuntiradi, ammo hammasini emas. Muallif daromadni ahamiyatsiz demayapti — shunchaki to‘liq emas.",
+    "distractors": "‘Tez-tez ta’sir qiladi deyiladi, lekin aslida qilmaydi’ rad etishni oshirib yuboradi.\n\n‘Modelning taxminidan boshqa sabablar uchun’ — matn ko‘rsatmagan muqobil mexanizm.\n\n‘Miqdorini cheklaydi, lekin turini emas’ — to‘qib chiqarilgan.",
+    "takeaway": "‘Rozi bo‘lardi’ savolida muallifning aynan rad etgan da’vosining mo‘tadil shaklini izlang."
   },
   "details:15": {
-    "prompt_focus": "Why was the unchanged microorganism community composition important.",
-    "passage_breakdown": "Text: \"microorganism community composition was unchanged, allowing Kaštovská et al. to attribute the acceleration to temperature-induced increases in microorganism activity.\"",
-    "reasoning": "If composition had changed, the acceleration could have been blamed on different microbes. Same microbes → can't blame composition → must be temperature-driven *activity*. The unchanged composition *ruled out* an alternative explanation.",
-    "distractors": "Preliminary evidence of acceleration — backwards.\n\nEffects at high elevations — not discussed.\n\nActivity varying by community composition — opposite of unchanged composition."
+    "prompt_focus": "Mikroorganizm jamoasining tarkibi o‘zgarmasligi nima uchun muhim edi?",
+    "reasoning": "Tarkib o‘zgargan bo‘lsa, tezlanish boshqa mikroblarga ayblanishi mumkin edi. Bir xil mikroblar → tarkibni ayblay olmaymiz → harorat-haydovchi *faollik* bo‘lishi shart. O‘zgarmagan tarkib muqobil tushuntirishni *istisno qildi*.",
+    "distractors": "Tezlashtirishning oldindan dalili — teskari.\n\nYuqori balandliklardagi ta’sirlar — muhokama qilinmagan.\n\nFaollik tarkib bo‘yicha o‘zgarishi — o‘zgarmagan tarkibga zid.",
+    "takeaway": "‘Nima uchun X muhim’ savolida X muqobil tushuntirishni qanday istisno qilganini izlang."
   },
   "details:16": {
-    "prompt_focus": "What the text supports about hDNA.",
-    "passage_breakdown": "Text: \"this approach offers unique benefits, such as access to genomic data from extirpated populations.\"",
-    "reasoning": "\"Unique benefits\" → insights other genomic data can't yield (e.g., extirpated populations are gone and so unavailable to standard sampling).",
-    "distractors": "Pathogen-only utility — not stated.\n\nUnderuse due to *controversial status* — text says due to degradation/limits, not controversy.\n\nMore degraded *than other DNA of comparable age* — not stated."
+    "prompt_focus": "Matn hDNA haqida nimani qo‘llab-quvvatlaydi?",
+    "reasoning": "‘Noyob foyda’ → boshqa genom ma’lumotlari berolmaydigan tushunchalar (masalan, yo‘q qilingan populyatsiyalar yo‘q va shuning uchun standart namunaga mavjud emas).",
+    "distractors": "Faqat patogen-foydaliligi — aytilmagan.\n\n*Bahsli holat* tufayli kam ishlatilishi — matn buzilish/cheklovlar tufayli, deydi.\n\n*Solishtirma yoshdagi boshqa DNAdan ko‘ra* ko‘proq buzilgan — aytilmagan.",
+    "takeaway": "‘Noyob foyda’ savollarida boshqalar bera olmaydigan tushunchani topib, ko‘rsating."
   },
   "details:17": {
-    "prompt_focus": "What some historians suggest about Maya civilization.",
-    "passage_breakdown": "Text: \"Some historians suggest that Maya mathematicians inherited [zero] from the Olmec civilization.\"",
-    "reasoning": "The suggestion: Maya acquired zero from the Olmec.",
-    "distractors": "Respect comparisons — invented.\n\nSecrecy — invented.\n\nTrying to spread their writing system — invented."
+    "prompt_focus": "Ba’zi tarixchilar Maya tsivilizatsiyasi haqida nimani taklif qiladi?",
+    "reasoning": "Taklif: Maya Olmekdan hech narsa olmagan.",
+    "distractors": "Hurmat solishtirishlari — to‘qib chiqarilgan.\n\nMaxfiylik — to‘qib chiqarilgan.\n\nYozuv tizimini tarqatishga harakat qilish — to‘qib chiqarilgan.",
+    "takeaway": "‘Ba’zi tarixchilar taklif qiladi’ — matnda aynan shu lager aytgan narsani qaytaring."
   },
   "details:18": {
-    "prompt_focus": "Why the energy ladder is called *reductive*.",
-    "passage_breakdown": "Text: energy ladder = \"household income mediates fuel choice.\" Heltberg's study: heterogeneous, flexible, multiple factors.",
-    "reasoning": "The model attributes choice *primarily to one characteristic* (income); the data show *multiple factors* matter. That mismatch between one-factor model and multi-factor reality is the reductive complaint.",
-    "distractors": "\"Households ignore that characteristic\" — not stated; income still matters partially.\n\n\"Equal-proportion fuel use\" — not stated.\n\n\"Different factors in different countries\" — narrower than the actual critique."
+    "prompt_focus": "Energiya narvoni nima uchun *reduktiv* deb ataladi?",
+    "reasoning": "Model tanlovni *bir asosiy xususiyatga* (daromadga) bog‘laydi; ma’lumotlar *bir nechta* omilning ahamiyatli ekanini ko‘rsatadi. Bir-omilli model va ko‘p-omilli haqiqat o‘rtasidagi mos kelmaslik — reduktiv shikoyat.",
+    "distractors": "‘Uy xo‘jaliklari bu xususiyatni e’tiborsiz qoldiradi’ — aytilmagan; daromad qisman muhim.\n\n‘Teng-nisbatdagi yoqilg‘i ishlatilishi’ — aytilmagan.\n\n‘Turli mamlakatlarda turli omillar’ — haqiqiy tanqiddan torroq.",
+    "takeaway": "‘Reduktiv’ savollar — matnning ko‘p-omilli aks-da’vosini izlash bilan hal qilinadi."
   },
   "details:19": {
-    "prompt_focus": "How Hooks and Ward initially met.",
-    "reasoning": "Same as Q8 — both actors in A Raisin in the Sun.",
-    "distractors": "Same as Q8."
+    "prompt_focus": "Q8 bilan bir xil — Hooks va Ward dastlab qanday tanishgan.",
+    "reasoning": "Q8 bilan bir xil — ikkalasi ham A Raisin in the Sun pyesasida aktyor edi.",
+    "distractors": "Q8 bilan bir xil.",
+    "takeaway": "Q8 bilan bir xil dars."
   },
   "details:20": {
-    "prompt_focus": "What Alfonzo would agree with about studies of decision-making about walking.",
-    "passage_breakdown": "Alfonzo: \"some studies emphasize demographic characteristics, others public transit availability… but walking decisions are made in complex contexts.\"",
-    "reasoning": "Multiple competing single-factor theories + complex contexts → no single factor will reliably predict walking decisions. \"Unlikely to find convincing evidence that any single factor consistently predicts walking decisions.\"",
-    "distractors": "\"Identifying common features of high-walk cities\" — Alfonzo precisely *rejects* this approach.\n\nOverstating individual differences — not the point.\n\n\"Misleading because they ignore the most important factor\" — Alfonzo doesn't single out one factor."
+    "prompt_focus": "Alfonzo yurish-qarorlari haqidagi tadqiqotlar bilan nima bilan rozi bo‘lardi?",
+    "reasoning": "Bir nechta raqobatchi bir-omilli nazariyalar + murakkab kontekstlar → hech bir omil yurish qarorlarini ishonchli bashorat qila olmaydi. ‘Hech bir omil doimiy yurish qarorlarini bashorat qilishi haqida ishonchli dalil topish ehtimoli kam.’",
+    "distractors": "‘Yuqori-yurish shaharlarining umumiy xususiyatlarini aniqlash’ — Alfonzo aynan rad etadi.\n\nIndividual farqlarni oshirib yuborish — nuqta emas.\n\n‘Eng muhim omilni e’tibordan chetda qoldirgani uchun adashtiruvchi’ — Alfonzo bitta omilni ajratmaydi.",
+    "takeaway": "Muallifning fikrini topish — matnning mantiqiy xulosasini qaytaring, parchani qayta ifodalang."
   },
   "details:21": {
-    "prompt_focus": "Same as Q7 — restricted-to-customer-facing data → may miss amenities.",
-    "reasoning": "Same as Q7.",
-    "distractors": "Same as Q7."
+    "prompt_focus": "Q7 bilan bir xil — mijozga qaratilgan ma’lumotlar bilan cheklanish.",
+    "reasoning": "Q7 bilan bir xil.",
+    "distractors": "Q7 bilan bir xil.",
+    "takeaway": "Q7 bilan bir xil dars."
   },
   "details:22": {
-    "prompt_focus": "What did Elangovan and Marimuthu find, and why?",
-    "passage_breakdown": "Finding: high moonlight inhibits short-nosed fruit bat activity. Reason: greater detection by predators outweighs the foraging benefit.",
-    "reasoning": "Bats *reduce* activity during high lunar intensity because predators spot them more easily, and the lunar-intensity foraging benefit doesn't justify the risk.",
-    "distractors": "\"More active under high moonlight\" — opposite.\n\nMongoose-lemur predator detection comparison — not what was tested.\n\nMongoose lemurs facing greater risks — text says lemurs forage *more*; risks are evaluated for the bats."
+    "prompt_focus": "Elangovan va Marimuthu nima topgan va nima uchun?",
+    "reasoning": "Ko‘rshapalaklar yuqori oy intensivligi paytida faollikni *kamaytiradi*, chunki yirtqichlar ularni osonroq sezadi va oy-intensivligi ovqatlanish foydasi xavfni oqlamaydi.",
+    "distractors": "‘Yuqori oy yorug‘ligi ostida ko‘proq faol’ — teskari.\n\nMongoose-lemur yirtqich aniqlash solishtirishi — sinab ko‘rilgan narsa emas.\n\nMongoose lemurlari katta xavflarga duch keladi — matn lemurlar *ko‘proq* ovqatlanishini aytadi; xavflar ko‘rshapalaklar uchun baholanadi.",
+    "takeaway": "‘Nima topgan va nima uchun’ — matndagi sabab-natija juftligini qaytaring."
   },
   "details:23": {
-    "prompt_focus": "What the author would *disagree* with about hyperpop voice manipulation.",
-    "passage_breakdown": "Text: voice modification \"functions as a commentary on how digital technology mediates human experience today.\"",
-    "reasoning": "If voice modification is a *social commentary*, then the claim that it has \"little or no social import\" is exactly what the author would reject.",
-    "distractors": "\"Confirms hyperpop's ability to offset negative tech effects\" — also dubious but not directly rejected.\n\n\"Symbol of influence on listeners\" — neutral.\n\n\"Represents tech-driven change in human experience\" — close to what the text endorses."
+    "prompt_focus": "Muallif hyperpop ovoz manipulyatsiyasi haqida nima bilan *rozi emas* bo‘lardi?",
+    "reasoning": "Ovoz o‘zgartirish *ijtimoiy sharh* bo‘lsa, ‘ozgina yoki hech qanday ijtimoiy ahamiyatga ega emas’ degan da’vo aynan muallif rad etadigan narsa.",
+    "distractors": "‘Texnologiyaning salbiy ta’sirini bartaraf etish qobiliyatini tasdiqlaydi’ — shubhali, lekin to‘g‘ridan-to‘g‘ri rad etilmaydi.\n\n‘Tinglovchilarga ta’sir ramzi’ — neytral.\n\n‘Inson tajribasidagi tex-haydovchi o‘zgarishni anglatadi’ — matn ma’qullashga yaqin.",
+    "takeaway": "‘Rozi bo‘lmasdi’ savolida muallifning aynan rad etadigan teskarisini izlang."
   },
   "details:24": {
-    "prompt_focus": "Same template as Q1 — proximity can't explain the gap.",
-    "reasoning": "Same as Q1.",
-    "distractors": "Same as Q1."
+    "prompt_focus": "Q1 bilan bir xil — yaqinlik farqni tushuntirmaydi.",
+    "reasoning": "Q1 bilan bir xil.",
+    "distractors": "Q1 bilan bir xil.",
+    "takeaway": "Q1 bilan bir xil dars."
   },
   "details:25": {
-    "prompt_focus": "Same as Support Q9 — survey response best illustrating researchers' explanation (search-driven exposure).",
-    "reasoning": "Cleaning supplies moved → looking for them → noticed and bought a notebook = canonical layout-induced unplanned purchase.",
-    "distractors": "Same as Support Q9."
+    "prompt_focus": "Support Q9 bilan bir xil — tadqiqotchilar tushuntirishini eng yaxshi tasvirlovchi so‘rov javobi.",
+    "reasoning": "Tozalik vositalari ko‘chirilgan → ularni izlash → daftar ko‘rib, sotib olish = klassik joylashuv-keltirgan rejasiz xarid.",
+    "distractors": "Support Q9 bilan bir xil.",
+    "takeaway": "Support Q9 bilan bir xil dars."
   },
   "details:26": {
-    "prompt_focus": "Krill consumption sei vs. bowhead.",
-    "reasoning": "Sei max 25,000 × 30% = 7,500 kg/day. Bowhead 66,000 × 30% allowed → text gives 19,800 kg/day. Bowhead eats more.",
-    "distractors": "Same template as other whale Qs."
+    "prompt_focus": "Sei vs. bowhead krill iste’moli.",
+    "reasoning": "Sei maks 25 000 × 30% = 7 500 kg/kun. Bowhead 66 000 × 30% — matn 19 800 kg/kun beradi. Bowhead ko‘proq yeydi.",
+    "distractors": "Boshqa kit savollari bilan bir xil shablon.",
+    "takeaway": "Q2 bilan bir xil dars."
   },
   "details:27": {
-    "prompt_focus": "A disadvantage of conventional thermal preservation methods.",
-    "passage_breakdown": "Text: conventional methods transfer energy from surface to interior; infrared generates heat *within* the food, *reducing industrial cooking times*.",
-    "reasoning": "Reduced cooking time = improvement → conventional methods have *longer* cooking times. That's the stated disadvantage.",
-    "distractors": "Tech breakdowns — not mentioned.\n\nLightweight-only — not mentioned.\n\nEnergy use — not mentioned."
+    "prompt_focus": "An’anaviy issiqlik konservatsiya usullarining bir kamchiligi.",
+    "reasoning": "Pishirish vaqtining qisqarishi = yaxshilanish → an’anaviy usullar *uzunroq* pishirish vaqtiga ega. Bu — aytilgan kamchilik.",
+    "distractors": "Texnik buzilishlar — eslatilmagan.\n\nFaqat yengillik — eslatilmagan.\n\nEnergiya iste’moli — eslatilmagan.",
+    "takeaway": "‘Kamchilik’ savollarida matnda aynan nomlangan kemtikni izlang."
   },
   "details:28": {
-    "prompt_focus": "Same as Q13 — Spanish as medium for Indigenous → English transfer.",
-    "reasoning": "Same as Q13.",
-    "distractors": "Same as Q13."
+    "prompt_focus": "Q13 bilan bir xil — Ispan tubjoy → ingliz tilini o‘tkazish vositasi sifatida.",
+    "reasoning": "Q13 bilan bir xil.",
+    "distractors": "Q13 bilan bir xil.",
+    "takeaway": "Q13 bilan bir xil dars."
   },
   "details:29": {
-    "prompt_focus": "Same as Q16 — hDNA's unique benefits.",
-    "reasoning": "Unique benefit named: \"ascertain biogeographical origins of organisms.\" That's a kind of insight other genomic data may not provide.",
-    "distractors": "Same as Q16."
+    "prompt_focus": "Q16 bilan bir xil — hDNA noyob foydalari.",
+    "reasoning": "Aytilgan noyob foyda: ‘organizmlarning biogeografik kelib chiqishini aniqlash’. Bu boshqa genom ma’lumoti bera olmaydigan tushuncha.",
+    "distractors": "Q16 bilan bir xil.",
+    "takeaway": "Q16 bilan bir xil dars."
   },
   "details:30": {
-    "prompt_focus": "Same as Q14 — household income explains some but not all.",
-    "reasoning": "Same as Q14.",
-    "distractors": "Same as Q14."
+    "prompt_focus": "Q14 bilan bir xil — uy xo‘jaligi daromadi qisman tushuntiradi.",
+    "reasoning": "Q14 bilan bir xil.",
+    "distractors": "Q14 bilan bir xil.",
+    "takeaway": "Q14 bilan bir xil dars."
   },
   "details:31": {
-    "prompt_focus": "How Yung perceives New York to have changed 1847 → 1909.",
-    "passage_breakdown": "Text: 250–300k → metropolis rivalling London; \"Manhattan turned into a city of skyscrapers.\"",
-    "reasoning": "Population grew massively; built environment became more developed (skyscrapers).",
-    "distractors": "Architecture less appealing — Yung's description (skyscrapers, churches, palatial residences) is neutral-to-positive.\n\nPolitically active — not mentioned.\n\nDiversity vs. London — not mentioned."
+    "prompt_focus": "Yung 1847 → 1909 yillarida Nyu-Yorkning qanday o‘zgarganini sezgan?",
+    "reasoning": "Aholi katta o‘sgan; qurilish muhiti ko‘proq rivojlangan (osmono‘pirar binolar).",
+    "distractors": "Arxitektura kamroq jozibali — Yung tasviri (osmono‘pir, cherkov, qasrli rezidentsiya) neytral-ijobiy.\n\nSiyosiy faol — eslatilmagan.\n\nLondon bilan xilma-xillik — eslatilmagan.",
+    "takeaway": "‘Qanday o‘zgargan’ savolida matnda nomlangan o‘zgaruvchan xususiyatlarni qaytaring."
   },
   "details:32": {
-    "prompt_focus": "What motivates Tia Ana's behavior.",
-    "passage_breakdown": "Tia Ana \"already came into the room several times to see if these guests had departed yet.\" The front parlor \"had always been her special province, as she used it for her little school.\"",
-    "reasoning": "Tia Ana wants the room back for her *school*. She's anxious for guests to leave so she can prepare the space.",
-    "distractors": "Considering guests uninteresting — not stated.\n\nSeeking patronage from guests — not stated.\n\nNeeding Salomé's help — not stated."
+    "prompt_focus": "Tia Ananing xatti-harakatini nima motivlashtiradi?",
+    "reasoning": "Tia Ana xonani *maktab* uchun qaytarmoqchi. U mehmonlar ketishini intiqib kutmoqda, shuning uchun joyni tayyorlay oladi.",
+    "distractors": "Mehmonlarni qiziq emas deb hisoblash — aytilmagan.\n\nMehmonlardan homiylik izlash — aytilmagan.\n\nSalomé yordamiga muhtojlik — aytilmagan.",
+    "takeaway": "Motivatsiya savollarida matn aytgan oldinga qaratilgan maqsadni topib, ko‘rsating."
   },
   "details:33": {
-    "prompt_focus": "What the text suggests about Rainey's and Smith's songs.",
-    "passage_breakdown": "Davis had to *transcribe* improvised lyrics by *listening repeatedly to vinyl recordings*. That's labor-intensive. Implies no clean transcript existed.",
-    "reasoning": "If Davis had to laboriously transcribe by ear, then few/no reliable transcriptions of those improvised lyrics existed when she started.",
-    "distractors": "Popularity growth — not mentioned.\n\nInnovation comparison — not mentioned.\n\nRecording counts — not mentioned."
+    "prompt_focus": "Matn Rainey va Smithning qo‘shiqlari haqida nimani taklif qiladi?",
+    "reasoning": "Davis quloq orqali mashaqqat bilan transkripsiya qilishi kerak bo‘lsa, u boshlaganida o‘sha improvizatsion lirikalarning kam yoki hech qanday ishonchli transkripsiyalari mavjud emas edi.",
+    "distractors": "Mashhurlik o‘sishi — eslatilmagan.\n\nInnovatsiya solishtirishi — eslatilmagan.\n\nYozuv soni — eslatilmagan.",
+    "takeaway": "‘Taklif qiladi’ — matnda nomlangan harakat (transkripsiya) ning sababini chiqaring."
   },
   "details:34": {
-    "prompt_focus": "A difference in how historians view Lestek vs. Władysław I Herman.",
-    "passage_breakdown": "Władysław I Herman is described as a documented duke (1079–1102). Lestek's \"historical actuality is *disputed*\" and his record relies on *oral tradition*.",
-    "reasoning": "Historians agree Władysław existed; they disagree about whether Lestek existed. That's the key asymmetry.",
-    "distractors": "Gesta evidence comparing the two — backwards.\n\nTime-of-rule comparison — not the asymmetry.\n\nOral evidence about Władysław — backwards."
+    "prompt_focus": "Tarixchilar Lestek va Władysław I Hermanga qanday boshqacha qaraydi?",
+    "reasoning": "Tarixchilar Władysław mavjud bo‘lganini qabul qiladi; Lestek mavjud bo‘lganmi-yo‘qmi degan masalada kelishmaydi. Bu — asosiy assimetriya.",
+    "distractors": "Gesta dalillari ikkalasini solishtirish — teskari.\n\nHukmronlik vaqtini solishtirish — assimetriya emas.\n\nWładysław haqidagi og‘zaki dalillar — teskari.",
+    "takeaway": "‘Farq’ savollarida matn ikki obyekt o‘rtasida aynan farq qilgan o‘qni izlang."
   },
   "details:35": {
-    "prompt_focus": "What Jack believes about Bartley.",
-    "passage_breakdown": "Bartley claims it will rain on him; Jack quips that even if it didn't, Bartley would carry a leaky pail on his head so he'd \"not be without some cause of complaining.\"",
-    "reasoning": "Jack's joke: Bartley would *invent* a problem if none existed. Jack believes Bartley finds fault with any situation.",
-    "distractors": "Helping with hay — opposite tone.\n\nBartley concerned about *Jack's* preparedness — Bartley is complaining about himself.\n\nBartley a poor weather judge — Jack is mocking his disposition, not his forecasting accuracy."
+    "prompt_focus": "Jek Bartli haqida nimaga ishonadi?",
+    "reasoning": "Jekning hazili: Bartli muammo bo‘lmasa ham *o‘ylab topadi*. Jek Bartli har qanday vaziyatda kamchilik topadi deb ishonadi.",
+    "distractors": "Pichanga yordam berish — qarama-qarshi ohang.\n\nBartli *Jekning* tayyorgarligi haqida tashvishlanadi — Bartli o‘zini-o‘zi shikoyat qiladi.\n\nBartli yomon ob-havo bahosi — Jek uning xulqini masxara qiladi, bashorat aniqligini emas.",
+    "takeaway": "Adabiy xarakter qarashlari savolida xarakterning hazil yoki kinoyali so‘zlari ortidagi haqiqiy fikrni topishga harakat qiling."
   },
   "details:36": {
-    "prompt_focus": "Same as Support Q15 — Iliffe et al. likely use different evidence.",
-    "reasoning": "Same as Support Q15.",
-    "distractors": "Same as Support Q15."
+    "prompt_focus": "Support Q15 bilan bir xil — Iliffe va boshqalar boshqa dalillardan foydalanishi mumkin.",
+    "reasoning": "Support Q15 bilan bir xil.",
+    "distractors": "Support Q15 bilan bir xil.",
+    "takeaway": "Support Q15 bilan bir xil dars."
   },
   "details:37": {
-    "prompt_focus": "What the text suggests about Pimentel et al.'s conclusion. The four answer options each propose a characterization; the text directly criticizes the *small sample size* increasing bias and *exaggerated effects*.",
-    "reasoning": "The text's specific implication is that the small sample size makes Pimentel's conclusion vulnerable to bias and exaggeration. None of options A, B, or D match that nuance — A claims the same sample size as earlier studies (not in the text), B claims broad implications (not in the text), D claims invalidation by similar studies (not in the text). The correct option captures the bias/exaggeration warning.",
-    "distractors": "Same sample size as earlier — fabricated.\n\nBroad implications — fabricated.\n\nInvalidated by similar studies — fabricated."
+    "prompt_focus": "Matn Pimentel xulosasi haqida nimani taklif qiladi? Matn aniq ravishda *kichik namuna hajmi* xolislikni oshirib, ta’sirlarni *bo‘rttirib ko‘rsatishini* tanqid qiladi.",
+    "reasoning": "Matnning aniq ko‘rsatilgan oqibati — kichik namuna hajmi Pimentel xulosasini xolislik va bo‘rttirib ko‘rsatishga zaif qiladi.",
+    "distractors": "Avvalgi tadqiqotlar bilan bir xil namuna hajmi — to‘qib chiqarilgan.\n\nKeng oqibatlar — to‘qib chiqarilgan.\n\nShu kabi tadqiqotlar tomonidan bekor qilingan — to‘qib chiqarilgan.",
+    "takeaway": "‘Taklif qiladi’ savollarida matn aniq nomlagan xolislik manbasini qaytaring."
   },
   "details:38": {
-    "prompt_focus": "A conclusion drawn from the food-delivery-app study.",
-    "passage_breakdown": "Text: \"this and other small changes to the app could reduce plastic waste in China by as much as 3.26 million metric tons per year.\"",
-    "reasoning": "Small changes → big plastic-waste reduction. That is the conclusion.",
-    "distractors": "Increase in production — not in text.\n\nCutlery-blocking apps' popularity — not in text.\n\nCustomer understanding driving choices — not in text (customers' choice was driven by the *default*, not understanding)."
+    "prompt_focus": "Oziq-ovqat yetkazib berish ilovasi tadqiqotidan chiqarilgan xulosa.",
+    "reasoning": "Kichik o‘zgarishlar → katta plastik chiqindi kamayishi. Bu — xulosa.",
+    "distractors": "Ishlab chiqarish o‘sishi — matnda yo‘q.\n\nStol asbobini bloklovchi ilovalar mashhurligi — matnda yo‘q.\n\nMijozlarning tushunishi tanlovni boshqaradi — matnda yo‘q (mijozlar tanlovi *standart* tomonidan boshqarilgan, tushunish bilan emas).",
+    "takeaway": "‘Xulosa’ savollarida matnning yakuniy nuqtasini topib, qaytaring."
   },
   "details:39": {
-    "prompt_focus": "Percentage of field mustard seeds that sprouted.",
-    "reasoning": "The text supplies a 30% figure for field mustard.",
-    "distractors": "The other percentages are simply not the number the text gives."
+    "prompt_focus": "Dala xantal urug‘larining nechta foizi unib chiqdi?",
+    "reasoning": "Matn dala xantali uchun 30% raqamini beradi.",
+    "distractors": "Boshqa foizlar matn bermagan raqamlar.",
+    "takeaway": "Aniq raqam savollarida — matnda yozilgan raqamni qaytaring."
   },
   "details:40": {
-    "prompt_focus": "What happened when oil was added.",
-    "passage_breakdown": "Text: \"Friction between pieces of graphene is generally extremely low, and when the researchers added a drop of oil as lubrication, that friction nearly vanished.\"",
-    "reasoning": "Already-low friction became even lower.",
-    "distractors": "Graphene migrating to one surface — not stated.\n\nNanotubes fracturing further — already happened *before* oil.\n\nNo noticeable change — opposite of the text."
+    "prompt_focus": "Yog‘ qo‘shilganda nima sodir bo‘ldi?",
+    "reasoning": "Allaqachon past ishqalanish yanada past bo‘ldi.",
+    "distractors": "Grafenning bir yuzaga ko‘chishi — aytilmagan.\n\nNanotrubkalarning yanada parchalanishi — yog‘ kelishidan *oldin* sodir bo‘lgan.\n\nSezilarli o‘zgarish yo‘q — matnga zid.",
+    "takeaway": "Eksperiment savollarida matn aytgan natijani qaytaring."
   },
   "details:41": {
-    "prompt_focus": "Claim about petroleum demand.",
-    "passage_breakdown": "Text: \"as social attitudes increasingly favor using less carbon-intensive sources of energy, demand for petroleum falls.\"",
-    "reasoning": "Societal preference for low-carbon → falling petroleum demand. Society's preferences are a factor.",
-    "distractors": "Companies unaffected — opposite (they accumulate liabilities).\n\nAnnual cycle — not stated.\n\nCompanies benefiting from decline — opposite (drilling becomes a liability)."
+    "prompt_focus": "Neft talabi haqidagi da’vo.",
+    "reasoning": "Past karbonga ijtimoiy afzallik → neft talabi pasayishi. Jamiyat afzalliklari — omil.",
+    "distractors": "Kompaniyalar ta’sirsiz — teskari (ular majburiyatlarni to‘playdi).\n\nYillik tsikl — aytilmagan.\n\nKompaniyalar pasayishdan foyda oladi — teskari (qazib olish majburiyatga aylanadi).",
+    "takeaway": "Sabab da’volarida matnning aniq sabab-natija zanjiriga e’tibor qiling."
   },
   "details:42": {
-    "prompt_focus": "Trait researchers think contributes to the flat-headed cat's purring.",
-    "passage_breakdown": "Text: flat-headed cats have a *rigid hyoid* that rumbles when the larynx vibrates → purr.",
-    "reasoning": "The rigid hyoid is the explicit purr-enabling trait.",
-    "distractors": "Larynx shape — never specified as a contributor.\n\nStretchy ligament — text says flat-headed cats *lack* this; it's a roar-enabling trait in jaguars.\n\nBody-throat size ratio — not stated."
+    "prompt_focus": "Tadqiqotchilar tekis-bosh mushukning xirildashiga hissa qo‘shadi deb hisoblagan xususiyat.",
+    "reasoning": "Qattiq hyoid suyak — aniq xirildash-imkon beruvchi xususiyat.",
+    "distractors": "Hiqildoq shakli — hech qachon hissa sifatida ko‘rsatilmagan.\n\nCho‘ziluvchan ligament — matn tekis-bosh mushuklarda *yo‘q* deydi; bu yo‘lbarslarda baqirish-imkon xususiyati.\n\nTana-tomoq nisbati — aytilmagan.",
+    "takeaway": "Anatomik atribut savollarida matnda aniq nomlangan xususiyatni qaytaring."
   },
   "details:43": {
-    "prompt_focus": "Factors linked to butterfly behavior in Herzel et al.",
-    "passage_breakdown": "Title clue: study of how butterfly *color* and *weather* relate to behavior. Both are studied factors.",
-    "reasoning": "Both color and weather are linked.",
-    "distractors": "Each \"only one\" or \"neither\" option contradicts the explicit subject of the study."
+    "prompt_focus": "Herzelda kapalak xulqi bilan bog‘langan omillar.",
+    "reasoning": "Ham rang, ham ob-havo bog‘langan.",
+    "distractors": "Har bir ‘faqat bittasi’ yoki ‘ikkalasi ham yo‘q’ varianti tadqiqot mavzusiga zid.",
+    "takeaway": "‘Bog‘langan omillar’ savollarida matn nomlagan barcha omillarni qamrab oluvchi variantni tanlang."
   },
   "details:44": {
-    "prompt_focus": "Same as Q13/Q28 — Spanish as Indigenous→English medium.",
-    "reasoning": "Same as Q13.",
-    "distractors": "Same as Q13."
+    "prompt_focus": "Q13/Q28 bilan bir xil — Ispan tubjoy → ingliz vositasi.",
+    "reasoning": "Q13 bilan bir xil.",
+    "distractors": "Q13 bilan bir xil.",
+    "takeaway": "Q13 bilan bir xil dars."
   },
   "details:45": {
-    "prompt_focus": "What the text suggests about natural-history-collection specimens.",
-    "passage_breakdown": "Text: archival specimens are sometimes stored in ways that compromise DNA quality. While they offer unique benefits, this is \"not easily remediable.\"",
-    "reasoning": "If some specimens have compromised DNA, then *not all of them* will yield usable hDNA, even though some will.",
-    "distractors": "Mainly used for major-evolutionary-change studies — not in text.\n\nTime-consuming extraction — not the focus.\n\n\"Generally marginal value\" — overstates; text emphasizes unique benefits."
+    "prompt_focus": "Matn tabiat-tarixi to‘plami namunalari haqida nimani taklif qiladi?",
+    "reasoning": "Ba’zi namunalar buzilgan DNAga ega bo‘lsa, *barchasi* foydalanishga yaroqli hDNA bermaydi, garchi ba’zi bersa-da.",
+    "distractors": "Asosan asosiy-evolyutsion-o‘zgarish tadqiqotlari uchun ishlatilgan — matnda yo‘q.\n\nVaqt talab qiluvchi ekstraksiya — fokus emas.\n\n‘Umuman marjinal qiymat’ — oshirib yuborgan; matn noyob foydalarga e’tibor qaratadi.",
+    "takeaway": "‘Taklif qiladi’ savollarida matnning ehtiyotkor tilini saqlang (‘ba’zi’, ‘mumkin’, ‘shart emas’)."
   },
   "details:46": {
-    "prompt_focus": "What did Gloria Richardson lead?",
-    "passage_breakdown": "Text: \"She was also the leader of what became known as the Cambridge movement.\"",
-    "reasoning": "The Cambridge movement.",
-    "distractors": "Business, environmental protests, daughter's school — none mentioned."
+    "prompt_focus": "Gloria Richardson nimaga rahbarlik qildi?",
+    "reasoning": "Cambridge harakati.",
+    "distractors": "Biznes, atrof-muhit norozilik, qiz maktabi — eslatilmagan.",
+    "takeaway": "Aniq nomli faktlarda matnning aynan iborasini topib qaytaring."
   },
   "details:47": {
-    "prompt_focus": "Material Villasana uses.",
-    "passage_breakdown": "Text: \"using her unique method of applying colorful yarn to photographs of people.\"",
-    "reasoning": "Yarn.",
-    "distractors": "Stone, chalk, paint — not mentioned."
+    "prompt_focus": "Villasana ishlatadigan material.",
+    "reasoning": "Ip.",
+    "distractors": "Tosh, bo‘r, bo‘yoq — eslatilmagan.",
+    "takeaway": "Aniq nomli faktlarda matnning aynan iborasini qaytaring."
   },
   "details:48": {
-    "prompt_focus": "The value of Drelichman & Voth's research.",
-    "passage_breakdown": "Text: their unique contribution = reconstruction of earliest annual fiscal records, demonstrating Philip's defaults caused by *short-term liquidity crises, not long-term unsustainable debts*.",
-    "reasoning": "They used new evidence to *eliminate* one cause (long-term debt) and *affirm* another (liquidity crisis).",
-    "distractors": "Defaults exacerbating liquidity crises — backwards causal direction.\n\nCorrecting earlier work — text says they *build on*, not *correct*.\n\nSupporting Hoffman/Norberg's hypothesis on debt defaults — not stated; Hoffman/Norberg studied state finance and political development, not debt defaults."
+    "prompt_focus": "Drelichman va Vothning tadqiqot qiymati.",
+    "reasoning": "Ular yangi dalil bilan bir sababni (uzoq muddatli qarz) *istisno qilgan* va boshqasini (likvidlik krizisi) *tasdiqlagan*.",
+    "distractors": "Defoltlar likvidlik krizisini kuchaytirgan — teskari sabab yo‘nalishi.\n\nAvvalgi ishni tuzatish — matn *qurilgan*, *tuzatilmagan* deb aytadi.\n\nHoffman/Norberg gipotezasini quvvatlash — aytilmagan; Hoffman/Norberg davlat moliyasini va siyosiy rivojlanishni o‘rgangan.",
+    "takeaway": "Tadqiqot qiymati savollarida matn nomlagan ‘istisno qilgan’ va ‘tasdiqlagan’ ikkita aniq narsani qaytaring."
   },
   "details:49": {
-    "prompt_focus": "Same as Support Q40 — study design rating category similarity, correlating with probability changes.",
-    "reasoning": "Same as Support Q40.",
-    "distractors": "Same as Support Q40."
+    "prompt_focus": "Support Q40 bilan bir xil — kategoriya o‘xshashligi va ehtimollik o‘zgarishlari korrelyatsiyasi tadqiqot dizayni.",
+    "reasoning": "Support Q40 bilan bir xil.",
+    "distractors": "Support Q40 bilan bir xil.",
+    "takeaway": "Support Q40 bilan bir xil dars."
   },
   "details:50": {
-    "prompt_focus": "Same as Q18 — energy ladder reductive because it attributes choice to one characteristic when many factors matter.",
-    "reasoning": "Same as Q18.",
-    "distractors": "Same as Q18."
+    "prompt_focus": "Q18 bilan bir xil — energiya narvoni reduktiv, chunki bir xususiyatga tanlovni bog‘laydi.",
+    "reasoning": "Q18 bilan bir xil.",
+    "distractors": "Q18 bilan bir xil.",
+    "takeaway": "Q18 bilan bir xil dars."
   },
   "details:51": {
-    "prompt_focus": "Same as Q8/Q19 — Hooks and Ward met as actors in A Raisin in the Sun.",
-    "reasoning": "Same as Q8.",
-    "distractors": "Same as Q8."
+    "prompt_focus": "Q8/Q19 bilan bir xil — Hooks va Ward A Raisin in the Sun aktyorlari sifatida tanishgan.",
+    "reasoning": "Q8 bilan bir xil.",
+    "distractors": "Q8 bilan bir xil.",
+    "takeaway": "Q8 bilan bir xil dars."
   },
   "details:52": {
-    "prompt_focus": "Why Miguel accompanies his brother.",
-    "passage_breakdown": "Text: Miguel \"was an aspiring poet, and he had heard from his brother that the Ureña girls\" — and their father is a famous poet.",
-    "reasoning": "Miguel hopes to meet the girls *and* their famous-poet father. \"Anticipates being introduced to both the sisters and their father\" matches.",
-    "distractors": "Wanting tutoring from sisters — not stated.\n\nWanting *father as mentor* — closer but the option overstates ambition vs. introduction.\n\nWanting to recite poems — not stated."
+    "prompt_focus": "Migel nima uchun akasi bilan boradi?",
+    "reasoning": "Migel qizlar va ularning mashhur-shoir otasi bilan tanishishni umid qiladi. ‘Singillar va ularning otasi bilan tanishtirilishini kutadi’ — mos.",
+    "distractors": "Singillardan ta’lim olish — aytilmagan.\n\n*Otani mentor sifatida* xohlash — yaqinroq, ammo tanitishdan ko‘ra ambitsiyani oshirib yuboradi.\n\nShe’r o‘qishni xohlash — aytilmagan.",
+    "takeaway": "Motivatsiya savollarida xarakterning aniq oldinga qaratilgan kutishini matndan topib, qaytaring."
   },
   "details:53": {
-    "prompt_focus": "Inference about Ancient Language.",
-    "passage_breakdown": "Land art \"often install[s] large-scale pieces outdoors, often in surprising locations.\" Ancient Language is in the Atacama Desert.",
-    "reasoning": "A desert is a 'surprising location' per the text — so Ancient Language's location may be considered surprising.",
-    "distractors": "Popularity-shift marker — not in text.\n\nCommercial success comparison — text says land art *rejects commercialization*.\n\nEarly-career marker — not in text."
+    "prompt_focus": "Ancient Language haqidagi xulosa.",
+    "reasoning": "Cho‘l matn bo‘yicha ‘hayratlanarli joy’ — demak Ancient Language joyi hayratlanarli deb hisoblanishi mumkin.",
+    "distractors": "Mashhurlik-o‘zgarish belgisi — matnda yo‘q.\n\nTijorat muvaffaqiyati solishtirishi — matn er-san’ati *tijoriylashtirishni rad etadi* deydi.\n\nErta-karyera belgisi — matnda yo‘q.",
+    "takeaway": "‘Inference’ tipidagi Details savolda matnning chetida aniq belgilangan tushunchani qaytaring."
   },
   "details:54": {
-    "prompt_focus": "Curtis et al.'s finding on mongoose lemurs.",
-    "passage_breakdown": "Text: lunar intensity \"positively associated with foraging by mongoose lemurs.\"",
-    "reasoning": "As lunar intensity rises, lemurs forage more.",
-    "distractors": "Mongoose-lemur > mice benefit comparison — not the literal finding.\n\nIncreased reliance on vision — not stated.\n\nMice reducing foraging — that's *Brown's* finding, not Curtis's."
+    "prompt_focus": "Curtis va boshq. mongoose lemurlari haqidagi natija.",
+    "reasoning": "Oy intensivligi oshganda lemurlar ko‘proq ovqatlanadi.",
+    "distractors": "Mongoose-lemur > sichqon foyda solishtirishi — natijaning aynan ifodasi emas.\n\nKo‘rishga ko‘proq ishonish — aytilmagan.\n\nSichqonlarning ovqatlanishni kamaytirishi — *Brownning* topilmasi, Curtisning emas.",
+    "takeaway": "Kim nima topgani savollarida matnning kim-nima sxemasiga e’tibor qiling."
   },
   "details:55": {
-    "prompt_focus": "What the text suggests about Hans Castorp's story.",
-    "passage_breakdown": "Story is told for the *story's* sake; Hans Castorp is \"perfectly ordinary, if engaging\"; story is covered with the patina of history.",
-    "reasoning": "Remarkable story, unremarkable person, with the value of the story potentially conferring some interest onto the person.",
-    "distractors": "\"All people are unique\" overgeneralizes.\n\nPerson of *no particular importance* with story-importance signals — close but understates the ordinary/remarkable contrast.\n\n\"All inconsequential people's stories must be related a particular way\" overgeneralizes."
+    "prompt_focus": "Matn Hans Castorp hikoyasi haqida nimani taklif qiladi?",
+    "reasoning": "Hayratlanarli hikoya, oddiy odam, hikoyaning qiymati shaxsga qiziqish berishi mumkin.",
+    "distractors": "‘Barcha odamlar noyob’ — haddan tashqari umumlashtirish.\n\n*Alohida ahamiyatga ega bo‘lmagan* odam hikoyasi-ahamiyatlilik signallari bilan — yaqin, lekin oddiy/hayratlanarli qarama-qarshilikni kichraytiradi.\n\n‘Barcha ahamiyatsiz odamlar hikoyalari ma’lum bir tarzda aytilishi shart’ — haddan tashqari umumlashtirish.",
+    "takeaway": "Matnning aniq qarama-qarshiligini saqlovchi variantni tanlang — uni soddalashtirmang."
   },
   "details:56": {
-    "prompt_focus": "Same as Support Q40/Q49 — design correlating category similarity with probability change.",
-    "reasoning": "Same as Support Q40.",
-    "distractors": "Same."
+    "prompt_focus": "Support Q40/Q49 bilan bir xil — kategoriya o‘xshashligi va ehtimollik korrelyatsiyasi.",
+    "reasoning": "Support Q40 bilan bir xil.",
+    "distractors": "Support Q40 bilan bir xil.",
+    "takeaway": "Support Q40 bilan bir xil dars."
   },
   "details:57": {
-    "prompt_focus": "One way The Crown of Columbus differs from most Erdrich.",
-    "passage_breakdown": "Text: Erdrich's writing usually focuses on Ojibwe communities; some novels (like a 1991 one) have fantastical plots and *take place outside Ojibwe communities*.",
-    "reasoning": "The Crown of Columbus is the example of Erdrich's outside-Ojibwe-community novel — so it isn't set in a rural Ojibwe community.",
-    "distractors": "Movie adaptation — not stated.\n\nLittle dialogue — not stated.\n\nOjibwe main characters — opposite of \"outside Ojibwe communities.\""
+    "prompt_focus": "The Crown of Columbus Erdrich asarlarining ko‘pchiligidan qanday farq qiladi?",
+    "reasoning": "The Crown of Columbus — Erdrichning ojibve-jamoasidan tashqaridagi roman misoli — demak u qishloq ojibve jamoasida o‘rnatilmagan.",
+    "distractors": "Film moslashuvi — aytilmagan.\n\nOzgina dialog — aytilmagan.\n\nOjibve asosiy qahramonlar — ‘Ojibve jamoalaridan tashqarida’ ga zid.",
+    "takeaway": "‘Farq qiladi’ savollarida boshqalar uchun normal bo‘lgan narsani konkret obyektda topa olmaslikka asoslang."
   },
   "details:58": {
-    "prompt_focus": "Inference about Ramchand.",
-    "passage_breakdown": "Ramchand notices, *guiltily*, that other shop assistants are already in place — he is arriving later.",
-    "reasoning": "\"Remorseful about arriving later than other shop assistants\" matches the *guilty* observation.",
-    "distractors": "Mesmerized by jalebi — overreads.\n\nOverwhelmed by chaos — text doesn't describe chaos.\n\nHappy at work — opposite of guilt."
+    "prompt_focus": "Ramchand haqidagi xulosa.",
+    "reasoning": "‘Boshqa do‘kon yordamchilaridan kechroq kelganidan afsuslanadigan’ aniqlash *aybdor* kuzatuvga mos.",
+    "distractors": "Jalebi’dan hayratda — oshirib o‘qigan.\n\nTartibsizlikdan tushib qolgan — matn tartibsizlikni tasvirlamaydi.\n\nIshda baxtli — aybdorlikning aksi.",
+    "takeaway": "Adabiy ‘nima his qiladi’ savollarda matnda aytilgan emotsional iborani qaytaring."
   },
   "details:59": {
-    "prompt_focus": "What Zucman's research suggests about Japanese investors.",
-    "passage_breakdown": "Tax havens \"are rarely used by investors living in Japan, while many investors who utilize tax havens reside in Saudi Arabia or Greece.\" Singapore is named as a tax haven.",
-    "reasoning": "Japanese investors *rarely* use tax havens; Saudi Arabian investors *often* do. So Japanese investors are *less likely* than Saudi Arabian investors to store wealth in Singapore (a tax haven).",
-    "distractors": "Robeyns *disapproves* of tax-haven use — wouldn't acknowledge benefit.\n\nHigher-risk investment strategies — not in text.\n\nMore likely than Greeks to do tax avoidance — opposite (Greeks use havens more)."
+    "prompt_focus": "Zucman tadqiqotlari yapon investorlari haqida nimani taklif qiladi?",
+    "reasoning": "Yapon investorlari soliq panohlaridan *kamdan kam* foydalanadi; Saudiya Arabistoni investorlari *tez-tez*. Demak yapon investorlari Singapur (soliq panohi)da boylikni saqlash ehtimoli Saudiya investorlaridan PASTROQ.",
+    "distractors": "Robeyns soliq-panoh ishlatishni *ma’qullamaydi* — foydani tan olmaydi.\n\nYuqori-xavf investitsiya strategiyalari — matnda yo‘q.\n\nYunonlardan ko‘ra ko‘proq soliqdan qochish — teskari (Yunonlar panohlardan ko‘proq foydalanadi).",
+    "takeaway": "‘Taklif qiladi’ savollarida matnning aynan iboralari (‘kamdan kam’, ‘tez-tez’) bilan ikki guruhni solishtiring."
   },
   "details:60": {
-    "prompt_focus": "Same as Support Q57 — mycelium thermoregulation independent of fruited bodies.",
-    "reasoning": "Same as Support Q57.",
-    "distractors": "Same as Support Q57."
+    "prompt_focus": "Support Q57 bilan bir xil — miselyum termoregulyatsiyasi meva tanalardan mustaqil.",
+    "reasoning": "Support Q57 bilan bir xil.",
+    "distractors": "Support Q57 bilan bir xil.",
+    "takeaway": "Support Q57 bilan bir xil dars."
   },
   "details:61": {
-    "prompt_focus": "What the text supports about hummingbird preferences.",
-    "passage_breakdown": "Text: visit frequencies *not* influenced by nectar traits but by physical compatibility of corollas and bills.",
-    "reasoning": "Since visits are driven by trait-matching, not nectar quality, hummingbirds may visit physically-compatible flowers *even if* those flowers' nectar rewards are low.",
-    "distractors": "\"Consistently prefer low-reward compatible flowers\" overgeneralizes.\n\n\"Trait-matching primary, nectar secondary\" — text rejects nectar's role.\n\n\"Trait-matching becomes important when uncertain\" — fabricated."
+    "prompt_focus": "Matn kolibri afzalliklari haqida nimani qo‘llab-quvvatlaydi?",
+    "reasoning": "Tashriflar xususiyat-mosligiga, nektar sifatiga emas, asoslangan bo‘lsa, kolibri jismonan-mos gullarga *garchi* o‘sha gullarning nektar mukofotlari past bo‘lsa ham, tashrif buyurishi mumkin.",
+    "distractors": "‘Doimiy ravishda past-mukofotli mos gullarni afzal ko‘radi’ — haddan oshirib yuborilgan.\n\n‘Xususiyat-mosligi birlamchi, nektar ikkinchi’ — matn nektar rolini rad etadi.\n\n‘Xususiyat-mosligi noaniqlikda muhim bo‘ladi’ — to‘qib chiqarilgan.",
+    "takeaway": "Mexanizm-asoslangan da’volarda asosiy mexanizmni boshqa mezon bilan aralashtirmang."
   },
   "details:62": {
-    "prompt_focus": "What the text suggests about southern sea otters in environments with snails, mussels, and clams.",
-    "passage_breakdown": "Tool-using otters: high-quality, hard-shelled prey (mussels/clams). Non-tool-users: abundant, energy-poor, easily extractable prey (snails).",
-    "reasoning": "Energy-poor prey → need *more of it* to meet energy needs. Non-tool-users will need to process *larger amounts* of prey to meet their energy requirements than tool-users.",
-    "distractors": "Snail-eaters with less tooth damage — possibly true but not the *suggestion* — text emphasises tool-users avoiding tooth damage; the question targets *amount* of prey processing.\n\nNon-tool-users having more robust health — opposite of energy-resource access.\n\nLess foraging time — opposite (more low-energy prey = more foraging)."
+    "prompt_focus": "Matn salyangoz, midiya va chig‘anoqli muhitlardagi janubiy dengiz qunduzlari haqida nimani taklif qiladi?",
+    "reasoning": "Energiyaga kambag‘al o‘lja → energiya ehtiyojini qondirish uchun ko‘proq kerak. Asbobsiz foydalanuvchilar ehtiyojlarini qondirish uchun asbob foydalanuvchilardan KO‘PROQ o‘ljani qayta ishlashi kerak.",
+    "distractors": "Salyangoz iste’molchilari kamroq tish shikastlanishi bilan — *taklif* emas; matn tool-userlarning tish shikastlanishidan qochishini ta’kidlaydi; savol o‘lja qayta ishlash *miqdoriga* qaratilgan.\n\nAsbobsizlarning sog‘lig‘i mustahkamroq — energiya-resurs kirishining aksi.\n\nKamroq ovqatlanish vaqti — teskari (ko‘proq past-energiya o‘lja = ko‘proq ovqatlanish).",
+    "takeaway": "Matnda aniq mexanizmni topib, uni oddiy energiya hisobiga aylantiring."
   },
   "quotation:1": {
     "prompt_focus": "A Quotation question gives you a *claim* about a text and asks which of four quoted lines from that text actually demonstrates the claim. The right quote must literally enact the claim — not merely be from the same text or be near the relevant passage. Claim: Winnemucca \"directly addresses the reader\" to establish her *authority and credibility*. We need a line that (a) speaks to the reader and (b) asserts she knows what she's talking about.",
