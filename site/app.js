@@ -205,15 +205,24 @@ function renderQuestion(main, crumb, slug, qnum) {
       <ul class="options">${opts}</ul>
 
       <section class="explanation">
-        <h3>Question type — definition</h3>
+        <h3>1 · What this question is asking — full definition</h3>
         <div class="definition">${escapeHtml(def)}</div>
-        <h3>Reasoning toward the correct answer</h3>
+        ${exp && exp.prompt_focus
+          ? `<h3>2 · The specific job of this prompt</h3>${splitParas(exp.prompt_focus).map(p => `<p>${escapeHtml(p)}</p>`).join("")}`
+          : ""}
+        ${exp && exp.passage_breakdown
+          ? `<h3>${exp.prompt_focus ? "3" : "2"} · Passage breakdown — what each part establishes</h3>${splitParas(exp.passage_breakdown).map(p => `<p>${escapeHtml(p)}</p>`).join("")}`
+          : ""}
+        <h3>${(exp && exp.prompt_focus ? 1 : 0) + (exp && exp.passage_breakdown ? 1 : 0) + 2} · Reasoning toward the correct interpretation</h3>
         ${reasoning
           ? splitParas(reasoning).map(p => `<p>${escapeHtml(p)}</p>`).join("")
           : `<p class="placeholder">Full reasoning paragraph for this question is not yet written. The definition above still tells you exactly what the question is asking and how to evaluate the four options.</p>`
         }
         ${exp && exp.distractors
-          ? `<h3>Why the other readings fail</h3>${splitParas(exp.distractors).map(p => `<p>${escapeHtml(p)}</p>`).join("")}`
+          ? `<h3>${(exp && exp.prompt_focus ? 1 : 0) + (exp && exp.passage_breakdown ? 1 : 0) + 3} · Why each of the other readings fails</h3>${splitParas(exp.distractors).map(p => `<p>${escapeHtml(p)}</p>`).join("")}`
+          : ""}
+        ${exp && exp.takeaway
+          ? `<h3>Takeaway</h3><p><em>${escapeHtml(exp.takeaway)}</em></p>`
           : ""}
       </section>
 
