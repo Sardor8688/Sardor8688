@@ -1925,5 +1925,848 @@
     "prompt_focus": "A Graphs / Quantitative-Evidence question pairs a textual claim with a chart or table and asks which answer correctly *uses the data* to complete the claim. The right option must (a) be literally readable off the chart and (b) actually support the specific claim — not just any neighboring fact. Claim: the seagrass coverage increase doesn't necessarily mean ecosystem resilience — what's the supporting cautionary data?",
     "reasoning": "Water temperatures rose slowly 2012–2018, then spiked unprecedentedly in early 2019 — and only *widgeon grass* among the seagrass species can tolerate such high temps. So the apparent recovery is fragile.",
     "distractors": "Options that don't combine temperature spike + species tolerance fail."
+  },
+  "inference:1": {
+    "prompt_focus": "An Inference question presents a passage that *implies* but does not state a conclusion, then asks you to identify the option that *most logically completes* the text. The right answer is the only one that follows directly from the facts in the passage — not over-strong, not contradicted, not unrelated. Why is a constrained sociology study less dependent on heavy funding?",
+    "passage_breakdown": "SAGE is *longitudinal*: it tracks 66,000 participants over time, requiring extensive funding for data collection at intervals. The contrast: a study that only wants the *average age* of new parents in one city is *constrained*.",
+    "reasoning": "Longitudinal studies cost a lot because they need data spanning years. A snapshot of one city's average age is *not* trying to identify a trend over time — so it doesn't need the multi-year funding.",
+    "distractors": "Options about study quality being independent of funding overstate the claim.\n\nOptions about constrained studies inevitably being unreliable contradict the passage.\n\nOptions about funding always increasing reliability are unrelated to the contrast.",
+    "takeaway": "The completion of an inference must align with the *specific contrast* the passage sets up."
+  },
+  "inference:2": {
+    "prompt_focus": "An Inference question presents a passage that *implies* but does not state a conclusion, then asks you to identify the option that *most logically completes* the text. The right answer is the only one that follows directly from the facts in the passage — not over-strong, not contradicted, not unrelated. What disadvantage does calling Agnes Grey 'autobiographical' impose?",
+    "passage_breakdown": "Agnes Grey *does* parallel Brontë's life. But labeling it 'autobiographical' makes readers think Brontë merely fictionalised true events — an artistic field where creativity is prized.",
+    "reasoning": "If readers think she 'merely fictionalised true events,' they undervalue her *imaginative* achievement. The completion: the work is *less of an imaginative achievement than it actually is.*",
+    "distractors": "Options claiming Brontë invented nothing contradict the parallels.\n\nOptions about commercial success or biographical accuracy don't match the artistic-undervaluation thread."
+  },
+  "inference:3": {
+    "prompt_focus": "An Inference question presents a passage that *implies* but does not state a conclusion, then asks you to identify the option that *most logically completes* the text. The right answer is the only one that follows directly from the facts in the passage — not over-strong, not contradicted, not unrelated. What did the simulation predict for M. klissingiana spreading to new habitats?",
+    "passage_breakdown": "Prior research: narrow-range species are *more* genetically homogeneous. M. klissingiana is currently narrow-range. Simulation: spread to new habitats.",
+    "reasoning": "If narrow → homogeneous, then *expanding* the range should *reduce* homogeneity. Hence the simulation showed homogeneity *decreased over time.*",
+    "distractors": "Options saying homogeneity stayed the same contradict the directional rule.\n\nOptions about increased homogeneity reverse the rule."
+  },
+  "inference:4": {
+    "prompt_focus": "An Inference question presents a passage that *implies* but does not state a conclusion, then asks you to identify the option that *most logically completes* the text. The right answer is the only one that follows directly from the facts in the passage — not over-strong, not contradicted, not unrelated. What do the PTSD memory findings contribute to?",
+    "passage_breakdown": "Brain stores remote fear memories permanently → understanding helps PTSD treatment.",
+    "reasoning": "Knowing how fear memories are stored permanently allows researchers to design *more effective treatments* for PTSD and similar fear-related disorders.",
+    "distractors": "Options about cures, prevention of fear formation, or unrelated benefits overshoot the data."
+  },
+  "inference:5": {
+    "prompt_focus": "An Inference question presents a passage that *implies* but does not state a conclusion, then asks you to identify the option that *most logically completes* the text. The right answer is the only one that follows directly from the facts in the passage — not over-strong, not contradicted, not unrelated. Why did some search results discuss tractor engines?",
+    "passage_breakdown": "Williams searched for 'Twitter' on academic databases; most hits were about the social platform, but a few were about tractor noises.",
+    "reasoning": "The word 'twitter' has *multiple meanings* — including bird/machine noises. So a keyword search picks up unrelated 'twitter' uses (machine noises).",
+    "distractors": "Options blaming database errors or researcher mistakes don't fit a simple homonym explanation."
+  },
+  "inference:6": {
+    "prompt_focus": "An Inference question presents a passage that *implies* but does not state a conclusion, then asks you to identify the option that *most logically completes* the text. The right answer is the only one that follows directly from the facts in the passage — not over-strong, not contradicted, not unrelated. If similar non-NA findings emerge, what's implied about the NA association?",
+    "passage_breakdown": "NA studies show DOC↔Hg positive. Korean study found *negative*. If more non-NA studies show negative, then…",
+    "reasoning": "The NA association would reflect *region-specific* ecosystems rather than a *universal* truth.",
+    "distractors": "Options claiming universal trends or proving the Korean finding wrong contradict the inference structure."
+  },
+  "inference:7": {
+    "prompt_focus": "An Inference question presents a passage that *implies* but does not state a conclusion, then asks you to identify the option that *most logically completes* the text. The right answer is the only one that follows directly from the facts in the passage — not over-strong, not contradicted, not unrelated. Given gold's rarity, what is *not surprising*?",
+    "passage_breakdown": "Some hoards contain gold (Fittleworth); gold was much rarer than bronze.",
+    "reasoning": "Rarity → most hoards lack gold. Hence Parc-y-Meirch (the other hoard) likely contained no gold — *some hoards contained no gold.*",
+    "distractors": "Options claiming all hoards had gold contradict rarity; options about silver/copper are unrelated."
+  },
+  "inference:8": {
+    "prompt_focus": "An Inference question presents a passage that *implies* but does not state a conclusion, then asks you to identify the option that *most logically completes* the text. The right answer is the only one that follows directly from the facts in the passage — not over-strong, not contradicted, not unrelated. What follows from climate-driven range changes for invasive/native designations?",
+    "passage_breakdown": "ND classified spiny water flea as invasive. Camacho/McLachlan: climate is shifting ranges. This *challenges* the labels.",
+    "reasoning": "If ranges shift and habitats change, *current* invasive/native labels may no longer apply — so states like ND may need to *reevaluate*.",
+    "distractors": "Options about banning the label or universal application don't match 'reevaluate.'"
+  },
+  "inference:9": {
+    "prompt_focus": "An Inference question presents a passage that *implies* but does not state a conclusion, then asks you to identify the option that *most logically completes* the text. The right answer is the only one that follows directly from the facts in the passage — not over-strong, not contradicted, not unrelated. Combining Levine/Zervos and Henry — what overall pattern?",
+    "passage_breakdown": "Levine/Zervos: no enduring increase. Henry: short-term increase in 3 years post-liberalization.",
+    "reasoning": "Companies see *short-term boosts* but those gains are *unlikely to last* — the synthesis of the two findings.",
+    "distractors": "Options stating no effect at all or permanent effect ignore one half of the evidence."
+  },
+  "inference:10": {
+    "prompt_focus": "An Inference question presents a passage that *implies* but does not state a conclusion, then asks you to identify the option that *most logically completes* the text. The right answer is the only one that follows directly from the facts in the passage — not over-strong, not contradicted, not unrelated. What contrast between Horsehope Craig and Llanarmon-yn-Iâl is implied?",
+    "passage_breakdown": "Llanarmon: 16th c. BCE artifacts (Middle BA). Horsehope Craig: 7th c. BCE artifacts. Some change in burial practice / artifact composition occurred mid-Middle BA.",
+    "reasoning": "Whatever change is being mentioned shows up *in Horsehope Craig* (later) but *not in Llanarmon* (earlier).",
+    "distractors": "Options reversing the timeline or claiming both showed the change contradict the chronology."
+  },
+  "inference:11": {
+    "prompt_focus": "An Inference question presents a passage that *implies* but does not state a conclusion, then asks you to identify the option that *most logically completes* the text. The right answer is the only one that follows directly from the facts in the passage — not over-strong, not contradicted, not unrelated. What does the NA-vs-Sweden mismatch suggest?",
+    "passage_breakdown": "Bravo et al. (Sweden): negative DOC↔Hg. Most others (NA) positive. NA sites share characteristics.",
+    "reasoning": "The Swedish site likely differs in *environmental conditions* — that's why the DOC↔Hg relationship is different.",
+    "distractors": "Options claiming Bravo's data are flawed or universally invalid overshoot."
+  },
+  "inference:12": {
+    "prompt_focus": "An Inference question presents a passage that *implies* but does not state a conclusion, then asks you to identify the option that *most logically completes* the text. The right answer is the only one that follows directly from the facts in the passage — not over-strong, not contradicted, not unrelated. Same template as Q8 — invasive labels challenged by climate change.",
+    "passage_breakdown": "South Africa labels Gaboon viper invasive. Climate may shift ranges.",
+    "reasoning": "Distinctions countries make may not fit changing circumstances.",
+    "distractors": "Same as Q8."
+  },
+  "inference:13": {
+    "prompt_focus": "An Inference question presents a passage that *implies* but does not state a conclusion, then asks you to identify the option that *most logically completes* the text. The right answer is the only one that follows directly from the facts in the passage — not over-strong, not contradicted, not unrelated. Why doesn't the fitness study need a large budget?",
+    "passage_breakdown": "MCS = longitudinal, expensive. The fitness study only seeks current % of weight-trainers.",
+    "reasoning": "It can be done well *without years* of data collection — no longitudinal sampling needed.",
+    "distractors": "Options about quality being unrelated to time miss the time-vs-budget link."
+  },
+  "inference:14": {
+    "prompt_focus": "An Inference question presents a passage that *implies* but does not state a conclusion, then asks you to identify the option that *most logically completes* the text. The right answer is the only one that follows directly from the facts in the passage — not over-strong, not contradicted, not unrelated. If small white herons prefer canopy cover but little blue herons don't, what does increasing canopy do?",
+    "passage_breakdown": "Small whites prefer canopy; little blue not so much.",
+    "reasoning": "Canopy-cover management would attract small whites *but not* little blues — i.e., it's *less likely to attract little blue herons* than small white herons.",
+    "distractors": "Options claiming canopy attracts both or repels both contradict the asymmetry."
+  },
+  "inference:15": {
+    "prompt_focus": "An Inference question presents a passage that *implies* but does not state a conclusion, then asks you to identify the option that *most logically completes* the text. The right answer is the only one that follows directly from the facts in the passage — not over-strong, not contradicted, not unrelated. What is the limitation of a 2D photograph?",
+    "passage_breakdown": "A photo can't capture interaction with surroundings — complement, blend, clash.",
+    "reasoning": "So a photo *fails to convey the full impact* of the building's design and structure.",
+    "distractors": "Options claiming photos are useless or that architects can't use them at all overshoot."
+  },
+  "inference:16": {
+    "prompt_focus": "An Inference question presents a passage that *implies* but does not state a conclusion, then asks you to identify the option that *most logically completes* the text. The right answer is the only one that follows directly from the facts in the passage — not over-strong, not contradicted, not unrelated. Same template as Q1 — constrained study not seeking trends.",
+    "passage_breakdown": "SOEP longitudinal; constrained study seeks one snapshot.",
+    "reasoning": "Constrained studies aren't trying to identify trends over time — that's why they need less funding.",
+    "distractors": "Same as Q1."
+  },
+  "inference:17": {
+    "prompt_focus": "An Inference question presents a passage that *implies* but does not state a conclusion, then asks you to identify the option that *most logically completes* the text. The right answer is the only one that follows directly from the facts in the passage — not over-strong, not contradicted, not unrelated. What does middle-aged adults' high effectiveness rating suggest about purchase likelihood?",
+    "passage_breakdown": "Sharma/Dayal: higher perceived effectiveness → higher likelihood to buy. Chile study: middle-aged rated effectiveness highest.",
+    "reasoning": "Combining: middle-aged adults are *more likely* than other groups to buy the food product.",
+    "distractors": "Options about other groups or contradicting the effectiveness-purchase link fail."
+  },
+  "inference:18": {
+    "prompt_focus": "An Inference question presents a passage that *implies* but does not state a conclusion, then asks you to identify the option that *most logically completes* the text. The right answer is the only one that follows directly from the facts in the passage — not over-strong, not contradicted, not unrelated. If non-NA studies replicate NA pattern, what does Bravo's outlier mean?",
+    "passage_breakdown": "Most studies (NA + many outside) show positive DOC↔Hg. Bravo (Sweden) shows negative.",
+    "reasoning": "The general truth is that DOC and Hg *do typically rise and fall together* in fresh water — Bravo is an outlier.",
+    "distractors": "Options favoring Bravo over the majority or doubting the consensus contradict the synthesis."
+  },
+  "inference:19": {
+    "prompt_focus": "An Inference question presents a passage that *implies* but does not state a conclusion, then asks you to identify the option that *most logically completes* the text. The right answer is the only one that follows directly from the facts in the passage — not over-strong, not contradicted, not unrelated. What's the limitation of single-species conservation if ecosystem view is right?",
+    "passage_breakdown": "Single-species focus on M. guerreronis. Ecosystem view: interactions matter.",
+    "reasoning": "Single-species could *fail to consider* how M. guerreronis depends on other species' populations in Guerrero.",
+    "distractors": "Options claiming single-species always fails or always succeeds overshoot."
+  },
+  "inference:20": {
+    "prompt_focus": "An Inference question presents a passage that *implies* but does not state a conclusion, then asks you to identify the option that *most logically completes* the text. The right answer is the only one that follows directly from the facts in the passage — not over-strong, not contradicted, not unrelated. What does the constrained transportation study require relative to SOEP?",
+    "passage_breakdown": "SOEP longitudinal, expensive. Transportation study just counts daily users — no causal inference.",
+    "reasoning": "Transportation study needs *significantly less financial outlay* than SOEP.",
+    "distractors": "Options claiming equal or higher cost contradict the contrast."
+  },
+  "inference:21": {
+    "prompt_focus": "An Inference question presents a passage that *implies* but does not state a conclusion, then asks you to identify the option that *most logically completes* the text. The right answer is the only one that follows directly from the facts in the passage — not over-strong, not contradicted, not unrelated. What can be inferred about Malory's sources for the Round Table?",
+    "passage_breakdown": "Round Table absent in pre-1155 sources (Annales Cambriae 970, Mabinogion 12th-13th c., Geoffrey 1130s). Present in Roman de Brut (1155) and Le Morte d'Arthur (15th c.).",
+    "reasoning": "Annales Cambriae (970) is pre-1155 → has no Round Table → so Malory *did not use Annales Cambriae* as a source for the Round Table.",
+    "distractors": "Options claiming Malory copied from Annales contradict the source's content."
+  },
+  "inference:22": {
+    "prompt_focus": "An Inference question presents a passage that *implies* but does not state a conclusion, then asks you to identify the option that *most logically completes* the text. The right answer is the only one that follows directly from the facts in the passage — not over-strong, not contradicted, not unrelated. Why are conservationists satisfied even though bird-focused mitigations dominate?",
+    "passage_breakdown": "Many measures for birds, few for mammals. Yet conservationists were satisfied.",
+    "reasoning": "The bird-focused measures will *also* minimise most effects on mammals — overlap of effects.",
+    "distractors": "Options claiming mammals don't matter or birds are immune fail."
+  },
+  "inference:23": {
+    "prompt_focus": "An Inference question presents a passage that *implies* but does not state a conclusion, then asks you to identify the option that *most logically completes* the text. The right answer is the only one that follows directly from the facts in the passage — not over-strong, not contradicted, not unrelated. What can we conclude about the Waterloo's crew vs. Caledonia's?",
+    "passage_breakdown": "First-rate ships have 850-875 crew; lower ranks fewer. Caledonia first-rate (120 cannons, 3 decks). Waterloo not first-rate.",
+    "reasoning": "Waterloo (lower rank) had fewer crew than Caledonia (first-rate) — *Waterloo had a smaller crew.*",
+    "distractors": "Options about Temeraire or claiming Waterloo had more crew contradict the rule."
+  },
+  "inference:24": {
+    "prompt_focus": "An Inference question presents a passage that *implies* but does not state a conclusion, then asks you to identify the option that *most logically completes* the text. The right answer is the only one that follows directly from the facts in the passage — not over-strong, not contradicted, not unrelated. What do the increased clam findings imply about the Kwakwaka'wakw method?",
+    "passage_breakdown": "Songs reference terraced clam gardens. Local clam-bivalve records show significant increases.",
+    "reasoning": "The practical approach *effectively maintained clams* as a sustainable food source — confirmed by the clam-record increases.",
+    "distractors": "Options claiming songs are merely metaphorical or that clams declined contradict the data."
+  },
+  "inference:25": {
+    "prompt_focus": "An Inference question presents a passage that *implies* but does not state a conclusion, then asks you to identify the option that *most logically completes* the text. The right answer is the only one that follows directly from the facts in the passage — not over-strong, not contradicted, not unrelated. Tarabieh: higher *risk perception* → *lower* purchase likelihood. Rural residents had highest risk perception.",
+    "reasoning": "So rural residents are *less likely* to buy the TV.",
+    "distractors": "Options reversing the direction or focusing on wrong demographics fail."
+  },
+  "inference:26": {
+    "prompt_focus": "An Inference question presents a passage that *implies* but does not state a conclusion, then asks you to identify the option that *most logically completes* the text. The right answer is the only one that follows directly from the facts in the passage — not over-strong, not contradicted, not unrelated. What does the convergence-of-gases finding imply for early-universe models?",
+    "passage_breakdown": "Whalen/Latif simulations show no need for ultraviolet backgrounds or extreme conditions.",
+    "reasoning": "Models can be built on *more credible assumptions* than previous models that required exotic conditions.",
+    "distractors": "Options claiming previous models were entirely wrong or that no progress is possible overshoot."
+  },
+  "inference:27": {
+    "prompt_focus": "An Inference question presents a passage that *implies* but does not state a conclusion, then asks you to identify the option that *most logically completes* the text. The right answer is the only one that follows directly from the facts in the passage — not over-strong, not contradicted, not unrelated. Risk to readers who try to identify too many real-life analogues.",
+    "passage_breakdown": "Novel is largely pure invention; some Ephron parallels exist.",
+    "reasoning": "Such readers risk *positing unsupportable connections* between the novel and Ephron's life.",
+    "distractors": "Options claiming readers will dislike the novel or always find correct analogues miss the 'unsupportable' angle."
+  },
+  "inference:28": {
+    "prompt_focus": "An Inference question presents a passage that *implies* but does not state a conclusion, then asks you to identify the option that *most logically completes* the text. The right answer is the only one that follows directly from the facts in the passage — not over-strong, not contradicted, not unrelated. Same template as Q14 — water depth (great blue prefers, small dark doesn't).",
+    "reasoning": "Water-depth management attracts great blues *more than* small darks — *less likely* to attract small darks.",
+    "distractors": "Same template."
+  },
+  "inference:29": {
+    "prompt_focus": "An Inference question presents a passage that *implies* but does not state a conclusion, then asks you to identify the option that *most logically completes* the text. The right answer is the only one that follows directly from the facts in the passage — not over-strong, not contradicted, not unrelated. Inference from chasing similarity + genetic basis.",
+    "passage_breakdown": "MacLean: behavior similarity correlates with genetic similarity, especially for chasing.",
+    "reasoning": "French bulldog and bullmastiff both show similar chasing → likely *shared aspect of their genetics.*",
+    "distractors": "Options denying genetic role or claiming environmental cause contradict the framework."
+  },
+  "inference:30": {
+    "prompt_focus": "An Inference question presents a passage that *implies* but does not state a conclusion, then asks you to identify the option that *most logically completes* the text. The right answer is the only one that follows directly from the facts in the passage — not over-strong, not contradicted, not unrelated. What about pre-1960s discoveries (no detectors etc.)?",
+    "passage_breakdown": "Detectors, GPR, aerial surveys *post-1960s*. Hoards found before that.",
+    "reasoning": "Without those tools, earlier hoard discoveries likely *resulted from artifacts being unearthed accidentally.*",
+    "distractors": "Options assuming systematic searching pre-1960s contradict the technology timeline."
+  },
+  "inference:31": {
+    "prompt_focus": "An Inference question presents a passage that *implies* but does not state a conclusion, then asks you to identify the option that *most logically completes* the text. The right answer is the only one that follows directly from the facts in the passage — not over-strong, not contradicted, not unrelated. Same as Q8 with walnut twig beetle.",
+    "reasoning": "The state's *invasive* designation may be appropriate now but *not in the future.*",
+    "distractors": "Same."
+  },
+  "inference:32": {
+    "prompt_focus": "An Inference question presents a passage that *implies* but does not state a conclusion, then asks you to identify the option that *most logically completes* the text. The right answer is the only one that follows directly from the facts in the passage — not over-strong, not contradicted, not unrelated. Philippines + Henry's findings consistent with what?",
+    "passage_breakdown": "Standard view: liberalization → easier to raise money. Henry studied 11 countries that were liberalised.",
+    "reasoning": "Empirical evidence (Henry) was *consistent with the scholarly consensus* about liberalization's effect on investment.",
+    "distractors": "Options that contradict the consensus or claim no effect fail."
+  },
+  "inference:33": {
+    "prompt_focus": "An Inference question presents a passage that *implies* but does not state a conclusion, then asks you to identify the option that *most logically completes* the text. The right answer is the only one that follows directly from the facts in the passage — not over-strong, not contradicted, not unrelated. Same template as Q2 — autobiographical labelling reduces perceived imagination.",
+    "reasoning": "Empire of the Sun is *less of an imaginative achievement than it actually is.*",
+    "distractors": "Same."
+  },
+  "inference:34": {
+    "prompt_focus": "An Inference question presents a passage that *implies* but does not state a conclusion, then asks you to identify the option that *most logically completes* the text. The right answer is the only one that follows directly from the facts in the passage — not over-strong, not contradicted, not unrelated. Why must language preservation efforts incorporate songs?",
+    "passage_breakdown": "UN preservation focuses on spoken language; some expressions appear only in songs.",
+    "reasoning": "Preservation must *incorporate the preservation of songs* into broader language-protection efforts.",
+    "distractors": "Options about replacing language preservation with songs miss the inclusion sense."
+  },
+  "inference:35": {
+    "prompt_focus": "An Inference question presents a passage that *implies* but does not state a conclusion, then asks you to identify the option that *most logically completes* the text. The right answer is the only one that follows directly from the facts in the passage — not over-strong, not contradicted, not unrelated. Same as Q11 — Guédron/Tisserand finding likely due to environmental difference.",
+    "reasoning": "Same.",
+    "distractors": "Same."
+  },
+  "inference:36": {
+    "prompt_focus": "An Inference question presents a passage that *implies* but does not state a conclusion, then asks you to identify the option that *most logically completes* the text. The right answer is the only one that follows directly from the facts in the passage — not over-strong, not contradicted, not unrelated. Why do three-host CLP abundance decline with warming but two-host stable?",
+    "passage_breakdown": "Three-host CLPs depend on at least 2 vertebrate hosts; two-host CLPs depend on only one. Vertebrates vulnerable to climate change.",
+    "reasoning": "Warming hurts vertebrate populations → suppresses some parasites that depend on multiple vertebrates. Two-host parasites' singular host wasn't affected enough to suppress them.",
+    "distractors": "Options claiming warming had no effect or that two-host CLPs increased contradict the data."
+  },
+  "inference:37": {
+    "prompt_focus": "An Inference question presents a passage that *implies* but does not state a conclusion, then asks you to identify the option that *most logically completes* the text. The right answer is the only one that follows directly from the facts in the passage — not over-strong, not contradicted, not unrelated. Same as Q8.",
+    "reasoning": "Labels reflect environmental conditions that may not persist.",
+    "distractors": "Same."
+  },
+  "inference:38": {
+    "prompt_focus": "An Inference question presents a passage that *implies* but does not state a conclusion, then asks you to identify the option that *most logically completes* the text. The right answer is the only one that follows directly from the facts in the passage — not over-strong, not contradicted, not unrelated. Inference about face-centered cubic structure.",
+    "passage_breakdown": "Ferritic (used in induction cookers) ≠ face-centered cubic. Austenitic = face-centered cubic.",
+    "reasoning": "So austenitic stainless steel *will* have a face-centered cubic structure, while stainless steel used in induction cookers (ferritic) *will not.*",
+    "distractors": "Options swapping the structure–type pairing fail."
+  },
+  "inference:39": {
+    "prompt_focus": "An Inference question presents a passage that *implies* but does not state a conclusion, then asks you to identify the option that *most logically completes* the text. The right answer is the only one that follows directly from the facts in the passage — not over-strong, not contradicted, not unrelated. Same as Q36 — three-host vertebrate dependence.",
+    "reasoning": "Same.",
+    "distractors": "Same."
+  },
+  "inference:40": {
+    "prompt_focus": "An Inference question presents a passage that *implies* but does not state a conclusion, then asks you to identify the option that *most logically completes* the text. The right answer is the only one that follows directly from the facts in the passage — not over-strong, not contradicted, not unrelated. What do settlement patterns of north/south Chinese immigrants imply?",
+    "passage_breakdown": "North-China immigrants → Flushing; South-China → Chinatown.",
+    "reasoning": "Geographic differences in primary language *within China* are *reflected* in NYC settlement patterns.",
+    "distractors": "Options claiming language abandonment or random settlement contradict the pattern."
+  },
+  "inference:41": {
+    "prompt_focus": "An Inference question presents a passage that *implies* but does not state a conclusion, then asks you to identify the option that *most logically completes* the text. The right answer is the only one that follows directly from the facts in the passage — not over-strong, not contradicted, not unrelated. Same as Q34 — incorporate songs into language preservation.",
+    "reasoning": "Same.",
+    "distractors": "Same."
+  },
+  "inference:42": {
+    "prompt_focus": "An Inference question presents a passage that *implies* but does not state a conclusion, then asks you to identify the option that *most logically completes* the text. The right answer is the only one that follows directly from the facts in the passage — not over-strong, not contradicted, not unrelated. Same as Q11 — environmental difference explanation.",
+    "reasoning": "Same.",
+    "distractors": "Same."
+  },
+  "inference:43": {
+    "prompt_focus": "An Inference question presents a passage that *implies* but does not state a conclusion, then asks you to identify the option that *most logically completes* the text. The right answer is the only one that follows directly from the facts in the passage — not over-strong, not contradicted, not unrelated. Same as Q36.",
+    "reasoning": "Same.",
+    "distractors": "Same."
+  },
+  "inference:44": {
+    "prompt_focus": "An Inference question presents a passage that *implies* but does not state a conclusion, then asks you to identify the option that *most logically completes* the text. The right answer is the only one that follows directly from the facts in the passage — not over-strong, not contradicted, not unrelated. Same template — ibis prefers deep water; small darks don't.",
+    "reasoning": "Deep-water management attracts ibises *more* than small darks.",
+    "distractors": "Same."
+  },
+  "inference:45": {
+    "prompt_focus": "An Inference question presents a passage that *implies* but does not state a conclusion, then asks you to identify the option that *most logically completes* the text. The right answer is the only one that follows directly from the facts in the passage — not over-strong, not contradicted, not unrelated. What does the model do at large forests for large mammals?",
+    "passage_breakdown": "Model predictions too high for large mammals in large forests; too small for small mammals in small forests.",
+    "reasoning": "Beaverhead-Deerlodge (large forest) → model will *overestimate* large-mammal populations there.",
+    "distractors": "Options reversing the direction or applying the small-forest rule fail."
+  },
+  "inference:46": {
+    "prompt_focus": "An Inference question presents a passage that *implies* but does not state a conclusion, then asks you to identify the option that *most logically completes* the text. The right answer is the only one that follows directly from the facts in the passage — not over-strong, not contradicted, not unrelated. Why does Laidre disagree with the freezing-detection hypothesis?",
+    "passage_breakdown": "Many narwhals lack a tusk. If tusk had an essential survival function, then…",
+    "reasoning": "…*more narwhals would have a tusk* (essential traits would be common).",
+    "distractors": "Options claiming the tusk is purely decorative or only for males don't fit Laidre's reasoning."
+  },
+  "inference:47": {
+    "prompt_focus": "An Inference question presents a passage that *implies* but does not state a conclusion, then asks you to identify the option that *most logically completes* the text. The right answer is the only one that follows directly from the facts in the passage — not over-strong, not contradicted, not unrelated. Same as Q40 — correlations replicate in new country.",
+    "reasoning": "Same.",
+    "distractors": "Same."
+  },
+  "inference:48": {
+    "prompt_focus": "An Inference question presents a passage that *implies* but does not state a conclusion, then asks you to identify the option that *most logically completes* the text. The right answer is the only one that follows directly from the facts in the passage — not over-strong, not contradicted, not unrelated. Same as Q2.",
+    "reasoning": "Same.",
+    "distractors": "Same."
+  },
+  "inference:49": {
+    "prompt_focus": "An Inference question presents a passage that *implies* but does not state a conclusion, then asks you to identify the option that *most logically completes* the text. The right answer is the only one that follows directly from the facts in the passage — not over-strong, not contradicted, not unrelated. What does 'younger speakers borrow more' imply about the dialect?",
+    "passage_breakdown": "Hypothesis: NYC Spanish dialect diverging via interaction with English. Younger speakers borrow more from majority languages.",
+    "reasoning": "Younger Spanish speakers in NYC are *more likely* to use a NYC-specific dialect than older speakers in the same neighborhood.",
+    "distractors": "Options reversing age-direction or claiming no dialect difference fail."
+  },
+  "inference:50": {
+    "prompt_focus": "An Inference question presents a passage that *implies* but does not state a conclusion, then asks you to identify the option that *most logically completes* the text. The right answer is the only one that follows directly from the facts in the passage — not over-strong, not contradicted, not unrelated. Same as Q21 — Malory didn't use Preiddeu Annwfn for Round Table material.",
+    "reasoning": "Same.",
+    "distractors": "Same."
+  },
+  "inference:51": {
+    "prompt_focus": "An Inference question presents a passage that *implies* but does not state a conclusion, then asks you to identify the option that *most logically completes* the text. The right answer is the only one that follows directly from the facts in the passage — not over-strong, not contradicted, not unrelated. What can rulers proclaim, given the trader-noticed yellowing?",
+    "passage_breakdown": "Coins below 80% silver were not suitable for trade. The 367 BCE coin had only 74.2% silver — too yellow, not trade-worthy.",
+    "reasoning": "Authorities would *raise* the silver threshold above 80% to restore trade suitability.",
+    "distractors": "Options about banning coins entirely or lowering the threshold contradict the trade purpose."
+  },
+  "inference:52": {
+    "prompt_focus": "An Inference question presents a passage that *implies* but does not state a conclusion, then asks you to identify the option that *most logically completes* the text. The right answer is the only one that follows directly from the facts in the passage — not over-strong, not contradicted, not unrelated. Same as Q40/47.",
+    "reasoning": "Same.",
+    "distractors": "Same."
+  },
+  "inference:53": {
+    "prompt_focus": "An Inference question presents a passage that *implies* but does not state a conclusion, then asks you to identify the option that *most logically completes* the text. The right answer is the only one that follows directly from the facts in the passage — not over-strong, not contradicted, not unrelated. Same as Q19.",
+    "reasoning": "Single-species approach fails to consider species interactions.",
+    "distractors": "Same."
+  },
+  "inference:54": {
+    "prompt_focus": "An Inference question presents a passage that *implies* but does not state a conclusion, then asks you to identify the option that *most logically completes* the text. The right answer is the only one that follows directly from the facts in the passage — not over-strong, not contradicted, not unrelated. Same as Q21/50.",
+    "reasoning": "Same.",
+    "distractors": "Same."
+  },
+  "inference:55": {
+    "prompt_focus": "An Inference question presents a passage that *implies* but does not state a conclusion, then asks you to identify the option that *most logically completes* the text. The right answer is the only one that follows directly from the facts in the passage — not over-strong, not contradicted, not unrelated. What do correlations + no plateau imply?",
+    "passage_breakdown": "Vitamin D correlates with UVB; no plateau even at peak local UVB.",
+    "reasoning": "Their bodies could synthesize *more* vitamin D if UVB were higher → in mid-latitude zoos they synthesize *less than they're inherently capable of.*",
+    "distractors": "Options claiming they max out or over-synthesize contradict the no-plateau finding."
+  },
+  "inference:56": {
+    "prompt_focus": "An Inference question presents a passage that *implies* but does not state a conclusion, then asks you to identify the option that *most logically completes* the text. The right answer is the only one that follows directly from the facts in the passage — not over-strong, not contradicted, not unrelated. What happens to fat content without hydrocolloid coating?",
+    "passage_breakdown": "Hydrocolloids reduce moisture loss → less void → less oil filling. Without hydrocolloids, more moisture leaves → more oil enters.",
+    "reasoning": "A food fried *without* hydrocolloid coating has *higher fat content* than one fried with it.",
+    "distractors": "Options claiming reverse or no difference fail."
+  },
+  "inference:57": {
+    "prompt_focus": "An Inference question presents a passage that *implies* but does not state a conclusion, then asks you to identify the option that *most logically completes* the text. The right answer is the only one that follows directly from the facts in the passage — not over-strong, not contradicted, not unrelated. What does the burial alongside spear points + same-time radiocarbon suggest?",
+    "passage_breakdown": "Fox skeleton found alongside human artifacts; possibly deliberately buried.",
+    "reasoning": "The fox may have been a *companion animal* of the human inhabitants.",
+    "distractors": "Options claiming food source or accidental co-location are contradicted by 'deliberately buried.'"
+  },
+  "inference:58": {
+    "prompt_focus": "An Inference question presents a passage that *implies* but does not state a conclusion, then asks you to identify the option that *most logically completes* the text. The right answer is the only one that follows directly from the facts in the passage — not over-strong, not contradicted, not unrelated. What inference about variation between studies?",
+    "passage_breakdown": "On average, mammals show larger differences than fish. But every class had individual studies above the mammal average.",
+    "reasoning": "So *some fish studies* found larger effects than *some mammal studies* — within-class variation crosses between-class averages.",
+    "distractors": "Options claiming mammals always > fish ignore individual-study spread."
+  },
+  "inference:59": {
+    "prompt_focus": "An Inference question presents a passage that *implies* but does not state a conclusion, then asks you to identify the option that *most logically completes* the text. The right answer is the only one that follows directly from the facts in the passage — not over-strong, not contradicted, not unrelated. What does the red-association research suggest about Liverpool's success?",
+    "passage_breakdown": "Liverpool wore red and won more than non-red Watford. Red associated with power/dominance/caution.",
+    "reasoning": "Opponents may have been *influenced by the color of Liverpool's uniforms*.",
+    "distractors": "Options claiming red itself caused referee bias or weather effects overshoot."
+  },
+  "inference:60": {
+    "prompt_focus": "An Inference question presents a passage that *implies* but does not state a conclusion, then asks you to identify the option that *most logically completes* the text. The right answer is the only one that follows directly from the facts in the passage — not over-strong, not contradicted, not unrelated. Same as Q8.",
+    "reasoning": "Designation may be appropriate now but not in the future.",
+    "distractors": "Same."
+  },
+  "inference:61": {
+    "prompt_focus": "An Inference question presents a passage that *implies* but does not state a conclusion, then asks you to identify the option that *most logically completes* the text. The right answer is the only one that follows directly from the facts in the passage — not over-strong, not contradicted, not unrelated. What ecological knowledge is preserved in Indigenous songs?",
+    "passage_breakdown": "Songs reference clam gardens; archaeology supports clam-cultivation effectiveness.",
+    "reasoning": "*Effective methods for cultivating sources of sustenance* are among the ecological knowledge preserved in such songs.",
+    "distractors": "Options claiming songs are only spiritual or unrelated to practical knowledge fail."
+  },
+  "inference:62": {
+    "prompt_focus": "An Inference question presents a passage that *implies* but does not state a conclusion, then asks you to identify the option that *most logically completes* the text. The right answer is the only one that follows directly from the facts in the passage — not over-strong, not contradicted, not unrelated. What's the risk of the langur conservation study?",
+    "passage_breakdown": "Hard to count langurs; population trend unclear.",
+    "reasoning": "Without accurate counts, the study *risks making inaccurate conclusions* about which strategies work.",
+    "distractors": "Options claiming the study will *certainly* fail or will *guarantee* accurate counts overshoot."
+  },
+  "inference:63": {
+    "prompt_focus": "An Inference question presents a passage that *implies* but does not state a conclusion, then asks you to identify the option that *most logically completes* the text. The right answer is the only one that follows directly from the facts in the passage — not over-strong, not contradicted, not unrelated. Same as Q24 — practice effectively maintained clams.",
+    "reasoning": "Plus archaeology shows abundance and *robustness* — promoted both maintenance and robustness.",
+    "distractors": "Same."
+  },
+  "inference:64": {
+    "prompt_focus": "An Inference question presents a passage that *implies* but does not state a conclusion, then asks you to identify the option that *most logically completes* the text. The right answer is the only one that follows directly from the facts in the passage — not over-strong, not contradicted, not unrelated. What does considering Sandoval's role *and* the art-establishment context suggest?",
+    "passage_breakdown": "Critics focus on women's constraints (Valdez), but Sandoval (male) is also taped. Context: nonmuralist Chicano artists couldn't exhibit.",
+    "reasoning": "The work's *constraint* theme is *aesthetic*: the constraining expectations placed on Chicano artists to be muralists — applies to both Valdez and Sandoval.",
+    "distractors": "Options focusing only on gender or claiming no constraint fail to account for Sandoval."
+  },
+  "inference:65": {
+    "prompt_focus": "An Inference question presents a passage that *implies* but does not state a conclusion, then asks you to identify the option that *most logically completes* the text. The right answer is the only one that follows directly from the facts in the passage — not over-strong, not contradicted, not unrelated. What's predicted about nest success near vs. far from the road?",
+    "passage_breakdown": "Ravens spot nests near open spaces (roads) more easily than woodland nests.",
+    "reasoning": "Finches nesting *near* the road will *lose more eggs* to ravens than those nesting deep in woodland.",
+    "distractors": "Options reversing the direction or claiming no impact fail."
+  },
+  "inference:66": {
+    "prompt_focus": "An Inference question presents a passage that *implies* but does not state a conclusion, then asks you to identify the option that *most logically completes* the text. The right answer is the only one that follows directly from the facts in the passage — not over-strong, not contradicted, not unrelated. What does the daytime-activity difference imply about lab settings?",
+    "passage_breakdown": "Wild tucos most active in daytime; captive tucos not.",
+    "reasoning": "Lab setting is *interfering* with tucos' rest/activity patterns.",
+    "distractors": "Options claiming tucos are unaffected by environment contradict the daytime difference."
+  },
+  "inference:67": {
+    "prompt_focus": "An Inference question presents a passage that *implies* but does not state a conclusion, then asks you to identify the option that *most logically completes* the text. The right answer is the only one that follows directly from the facts in the passage — not over-strong, not contradicted, not unrelated. Chromium content of 200-series stainless steel + induction-cooker steel.",
+    "passage_breakdown": "Ferritic: ≥10.5% Cr (induction cookers). Austenitic: lower Cr (washing machines = 200 series).",
+    "reasoning": "Wait — ferritic has ≥10.5% Cr; austenitic has *less*. So induction-cooker steel ≥10.5%, washing-machine steel < 10.5%. The completion notes both furnaces and washing-machine stainless steel will have *less* than 10.5% — given the question's specifics.",
+    "distractors": "Options swapping the chromium relationships fail."
+  },
+  "inference:68": {
+    "prompt_focus": "An Inference question presents a passage that *implies* but does not state a conclusion, then asks you to identify the option that *most logically completes* the text. The right answer is the only one that follows directly from the facts in the passage — not over-strong, not contradicted, not unrelated. Why is molecular analysis better than morphological for distinguishing similar species?",
+    "passage_breakdown": "Some species identified molecularly (Ledella knudseni); others (Prionospio branchioclada) only morphologically.",
+    "reasoning": "Molecular doesn't require *subtle physiological differences* → it's *more likely to properly distinguish* morphologically similar but distinct species.",
+    "distractors": "Options claiming morphology is more accurate or that the methods are equivalent fail."
+  },
+  "inference:69": {
+    "prompt_focus": "An Inference question presents a passage that *implies* but does not state a conclusion, then asks you to identify the option that *most logically completes* the text. The right answer is the only one that follows directly from the facts in the passage — not over-strong, not contradicted, not unrelated. Same as Q61 — effective sustenance-cultivation methods preserved in songs.",
+    "reasoning": "Same.",
+    "distractors": "Same."
+  },
+  "inference:70": {
+    "prompt_focus": "An Inference question presents a passage that *implies* but does not state a conclusion, then asks you to identify the option that *most logically completes* the text. The right answer is the only one that follows directly from the facts in the passage — not over-strong, not contradicted, not unrelated. If both are at 61.5 dB but participant treats nature sounds as noise…",
+    "passage_breakdown": "Meaningful sounds perceived as *quieter* than noise at the same volume.",
+    "reasoning": "Participant perceives 'Sad but True' as quieter; nature sounds (noise) as louder. So they would *experience nature sounds as louder* than 'Sad but True' even though both are equally loud.",
+    "distractors": "Options reversing the perceived-loudness direction fail."
+  },
+  "inference:71": {
+    "prompt_focus": "An Inference question presents a passage that *implies* but does not state a conclusion, then asks you to identify the option that *most logically completes* the text. The right answer is the only one that follows directly from the facts in the passage — not over-strong, not contradicted, not unrelated. Inference from differing attachment behaviors.",
+    "passage_breakdown": "MacLean: behavior differences ↔ genetic differences, especially for attachment/attention-seeking.",
+    "reasoning": "If the breeds *differ* in attachment behavior, they likely *differ in the genetic underpinnings* for attachment/attention-seeking.",
+    "distractors": "Options claiming environmental cause or shared genetics fail."
+  },
+  "inference:72": {
+    "prompt_focus": "An Inference question presents a passage that *implies* but does not state a conclusion, then asks you to identify the option that *most logically completes* the text. The right answer is the only one that follows directly from the facts in the passage — not over-strong, not contradicted, not unrelated. What's implied by 52 of 252 genera (incl. some geometers) producing clicks?",
+    "passage_breakdown": "Researchers thought ultrasound was confined to a few groups. New finding: it's in many more genera.",
+    "reasoning": "Anti-bat ultrasound may be a *more prevalent* defense strategy than previously known.",
+    "distractors": "Options claiming it's only in tiger moths or universal in all moths overshoot."
+  },
+  "inference:73": {
+    "prompt_focus": "An Inference question presents a passage that *implies* but does not state a conclusion, then asks you to identify the option that *most logically completes* the text. The right answer is the only one that follows directly from the facts in the passage — not over-strong, not contradicted, not unrelated. Same as Q61.",
+    "reasoning": "Same.",
+    "distractors": "Same."
+  },
+  "inference:74": {
+    "prompt_focus": "An Inference question presents a passage that *implies* but does not state a conclusion, then asks you to identify the option that *most logically completes* the text. The right answer is the only one that follows directly from the facts in the passage — not over-strong, not contradicted, not unrelated. Same as Q70.",
+    "reasoning": "Same.",
+    "distractors": "Same."
+  },
+  "inference:75": {
+    "prompt_focus": "An Inference question presents a passage that *implies* but does not state a conclusion, then asks you to identify the option that *most logically completes* the text. The right answer is the only one that follows directly from the facts in the passage — not over-strong, not contradicted, not unrelated. Same template as Q71 with trainability.",
+    "reasoning": "Different trainability → different genetic underpinnings for trainability.",
+    "distractors": "Same."
+  },
+  "inference:76": {
+    "prompt_focus": "An Inference question presents a passage that *implies* but does not state a conclusion, then asks you to identify the option that *most logically completes* the text. The right answer is the only one that follows directly from the facts in the passage — not over-strong, not contradicted, not unrelated. Same as Q72.",
+    "reasoning": "Same.",
+    "distractors": "Same."
+  },
+  "inference:77": {
+    "prompt_focus": "An Inference question presents a passage that *implies* but does not state a conclusion, then asks you to identify the option that *most logically completes* the text. The right answer is the only one that follows directly from the facts in the passage — not over-strong, not contradicted, not unrelated. Same as Q61.",
+    "reasoning": "Same.",
+    "distractors": "Same."
+  },
+  "inference:78": {
+    "prompt_focus": "An Inference question presents a passage that *implies* but does not state a conclusion, then asks you to identify the option that *most logically completes* the text. The right answer is the only one that follows directly from the facts in the passage — not over-strong, not contradicted, not unrelated. Same as Q59.",
+    "reasoning": "Same.",
+    "distractors": "Same."
+  },
+  "inference:79": {
+    "prompt_focus": "An Inference question presents a passage that *implies* but does not state a conclusion, then asks you to identify the option that *most logically completes* the text. The right answer is the only one that follows directly from the facts in the passage — not over-strong, not contradicted, not unrelated. Same as Q9 — liberalization may boost investment temporarily.",
+    "reasoning": "Same.",
+    "distractors": "Same."
+  },
+  "inference:80": {
+    "prompt_focus": "An Inference question presents a passage that *implies* but does not state a conclusion, then asks you to identify the option that *most logically completes* the text. The right answer is the only one that follows directly from the facts in the passage — not over-strong, not contradicted, not unrelated. What does the mix of sandstone (flowing water) + mudstone (low-flow) signal?",
+    "passage_breakdown": "Coarse grains = sandstone (flowing water). Fine grains, dominant + crack-signs = mudstone, slow deposition + episodic drying.",
+    "reasoning": "A *lake* existed for a prolonged period (slow deposition) with *occasional drying* (cracks) and *streams* (flowing water for sandstone) at times.",
+    "distractors": "Options claiming only one type of water body fail to account for both grain types."
+  },
+  "inference:81": {
+    "prompt_focus": "An Inference question presents a passage that *implies* but does not state a conclusion, then asks you to identify the option that *most logically completes* the text. The right answer is the only one that follows directly from the facts in the passage — not over-strong, not contradicted, not unrelated. What does the Mayan-borrowing pattern (from BOTH Mixe and Zoque branches) imply?",
+    "passage_breakdown": "Mixe-Zoquean has two branches (Mixe and Zoque). Mayan languages have words from *both* branches during Olmec era.",
+    "reasoning": "Borrowing from both branches means the family had *already split* into Mixe and Zoque by then — i.e., divergence occurred before the Olmecs became dominant.",
+    "distractors": "Options claiming a single-branch borrowing or no divergence fail."
+  },
+  "inference:82": {
+    "prompt_focus": "An Inference question presents a passage that *implies* but does not state a conclusion, then asks you to identify the option that *most logically completes* the text. The right answer is the only one that follows directly from the facts in the passage — not over-strong, not contradicted, not unrelated. Same as Q59 — opponents negatively affected by red uniforms.",
+    "reasoning": "Same.",
+    "distractors": "Same."
+  },
+  "inference:83": {
+    "prompt_focus": "An Inference question presents a passage that *implies* but does not state a conclusion, then asks you to identify the option that *most logically completes* the text. The right answer is the only one that follows directly from the facts in the passage — not over-strong, not contradicted, not unrelated. What's likely true about lab sparrows' baseline corticosterone?",
+    "passage_breakdown": "White-throated sparrows' surroundings significantly affect hormone levels. Lab settings are different.",
+    "reasoning": "Captive sparrows likely have *higher baseline corticosterone* than wild ones.",
+    "distractors": "Options claiming hormone levels are environment-independent contradict the passage."
+  },
+  "inference:84": {
+    "prompt_focus": "An Inference question presents a passage that *implies* but does not state a conclusion, then asks you to identify the option that *most logically completes* the text. The right answer is the only one that follows directly from the facts in the passage — not over-strong, not contradicted, not unrelated. Same as Q55.",
+    "reasoning": "Same.",
+    "distractors": "Same."
+  },
+  "inference:85": {
+    "prompt_focus": "An Inference question presents a passage that *implies* but does not state a conclusion, then asks you to identify the option that *most logically completes* the text. The right answer is the only one that follows directly from the facts in the passage — not over-strong, not contradicted, not unrelated. Why caution against generalizing the Serbia findings?",
+    "passage_breakdown": "Serbia is a developing economy; one country's findings.",
+    "reasoning": "*Additional research* across countries with varying economic development is needed before generalizing.",
+    "distractors": "Options claiming the findings are universal or invalid overshoot."
+  },
+  "inference:86": {
+    "prompt_focus": "An Inference question presents a passage that *implies* but does not state a conclusion, then asks you to identify the option that *most logically completes* the text. The right answer is the only one that follows directly from the facts in the passage — not over-strong, not contradicted, not unrelated. Why did three-host CLPs decline despite shielded transmission?",
+    "passage_breakdown": "CLPs shielded during transmission (advantage); but three-host abundance fell with warming.",
+    "reasoning": "Whatever advantages the shielded transmission gave didn't *fully offset* other temperature-driven negative effects.",
+    "distractors": "Options claiming the strategy is purely advantageous or universally maladaptive fail."
+  },
+  "inference:87": {
+    "prompt_focus": "An Inference question presents a passage that *implies* but does not state a conclusion, then asks you to identify the option that *most logically completes* the text. The right answer is the only one that follows directly from the facts in the passage — not over-strong, not contradicted, not unrelated. Same as Q58 with amphibians instead of fish.",
+    "reasoning": "Same.",
+    "distractors": "Same."
+  },
+  "inference:88": {
+    "prompt_focus": "An Inference question presents a passage that *implies* but does not state a conclusion, then asks you to identify the option that *most logically completes* the text. The right answer is the only one that follows directly from the facts in the passage — not over-strong, not contradicted, not unrelated. Same as Q59.",
+    "reasoning": "Same.",
+    "distractors": "Same."
+  },
+  "inference:89": {
+    "prompt_focus": "An Inference question presents a passage that *implies* but does not state a conclusion, then asks you to identify the option that *most logically completes* the text. The right answer is the only one that follows directly from the facts in the passage — not over-strong, not contradicted, not unrelated. Same as Q9.",
+    "reasoning": "Same.",
+    "distractors": "Same."
+  },
+  "inference:90": {
+    "prompt_focus": "An Inference question presents a passage that *implies* but does not state a conclusion, then asks you to identify the option that *most logically completes* the text. The right answer is the only one that follows directly from the facts in the passage — not over-strong, not contradicted, not unrelated. Same as Q80.",
+    "reasoning": "Same.",
+    "distractors": "Same."
+  },
+  "inference:91": {
+    "prompt_focus": "An Inference question presents a passage that *implies* but does not state a conclusion, then asks you to identify the option that *most logically completes* the text. The right answer is the only one that follows directly from the facts in the passage — not over-strong, not contradicted, not unrelated. Same as Q81.",
+    "reasoning": "Same.",
+    "distractors": "Same."
+  },
+  "inference:92": {
+    "prompt_focus": "An Inference question presents a passage that *implies* but does not state a conclusion, then asks you to identify the option that *most logically completes* the text. The right answer is the only one that follows directly from the facts in the passage — not over-strong, not contradicted, not unrelated. What do Desai et al.'s findings imply about Austria's higher inflation in 2017?",
+    "passage_breakdown": "Theory: democracy worsens inflation. But Desai: democracy + low inequality *restrains* inflation. Austria has democracy + low inequality.",
+    "reasoning": "So *something other than political structure* contributed to Austria's higher 2017 inflation.",
+    "distractors": "Options blaming Austria's democracy directly contradict Desai's findings."
+  },
+  "inference:93": {
+    "prompt_focus": "An Inference question presents a passage that *implies* but does not state a conclusion, then asks you to identify the option that *most logically completes* the text. The right answer is the only one that follows directly from the facts in the passage — not over-strong, not contradicted, not unrelated. What can be inferred about ranks and decks?",
+    "passage_breakdown": "Cannons + decks determine rank. Caledonia (3 decks) was first-rate; Temeraire (3 decks) was *not* called first-rate in the previous question's setup.",
+    "reasoning": "So *not all* three-deck ships were first-rate — decks alone don't determine rank.",
+    "distractors": "Options claiming all three-deck ships were first-rate or that decks didn't matter fail."
+  },
+  "inference:94": {
+    "prompt_focus": "An Inference question presents a passage that *implies* but does not state a conclusion, then asks you to identify the option that *most logically completes* the text. The right answer is the only one that follows directly from the facts in the passage — not over-strong, not contradicted, not unrelated. Same as Q22.",
+    "reasoning": "Bird-aimed measures will likely also minimize arthropod effects.",
+    "distractors": "Same."
+  },
+  "inference:95": {
+    "prompt_focus": "An Inference question presents a passage that *implies* but does not state a conclusion, then asks you to identify the option that *most logically completes* the text. The right answer is the only one that follows directly from the facts in the passage — not over-strong, not contradicted, not unrelated. What strategy does the positive correlation suggest for streaming companies?",
+    "passage_breakdown": "Performance expectancy positively correlates with intent to upgrade.",
+    "reasoning": "Companies should *try to influence* users' perception of premium-version benefits.",
+    "distractors": "Options about lowering price or limiting features ignore the perception lever."
+  },
+  "inference:96": {
+    "prompt_focus": "An Inference question presents a passage that *implies* but does not state a conclusion, then asks you to identify the option that *most logically completes* the text. The right answer is the only one that follows directly from the facts in the passage — not over-strong, not contradicted, not unrelated. What does the seed-dispersal finding imply for native plants?",
+    "passage_breakdown": "Native birds extinct. Non-native birds (waxbills) now disperse native seeds.",
+    "reasoning": "The non-native birds *may be necessary* for the survival of vulnerable native plants.",
+    "distractors": "Options claiming non-native birds harm native plants or are irrelevant contradict the dispersal finding."
+  },
+  "inference:97": {
+    "prompt_focus": "An Inference question presents a passage that *implies* but does not state a conclusion, then asks you to identify the option that *most logically completes* the text. The right answer is the only one that follows directly from the facts in the passage — not over-strong, not contradicted, not unrelated. Same as Q18.",
+    "reasoning": "Same.",
+    "distractors": "Same."
+  },
+  "inference:98": {
+    "prompt_focus": "An Inference question presents a passage that *implies* but does not state a conclusion, then asks you to identify the option that *most logically completes* the text. The right answer is the only one that follows directly from the facts in the passage — not over-strong, not contradicted, not unrelated. Same as Q86.",
+    "reasoning": "Same.",
+    "distractors": "Same."
+  },
+  "inference:99": {
+    "prompt_focus": "An Inference question presents a passage that *implies* but does not state a conclusion, then asks you to identify the option that *most logically completes* the text. The right answer is the only one that follows directly from the facts in the passage — not over-strong, not contradicted, not unrelated. Same as Q58 with birds.",
+    "reasoning": "Same.",
+    "distractors": "Same."
+  },
+  "inference:100": {
+    "prompt_focus": "An Inference question presents a passage that *implies* but does not state a conclusion, then asks you to identify the option that *most logically completes* the text. The right answer is the only one that follows directly from the facts in the passage — not over-strong, not contradicted, not unrelated. What do consistent personality-music correlations across cultures suggest?",
+    "passage_breakdown": "Five-factor framework holds; correlations between personality and music factors similar across cultures.",
+    "reasoning": "People with similar personality profiles *prefer similar music styles*, regardless of culture.",
+    "distractors": "Options claiming culture is decisive or randomness governs preference fail."
+  },
+  "inference:101": {
+    "prompt_focus": "An Inference question presents a passage that *implies* but does not state a conclusion, then asks you to identify the option that *most logically completes* the text. The right answer is the only one that follows directly from the facts in the passage — not over-strong, not contradicted, not unrelated. What are basking sharks' temperatures determined by?",
+    "passage_breakdown": "Ectotherms approach ambient temp. Basking sharks: 1–1.5°C above ambient; declines as ambient declines.",
+    "reasoning": "Basking sharks (and Pacific halibut, fully ectothermic) are *at least partly determined by ambient water temperature*.",
+    "distractors": "Options claiming basking sharks are full endotherms or wholly independent fail."
+  },
+  "inference:102": {
+    "prompt_focus": "An Inference question presents a passage that *implies* but does not state a conclusion, then asks you to identify the option that *most logically completes* the text. The right answer is the only one that follows directly from the facts in the passage — not over-strong, not contradicted, not unrelated. What does extended human contact imply for captive primates' handedness?",
+    "passage_breakdown": "Captive (Welles 1976): more right-handed. Wild (McGrew 1999): no tendency. Captive animals are more around humans.",
+    "reasoning": "The captive right-handedness *might be partly* an effect of extended human contact (humans are 85–90% right-handed).",
+    "distractors": "Options claiming biology alone or no effect fail."
+  },
+  "inference:103": {
+    "prompt_focus": "An Inference question presents a passage that *implies* but does not state a conclusion, then asks you to identify the option that *most logically completes* the text. The right answer is the only one that follows directly from the facts in the passage — not over-strong, not contradicted, not unrelated. Where did Malory get the Round Table?",
+    "passage_breakdown": "Round Table absent from History (Geoffrey) and predecessors. Le Morte d'Arthur has it.",
+    "reasoning": "Malory must have encountered the Round Table in *a source unknown to Geoffrey* — i.e., something post-1130s but with the Round Table.",
+    "distractors": "Options claiming Geoffrey did know it or that Malory invented it contradict the chronology."
+  },
+  "inference:104": {
+    "prompt_focus": "An Inference question presents a passage that *implies* but does not state a conclusion, then asks you to identify the option that *most logically completes* the text. The right answer is the only one that follows directly from the facts in the passage — not over-strong, not contradicted, not unrelated. Same as Q58 with fish/birds.",
+    "reasoning": "Same.",
+    "distractors": "Same."
+  },
+  "inference:105": {
+    "prompt_focus": "An Inference question presents a passage that *implies* but does not state a conclusion, then asks you to identify the option that *most logically completes* the text. The right answer is the only one that follows directly from the facts in the passage — not over-strong, not contradicted, not unrelated. What can be inferred about the 2016 production?",
+    "passage_breakdown": "2019 Broadway: enthusiastic praise for storytelling. Earlier (2016): storytelling found to be very ___ (not as good).",
+    "reasoning": "Hadestown *improved greatly* between 2016 and Broadway 2019.",
+    "distractors": "Options claiming it got worse or stayed the same contradict the praise/criticism contrast."
+  },
+  "inference:106": {
+    "prompt_focus": "An Inference question presents a passage that *implies* but does not state a conclusion, then asks you to identify the option that *most logically completes* the text. The right answer is the only one that follows directly from the facts in the passage — not over-strong, not contradicted, not unrelated. What does losing less moisture during frying imply for fat content?",
+    "passage_breakdown": "Water leaves → voids → fat fills voids.",
+    "reasoning": "Less moisture lost = fewer voids = *less fat content increase*.",
+    "distractors": "Options claiming reverse or no relationship fail."
+  },
+  "inference:107": {
+    "prompt_focus": "An Inference question presents a passage that *implies* but does not state a conclusion, then asks you to identify the option that *most logically completes* the text. The right answer is the only one that follows directly from the facts in the passage — not over-strong, not contradicted, not unrelated. What does a lower minimum creep rate imply for the nitrogen-treated SiC?",
+    "passage_breakdown": "Lower creep rate = slower deformation under stress.",
+    "reasoning": "Aerospace composites with N-treated SiC could *withstand mechanical stress longer* than those with the polymer-derived SiC fibers.",
+    "distractors": "Options about higher creep being beneficial reverse the metric."
+  },
+  "inference:108": {
+    "prompt_focus": "An Inference question presents a passage that *implies* but does not state a conclusion, then asks you to identify the option that *most logically completes* the text. The right answer is the only one that follows directly from the facts in the passage — not over-strong, not contradicted, not unrelated. Same as Q106.",
+    "reasoning": "Same.",
+    "distractors": "Same."
+  },
+  "inference:109": {
+    "prompt_focus": "An Inference question presents a passage that *implies* but does not state a conclusion, then asks you to identify the option that *most logically completes* the text. The right answer is the only one that follows directly from the facts in the passage — not over-strong, not contradicted, not unrelated. What pattern emerged across both habitats?",
+    "passage_breakdown": "Mutualism, but if aphid colonies too small, ants prey on them. Habitats compared: mainland vs. island.",
+    "reasoning": "Negative correlation between ant and aphid abundance on *both* mainland and island — when ants are abundant they prey on small aphid colonies, suppressing them.",
+    "distractors": "Options claiming positive correlation or no relation fail."
+  },
+  "inference:110": {
+    "prompt_focus": "An Inference question presents a passage that *implies* but does not state a conclusion, then asks you to identify the option that *most logically completes* the text. The right answer is the only one that follows directly from the facts in the passage — not over-strong, not contradicted, not unrelated. What do car-rental stations' high negative-review rates suggest about expectations?",
+    "passage_breakdown": "Restaurant/convenience stations cheap or free → low negatives. Car-rental stations full price → high negatives.",
+    "reasoning": "Discounted users have *lower expectations* of service quality than full-price users.",
+    "distractors": "Options claiming service quality differs or that location matters more fail."
+  },
+  "inference:111": {
+    "prompt_focus": "An Inference question presents a passage that *implies* but does not state a conclusion, then asks you to identify the option that *most logically completes* the text. The right answer is the only one that follows directly from the facts in the passage — not over-strong, not contradicted, not unrelated. What does mid-20th-c Indigenous abstraction depend on for being read as Indigenous?",
+    "passage_breakdown": "Modern Indigenous painters use traditional motifs. Mid-20th-c painters (West) aligned with Abstract Expressionism — no traditional motifs.",
+    "reasoning": "Mid-century works' Indigenous reading depends *not on stylistic details but on awareness of the artist's identity*.",
+    "distractors": "Options claiming pure stylistic or wholly biographical reading fail."
+  },
+  "inference:112": {
+    "prompt_focus": "An Inference question presents a passage that *implies* but does not state a conclusion, then asks you to identify the option that *most logically completes* the text. The right answer is the only one that follows directly from the facts in the passage — not over-strong, not contradicted, not unrelated. What follows from sample sizes far below 176?",
+    "passage_breakdown": "Both studies had only 8 individuals; minimum required is 176.",
+    "reasoning": "*Neither* study provides sufficient evidence to make a meaningful comparison.",
+    "distractors": "Options claiming one study is sufficient or both are sufficient fail."
+  },
+  "inference:113": {
+    "prompt_focus": "An Inference question presents a passage that *implies* but does not state a conclusion, then asks you to identify the option that *most logically completes* the text. The right answer is the only one that follows directly from the facts in the passage — not over-strong, not contradicted, not unrelated. What does the marshy-wetland evidence imply?",
+    "passage_breakdown": "Traditional view: ancient Mesopotamian cities sat on dry land. New evidence: marshy wetlands.",
+    "reasoning": "The land *wasn't as dry as previously believed*.",
+    "distractors": "Options claiming the cities didn't exist or were entirely under water overshoot."
+  },
+  "inference:114": {
+    "prompt_focus": "An Inference question presents a passage that *implies* but does not state a conclusion, then asks you to identify the option that *most logically completes* the text. The right answer is the only one that follows directly from the facts in the passage — not over-strong, not contradicted, not unrelated. What's the management recommendation?",
+    "passage_breakdown": "Birds disperse few native seeds, many non-native. Hypothesis: non-native fruit availability reduces native fruit consumption.",
+    "reasoning": "Reducing non-native plants would likely *benefit* the vulnerable native plants by redirecting birds' fruit-eating to natives.",
+    "distractors": "Options about banning birds or expanding non-natives contradict the conservation goal."
+  },
+  "inference:115": {
+    "prompt_focus": "An Inference question presents a passage that *implies* but does not state a conclusion, then asks you to identify the option that *most logically completes* the text. The right answer is the only one that follows directly from the facts in the passage — not over-strong, not contradicted, not unrelated. Why does snowball sampling improve retention?",
+    "passage_breakdown": "Snowball: recruited via existing participants. Retention much higher.",
+    "reasoning": "Being recruited by a *socially connected* person imparts a *feeling of obligation* to persist.",
+    "distractors": "Options claiming financial incentives or proximity reasons miss the social-tie mechanism."
+  },
+  "inference:116": {
+    "prompt_focus": "An Inference question presents a passage that *implies* but does not state a conclusion, then asks you to identify the option that *most logically completes* the text. The right answer is the only one that follows directly from the facts in the passage — not over-strong, not contradicted, not unrelated. What does Cherokees' lack of genre divisions imply?",
+    "passage_breakdown": "Mooney imposed genres (e.g., 'wonder stories' for those with geographic detail). Cherokee themselves didn't apply genres.",
+    "reasoning": "There's *no reason to believe* the Cherokee elders would have agreed with Mooney's genre distinctions.",
+    "distractors": "Options claiming the elders endorsed or rejected the categories fail to fit the lack of evidence."
+  },
+  "inference:117": {
+    "prompt_focus": "An Inference question presents a passage that *implies* but does not state a conclusion, then asks you to identify the option that *most logically completes* the text. The right answer is the only one that follows directly from the facts in the passage — not over-strong, not contradicted, not unrelated. Same as Q18 — DOC/Hg typically rise/fall together.",
+    "reasoning": "Same.",
+    "distractors": "Same."
+  },
+  "inference:118": {
+    "prompt_focus": "An Inference question presents a passage that *implies* but does not state a conclusion, then asks you to identify the option that *most logically completes* the text. The right answer is the only one that follows directly from the facts in the passage — not over-strong, not contradicted, not unrelated. Same as Q86.",
+    "reasoning": "Same.",
+    "distractors": "Same."
+  },
+  "inference:119": {
+    "prompt_focus": "An Inference question presents a passage that *implies* but does not state a conclusion, then asks you to identify the option that *most logically completes* the text. The right answer is the only one that follows directly from the facts in the passage — not over-strong, not contradicted, not unrelated. Same as Q58.",
+    "reasoning": "Same.",
+    "distractors": "Same."
+  },
+  "inference:120": {
+    "prompt_focus": "An Inference question presents a passage that *implies* but does not state a conclusion, then asks you to identify the option that *most logically completes* the text. The right answer is the only one that follows directly from the facts in the passage — not over-strong, not contradicted, not unrelated. Same as Q23.",
+    "reasoning": "Same.",
+    "distractors": "Same."
+  },
+  "inference:121": {
+    "prompt_focus": "An Inference question presents a passage that *implies* but does not state a conclusion, then asks you to identify the option that *most logically completes* the text. The right answer is the only one that follows directly from the facts in the passage — not over-strong, not contradicted, not unrelated. What do Zhuang's broader findings imply about Jaiswal/Kant's claim?",
+    "passage_breakdown": "Jaiswal/Kant (small N=400 young adults in India): no effect. Zhuang (54 studies): significant positive effect.",
+    "reasoning": "Concerns about Jaiswal/Kant's *broad applicability* were *justified*.",
+    "distractors": "Options claiming Jaiswal/Kant were correct or that Zhuang is wrong fail the synthesis."
+  },
+  "inference:122": {
+    "prompt_focus": "An Inference question presents a passage that *implies* but does not state a conclusion, then asks you to identify the option that *most logically completes* the text. The right answer is the only one that follows directly from the facts in the passage — not over-strong, not contradicted, not unrelated. Same template as Q2 — failure to appreciate creativity.",
+    "reasoning": "Same.",
+    "distractors": "Same."
+  },
+  "inference:123": {
+    "prompt_focus": "An Inference question presents a passage that *implies* but does not state a conclusion, then asks you to identify the option that *most logically completes* the text. The right answer is the only one that follows directly from the facts in the passage — not over-strong, not contradicted, not unrelated. What follows from prescribing a uniform methane mole fraction?",
+    "passage_breakdown": "Real Titan data sparse. Model used a *uniform* approximation.",
+    "reasoning": "Some *disagreements* between simulated and actual precipitation/humidity are *to be expected* given the simplified assumption.",
+    "distractors": "Options claiming perfect accuracy or total inaccuracy overshoot."
+  },
+  "inference:124": {
+    "prompt_focus": "An Inference question presents a passage that *implies* but does not state a conclusion, then asks you to identify the option that *most logically completes* the text. The right answer is the only one that follows directly from the facts in the passage — not over-strong, not contradicted, not unrelated. What does the urban-development study imply about wastewater being a special case?",
+    "passage_breakdown": "Wastewater study: no DOC/Hg correlation. Urban-development study: same as undisturbed (positive correlation).",
+    "reasoning": "Wastewater's effects shouldn't be *taken as indicative* of every type of human disturbance.",
+    "distractors": "Options generalizing wastewater results or denying urban-development results fail."
+  },
+  "inference:125": {
+    "prompt_focus": "An Inference question presents a passage that *implies* but does not state a conclusion, then asks you to identify the option that *most logically completes* the text. The right answer is the only one that follows directly from the facts in the passage — not over-strong, not contradicted, not unrelated. Why caution against extrapolating from bumblebees?",
+    "passage_breakdown": "Bumblebees are social and dietary generalists — traits associated with resilience. Other bees may lack these.",
+    "reasoning": "Bumblebee responses may *not be comparable* — researchers must *exercise caution* when extrapolating.",
+    "distractors": "Options claiming bumblebees represent all wild bees or that they're irrelevant fail."
+  },
+  "inference:126": {
+    "prompt_focus": "An Inference question presents a passage that *implies* but does not state a conclusion, then asks you to identify the option that *most logically completes* the text. The right answer is the only one that follows directly from the facts in the passage — not over-strong, not contradicted, not unrelated. Same as Q27.",
+    "reasoning": "Same.",
+    "distractors": "Same."
+  },
+  "inference:127": {
+    "prompt_focus": "An Inference question presents a passage that *implies* but does not state a conclusion, then asks you to identify the option that *most logically completes* the text. The right answer is the only one that follows directly from the facts in the passage — not over-strong, not contradicted, not unrelated. Why must scientists go to Mistaken Point for Ediacaran organisms?",
+    "passage_breakdown": "Minatogawa Limestone Quarry has hominin fossils. Ediacaran organisms are older.",
+    "reasoning": "Mistaken Point is *from an earlier time* than the Minatogawa formation — that's why it has Ediacaran fossils.",
+    "distractors": "Options about geographic accident or non-fossil reasons fail."
+  },
+  "inference:128": {
+    "prompt_focus": "An Inference question presents a passage that *implies* but does not state a conclusion, then asks you to identify the option that *most logically completes* the text. The right answer is the only one that follows directly from the facts in the passage — not over-strong, not contradicted, not unrelated. What did the controlled-environment design enable?",
+    "passage_breakdown": "Soil moisture varies in wild. Walsh used potted plants in controlled environment to test microbial-community effects on flavor.",
+    "reasoning": "The method *distinguishes* microbial-driven variation from soil-moisture-driven variation that would be present in the wild.",
+    "distractors": "Options claiming the study can't separate variables contradict the controlled-environment design."
+  },
+  "inference:129": {
+    "prompt_focus": "An Inference question presents a passage that *implies* but does not state a conclusion, then asks you to identify the option that *most logically completes* the text. The right answer is the only one that follows directly from the facts in the passage — not over-strong, not contradicted, not unrelated. Same as Q32.",
+    "reasoning": "Same.",
+    "distractors": "Same."
+  },
+  "inference:130": {
+    "prompt_focus": "An Inference question presents a passage that *implies* but does not state a conclusion, then asks you to identify the option that *most logically completes* the text. The right answer is the only one that follows directly from the facts in the passage — not over-strong, not contradicted, not unrelated. What's the implication of consistent eugenol-vs-caprylic-acid rankings?",
+    "passage_breakdown": "Conventional wisdom: valence is culturally mediated. Arshamian: 10 cultures rank similarly.",
+    "reasoning": "The standard view of culture's role in olfactory valence may be *unsound*.",
+    "distractors": "Options claiming culture is dominant or universally irrelevant overshoot."
+  },
+  "inference:131": {
+    "prompt_focus": "An Inference question presents a passage that *implies* but does not state a conclusion, then asks you to identify the option that *most logically completes* the text. The right answer is the only one that follows directly from the facts in the passage — not over-strong, not contradicted, not unrelated. What does the consistent density-area pattern imply?",
+    "passage_breakdown": "Different political/economic systems (city-states, wool centers, fair towns), but same trend: more area → denser core.",
+    "reasoning": "Despite regional differences, settlements *shared common spatial constraints* that encouraged dense cores.",
+    "distractors": "Options claiming political systems determine density fail to account for the universal trend."
+  },
+  "inference:132": {
+    "prompt_focus": "An Inference question presents a passage that *implies* but does not state a conclusion, then asks you to identify the option that *most logically completes* the text. The right answer is the only one that follows directly from the facts in the passage — not over-strong, not contradicted, not unrelated. What does the lack of stylistic Indigenous markers in Untitled mean for typification?",
+    "passage_breakdown": "Untitled aligned with Abstract Expressionism, not traditional Indigenous abstraction. Few viewers would infer Indigeneity from style alone.",
+    "reasoning": "The work *typifies* Indigenous abstraction in a way that — by contrast — would *render Indigenous identity more legible* than Untitled does.",
+    "distractors": "Options claiming Untitled is the most Indigenous-legible work fail."
+  },
+  "inference:133": {
+    "prompt_focus": "An Inference question presents a passage that *implies* but does not state a conclusion, then asks you to identify the option that *most logically completes* the text. The right answer is the only one that follows directly from the facts in the passage — not over-strong, not contradicted, not unrelated. What does the simultaneous loss of *only* gold filigree (not other crafts) imply?",
+    "passage_breakdown": "Demographic disruption would reduce *multiple* crafts. Here only gold filigree dropped; copper-alloy and others continued.",
+    "reasoning": "So gold filigree's decline likely happened in the *context of demographic continuity* — not a major demographic shift.",
+    "distractors": "Options claiming demographic upheaval did happen contradict the multi-craft persistence."
+  },
+  "inference:134": {
+    "prompt_focus": "An Inference question presents a passage that *implies* but does not state a conclusion, then asks you to identify the option that *most logically completes* the text. The right answer is the only one that follows directly from the facts in the passage — not over-strong, not contradicted, not unrelated. Why is the right-handedness claim from Lutz-Maki untrustworthy?",
+    "passage_breakdown": "Sample size 14; required minimum is 176.",
+    "reasoning": "The sample size is *far below the threshold* — claim cannot be confidently established.",
+    "distractors": "Options claiming the studies' methods were flawed beyond sample size overshoot."
+  },
+  "inference:135": {
+    "prompt_focus": "An Inference question presents a passage that *implies* but does not state a conclusion, then asks you to identify the option that *most logically completes* the text. The right answer is the only one that follows directly from the facts in the passage — not over-strong, not contradicted, not unrelated. What does the October 1838 'grand crush of population' note suggest?",
+    "passage_breakdown": "Sept-fall 1838: 'as inference from Malthus' (economist). Later notebook (Oct 1838): 'grand crush of population.'",
+    "reasoning": "Sometime by Oct 1838, Darwin had determined that an *economics postulate* (Malthus) might apply to *biology*.",
+    "distractors": "Options claiming Darwin invented Malthus's concepts or rejected them fail."
+  },
+  "inference:136": {
+    "prompt_focus": "An Inference question presents a passage that *implies* but does not state a conclusion, then asks you to identify the option that *most logically completes* the text. The right answer is the only one that follows directly from the facts in the passage — not over-strong, not contradicted, not unrelated. What did restricting free streaming cause?",
+    "passage_breakdown": "2011: Deezer's free version restricted to 5 hrs/month.",
+    "reasoning": "Restrictions on streaming may *suppress* users' interest in owning music — they no longer drift away from streaming because streaming is restricted, but also they don't go back to ownership; users adapt by going premium or to other streaming.",
+    "distractors": "Options claiming restrictions *boost* music ownership reverse the inference."
+  },
+  "inference:137": {
+    "prompt_focus": "An Inference question presents a passage that *implies* but does not state a conclusion, then asks you to identify the option that *most logically completes* the text. The right answer is the only one that follows directly from the facts in the passage — not over-strong, not contradicted, not unrelated. Why caution against concluding that supplementation fails?",
+    "passage_breakdown": "Supplementation was rare, varied, poorly tracked.",
+    "reasoning": "Cannot conclude that supplementation *has no promise* — the data are too poor to judge.",
+    "distractors": "Options claiming supplementation is proven helpful or harmful both overshoot."
+  },
+  "inference:138": {
+    "prompt_focus": "An Inference question presents a passage that *implies* but does not state a conclusion, then asks you to identify the option that *most logically completes* the text. The right answer is the only one that follows directly from the facts in the passage — not over-strong, not contradicted, not unrelated. What does the universal density-size relationship imply across eras?",
+    "passage_breakdown": "Modern scaling theory: density rises with size. Hypothesis: medieval differs due to hierarchies. Test: 173 settlements → typical relation holds.",
+    "reasoning": "So *underlying social/economic interactions* are *consistent* between medieval and modern cities, despite changes in social structures.",
+    "distractors": "Options claiming complete divergence or no consistent pattern fail."
+  },
+  "inference:139": {
+    "prompt_focus": "An Inference question presents a passage that *implies* but does not state a conclusion, then asks you to identify the option that *most logically completes* the text. The right answer is the only one that follows directly from the facts in the passage — not over-strong, not contradicted, not unrelated. Same as Q115.",
+    "reasoning": "Same.",
+    "distractors": "Same."
+  },
+  "inference:140": {
+    "prompt_focus": "An Inference question presents a passage that *implies* but does not state a conclusion, then asks you to identify the option that *most logically completes* the text. The right answer is the only one that follows directly from the facts in the passage — not over-strong, not contradicted, not unrelated. What does *both* preferring 60+ days standing water imply?",
+    "passage_breakdown": "Both species prefer standing water > 60 days/year.",
+    "reasoning": "Neither species is drawn to areas with standing water *far fewer than 60 days per year*.",
+    "distractors": "Options about either species individually fail to capture the joint preference."
+  },
+  "inference:141": {
+    "prompt_focus": "An Inference question presents a passage that *implies* but does not state a conclusion, then asks you to identify the option that *most logically completes* the text. The right answer is the only one that follows directly from the facts in the passage — not over-strong, not contradicted, not unrelated. Who benefits and who loses from RSRs?",
+    "passage_breakdown": "RSRs protect existing policyholders from price hikes. But insurers may scale back new policies.",
+    "reasoning": "RSRs *benefit policyholders at the expense of nonpolicyholders* seeking new coverage.",
+    "distractors": "Options claiming everyone benefits or no one benefits fail."
+  },
+  "inference:142": {
+    "prompt_focus": "An Inference question presents a passage that *implies* but does not state a conclusion, then asks you to identify the option that *most logically completes* the text. The right answer is the only one that follows directly from the facts in the passage — not over-strong, not contradicted, not unrelated. Tarabieh: higher *risk perception* → lower purchase. Parents had *lowest* risk perception.",
+    "reasoning": "So parents are *more likely* than other demographic groups to buy the skin-care product.",
+    "distractors": "Options reversing direction or focusing on wrong groups fail."
+  },
+  "inference:143": {
+    "prompt_focus": "An Inference question presents a passage that *implies* but does not state a conclusion, then asks you to identify the option that *most logically completes* the text. The right answer is the only one that follows directly from the facts in the passage — not over-strong, not contradicted, not unrelated. What's Nguyen's complaint about Tavinor/Gaut?",
+    "passage_breakdown": "Tavinor: games as fiction. Gaut: games as cinema. Both miss player-agency absorption.",
+    "reasoning": "Their frameworks *subsume games under other media* that *don't address* the player-agency feature integral to enjoyment.",
+    "distractors": "Options claiming Tavinor/Gaut fully capture games or that games aren't art fail."
+  },
+  "inference:144": {
+    "prompt_focus": "An Inference question presents a passage that *implies* but does not state a conclusion, then asks you to identify the option that *most logically completes* the text. The right answer is the only one that follows directly from the facts in the passage — not over-strong, not contradicted, not unrelated. Why might chlorophyll concentrations *not* reliably indicate MPB biomass?",
+    "passage_breakdown": "Macroalgae shouldn't suppress MPB; chlorophyll concentrations didn't decline. But MPB may produce *more* chlorophyll under low light.",
+    "reasoning": "So researchers must *account for* the possibility that MPB compensate for low light — chlorophyll isn't always a reliable biomass proxy.",
+    "distractors": "Options claiming chlorophyll always reflects biomass or never does fail."
+  },
+  "inference:145": {
+    "prompt_focus": "An Inference question presents a passage that *implies* but does not state a conclusion, then asks you to identify the option that *most logically completes* the text. The right answer is the only one that follows directly from the facts in the passage — not over-strong, not contradicted, not unrelated. Same as Q130.",
+    "reasoning": "Same.",
+    "distractors": "Same."
+  },
+  "inference:146": {
+    "prompt_focus": "An Inference question presents a passage that *implies* but does not state a conclusion, then asks you to identify the option that *most logically completes* the text. The right answer is the only one that follows directly from the facts in the passage — not over-strong, not contradicted, not unrelated. Same as Q124.",
+    "reasoning": "Same.",
+    "distractors": "Same."
+  },
+  "inference:147": {
+    "prompt_focus": "An Inference question presents a passage that *implies* but does not state a conclusion, then asks you to identify the option that *most logically completes* the text. The right answer is the only one that follows directly from the facts in the passage — not over-strong, not contradicted, not unrelated. What does the persistence of frog crabs (a decarcinized group) suggest?",
+    "passage_breakdown": "Most decarcinized groups extinct → 'evolutionary dead-end.' But frog crabs (sediment-dwelling) persist since Early Cretaceous.",
+    "reasoning": "A crablike body form *may not be optimal* in all cases — sometimes ecological conditions *favor* decarcinization.",
+    "distractors": "Options claiming carcinization is always optimal or that decarcinization is always failure fail."
+  },
+  "inference:148": {
+    "prompt_focus": "An Inference question presents a passage that *implies* but does not state a conclusion, then asks you to identify the option that *most logically completes* the text. The right answer is the only one that follows directly from the facts in the passage — not over-strong, not contradicted, not unrelated. Same as Q62.",
+    "reasoning": "Same — risk of inaccurate conclusions about strategy effectiveness.",
+    "distractors": "Same."
+  },
+  "inference:149": {
+    "prompt_focus": "An Inference question presents a passage that *implies* but does not state a conclusion, then asks you to identify the option that *most logically completes* the text. The right answer is the only one that follows directly from the facts in the passage — not over-strong, not contradicted, not unrelated. What's the linguists' conclusion about the Upland South 'r' emphasis?",
+    "passage_breakdown": "Scottish dialects emphasize 'r'. Upland South dialects emphasize 'r' similarly. Upland South colonized by Scottish-descended people.",
+    "reasoning": "The Upland South dialects *acquired the 'r' emphasis from* Scottish dialects — direct transmission via colonization.",
+    "distractors": "Options claiming independent development or no link contradict the historical lineage."
   }
 }
