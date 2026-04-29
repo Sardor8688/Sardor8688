@@ -735,13 +735,13 @@
     "prompt_focus": "Antarktika minke va bowhead kitlari o‘rtasidagi krill iste’moli.",
     "reasoning": "3 000 < 19 800 — bowhead kuniga ko‘proq krill yeydi.",
     "distractors": "Ikkalasi 19 800 — imkonsiz (minke maksimumi 3 000).\n\nBowhead iste’moli minkega zarar yetkazadi — aytilmagan.\n\nMinke krillni kamroq yeydi — matnga zid.",
-    "takeaway": "Q2 bilan bir xil dars."
+    "takeaway": "Detalli savol — ifoda berilgan ma’lumotni qaytarib aytuvchi variantni tanlang."
   },
   "details:10": {
-    "prompt_focus": "Q4 bilan bir xil — klasterlash algoritmi nima uchun ishlatildi.",
-    "reasoning": "Q4 bilan bir xil — chegaralar tabiatan subyektiv bo‘lgani uchun mahallalarni *obyektiv* aniqlash usulini berish.",
-    "distractors": "Q4 bilan bir xil.",
-    "takeaway": "Q4 bilan bir xil dars."
+    "prompt_focus": "Hidalgo, Castañer va Sevtsuk klasterlash algoritmidan *qanday maqsadda* foydalanganini matn aniq aytadi: ‘How we define a neighborhood and its boundaries is subjective’ — ya’ni mahallaning chegaralari subyektiv. Algoritm bu subyektivlik muammosini hal qilish uchun ishlatilgan.",
+    "reasoning": "Matn aytadi: chegaralar subyektiv → algoritm tizimli/statistik tarzda zich amenities-guruhlashtirishni topadi (‘dense groupings of amenities that represent human-identified neighborhoods’). Bu ‘obyektiv usul’ ma’nosini bevosita beradi.",
+    "distractors": "‘Insight into how customers are made aware’ — mijozlarni xabardor qilish algoritmi haqida emas; matnda yo‘q.\n\n‘Evaluate reasons for a business closing’ — yopilish sabablari haqida; algoritm joylashuvni topish uchun ishlatilgan.\n\n‘Predict which businesses would be successful’ — muvaffaqiyat bashorati — modelning maqsadi, lekin algoritmning maxsus vazifasi *mahallani aniqlash*.",
+    "takeaway": "‘Nima uchun ishlatildi’ savollarida — matnda aniq aytilgan muammo (subyektivlik) va uning hal qilinish vositasini bog‘lang."
   },
   "details:11": {
     "prompt_focus": "‘I Got Plenty of Nuthin’ ariyasi haqida nima rost?",
@@ -753,7 +753,7 @@
     "prompt_focus": "Antarktika minke va janubiy o‘ng kitlari o‘rtasidagi krill iste’moli.",
     "reasoning": "10 000 kg minke × 30% → 3 000 kg/kun. 80 000 kg janubiy o‘ng × 30% → 24 000 kg/kun. Janubiy o‘ng minkedan ko‘proq krill yeydi.",
     "distractors": "‘Temir kamayishi populyatsiyani kamaytirgan’ — matn temir *aylanishi fitoplankton’ni qo‘llab-quvvatlaydi*, populyatsiyani kamaytirgan deb da’vo qilmaydi.\n\nKrill turlar oraliq surilishi — aytilmagan.\n\n‘Faqat minke fitoplankton’da yashashi mumkin’ — matn aytmagan.",
-    "takeaway": "Q2 bilan bir xil dars — hisoblang, taqqoslang."
+    "takeaway": "Solishtirish savollarida — raqamlarni hisoblang va matn ifodasi bilan tekshiring."
   },
   "details:13": {
     "prompt_focus": "Muallifning aynan *ispan tili* haqidagi nuqtasi.",
@@ -792,10 +792,10 @@
     "takeaway": "‘Reduktiv’ savollar — matnning ko‘p-omilli aks-da’vosini izlash bilan hal qilinadi."
   },
   "details:19": {
-    "prompt_focus": "Q8 bilan bir xil — Hooks va Ward dastlab qanday tanishgan.",
-    "reasoning": "Q8 bilan bir xil — ikkalasi ham A Raisin in the Sun pyesasida aktyor edi.",
-    "distractors": "Q8 bilan bir xil.",
-    "takeaway": "Q8 bilan bir xil dars."
+    "prompt_focus": "Matn aytadi: Hooks va Ward ‘had met while performing in a 1960 touring production of Lorraine Hansberry’s play A Raisin in the Sun’ — ya’ni ikkalasi ham A Raisin in the Sun gastrolida aktyor sifatida ishlash chog‘ida birinchi marta uchrashishgan.",
+    "reasoning": "‘Hooks and Ward were both actors in a production of A Raisin in the Sun’ — matnning ‘met while performing in’ jumlasini bevosita parafraza qiladi: ikkalasi ham aktyorlar edi va birga ijro qilgani ularni tanishtirgan.",
+    "distractors": "‘Harrison introduced Hooks to Ward at a performance of The Great MacDaddy’ — The Great MacDaddy 1974-yilda, lekin ular 1960-da uchrashgan; vaqt jihatidan zid.\n\n‘Hooks and Ward attended the same performance of The Great MacDaddy’ — hech bir manbada ishtirokchi-tomoshabin emas, balki aktyorlar ekanligi aytilgan.\n\n‘Participated in the same workshop at NEC’ — NEC ular tomonidan asos solingan; ulardan oldin tanishishni anglatmaydi.",
+    "takeaway": "‘Initially met’ da’volarida — matn aytgan eng erta uchrashish kontekstini (‘met while…’) bevosita ko‘rsatuvchi variantni tanlang."
   },
   "details:20": {
     "prompt_focus": "Alfonzo yurish-qarorlari haqidagi tadqiqotlar bilan nima bilan rozi bo‘lardi?",
@@ -804,10 +804,10 @@
     "takeaway": "Muallifning fikrini topish — matnning mantiqiy xulosasini qaytaring, parchani qayta ifodalang."
   },
   "details:21": {
-    "prompt_focus": "Q7 bilan bir xil — mijozga qaratilgan ma’lumotlar bilan cheklanish.",
-    "reasoning": "Q7 bilan bir xil.",
-    "distractors": "Q7 bilan bir xil.",
-    "takeaway": "Q7 bilan bir xil dars."
+    "prompt_focus": "Matn aytadi: Hidalgo va kollegalar yondashuvining cheklovi — ‘data from Places API tend to be restricted to places that are customer facing’. Ya’ni mijozga qaratilgan biznesgina ko‘rinadi; mijozga ko‘rinmas amenities-lar (omborlar, distributorlar va h.k.) ko‘rinmaydi.",
+    "reasoning": "‘It may lead to conclusions that are not reflective of all the amenities in a given neighborhood’ — mijozga qaratilmagan amenities-lar tushib qoladi, shuning uchun mahallaning *barcha* amenities-lariga to‘liq mos kelmaydigan xulosalar chiqarilishi mumkin. Bu ‘customer facing’ cheklovini bevosita parafraza qiladi.",
+    "distractors": "‘Inaccurate identification of neighborhood boundaries’ — chegaralar haqida; matn cheklov sifatida aytayotgan narsa bu emas, balki amenities-tarkibi.\n\n‘Based on advancements from other fields not yet applied’ — fanlararo cheklov; matn ifodalamaydi.\n\n‘Depends upon outdated data’ — ma’lumotlar eskirganligi haqida; ‘customer facing’ cheklovi vaqt-cheklov emas.",
+    "takeaway": "‘Cheklov’ savollarida — matnda aniq aytilgan cheklovni qaytaruvchi (parafraza) variantni tanlang; o‘zingizdan qo‘shilgan turdagi muammolarni tanlamang."
   },
   "details:22": {
     "prompt_focus": "Elangovan va Marimuthu nima topgan va nima uchun?",
@@ -822,22 +822,22 @@
     "takeaway": "‘Rozi bo‘lmasdi’ savolida muallifning aynan rad etadigan teskarisini izlang."
   },
   "details:24": {
-    "prompt_focus": "Q1 bilan bir xil — yaqinlik farqni tushuntirmaydi.",
-    "reasoning": "Q1 bilan bir xil.",
-    "distractors": "Q1 bilan bir xil.",
-    "takeaway": "Q1 bilan bir xil dars."
+    "prompt_focus": "Matn aytadi: Mexico City foydalanish darajasi La Paz’dan yuqori (77.6% vs 67.5%), *garchi* Mexico City bog‘liklarining 10 daqiqalik yurish masofasidagi yashash darajasi La Paz’dan ancha past bo‘lsa ham. Bu ‘garchi’ konstruktsiyasi yaqinlik *yagona sabab emasligini* aytadi.",
+    "reasoning": "‘It is caused by something other than the parks’ proximity to city residents’ — matn yaqinlikni *istisno* qiladi (yaqinroq emas, lekin foydalanish ko‘proq) → demak boshqa sabab. Bu ‘although… lower’ konstruktsiyasini bevosita parafraza qiladi.",
+    "distractors": "‘Could be due to inaccuracies in the survey’ — so‘rov xatosi haqida; matn so‘rov sifatini muhokama qilmaydi.\n\n‘Calculated using sources that predate the survey’ — manba vaqti haqida; matn so‘rov metodologiyasi haqida hech narsa demaydi.\n\n‘Much larger than researchers expected’ — kutilmaganlik darajasi haqida; matn kutilmagan munosabatni bayon qilmaydi.",
+    "takeaway": "‘Although…’ konstruktsiyasi mavjud bo‘lsa — yaqinlik yetarli sabab emasligini matn ochiq ifodalaydi; ‘something other than’ javobini izlang."
   },
   "details:25": {
-    "prompt_focus": "Support Q9 bilan bir xil — tadqiqotchilar tushuntirishini eng yaxshi tasvirlovchi so‘rov javobi.",
+    "prompt_focus": "Tadqiqotchilarning tushuntirishi: yangi joylashtirilgan mahsulotlarni topish uchun xaridorlar do‘konning *ko‘proq qismida* yuradi, *ko‘proq mahsulot ko‘radi* va *rejasiz xarid qilish* ehtimoli oshadi. Eng yaxshi quvvatlovchi so‘rov javobi shu zanjirning barcha bosqichlarini ko‘rsatishi shart.",
     "reasoning": "Tozalik vositalari ko‘chirilgan → ularni izlash → daftar ko‘rib, sotib olish = klassik joylashuv-keltirgan rejasiz xarid.",
-    "distractors": "Support Q9 bilan bir xil.",
-    "takeaway": "Support Q9 bilan bir xil dars."
+    "distractors": "‘Couldn’t find items, looked all over’ — izlash bor, ammo *xarid bo‘lmagan*; tadqiqotchilarning tushuntirishini illyustratsiya qilmaydi.\n\n‘Coupon for new brand of soup, bought few cans’ — *kupon* tashqi reklama (boshqa marketing turi); tartib o‘zgarishi sababli emas.\n\n‘Larger store, more products, came to find things other store doesn’t have’ — *do‘kon tanlovi* haqida; do‘kon ichidagi joy o‘zgarishi haqida emas.",
+    "takeaway": "Sabab-natija tushuntirishini illyustratsiya qilishda — zanjirning *barcha bosqichlarini* (sabab → oraliq → natija) bir misolda ko‘ruvchi javobni tanlang."
   },
   "details:26": {
     "prompt_focus": "Sei vs. bowhead krill iste’moli.",
     "reasoning": "Sei maks 25 000 × 30% = 7 500 kg/kun. Bowhead 66 000 × 30% — matn 19 800 kg/kun beradi. Bowhead ko‘proq yeydi.",
-    "distractors": "Boshqa kit savollari bilan bir xil shablon.",
-    "takeaway": "Q2 bilan bir xil dars."
+    "distractors": "‘Bowhead krill iste’moli sei kitlarni etarli oziq-ovqat topishni qiyinlashtirgan’ — raqobat haqida; matnda yo‘q.\n\n‘Both can eat 19,800 kg/day’ — sei maks 7,500 kg/kun (25,000 × 30%); 19,800 ga yetolmaydi.\n\n‘Sei less likely to eat krill’ — ehtimollik haqida; matn ikkalasi ham krill yeydi deydi.",
+    "takeaway": "Solishtirish savollarida — raqamlarni hisoblang va matn aniq aytgan miqdorlar bilan tekshiring."
   },
   "details:27": {
     "prompt_focus": "An’anaviy issiqlik konservatsiya usullarining bir kamchiligi.",
@@ -846,22 +846,22 @@
     "takeaway": "‘Kamchilik’ savollarida matnda aynan nomlangan kemtikni izlang."
   },
   "details:28": {
-    "prompt_focus": "Q13 bilan bir xil — Ispan tubjoy → ingliz tilini o‘tkazish vositasi sifatida.",
-    "reasoning": "Q13 bilan bir xil.",
-    "distractors": "Q13 bilan bir xil.",
-    "takeaway": "Q13 bilan bir xil dars."
+    "prompt_focus": "Matn aytadi: ‘cocoa’ va ‘iguana’ ikkalasi ham *Ispan tili orqali* ingliz tiliga kelgan ko‘chma so‘zlar (Nahuatldan cocoa, Tainodan iguana). Ya’ni Ispan tili tubjoy tillarning inglizgacha yetib borishi uchun *vosita* (medium) sifatida xizmat qilgan.",
+    "reasoning": "‘It has served as a medium through which Indigenous languages have influenced English’ — Ispan tili Nahuatl va Taino so‘zlarini *uzatuvchi vosita* edi (‘indirectly from cacao’, ‘entered English through Spanish’). Matn ikki ham misolda ‘through Spanish’ ifodasini ishlatadi.",
+    "distractors": "‘Contribution roughly equals collective contribution by Indigenous languages’ — hissa miqdorini taqqoslash; matn miqdoriy taqqoslash qilmaydi.\n\n‘Borrowed from and contributed to Indigenous languages’ — ikki yo‘nalishli almashinuv; matn faqat ‘borrowed and passed on’ yo‘nalishni bayon qiladi.\n\n‘Adopted Nahuatl and Taino in equal numbers’ — raqam taqqoslash; matn raqamlarni keltirmaydi.",
+    "takeaway": "‘Vosita’ da’volarida — matnda ‘through X’ yoki ‘indirectly via X’ ifodalarini izlang."
   },
   "details:29": {
-    "prompt_focus": "Q16 bilan bir xil — hDNA noyob foydalari.",
+    "prompt_focus": "Matn aytadi: hDNA ‘offers unique benefits, such as the ability to ascertain the biogeographical origins of organisms’ — noyob foyda. Yana aytadi: hDNA ‘remains a relatively underutilized resource’ va deg-radatsiya muammosi bor. Eng to‘g‘ri quvvatlanadigan da’vo — hDNA boshqa genom-ma’lumotlar bera olmaydigan tushunchalarni berishi mumkin.",
     "reasoning": "Aytilgan noyob foyda: ‘organizmlarning biogeografik kelib chiqishini aniqlash’. Bu boshqa genom ma’lumoti bera olmaydigan tushuncha.",
-    "distractors": "Q16 bilan bir xil.",
-    "takeaway": "Q16 bilan bir xil dars."
+    "distractors": "‘Underused because of its controversial status among scientists’ — ilmiy bahsli holat haqida; matn deg-radatsiyani sabab sifatida nomlaydi.\n\n‘Proved valuable mainly to researchers studying flora’ — misol Malagasy o‘t (flora), ammo ‘mainly to flora’ deb ifodalanmagan; xulosa cheklash.\n\n‘More degraded than other DNA of comparable age’ — boshqa DNA bilan taqqoslash; matnda taqqoslash yo‘q.",
+    "takeaway": "‘Eng yaxshi quvvatlanadigan da’vo’ da’volarida — matnda aniq aytilgan ifodaga eng yaqin parafraza javobni tanlang."
   },
   "details:30": {
-    "prompt_focus": "Q14 bilan bir xil — uy xo‘jaligi daromadi qisman tushuntiradi.",
-    "reasoning": "Q14 bilan bir xil.",
-    "distractors": "Q14 bilan bir xil.",
-    "takeaway": "Q14 bilan bir xil dars."
+    "prompt_focus": "Matn da’volaydi: energiya narvoni modeli daromadni asosiy omil deb hisoblaydi, ammo Ouedraogo tadqiqoti modelni reduktiv ko‘rsatadi (chunki Burkina Faso’da yoqilg‘i tanlovi *bir nechta omilga* bog‘liq). Demak, daromad ta’sir qiladi, ammo *yagona omil emas*.",
+    "reasoning": "‘It can explain some but not all of the differences in fuel choice across households’ — ‘reductive’ atamasi daromadning rolini *qisman* tan oladi: u tushuntiradi, lekin to‘liq emas. Bu modelning ham daromadni inkor qilmasdan, ham boshqa omillarni qo‘shishini ifodalaydi.",
+    "distractors": "‘Constrains amount of fuel but not type’ — miqdor vs tur ajrim; matnda yo‘q.\n\n‘Affects fuel choice but not for reasons assumed’ — sababi noto‘g‘ri deb da’volaydi; matn aniq sababni inkor qilmaydi.\n\n‘Often said to influence but actually does not’ — daromadning ta’sirini butunlay inkor qiladi; matn faqat reduktivlikni tanqid qiladi.",
+    "takeaway": "‘Reductive’ deb da’volangan modellarda — daromadning roli *qisman* tan olinadi; faqat ‘ba’zilarini tushuntiradi, hammasini emas’ javobini izlang."
   },
   "details:31": {
     "prompt_focus": "Yung 1847 → 1909 yillarida Nyu-Yorkning qanday o‘zgarganini sezgan?",
@@ -894,10 +894,10 @@
     "takeaway": "Adabiy xarakter qarashlari savolida xarakterning hazil yoki kinoyali so‘zlari ortidagi haqiqiy fikrni topishga harakat qiling."
   },
   "details:36": {
-    "prompt_focus": "Support Q15 bilan bir xil — Iliffe va boshqalar boshqa dalillardan foydalanishi mumkin.",
-    "reasoning": "Support Q15 bilan bir xil.",
-    "distractors": "Support Q15 bilan bir xil.",
-    "takeaway": "Support Q15 bilan bir xil dars."
+    "prompt_focus": "Matn aytadi: kapitalizm tarixchilari arxiv yozuvlariga tayanadi, ammo Afrika uchun bunday yozuvlar *mavjud emas*. Iliffe va boshqa Africanist olimlar koloniyadan oldingi Afrikada kapitalizm xususiyatlarini topishgan, ya’ni *boshqa turdagi dalillardan* foydalanishlari shart.",
+    "reasoning": "‘They likely make use of different types of evidence than historians of capitalism typically rely on’ — Afrika uchun arxiv yo‘q (matn ifodasi), lekin Iliffe topilmalar topgan → demak ular boshqa manba turlaridan (og‘zaki tarix, arxeologik dalil va h.k.) foydalanishgan.",
+    "distractors": "‘Different view about which activities should be considered capitalist’ — ta’rif farqi; matn metodologiya farqini ifodalaydi.\n\n‘Different methods to derive longitudinal data from archival records’ — arxiv yo‘qligi ostida bu xulosa imkonsiz.\n\n‘View capitalism as more beneficial for Africa’ — baholash haqida; matn faqat metodologik farqni ifodalaydi.",
+    "takeaway": "Manba mavjud emasligi sababini bilish — olimlar boshqa manba turini ishlatishlari kerakligini xulosa qiladi."
   },
   "details:37": {
     "prompt_focus": "Matn Pimentel xulosasi haqida nimani taklif qiladi? Matn aniq ravishda *kichik namuna hajmi* xolislikni oshirib, ta’sirlarni *bo‘rttirib ko‘rsatishini* tanqid qiladi.",
@@ -942,10 +942,10 @@
     "takeaway": "‘Bog‘langan omillar’ savollarida matn nomlagan barcha omillarni qamrab oluvchi variantni tanlang."
   },
   "details:44": {
-    "prompt_focus": "Q13/Q28 bilan bir xil — Ispan tubjoy → ingliz vositasi.",
-    "reasoning": "Q13 bilan bir xil.",
-    "distractors": "Q13 bilan bir xil.",
-    "takeaway": "Q13 bilan bir xil dars."
+    "prompt_focus": "Q28 ga parallel: ‘coyote’ va ‘condor’ ikkalasi ham *Ispan tili orqali* (medium) ingliz tiliga o‘tgan tubjoy so‘zlar (Nahuatldan coyote, Quechuadan condor). Da’vo: Ispan tili tubjoy tillarning ingliz tiliga ta’sir qilishida vosita rolini o‘ynagan.",
+    "reasoning": "‘It has served as a medium through which Indigenous languages have influenced English’ — ‘indirectly from coyote’, ‘entered English through Spanish’ — ikkala misol ham Ispan tilini *uzatuvchi vosita* sifatida ko‘rsatadi.",
+    "distractors": "‘Contribution roughly equals’ — raqam taqqoslash; matnda yo‘q.\n\n‘Borrowed from and contributed to Indigenous languages’ — ikki tomonlama almashinuv; matn faqat bir tomondan ifodalaydi.\n\n‘Adopted Nahuatl and Quechua in equal numbers’ — son taqqoslash; matnda mavjud emas.",
+    "takeaway": "‘Vosita’ da’volarida — ‘through’ yoki ‘via’ ifodasi to‘g‘ridan-to‘g‘ri javobni tasdiqlaydi."
   },
   "details:45": {
     "prompt_focus": "Matn tabiat-tarixi to‘plami namunalari haqida nimani taklif qiladi?",
@@ -972,22 +972,22 @@
     "takeaway": "Tadqiqot qiymati savollarida matn nomlagan ‘istisno qilgan’ va ‘tasdiqlagan’ ikkita aniq narsani qaytaring."
   },
   "details:49": {
-    "prompt_focus": "Support Q40 bilan bir xil — kategoriya o‘xshashligi va ehtimollik o‘zgarishlari korrelyatsiyasi tadqiqot dizayni.",
-    "reasoning": "Support Q40 bilan bir xil.",
-    "distractors": "Support Q40 bilan bir xil.",
-    "takeaway": "Support Q40 bilan bir xil dars."
+    "prompt_focus": "Grasby va boshqalarning savoli: *kategoriyalar o‘xshashligi* iste’molchilarning brand-kengaytirish mahsulotlarini sotib olish ehtimolini bashorat qiladimi? Eng yaxshi tadqiqot dizayni: o‘xshashlik reytingini olish va ehtimollik o‘zgarishi bilan korrelyatsiyani hisoblash.",
+    "reasoning": "‘Have a representative sample rate similarity of product categories in each pair, then determine how those ratings correlate with the change in probability’ — bu aynan Grasby savoliga javob beradigan dizayn: ikkala o‘zgaruvchi (o‘xshashlik bahosi va ehtimollik o‘zgarishi) o‘lchanadi va korrelyatsiya hisoblanadi.",
+    "distractors": "‘Brand recognition vs. average cost’ — brendni-tanish va narx; matnning savoli o‘xshashlik haqida.\n\n‘Similarity of one product to others in same category’ — ichki-kategoriya taqqoslash; matnning savoli kategoriyalararo o‘xshashlik.\n\n‘Brand recognition vs. frequency by different group’ — brendni-tanish va alohida xaridor guruhi; mantiqsiz parallel.",
+    "takeaway": "Tadqiqot dizayni savollarida — savoldagi *aniq ikki o‘zgaruvchi* o‘lchanadigan dizaynni izlang."
   },
   "details:50": {
-    "prompt_focus": "Q18 bilan bir xil — energiya narvoni reduktiv, chunki bir xususiyatga tanlovni bog‘laydi.",
-    "reasoning": "Q18 bilan bir xil.",
-    "distractors": "Q18 bilan bir xil.",
-    "takeaway": "Q18 bilan bir xil dars."
+    "prompt_focus": "Q18/Q30 ga parallel — Heltbergning Guatemala tadqiqoti energiya narvoni modelini *reduktiv* deb ko‘rsatadi, chunki: model yoqilg‘i tanlovini *bir xususiyat*ga (daromad) bog‘laydi, ammo Heltberg yoqilg‘i tanlovi *bir nechta omilga* bog‘liq ekanligini ko‘rsatadi.",
+    "reasoning": "‘The energy ladder attributes household fuel choice primarily to a single characteristic of households, but Heltberg’s study showed that multiple circumstances can affect household fuel choice’ — ‘single’ vs ‘multiple’ ziddiyatini bevosita ifodalaydi: ‘reductive’ atamasining ma’nosi.",
+    "distractors": "‘Households ignore that characteristic and evaluate several other factors’ — daromadni butunlay tashlab qo‘yadi; matn ifodalamaydi (faqat reduktivlikni aytadi).\n\n‘Adoption of one fuel means another must be displaced’ — displacement haqida; matn xilma-xillik haqida.\n\n‘Same factor in all locations’ — lokatsion farq; matn omil-soni farqini ifodalaydi.",
+    "takeaway": "‘Reductive’ — ‘bir omil vs ko‘p omil’ ziddiyati; ‘single characteristic vs multiple circumstances’ javobini izlang."
   },
   "details:51": {
-    "prompt_focus": "Q8/Q19 bilan bir xil — Hooks va Ward A Raisin in the Sun aktyorlari sifatida tanishgan.",
-    "reasoning": "Q8 bilan bir xil.",
-    "distractors": "Q8 bilan bir xil.",
-    "takeaway": "Q8 bilan bir xil dars."
+    "prompt_focus": "Yana NEC asoschilari Hooks va Ward qanday tanishgan. Q19 ga ekvivalent struktur, lekin to‘g‘ri javob D pozitsiyasida.",
+    "reasoning": "‘Hooks and Ward were both actors in a production of A Raisin in the Sun’ — matnning ‘met while performing in a 1960 touring production’ jumlasini parafraza qiladi: ikkalasi ham aktyor edi va birga ijro qilgani ularni tanishtirgan.",
+    "distractors": "‘Harrison introduced at performance of The Great MacDaddy’ — 1974, lekin uchrashish 1960; vaqt zid.\n\n‘Attended same performance of The Great MacDaddy’ — tomoshabin emas, aktyor edi.\n\n‘Same workshop at NEC’ — NEC ulardan keyin (1967); avval tanishgan.",
+    "takeaway": "‘Initially met’ — matn aytgan eng erta uchrashish kontekstini bevosita ko‘rsatuvchi javobni tanlang."
   },
   "details:52": {
     "prompt_focus": "Migel nima uchun akasi bilan boradi?",
@@ -1014,10 +1014,10 @@
     "takeaway": "Matnning aniq qarama-qarshiligini saqlovchi variantni tanlang — uni soddalashtirmang."
   },
   "details:56": {
-    "prompt_focus": "Support Q40/Q49 bilan bir xil — kategoriya o‘xshashligi va ehtimollik korrelyatsiyasi.",
-    "reasoning": "Support Q40 bilan bir xil.",
-    "distractors": "Support Q40 bilan bir xil.",
-    "takeaway": "Support Q40 bilan bir xil dars."
+    "prompt_focus": "Q49 ga parallel — yana Grasby savolini hal qilish dizayni: o‘xshashlik bahosi va ehtimollik o‘zgarishi korrelyatsiyasi (Lego/Legoland kontekstida).",
+    "reasoning": "‘Have a representative sample rate similarity of product categories in each pair, then determine how those ratings correlate with the change in probability’ — ikki o‘zgaruvchi (o‘xshashlik va ehtimollik) o‘lchanadi va bog‘lanish hisoblanadi. Bu Grasbyning savoliga javob beradi.",
+    "distractors": "‘Brand recognition vs. frequency’ — noto‘g‘ri o‘zgaruvchilar.\n\n‘Brand recognition vs. average cost’ — noto‘g‘ri o‘zgaruvchilar.\n\n‘Similarity of one product to others in same category’ — ichki kategoriya, kategoriyalararo emas.",
+    "takeaway": "Tadqiqot dizayni — savoldagi *aniq ikki o‘zgaruvchi* o‘lchanadigan dizaynni izlang."
   },
   "details:57": {
     "prompt_focus": "The Crown of Columbus Erdrich asarlarining ko‘pchiligidan qanday farq qiladi?",
@@ -1038,10 +1038,10 @@
     "takeaway": "‘Taklif qiladi’ savollarida matnning aynan iboralari (‘kamdan kam’, ‘tez-tez’) bilan ikki guruhni solishtiring."
   },
   "details:60": {
-    "prompt_focus": "Support Q57 bilan bir xil — miselyum termoregulyatsiyasi meva tanalardan mustaqil.",
-    "reasoning": "Support Q57 bilan bir xil.",
-    "distractors": "Support Q57 bilan bir xil.",
-    "takeaway": "Support Q57 bilan bir xil dars."
+    "prompt_focus": "Matn aytadi: meva tanalari ajratilgan keyin ham, miselyumning *meva-hosil qiluvchi* va *meva-hosil qilmaydigan* qismlari o‘rtasidagi sovuqlik farqi *davom etgan*. Demak miselyumning termoregulyatsiya farqi meva tanalarining mavjudligi/yo‘qligiga *bog‘liq emas*.",
+    "reasoning": "‘Variation in thermoregulation across the mycelium may occur independent of the presence or absence of fruited bodies’ — ‘a difference that persisted even after fruited bodies were detached’ jumlasini bevosita parafraza qiladi: meva tanalari yo‘q bo‘lsa ham termoregulyatsiya farqi davom etadi → ular *mustaqil*.",
+    "distractors": "‘Higher mycelium temperature and greater fruit productivity’ — matn *quyiroq* haroratni emas, *yuqoriroq*ni aytmaydi; va meva mahsuldorligi haqida hech narsa demaydi.\n\n‘Temperatures lower in fruiting areas due to depth/spread differences’ — sabab matnda aytilmagan; faqat hodisani ifodalaydi.\n\n‘Mycelium maintains lower temperatures than fruited bodies even considering variations’ — matnda ‘both’ deydi (‘both their fruited bodies and their mycelium’); miselyum past degan ifoda yo‘q.",
+    "takeaway": "‘Mustaqil’ da’volarida — ikki omilning *bog‘lanmaganligini* (X yo‘q bo‘lsa ham Y davom etadi) ko‘rsatuvchi matn ifodalarini izlang."
   },
   "details:61": {
     "prompt_focus": "Matn kolibri afzalliklari haqida nimani qo‘llab-quvvatlaydi?",
