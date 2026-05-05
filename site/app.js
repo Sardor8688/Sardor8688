@@ -5,20 +5,34 @@
 */
 
 const TOPIC_ORDER = [
-  { slug: "main_ideas",   title: "Asosiy g‘oya (Main Ideas)",
+  // Section 1: Information and Ideas
+  { slug: "main_ideas",   section: "info", title: "Asosiy g‘oya (Main Ideas)",
     blurb: "Matnning umumiy markaziy fikrini topish — har bir gapni bog‘lab turgan g‘oya, alohida bir detal emas." },
-  { slug: "details",      title: "Tafsilotlar (Details)",
+  { slug: "details",      section: "info", title: "Tafsilotlar (Details)",
     blurb: "Matnda to‘g‘ridan-to‘g‘ri aytilgan aniq faktni topib, hech narsa qo‘shmay yoki o‘zgartirmay aynan o‘sha faktni qaytaruvchi variantni tanlash." },
-  { slug: "inference",    title: "Mantiqiy xulosa (Inference)",
+  { slug: "inference",    section: "info", title: "Mantiqiy xulosa (Inference)",
     blurb: "Matn aytmagan, ammo zaruriy ravishda kelib chiqadigan xulosani topish — matnni mantiqan tugatuvchi variant." },
-  { slug: "support",      title: "Dalil — Quvvatlash (Support)",
+  { slug: "support",      section: "info", title: "Dalil — Quvvatlash (Support)",
     blurb: "Berilgan da’vo yoki gipotezani eng kuchli tarzda mustahkamlovchi natijani tanlash." },
-  { slug: "weaken",       title: "Dalil — Zaiflashtirish (Weaken)",
+  { slug: "weaken",       section: "info", title: "Dalil — Zaiflashtirish (Weaken)",
     blurb: "Berilgan da’vo yoki gipotezani eng kuchli tarzda zaiflashtiruvchi yoki rad etuvchi natijani tanlash." },
-  { slug: "quotation",    title: "Iqtibos (Quotation)",
+  { slug: "quotation",    section: "info", title: "Iqtibos (Quotation)",
     blurb: "Aytilgan g‘oya, mavzu yoki xarakter xususiyatini eng aniq ko‘rsatuvchi adabiy iqtibosni tanlash." },
-  { slug: "graphs",       title: "Dalil — Grafiklar (Graphs)",
+  { slug: "graphs",       section: "info", title: "Dalil — Grafiklar (Graphs)",
     blurb: "Jadval yoki diagrammani aniq o‘qib, faqat shu raqamlardan kelib chiqadigan va matn da’vosiga mos variantni tanlash." },
+  // Section 2: Craft and Structure
+  { slug: "main_purpose",       section: "craft", title: "Asosiy maqsad (Main Purpose)",
+    blurb: "Muallif passajni nima uchun yozganini — matnning umumiy harakati va niyatini topish." },
+  { slug: "overall_structure",  section: "craft", title: "Umumiy tuzilma (Overall Structure)",
+    blurb: "Passajning bandlari qaysi tartibda nima qilayotganini — kompozitsion sxemani aniqlash." },
+  { slug: "underlined_purpose", section: "craft", title: "Tagi chizilgan jumla (Underlined Purpose)",
+    blurb: "Tagi chizilgan jumlaning matn argumenti uchun bajarayotgan vazifasini topish." },
+  { slug: "cross_text",         section: "craft", title: "Ikki matn bog‘lanishi (Cross-Text)",
+    blurb: "Ikki alohida matn (Text 1 va Text 2) mualliflari qaysi nuqtada kelishishini yoki farq qilishini topish." },
+  { slug: "gap_filling",        section: "craft", title: "Bo‘shliqni to‘ldirish (Gap Filling)",
+    blurb: "Passajdagi bo‘sh joyga eng aniq va mantiqiy mos so‘z yoki iborani tanlash — kontekst signallari asosida." },
+  { slug: "synonyms",           section: "craft", title: "Kontekstda sinonim (Synonyms)",
+    blurb: "Berilgan so‘zning passajdagi konkret kontekstdagi eng yaqin ma’nosini topish." },
 ];
 
 const TYPE_DEFINITION = {
@@ -28,7 +42,13 @@ const TYPE_DEFINITION = {
   support:    "Quvvatlash (Support) savoli — qaysi natija, agar to‘g‘ri bo‘lsa, da’voni yoki gipotezani eng kuchli tarzda quvvatlaydi, deb so‘raydi. To‘g‘ri variant da’voning HAR BIR shartiga aniq mos kelishi va aynan da’vo talab qilgan turdagi dalilni berishi kerak.",
   weaken:     "Zaiflashtirish (Weaken) savoli — qaysi natija da’voni eng kuchli tarzda zaiflashtiradi yoki rad etadi, deb so‘raydi. To‘g‘ri variant da’voning mantig‘iga to‘g‘ridan-to‘g‘ri qarshi chiqadi, muqobil tushuntirish ko‘rsatadi yoki da’vo bog‘liq bo‘lgan zaruriy shartni olib tashlaydi.",
   quotation:  "Iqtibos (Quotation) savoli aytilgan g‘oya, mavzu yoki xulosani eng yaqqol ko‘rsatuvchi adabiy iqtibosni tanlashni so‘raydi. To‘g‘ri iqtibos g‘oyani sahifaning o‘zida ‘sahnaga chiqaradi’ — unda aniq qaysi so‘zlar da’voni ko‘rsatayotganini ko‘rsatib bera olishingiz kerak.",
-  graphs:     "Grafiklar (Graphs) savoli jadval yoki diagrammani aniq o‘qib, FAQAT figura ko‘rsatgan ma’lumotlardan kelib chiqadigan va matn argumentiga mos variantni tanlashni so‘raydi. To‘g‘ri variant ham raqamlar bilan to‘liq tasdiqlanadi, ham gipotezaning aynan shartiga mos keladi."
+  graphs:     "Grafiklar (Graphs) savoli jadval yoki diagrammani aniq o‘qib, FAQAT figura ko‘rsatgan ma’lumotlardan kelib chiqadigan va matn argumentiga mos variantni tanlashni so‘raydi. To‘g‘ri variant ham raqamlar bilan to‘liq tasdiqlanadi, ham gipotezaning aynan shartiga mos keladi.",
+  main_purpose:       "Main Purpose (asosiy maqsad) savoli muallifning passajni *nima uchun* yozganini topadi. To‘g‘ri javob butun matnning markaziy harakatini (tushuntirmoqda, taqqoslamoqda, da’vo qilmoqda, masala kiritmoqda va h.k.) tor doirada, haddan oshirmasdan ifodalashi kerak. Faqat bir parchani qamrab olgan, matnda bo‘lmagan da’vo qo‘shgan yoki haddan tashqari umumlashtirgan variantlar — yiqiladi.",
+  overall_structure:  "Overall Structure (umumiy tuzilma) savoli passajning bandlari *qaysi tartibda* nima qilayotganini topadi. To‘g‘ri javob har bir bandning rolini va ular orasidagi mantiqiy bog‘lanishni (ta’rif → misol; muammo → yechim; jarayon → ahamiyat va h.k.) haqiqatga mos ravishda tasvirlashi kerak.",
+  underlined_purpose: "Underlined Purpose (tagi chizilgan jumla maqsadi) savoli — *aynan tagi chizilgan* jumlaning butun matn ichidagi *vazifasini* aniqlaydi (misol keltirishmi, qarshi-fikr berishmi, asosiy da’voni quvvatlashmi va h.k.). To‘g‘ri javob jumlaning matn argumenti bilan o‘zaro ta’sirini aniq nomlashi kerak — uning mazmunini emas, balki ROLINI.",
+  cross_text:         "Cross-Text Connection (ikki matn bog‘lanishi) savoli — Text 1 va Text 2 mualliflarining bir-biriga *kelishish, qarshi chiqish yoki to‘ldirish* munosabatini aniqlaydi. To‘g‘ri javob har ikki matnda ham mavjud bo‘lgan aniq fakt yoki fikrga asoslanadi.",
+  gap_filling:        "Gap Filling (bo‘shliqni to‘ldirish) savoli — passajdagi bo‘sh joyga eng *mantiqiy va aniq* so‘z yoki iborani topishni so‘raydi. To‘g‘ri javob signal so‘zlar (but, however, because, for instance, despite) va atrofdagi gaplarning umumiy ma’nosi bilan to‘liq mos keladigan yagona variantdir.",
+  synonyms:           "Most Nearly Means (kontekstdagi sinonim) savoli — passajdagi ma’lum so‘zning *aynan shu kontekstdagi* eng yaqin ma’nosini topadi. So‘zning lug‘aviy ma’nosi emas, kontekstdagi konkret ishlatilishi hal qiluvchidir."
 };
 
 const state = {
@@ -39,12 +59,14 @@ const state = {
 };
 
 async function load() {
-  const [qs, exps] = await Promise.all([
+  const [qs, exps, ans] = await Promise.all([
     fetch("data/questions.json").then(r => r.json()),
     fetch("data/explanations.json").then(r => r.json()).catch(() => ({})),
+    fetch("data/answers.json").then(r => r.json()).catch(() => ({})),
   ]);
   state.questions = qs;
   state.explanations = exps || {};
+  state.answers = ans || {};
   state.byTopic = {};
   for (const q of qs) {
     (state.byTopic[q.topic_slug] ||= []).push(q);
@@ -67,13 +89,13 @@ function route() {
     return;
   }
   if (hash === "#/strategy") {
-    crumb.innerHTML = `<a href="#/">Information &amp; Ideas</a> <span class="sep">›</span> Sirli qoidalar`;
+    crumb.innerHTML = `<a href="#/">SAToplam Reading</a> <span class="sep">›</span> Sirli qoidalar`;
     renderStrategy(main);
     return;
   }
   const ms = hash.match(/^#\/strategy\/([a-z_]+)$/);
   if (ms) {
-    crumb.innerHTML = `<a href="#/">Information &amp; Ideas</a> <span class="sep">›</span> <a href="#/strategy">Sirli qoidalar</a> <span class="sep">›</span> ${escapeHtml(topicMeta(ms[1]).title)}`;
+    crumb.innerHTML = `<a href="#/">SAToplam Reading</a> <span class="sep">›</span> <a href="#/strategy">Sirli qoidalar</a> <span class="sep">›</span> ${escapeHtml(topicMeta(ms[1]).title)}`;
     renderStrategyTopic(main, ms[1]);
     return;
   }
@@ -97,31 +119,45 @@ function escapeHtml(s) {
 }
 
 function renderHome(main) {
-  document.title = "SAToplam — Information & Ideas | Reasoning & Definitions";
-  const cards = TOPIC_ORDER.map((t, i) => {
-    const list = state.byTopic[t.slug] || [];
-    const explainedCount = list.filter(q => hasExplanation(q)).length;
+  document.title = "SAToplam Reading — Information & Ideas + Craft & Structure (o‘zbekcha)";
+  const renderSection = (sectionKey, sectionTitle, sectionLead) => {
+    const topics = TOPIC_ORDER.filter(t => t.section === sectionKey);
+    const cards = topics.map((t, i) => {
+      const list = state.byTopic[t.slug] || [];
+      const explainedCount = list.filter(q => hasExplanation(q)).length;
+      return `
+        <a class="topic-card" href="#/topic/${t.slug}">
+          <div class="num">${i + 1}-bo‘lim</div>
+          <div class="name">${escapeHtml(t.title)}</div>
+          <div class="meta">${list.length} ta savol${explainedCount ? ` · ${explainedCount} izoh bilan` : ""}</div>
+          <p class="muted" style="margin-top:8px">${escapeHtml(t.blurb)}</p>
+        </a>
+      `;
+    }).join("");
     return `
-      <a class="topic-card" href="#/topic/${t.slug}">
-        <div class="num">${i + 1}-bo‘lim</div>
-        <div class="name">${escapeHtml(t.title)}</div>
-        <div class="meta">${list.length} ta savol${explainedCount ? ` · ${explainedCount} izoh bilan` : ""}</div>
-        <p class="muted" style="margin-top:8px">${escapeHtml(t.blurb)}</p>
-      </a>
+      <section class="section-block">
+        <h2 class="section-title">${escapeHtml(sectionTitle)}</h2>
+        <p class="muted">${escapeHtml(sectionLead)}</p>
+        <div class="topic-grid">${cards}</div>
+      </section>
     `;
-  }).join("");
+  };
+  const total = state.questions.length;
   main.innerHTML = `
-    <h1>Information &amp; Ideas — o‘zbekcha</h1>
+    <h1>SAToplam Reading — o‘zbekcha</h1>
     <p class="lead">
-      SAToplam Reading Book’ning Information &amp; Ideas bo‘limidagi har bir savol —
-      to‘liq o‘zbekcha izoh va savol turining ta’rifi bilan. <strong>Javob harflari (A/B/C/D) ataylab ko‘rsatilmaydi</strong> —
-      izoh sizni to‘g‘ri talqinga yetaklaydi, shunda siz harfni yodlash o‘rniga o‘z fikringizni isbotlashni o‘rganasiz.
+      SAToplam Reading Book’ning <strong>Information &amp; Ideas</strong> va <strong>Craft &amp; Structure</strong> bo‘limlaridagi
+      har bir savol — to‘liq o‘zbekcha izoh va savol turining ta’rifi bilan.
+      <strong>Javob harflari (A/B/C/D) ataylab ko‘rsatilmaydi</strong> — izoh sizni to‘g‘ri talqinga yetaklaydi,
+      shunda siz harfni yodlash o‘rniga o‘z fikringizni isbotlashni o‘rganasiz.
     </p>
     <div class="notice">
       <strong>Qanday foydalanish kerak:</strong> avval matnni o‘qing, javobingizni tanlang, so‘ng pastdagi izohni o‘qing.
       Izoh — qaysi talqin to‘g‘ri ekanini harfsiz tushuntiradi va boshqa variantlar nima uchun yiqilishini ko‘rsatadi.
+      Jami: <strong>${total} ta savol</strong>, <strong>13 ta savol turi</strong>.
     </div>
-    <div class="topic-grid">${cards}</div>
+    ${renderSection("info",  "Bo‘lim 1 — Information and Ideas",  "Matn ichidagi g‘oyalar va ma’lumotlarni topish, xulosalash, dalil keltirish va grafiklarni o‘qish bo‘yicha 7 ta savol turi.")}
+    ${renderSection("craft", "Bo‘lim 2 — Craft and Structure",   "Muallif maqsadi, matn tuzilishi, jumlalarning vazifasi, ikki matn bog‘lanishi va kontekstdagi so‘z ma’nosi bo‘yicha 6 ta savol turi.")}
     <div class="tips">
       <h2>O‘qish strategiyasi — sirli qoidalar</h2>
       <ul>
@@ -149,7 +185,7 @@ function renderTopic(main, crumb, slug) {
   const meta = topicMeta(slug);
   const list = state.byTopic[slug] || [];
   document.title = `${meta.title} · SAToplam Information & Ideas`;
-  crumb.innerHTML = `<a href="#/">Information &amp; Ideas</a> <span class="sep">›</span> ${escapeHtml(meta.title)}`;
+  crumb.innerHTML = `<a href="#/">SAToplam Reading</a> <span class="sep">›</span> ${escapeHtml(meta.title)}`;
 
   const items = list.map(q => {
     const preview = (q.passage || "").slice(0, 140) + ((q.passage || "").length > 140 ? "…" : "");
@@ -192,14 +228,16 @@ function renderQuestion(main, crumb, slug, qnum) {
     return;
   }
   document.title = `${meta.title} · Q${qnum} · SAToplam`;
-  crumb.innerHTML = `<a href="#/">Information &amp; Ideas</a> <span class="sep">›</span> <a href="#/topic/${slug}">${escapeHtml(meta.title)}</a> <span class="sep">›</span> Q${qnum}`;
+  crumb.innerHTML = `<a href="#/">SAToplam Reading</a> <span class="sep">›</span> <a href="#/topic/${slug}">${escapeHtml(meta.title)}</a> <span class="sep">›</span> Q${qnum}`;
 
   const exp = getExplanation(q);
   const def = (exp && exp.definition) || TYPE_DEFINITION[slug] || "";
   const reasoning = exp && (exp.reasoning || exp.why_correct);
 
+  const correctLetter = (state.answers[slug] || {})[String(qnum)] || null;
+
   const opts = ["A", "B", "C", "D"].map(k => `
-    <li>
+    <li data-key="${k}">
       <span class="key">${k})</span>
       <span class="body">${escapeHtml(q.options[k] || "")}</span>
     </li>
@@ -214,7 +252,14 @@ function renderQuestion(main, crumb, slug, qnum) {
       <h1>Matn va savol</h1>
       <div class="question-passage">${escapeHtml(q.passage || "")}</div>
       <p class="question-prompt">${escapeHtml(q.prompt || "")}</p>
-      <ul class="options">${opts}</ul>
+      <ul class="options" id="opts">${opts}</ul>
+      ${correctLetter ? `
+      <div class="answer-toggle">
+        <button id="btn-show-answer" type="button" class="btn-answer">Javobni ko‘rish</button>
+        <div id="answer-reveal" class="answer-reveal" hidden>
+          <strong>To‘g‘ri javob:</strong> <span class="answer-letter">${correctLetter}</span>
+        </div>
+      </div>` : ""}
 
       <section class="explanation">
         <h3>1 · Bu savol nimani so‘rayapti — to‘liq ta’rif</h3>
@@ -245,6 +290,26 @@ function renderQuestion(main, crumb, slug, qnum) {
       </nav>
     </article>
   `;
+  // Wire up "Javobni ko'rish" toggle
+  const btn = document.getElementById("btn-show-answer");
+  if (btn) {
+    btn.addEventListener("click", () => {
+      const rev = document.getElementById("answer-reveal");
+      const isHidden = rev.hasAttribute("hidden");
+      if (isHidden) {
+        rev.removeAttribute("hidden");
+        btn.textContent = "Javobni yashirish";
+        // Highlight the correct option in the list
+        const li = document.querySelector(`#opts li[data-key="${correctLetter}"]`);
+        if (li) li.classList.add("correct");
+      } else {
+        rev.setAttribute("hidden", "");
+        btn.textContent = "Javobni ko‘rish";
+        const li = document.querySelector(`#opts li[data-key="${correctLetter}"]`);
+        if (li) li.classList.remove("correct");
+      }
+    });
+  }
   window.scrollTo({ top: 0, behavior: "instant" });
 }
 
@@ -487,26 +552,234 @@ const STRATEGY = {
       },
     ],
   },
+
+  main_purpose: {
+    name: "Asosiy maqsad (Main Purpose)",
+    intro:
+      "Main Purpose savolida muallif passajni nima uchun yozganini topish kerak. To‘g‘ri javob butun matnning markaziy harakatini (introduce, explain, compare, argue, illustrate va h.k.) tor doirada ifodalashi kerak — ortiqcha umumlashtirmasdan, kamaytirmasdan.",
+    rules: [
+      {
+        title: "Qoida 1 — Birinchi va oxirgi gapni alohida o‘qing",
+        body:
+          "Main Purpose javobi odatda matnning birinchi gapidagi mavzu va oxirgi gapidagi xulosa orasidagi *harakat*ni tasvirlaydi. Birinchi gap mavzu doirasini, oxirgi gap esa yo‘nalishni belgilaydi — ikkalasini ham qamrab olgan variantni qidiring.",
+      },
+      {
+        title: "Qoida 2 — Fe’ldan boshlanadigan variantning fe’li to‘g‘ri bo‘lsin",
+        body:
+          "Main Purpose variantlari odatda ‘To explain…’, ‘To compare…’, ‘To argue…’, ‘To describe…’ kabi fe’l bilan boshlanadi. Avval matnning *harakati* qaysi fe’lga to‘g‘ri kelishini aniqlang. ‘Argue’ — kuchli da’vo; ‘Explain’ — neytral; ‘Introduce’ — yangi mavzu kiritish.",
+      },
+      {
+        title: "Qoida 3 — Tor variantlarni rad et",
+        body:
+          "Faqat bitta misol yoki bitta paragrafni qamrab oluvchi variant — tor. ‘To prove that X is unique’, ‘To explain why Y went extinct’ — agar matn umumiy mavzu haqida bo‘lsa, bu variantlar tor bo‘ladi.",
+      },
+      {
+        title: "Qoida 4 — ‘Argue / prove / refute’ — matn aslida da’vo qilyaptimi?",
+        body:
+          "Matn faqat tushuntirsa, ‘argue’ yoki ‘prove’ varianti — kuchaytirilgan. To‘g‘ri javob ‘discuss’ yoki ‘explain’ bo‘lishi kerak. Aksincha, agar matnda aniq da’vo va dalillar bo‘lsa — ‘explain’ varianti zaif, ‘argue’ to‘g‘ri.",
+      },
+      {
+        title: "Qoida 5 — ‘Introduce a new X’ varianti uchun ‘yangi’ so‘zini qidiring",
+        body:
+          "Variantda ‘a new fitness tracker’, ‘a recently discovered species’ kabi ‘new/recent’ so‘zlari bo‘lsa, matnda ham aniq ‘new/recent’ so‘zi yoki shunga teng ifoda bo‘lishi shart. Aks holda variant matndan ko‘chgan.",
+      },
+    ],
+  },
+
+  overall_structure: {
+    name: "Umumiy tuzilma (Overall Structure)",
+    intro:
+      "Overall Structure savolida matnning bandlari qaysi tartibda nima qilayotganini topish kerak. To‘g‘ri javob har bir bandning *rolini* ketma-ket nomlaydi: ta’rif → misol; muammo → yechim; jarayon → ahamiyat va h.k.",
+    rules: [
+      {
+        title: "Qoida 1 — Matnni 2-3 qismga bo‘lib oling",
+        body:
+          "Birinchi 1-2 gap nima qilyapti? O‘rta qism nima qilyapti? Oxirgi qism nima qilyapti? Variant ushbu 3 qismni *aynan* nomlashi kerak. Bittasi noto‘g‘ri bo‘lsa — variant butunlay yiqiladi.",
+      },
+      {
+        title: "Qoida 2 — ‘Then…’ tartibiga yopishib qol",
+        body:
+          "Variantlar ko‘pincha ‘It first X, then Y, finally Z’ tarzida. Tartibni teskari qilib ko‘rsatuvchi variantlar — tuzoq. Matnda Y birinchi bo‘lsa, variantda ham Y birinchi bo‘lishi kerak.",
+      },
+      {
+        title: "Qoida 3 — ‘History → research direction’ vs. ‘process → importance’",
+        body:
+          "Eng tez-tez uchraydigan ikki sxema: (a) jarayonni tasvirlaydi, keyin ahamiyatini ochadi; (b) tarixiy fonni beradi, keyin yangi tadqiqot taklif qiladi. Matn aniq qaysi sxemada ekanligini birinchi bo‘lib aniqlang.",
+      },
+      {
+        title: "Qoida 4 — ‘Two sides’ tuzilishini taniring",
+        body:
+          "Agar matn ‘some say X, others say Y’ tuzilishida bo‘lsa, to‘g‘ri variant ‘presents two opposing views’ yoki ‘compares X and Y’ tarzida bo‘ladi. Bir tomonni tanlovchi variantlar — yiqiladi.",
+      },
+      {
+        title: "Qoida 5 — Variantning HAR BIR fe’li tekshirib chiqilsin",
+        body:
+          "Variant ‘provides a history… and suggests a direction’ desa, matnda HAM ‘history’ qismi, HAM ‘direction’ qismi bo‘lishi kerak. Bir qismi yo‘q bo‘lsa — variant noto‘g‘ri.",
+      },
+    ],
+  },
+
+  underlined_purpose: {
+    name: "Tagi chizilgan jumla (Underlined Purpose)",
+    intro:
+      "Underlined Purpose savolida tagi chizilgan jumlaning matn argumenti uchun *qanday vazifa bajarayotgani* (misol berish, qarshi-fikr, ta’rif berish, sababni ochish va h.k.) topiladi. To‘g‘ri javob jumlaning *rolini* nomlaydi — uning mazmunini emas.",
+    rules: [
+      {
+        title: "Qoida 1 — Jumlaning oldidan va keyinidan o‘qing",
+        body:
+          "Tagi chizilgan jumla yolg‘iz turmaydi — uning oldidagi va keyingi gaplarda nima aytilgan? Agar oldindagi gap ‘umumiy da’vo’ bo‘lsa, tagi chizilgan jumla — *misol*. Agar oldindagi gap muammo bo‘lsa — tagi chizilgan jumla *yechim* yoki *sabab* bo‘lishi mumkin.",
+      },
+      {
+        title: "Qoida 2 — ‘It illustrates’, ‘It supports’, ‘It contrasts’ — vazifa fe’llari",
+        body:
+          "Variantlar ‘It provides an example’, ‘It supports the claim’, ‘It introduces a counterargument’, ‘It defines a key term’, ‘It explains a cause’ tarzida fe’l bilan ifodalanadi. Eng to‘g‘ri fe’lni topish — birinchi vazifa.",
+      },
+      {
+        title: "Qoida 3 — Variantning *mazmunini takrorlash* — tuzoq",
+        body:
+          "Tagi chizilgan jumlaning *o‘zini* qaytarib aytuvchi variant — bu vazifa emas, bu shunchaki paraphrase. Variant qisqa bo‘lib, jumla nima *qilayotganini* nomlashi kerak — uning so‘zlarini takrorlamasligi kerak.",
+      },
+      {
+        title: "Qoida 4 — ‘With which the author disagrees’ — qarshi-fikrni topish",
+        body:
+          "Agar tagi chizilgan jumla matnning umumiy yo‘nalishiga ZID bo‘lsa, variantda ‘with which the author disagrees’ yoki ‘a counterclaim’ ifodasi bo‘lishi kerak. Matnda ‘however’, ‘but’, ‘in fact’ kabi belgilarga e’tibor bering.",
+      },
+      {
+        title: "Qoida 5 — Misol — eng tez-tez uchraydigan vazifa",
+        body:
+          "Tagi chizilgan jumla aniq bir voqea, raqam yoki holat tasvirlasa — bu odatda *misol*. ‘It details an example that supports…’ varianti birinchi tekshiriladi.",
+      },
+    ],
+  },
+
+  cross_text: {
+    name: "Ikki matn bog‘lanishi (Cross-Text)",
+    intro:
+      "Cross-Text savolida Text 1 va Text 2 mualliflari qaysi nuqtada *kelishishlarini* (yoki farq qilishlarini) topish kerak. To‘g‘ri javob har ikki matnda ham mavjud bo‘lgan aniq fakt yoki fikrga asoslanadi — bittasidagina aytilgan narsa noto‘g‘ri javob.",
+    rules: [
+      {
+        title: "Qoida 1 — Avval har matnning markaziy fikrini bir gapda yozing",
+        body:
+          "Text 1 nimani da’vo qilyapti? Text 2 nimani da’vo qilyapti? Ikki gapni yonma-yon qo‘ying — kelishish nuqtasi shu yerda topiladi. Bu nuqta variant orqali aytilishi kerak.",
+      },
+      {
+        title: "Qoida 2 — ‘Most likely agree’ vs. ‘would respond’ — savol turini ajrating",
+        body:
+          "Savol ‘most likely agree’ desa — ikkalasi ham qabul qilgan fikrni qidiring. ‘How would the author of Text 2 respond’ desa — Text 2 muallifining Text 1 ga qanday javob berishini tasavvur qiling (ko‘pincha — qarshi chiqish).",
+      },
+      {
+        title: "Qoida 3 — Bitta matnda gaplashilgan narsa — yiqiladi",
+        body:
+          "Variantda aytilgan fakt faqat bitta matnda mavjud bo‘lsa — bu javob ikkala muallifga tegmaydi. Variantda aytilgan fakt har ikki matnda ham aniq yoki bilvosita aytilishi kerak.",
+      },
+      {
+        title: "Qoida 4 — ‘Refined / improved’ — bittasi boshqasini takomillashtiradi",
+        body:
+          "Cross-Text savollarida ko‘pincha bir muallif boshqa muallifning fikrini ‘takomillashtirgan’ yoki ‘qo‘shimcha shart qo‘shgan’ bo‘ladi. ‘Could be refined to…’, ‘should be modified to…’ tipidagi variantlar shu sxemaga mos keladi.",
+      },
+      {
+        title: "Qoida 5 — Faktlarni juftlashtir",
+        body:
+          "Variantning har bir bo‘lagini Text 1 va Text 2 da topishga harakat qiling. Bo‘lakning har biri ikkala matnda ham tasdiqlansa — javob to‘g‘ri. Bittasi yo‘qolsa — variant noto‘g‘ri.",
+      },
+    ],
+  },
+
+  gap_filling: {
+    name: "Bo‘shliqni to‘ldirish (Gap Filling)",
+    intro:
+      "Gap Filling savolida bo‘sh joyga eng aniq mos so‘zni topish kerak. To‘g‘ri javob signal so‘zlar (but, however, because, for instance, despite, although) va atrofdagi gaplarning umumiy ma’nosi bilan to‘liq mos keladigan yagona variantdir.",
+    rules: [
+      {
+        title: "Qoida 1 — Bo‘shliq atrofidagi signal so‘zni toping",
+        body:
+          "‘But’, ‘however’, ‘although’, ‘despite’ — bo‘shliqdan keyingi yoki oldingi qism bo‘shliq bilan *qarama-qarshi* ma’noda bo‘lishini ko‘rsatadi. ‘Because’, ‘therefore’, ‘thus’ — *sabab/natija*. ‘For instance’, ‘such as’ — *misol*. Signal yo‘nalishini buzmaydigan so‘zni tanlang.",
+      },
+      {
+        title: "Qoida 2 — Tone (ohang) — ijobiy yoki salbiy",
+        body:
+          "Bo‘shliq atrofidagi gap ijobiy ohangda bo‘lsa (‘praise’, ‘admire’, ‘success’) — bo‘shliqqa ham ijobiy so‘z keladi. Salbiy ohangda bo‘lsa (‘criticize’, ‘fail’, ‘doubt’) — salbiy so‘z. Tonalni adashgan variantni darhol rad eting.",
+      },
+      {
+        title: "Qoida 3 — Variantni gapga qo‘yib o‘qing",
+        body:
+          "Har bir variantni bo‘sh joyga qo‘yib, butun gapni 1 marta o‘qing. Mantiq buzilsa, ohang buzilsa yoki ortiqcha kuchli/yumshoq bo‘lsa — variant noto‘g‘ri. Faqat bitta variant gapni *to‘liq tabiiy* qiladi.",
+      },
+      {
+        title: "Qoida 4 — So‘z aynan qaysi grammatik vazifada?",
+        body:
+          "Bo‘shliq sifat bo‘lishi kerakmi (ot oldidan), fe’lmi (sub’ektdan keyin), otmi yoki ravishmi? Variantning grammatik kategoriyasi noto‘g‘ri bo‘lsa — yiqiladi (kamdan-kam, lekin uchraydi).",
+      },
+      {
+        title: "Qoida 5 — ‘Precisely / exactly / specifically’ savol qo‘shimchasiga yopishib qol",
+        body:
+          "Savolda ‘most logical and precise’ deyilsa — *kontekstga eng yaqin ma’noli* so‘zni qidiring. Umumiy ma’noli so‘z (‘good’, ‘important’) zaif; aniq, kuchli so‘z (‘affecting’, ‘pivotal’, ‘meticulous’) — to‘g‘ri.",
+      },
+    ],
+  },
+
+  synonyms: {
+    name: "Kontekstda sinonim (Most Nearly Means)",
+    intro:
+      "Synonyms savolida berilgan so‘zning *passajdagi konkret ma’nosi*ga eng yaqin sinonim topiladi. So‘zning lug‘aviy ma’nosi emas — kontekstdagi ishlatilishi muhim. Bir so‘z bir necha ma’noga ega bo‘lishi mumkin; passaj qaysi ma’noni ishlatayotganini aniqlash birinchi vazifa.",
+    rules: [
+      {
+        title: "Qoida 1 — So‘zni gapdan ajratmasdan o‘qing",
+        body:
+          "Tagi chizilgan so‘zni o‘rab turgan kamida 1 jumla oldin va 1 jumla keyin o‘qing. So‘z qaysi maydonda — ijobiy, salbiy, neytral — ishlatilyapti? Avval shuni aniqlang.",
+      },
+      {
+        title: "Qoida 2 — Variantni gapga qo‘yib, ma’no o‘zgaradimi tekshiring",
+        body:
+          "Tagi chizilgan so‘zni har bir variant bilan almashtirib, gapni o‘qing. Ma’no o‘zgarmasa va ohang saqlansa — bu to‘g‘ri javob. Ma’no biroz farq qilsa, butun gap mantiqi buzilsa — yiqiladi.",
+      },
+      {
+        title: "Qoida 3 — Lug‘aviy ‘to‘g‘ri’ — kontekst bo‘yicha ‘noto‘g‘ri’ bo‘lishi mumkin",
+        body:
+          "Variant so‘zining birinchi lug‘aviy ma’nosi to‘g‘ri ko‘rinishi mumkin, lekin shu kontekstga to‘g‘ri kelmasligi mumkin. Masalan, ‘undergone’ ‘experienced’ ham, ‘passed through’ ham bo‘lishi mumkin — kontekst qaysisini talab qilayotganini aniqlash kerak.",
+      },
+      {
+        title: "Qoida 4 — Adabiy matnda — qadimiy yoki badiiy ma’no",
+        body:
+          "Passaj 19-asr yoki adabiy matn bo‘lsa, so‘zning *zamonaviy* ma’nosi emas, *o‘sha davrdagi* yoki *badiiy* ma’nosi izlanadi. Klassik adabiyot uslubiga mos keladigan variantni tanlang.",
+      },
+      {
+        title: "Qoida 5 — Eng yumshoq, neytral variantni qidiring (odatda)",
+        body:
+          "Eng kuchli, eng dramatik so‘z (‘destroyed’, ‘obliterated’) — odatda noto‘g‘ri javob. Konkret kontekstga mos keladigan o‘rta kuchli, neytral so‘z (‘endured’, ‘experienced’) — to‘g‘ri.",
+      },
+    ],
+  },
 };
 
 function renderStrategy(main) {
-  document.title = "Sirli qoidalar — SAToplam Information & Ideas";
-  const cards = TOPIC_ORDER.map((t, i) => `
-    <a class="topic-card" href="#/strategy/${t.slug}">
-      <div class="num">${i + 1}-bo‘lim</div>
-      <div class="name">${escapeHtml(t.title)}</div>
-      <div class="meta">${(STRATEGY[t.slug]?.rules?.length || 0)} ta sirli qoida</div>
-      <p class="muted" style="margin-top:8px">${escapeHtml(STRATEGY[t.slug]?.intro?.slice(0, 150) || "")}…</p>
-    </a>
-  `).join("");
+  document.title = "Sirli qoidalar — SAToplam Reading";
+  const renderSection = (sectionKey, sectionTitle) => {
+    const topics = TOPIC_ORDER.filter(t => t.section === sectionKey);
+    const cards = topics.map((t, i) => `
+      <a class="topic-card" href="#/strategy/${t.slug}">
+        <div class="num">${i + 1}-bo‘lim</div>
+        <div class="name">${escapeHtml(t.title)}</div>
+        <div class="meta">${(STRATEGY[t.slug]?.rules?.length || 0)} ta sirli qoida</div>
+        <p class="muted" style="margin-top:8px">${escapeHtml(STRATEGY[t.slug]?.intro?.slice(0, 150) || "")}…</p>
+      </a>
+    `).join("");
+    return `
+      <section class="section-block">
+        <h2 class="section-title">${escapeHtml(sectionTitle)}</h2>
+        <div class="topic-grid">${cards}</div>
+      </section>
+    `;
+  };
   main.innerHTML = `
     <h1>Sirli qoidalar — har bir savol turini tez yechish</h1>
     <p class="lead">
-      Quyidagi 7 ta bo‘lim har bir Information & Ideas savolini eng tez va aniq yechish uchun amaliy qoidalardan iborat.
+      Quyidagi 13 ta bo‘lim har bir SAToplam Reading savolini eng tez va aniq yechish uchun amaliy qoidalardan iborat.
       Har bir qoida real SAT savollaridagi naqshlardan kelib chiqqan — yodlab oling, va savolni ko‘rgan zahoti qaysi
       qoidani qo‘llashni bilib olasiz.
     </p>
-    <div class="topic-grid">${cards}</div>
+    ${renderSection("info",  "Bo‘lim 1 — Information and Ideas")}
+    ${renderSection("craft", "Bo‘lim 2 — Craft and Structure")}
     <p style="margin-top:18px"><a href="#/">← Bosh sahifa</a></p>
   `;
 }
