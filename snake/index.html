@@ -12,7 +12,7 @@
   />
   <link rel="stylesheet" href="styles.css" />
 </head>
-<body data-skin="old-money">
+<body data-skin="cyber" data-endless="1">
   <div class="paper">
     <header class="masthead">
       <div class="rule rule-top"></div>
@@ -69,6 +69,11 @@
           </div>
         </div>
         <div class="settings">
+          <button id="endless-toggle" class="setting-btn setting-endless active" type="button" aria-pressed="true" title="Toggle Endless mode (E) — when ON, walls wrap and the snake passes through itself">
+            <span class="setting-icon" aria-hidden="true">&infin;</span>
+            <span class="setting-label">Endless</span>
+            <span class="setting-state" id="endless-state">On</span>
+          </button>
           <button id="sound-toggle" class="setting-btn" type="button" aria-pressed="true" title="Toggle sound (M)">
             <span class="setting-icon" aria-hidden="true">&#9836;</span>
             <span class="setting-label">Sound</span>
@@ -91,7 +96,7 @@
               </p>
               <button id="start-btn" class="crest-btn" type="button">Begin the Round</button>
               <p class="overlay-foot">
-                <kbd>Space</kbd> pause &middot; <kbd>R</kbd> restart &middot; <kbd>1</kbd>&ndash;<kbd>8</kbd> skin &middot; <kbd>M</kbd> mute
+                <kbd>Space</kbd> pause &middot; <kbd>R</kbd> restart &middot; <kbd>1</kbd>&ndash;<kbd>8</kbd> skin &middot; <kbd>M</kbd> mute &middot; <kbd>E</kbd> endless
               </p>
             </div>
           </div>
@@ -101,7 +106,7 @@
       <aside class="ledger ledger-right">
         <h2 class="ledger-title" id="ledger-title-right">House Rules</h2>
         <ol class="rules" id="rules">
-          <li>One does not strike the walls.</li>
+          <li>The walls bend politely to one&rsquo;s will.</li>
           <li>One does not consume oneself.</li>
           <li>One collects emeralds with composure.</li>
           <li>The tempo quickens. So shall you.</li>
@@ -115,6 +120,7 @@
             <li><kbd>R</kbd> &mdash; Restart</li>
             <li><kbd>1</kbd>&ndash;<kbd>8</kbd> &mdash; Skin</li>
             <li><kbd>M</kbd> &mdash; Mute</li>
+            <li><kbd>E</kbd> &mdash; Endless</li>
           </ul>
         </div>
       </aside>

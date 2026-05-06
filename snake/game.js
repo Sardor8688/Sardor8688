@@ -45,7 +45,7 @@
         ledgerR:   "House Rules",
         seal:      "S·C",
         rules: [
-          "One does not strike the walls.",
+          "The walls bend politely to one’s will.",
           "One does not consume oneself.",
           "One collects emeralds with composure.",
           "The tempo quickens. So shall you.",
@@ -53,7 +53,7 @@
         overlay: {
           eyebrow: "Welcome",
           title:   "Pour yourself a drink.",
-          body:    "Guide the serpent with the arrow keys, or <em>W · A · S · D</em>. Collect the heirloom emeralds. Decline the walls.",
+          body:    "Guide the serpent with the arrow keys, or <em>W · A · S · D</em>. Collect the heirloom emeralds. The walls are merely suggestions.",
           start:   "Begin the Round",
           resume:  "Resume the Round",
           again:   "Play Another Round",
@@ -85,7 +85,7 @@
         ledgerR:   "Mission Brief",
         seal:      "ARC",
         rules: [
-          "Do not breach the perimeter.",
+          "The perimeter folds; thrust through it.",
           "Do not coil into your own armor.",
           "Collect arc reactors. Charge ahead.",
           "JARVIS will accelerate the tempo.",
@@ -125,7 +125,7 @@
         ledgerR:   "Spider-Sense",
         seal:      "SM",
         rules: [
-          "Don't hit the buildings.",
+          "Buildings slingshot you to the other side.",
           "Don't get tangled in your own web.",
           "Collect web cartridges. Sling more.",
           "Spider-sense tingles faster as you grow.",
@@ -165,7 +165,7 @@
         ledgerR:   "HULK RULES",
         seal:      "γ",
         rules: [
-          "HULK NO HIT WALL.",
+          "WALL JUST WRAP. HULK GO THROUGH.",
           "HULK NO BITE HULK.",
           "HULK SMASH GAMMA STONE.",
           "HULK GET FAST. HULK GET MAD.",
@@ -245,7 +245,7 @@
         ledgerR:   "Inevitabilities",
         seal:      "∞",
         rules: [
-          "Half of all walls must be avoided.",
+          "All walls bend to the Gauntlet.",
           "Do not consume yourself. Reality will fold.",
           "Collect the Infinity Stones.",
           "Inevitable acceleration awaits.",
@@ -325,7 +325,7 @@
         ledgerR:   "PROTOCOL",
         seal:      "01",
         rules: [
-          "boundary == lethal()",
+          "boundary.wrap = true — no walls",
           "self_collision: TRUE → game_over()",
           "consume(token) → score += 1",
           "tick_ms -= 5  per cycle",
@@ -358,7 +358,7 @@
   };
 
   const SKIN_ORDER = ["old-money", "iron-man", "spider-man", "hulk", "captain-america", "thanos", "black-panther", "cyber"];
-  let currentSkinKey = "old-money";
+  let currentSkinKey = "cyber";
 
   // =============================================================
   //  DOM
@@ -470,8 +470,8 @@
   function loadSkin() {
     try {
       const v = localStorage.getItem("serpent-club:skin");
-      return SKINS[v] ? v : "old-money";
-    } catch (_) { return "old-money"; }
+      return SKINS[v] ? v : "cyber";
+    } catch (_) { return "cyber"; }
   }
   function saveSkin(v) { try { localStorage.setItem("serpent-club:skin", v); } catch (_) {} }
 
@@ -480,8 +480,18 @@
   }
   function saveMute(v) { try { localStorage.setItem("serpent-club:mute", v ? "1" : "0"); } catch (_) {} }
 
+  function loadEndless() {
+    // Default ON: user explicitly asked for the game to never end on collisions.
+    try {
+      const v = localStorage.getItem("serpent-club:endless");
+      return v === null ? true : v === "1";
+    } catch (_) { return true; }
+  }
+  function saveEndless(v) { try { localStorage.setItem("serpent-club:endless", v ? "1" : "0"); } catch (_) {} }
+
   high = loadHigh();
   let muted = loadMute();
+  let endless = loadEndless();
 
   // =============================================================
   //  Audio (Web Audio API — no external assets)
@@ -526,12 +536,16 @@
     beep({ freq: 880, dur: 0.06, type: "sine", gain: 0.03 });
     setTimeout(() => beep({ freq: 1320, dur: 0.05, type: "sine", gain: 0.025 }), 60);
   }
+  function sfxWrap() {
+    // Soft warp blip when the snake passes through a wall.
+    beep({ freq: 980, dur: 0.05, type: "sine", gain: 0.025, slide: -260 });
+  }
 
   // =============================================================
   //  Skin application
   // =============================================================
   function applySkin(key, { silent = false } = {}) {
-    if (!SKINS[key]) key = "old-money";
+    if (!SKINS[key]) key = "cyber";
     currentSkinKey = key;
     document.body.dataset.skin = key;
     const t = SKINS[key].text;
@@ -612,6 +626,7 @@
       }
     }
     if (e.key === "m" || e.key === "M") { e.preventDefault(); toggleMute(); return; }
+    if (e.key === "e" || e.key === "E") { e.preventDefault(); toggleEndless(); return; }
     if (e.key === " " || e.code === "Space") { e.preventDefault(); togglePause(); return; }
     if (e.key === "r" || e.key === "R")     { e.preventDefault(); restart(); return; }
     const name = KEYS[e.key];
@@ -641,6 +656,25 @@
   // initial UI state for sound
   soundBtn.setAttribute("aria-pressed", String(!muted));
   soundState.textContent = muted ? "Off" : "On";
+
+  // endless mode toggle
+  const endlessBtn   = document.getElementById("endless-toggle");
+  const endlessState = document.getElementById("endless-state");
+  function refreshEndlessUI() {
+    if (!endlessBtn) return;
+    endlessBtn.setAttribute("aria-pressed", String(endless));
+    endlessBtn.classList.toggle("active", endless);
+    if (endlessState) endlessState.textContent = endless ? "On" : "Off";
+    document.body.dataset.endless = endless ? "1" : "0";
+  }
+  function toggleEndless() {
+    endless = !endless;
+    saveEndless(endless);
+    refreshEndlessUI();
+    sfxSkin();
+  }
+  if (endlessBtn) endlessBtn.addEventListener("click", () => toggleEndless());
+  refreshEndlessUI();
 
   // touchpad
   document.querySelectorAll(".touch-btn").forEach((btn) => {
@@ -796,12 +830,26 @@
   function step() {
     if (pendingDir) { dir = pendingDir; pendingDir = null; }
     const head = snake[0];
-    const next = { x: head.x + dir.x, y: head.y + dir.y };
+    let next = { x: head.x + dir.x, y: head.y + dir.y };
 
-    if (next.x < 0 || next.y < 0 || next.x >= GRID || next.y >= GRID) return gameOver();
+    // Wall-wrap: snake passes through walls and re-emerges on the opposite side.
+    let wrapped = false;
+    if (next.x < 0)         { next.x = GRID - 1; wrapped = true; }
+    else if (next.x >= GRID){ next.x = 0;        wrapped = true; }
+    if (next.y < 0)         { next.y = GRID - 1; wrapped = true; }
+    else if (next.y >= GRID){ next.y = 0;        wrapped = true; }
+    if (wrapped) sfxWrap();
+
     const eating    = (next.x === apple.x && next.y === apple.y);
     const checkBody = eating ? snake : snake.slice(0, -1);
-    if (checkBody.some(s => s.x === next.x && s.y === next.y)) return gameOver();
+    if (checkBody.some(s => s.x === next.x && s.y === next.y)) {
+      if (endless) {
+        // Endless mode: pass through ourselves too — no game-over ever.
+        sfxWrap();
+      } else {
+        return gameOver();
+      }
+    }
 
     snake.unshift(next);
     if (eating) {
