@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Serpent Club &middot; Snake Multiverse</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Italiana&family=Bebas+Neue&family=Russo+One&family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;700&family=Bangers&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-skin="cyber" data-endless="1">
+  <div class="paper">
+    <header class="masthead">
+      <div class="rule rule-top"></div>
+      <p class="eyebrow" id="eyebrow">Members Only &middot; Est. MMXXV</p>
+      <h1 class="wordmark" id="wordmark">The Serpent Club</h1>
+      <p class="tagline" id="tagline"><em>An Exercise in Patience &amp; Quiet Fortune</em></p>
+      <div class="rule rule-bottom"></div>
+    </header>
+
+    <!-- Skin selector -->
+    <nav class="skin-bar" aria-label="Choose skin">
+      <button class="skin-chip" data-skin="old-money" aria-label="Old Money skin"
+              title="Old Money (1)"><span class="chip-dot dot-old-money"></span><span class="chip-label">Old Money</span><span class="chip-key">1</span></button>
+      <button class="skin-chip" data-skin="iron-man" aria-label="Iron Man skin"
+              title="Iron Man (2)"><span class="chip-dot dot-iron-man"></span><span class="chip-label">Iron Man</span><span class="chip-key">2</span></button>
+      <button class="skin-chip" data-skin="spider-man" aria-label="Spider-Man skin"
+              title="Spider-Man (3)"><span class="chip-dot dot-spider-man"></span><span class="chip-label">Spider-Man</span><span class="chip-key">3</span></button>
+      <button class="skin-chip" data-skin="hulk" aria-label="Hulk skin"
+              title="Hulk (4)"><span class="chip-dot dot-hulk"></span><span class="chip-label">Hulk</span><span class="chip-key">4</span></button>
+      <button class="skin-chip" data-skin="captain-america" aria-label="Captain America skin"
+              title="Captain America (5)"><span class="chip-dot dot-captain-america"></span><span class="chip-label">Captain</span><span class="chip-key">5</span></button>
+      <button class="skin-chip" data-skin="thanos" aria-label="Thanos skin"
+              title="Thanos (6)"><span class="chip-dot dot-thanos"></span><span class="chip-label">Thanos</span><span class="chip-key">6</span></button>
+      <button class="skin-chip" data-skin="black-panther" aria-label="Black Panther skin"
+              title="Black Panther (7)"><span class="chip-dot dot-black-panther"></span><span class="chip-label">Wakanda</span><span class="chip-key">7</span></button>
+      <button class="skin-chip" data-skin="cyber" aria-label="Cyber Modern skin"
+              title="Cyber Modern (8)"><span class="chip-dot dot-cyber"></span><span class="chip-label">Cyber</span><span class="chip-key">8</span></button>
+    </nav>
+
+    <main class="court">
+      <aside class="ledger ledger-left">
+        <h2 class="ledger-title" id="ledger-title-left">Ledger</h2>
+        <dl class="ledger-list">
+          <div class="ledger-row">
+            <dt>Score</dt>
+            <dd id="score">0</dd>
+          </div>
+          <div class="ledger-row">
+            <dt>High</dt>
+            <dd id="high-score">0</dd>
+          </div>
+          <div class="ledger-row">
+            <dt>Length</dt>
+            <dd id="length">3</dd>
+          </div>
+          <div class="ledger-row">
+            <dt>Tempo</dt>
+            <dd id="tempo">Andante</dd>
+          </div>
+        </dl>
+        <div class="seal" aria-hidden="true">
+          <div class="seal-inner">
+            <span class="seal-mono" id="seal-mono">S&middot;C</span>
+          </div>
+        </div>
+        <div class="settings">
+          <button id="endless-toggle" class="setting-btn setting-endless active" type="button" aria-pressed="true" title="Toggle Endless mode (E) — when ON, walls wrap and the snake passes through itself">
+            <span class="setting-icon" aria-hidden="true">&infin;</span>
+            <span class="setting-label">Endless</span>
+            <span class="setting-state" id="endless-state">On</span>
+          </button>
+          <button id="sound-toggle" class="setting-btn" type="button" aria-pressed="true" title="Toggle sound (M)">
+            <span class="setting-icon" aria-hidden="true">&#9836;</span>
+            <span class="setting-label">Sound</span>
+            <span class="setting-state" id="sound-state">On</span>
+          </button>
+        </div>
+      </aside>
+
+      <section class="board-frame">
+        <div class="board-mat" id="board-mat">
+          <canvas id="board" width="480" height="480" aria-label="Snake game board"></canvas>
+          <div id="fx-layer" class="fx-layer" aria-hidden="true"></div>
+          <div id="overlay" class="overlay">
+            <div class="overlay-card">
+              <p class="overlay-eyebrow" id="overlay-eyebrow">Welcome</p>
+              <h2 class="overlay-title" id="overlay-title">Pour yourself a drink.</h2>
+              <p class="overlay-body" id="overlay-body">
+                Guide the serpent with the arrow keys, or <em>W &middot; A &middot; S &middot; D</em>.
+                Collect the heirloom emeralds. Decline the walls.
+              </p>
+              <button id="start-btn" class="crest-btn" type="button">Begin the Round</button>
+              <p class="overlay-foot">
+                <kbd>Space</kbd> pause &middot; <kbd>R</kbd> restart &middot; <kbd>1</kbd>&ndash;<kbd>8</kbd> skin &middot; <kbd>M</kbd> mute &middot; <kbd>E</kbd> endless
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <aside class="ledger ledger-right">
+        <h2 class="ledger-title" id="ledger-title-right">House Rules</h2>
+        <ol class="rules" id="rules">
+          <li>The walls bend politely to one&rsquo;s will.</li>
+          <li>One does not consume oneself.</li>
+          <li>One collects emeralds with composure.</li>
+          <li>The tempo quickens. So shall you.</li>
+        </ol>
+        <div class="controls">
+          <h3 class="controls-title">Controls</h3>
+          <ul class="keys">
+            <li><kbd>&uarr;</kbd><kbd>&darr;</kbd><kbd>&larr;</kbd><kbd>&rarr;</kbd></li>
+            <li><kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd></li>
+            <li><kbd>Space</kbd> &mdash; Pause</li>
+            <li><kbd>R</kbd> &mdash; Restart</li>
+            <li><kbd>1</kbd>&ndash;<kbd>8</kbd> &mdash; Skin</li>
+            <li><kbd>M</kbd> &mdash; Mute</li>
+            <li><kbd>E</kbd> &mdash; Endless</li>
+          </ul>
+        </div>
+      </aside>
+    </main>
+
+    <nav class="touchpad" aria-label="Touch controls">
+      <button class="touch-btn" data-dir="up" aria-label="Up">&uarr;</button>
+      <div class="touchpad-row">
+        <button class="touch-btn" data-dir="left" aria-label="Left">&larr;</button>
+        <button class="touch-btn" data-dir="down" aria-label="Down">&darr;</button>
+        <button class="touch-btn" data-dir="right" aria-label="Right">&rarr;</button>
+      </div>
+    </nav>
+
+    <footer class="colophon">
+      <div class="rule rule-top"></div>
+      <p class="colophon-line" id="colophon-line">
+        Bound &amp; Pressed by The Serpent Club &middot; <span class="amp">&amp;</span> &middot; A Private Pastime
+      </p>
+      <p class="colophon-mono" id="colophon-mono">No. 001 &middot; First Edition &middot; MMXXV</p>
+    </footer>
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>
