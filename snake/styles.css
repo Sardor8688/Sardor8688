@@ -1,48 +1,90 @@
 /* =============================================================
-   The Serpent Club — Old Money Snake
-   Palette: hunter green, cream parchment, oxblood, antique gold
+   The Serpent Club — Snake Multiverse
+   Skins: Old Money, Iron Man, Spider-Man, Hulk, Captain America,
+          Thanos, Black Panther, Cyber Modern
    ============================================================= */
 
+/* ---------------------------------------------------------------
+   Default theme variables (Old Money)
+   --------------------------------------------------------------- */
 :root {
-  --green-deep:   #0f2a1d;
-  --green-ink:    #14361f;
-  --green-felt:   #1d4a2c;
-  --green-soft:   #2d5a3d;
-  --cream:        #f4ecd8;
-  --cream-warm:   #ebe1c4;
-  --parchment:    #e9dfc3;
-  --gold:         #b08d3a;
-  --gold-bright:  #d4a84b;
-  --gold-soft:    #c9a449;
-  --oxblood:      #6b1f1a;
-  --ink:          #1c1a14;
-  --ink-soft:     #3a3528;
-  --shadow:       rgba(15, 25, 18, 0.35);
+  /* page bg */
+  --bg-1: #0c2418;
+  --bg-2: #0f2a1d;
+  --bg-3: #0a1d13;
+  --bg-accent: rgba(212, 168, 75, 0.07);
+  --bg-spotlight: rgba(212, 168, 75, 0.07);
+
+  /* paper / surface */
+  --paper-1: #f4ecd8;
+  --paper-2: #ebe1c4;
+  --ink:        #1c1a14;
+  --ink-soft:   #3a3528;
+  --ink-strong: #14361f;
+
+  /* accents */
+  --accent:        #b08d3a;       /* primary border / rules */
+  --accent-bright: #d4a84b;
+  --accent-soft:   #c9a449;
+  --accent-2:      #6b1f1a;       /* secondary, for seal etc. */
+  --accent-2-ink:  #f4ecd8;       /* ink color over accent-2 */
+
+  /* fonts */
+  --font-display:  "Italiana", "Cormorant Garamond", serif;
+  --font-body:     "Cormorant Garamond", Georgia, serif;
+  --font-mono:     "Libre Caslon Text", Georgia, serif;
+  --font-eyebrow-spacing: 0.4em;
+  --eyebrow-tt: uppercase;
+  --wordmark-shadow: 0 1px 0 rgba(255,255,255,0.6);
+
+  /* paper edges */
+  --paper-radius: 0px;
+  --paper-shadow:
+    0 0 0 1px var(--accent),
+    0 0 0 8px var(--paper-1),
+    0 0 0 9px var(--accent),
+    0 30px 60px -20px rgba(0,0,0,0.7),
+    0 60px 80px -40px rgba(0,0,0,0.5);
+  --paper-image:
+    radial-gradient(circle at 20% 10%, rgba(176,141,58,0.06), transparent 40%),
+    radial-gradient(circle at 80% 90%, rgba(107,31,26,0.05), transparent 45%);
+
+  /* board frame */
+  --board-bg-1: #10311f;
+  --board-bg-2: #1d4a2c;
+  --board-bg-3: #0f2a1d;
+  --board-grid: rgba(212,168,75,0.07);
+  --board-grid-strong: rgba(212,168,75,0.14);
+  --board-border: var(--accent);
+
+  /* misc */
+  --kbd-bg: var(--paper-1);
+  --kbd-fg: var(--ink-strong);
+  --rule-fg: var(--accent);
+  --rule-mid: var(--ink);
+  --crest-bg: var(--ink-strong);
+  --crest-fg: var(--paper-1);
+
+  /* skin name shown sometimes */
+  --skin-name: "Old Money";
 }
 
-* {
-  box-sizing: border-box;
-}
+/* ---------------------------------------------------------------
+   Reset + base
+   --------------------------------------------------------------- */
+* { box-sizing: border-box; }
 
-html, body {
-  margin: 0;
-  padding: 0;
-  min-height: 100%;
-}
+html, body { margin: 0; padding: 0; min-height: 100%; }
 
 body {
-  font-family: "Cormorant Garamond", "Libre Caslon Text", Georgia, serif;
-  color: var(--cream);
-  background-color: var(--green-deep);
+  font-family: var(--font-body);
+  color: var(--paper-1);
+  background-color: var(--bg-2);
   background-image:
-    radial-gradient(ellipse at top, rgba(212, 168, 75, 0.07), transparent 55%),
-    radial-gradient(ellipse at bottom, rgba(0, 0, 0, 0.45), transparent 60%),
-    repeating-linear-gradient(
-      45deg,
-      rgba(0, 0, 0, 0.04) 0 2px,
-      transparent 2px 6px
-    ),
-    linear-gradient(180deg, #0c2418 0%, #0f2a1d 50%, #0a1d13 100%);
+    radial-gradient(ellipse at top, var(--bg-spotlight), transparent 55%),
+    radial-gradient(ellipse at bottom, rgba(0,0,0,0.45), transparent 60%),
+    repeating-linear-gradient(45deg, rgba(0,0,0,0.04) 0 2px, transparent 2px 6px),
+    linear-gradient(180deg, var(--bg-1) 0%, var(--bg-2) 50%, var(--bg-3) 100%);
   background-attachment: fixed;
   min-height: 100vh;
   display: flex;
@@ -50,46 +92,46 @@ body {
   justify-content: center;
   padding: 32px 16px;
   letter-spacing: 0.01em;
+  transition: background-color 350ms ease;
 }
 
-/* ============== Paper / outer frame ============== */
-
+/* ---------------------------------------------------------------
+   Paper / outer frame
+   --------------------------------------------------------------- */
 .paper {
   width: 100%;
   max-width: 1080px;
-  background: linear-gradient(180deg, var(--cream) 0%, var(--cream-warm) 100%);
   color: var(--ink);
   padding: 44px 56px 32px;
   position: relative;
-  box-shadow:
-    0 0 0 1px var(--gold),
-    0 0 0 8px var(--cream),
-    0 0 0 9px var(--gold),
-    0 30px 60px -20px rgba(0, 0, 0, 0.7),
-    0 60px 80px -40px rgba(0, 0, 0, 0.5);
-  background-image:
-    radial-gradient(circle at 20% 10%, rgba(176, 141, 58, 0.06), transparent 40%),
-    radial-gradient(circle at 80% 90%, rgba(107, 31, 26, 0.05), transparent 45%);
+  border-radius: var(--paper-radius);
+  box-shadow: var(--paper-shadow);
+  background:
+    var(--paper-image),
+    linear-gradient(180deg, var(--paper-1) 0%, var(--paper-2) 100%);
+  transition: background 350ms ease, box-shadow 350ms ease;
 }
-
 .paper::before,
 .paper::after {
   content: "";
   position: absolute;
   inset: 14px;
-  border: 1px solid var(--gold);
+  border: 1px solid var(--accent);
   pointer-events: none;
+  border-radius: calc(var(--paper-radius) - 4px);
+  transition: border-color 350ms ease;
 }
 .paper::after {
   inset: 18px;
-  border: 1px solid rgba(176, 141, 58, 0.4);
+  border: 1px solid color-mix(in srgb, var(--accent) 40%, transparent);
 }
 
-/* ============== Masthead ============== */
-
+/* ---------------------------------------------------------------
+   Masthead
+   --------------------------------------------------------------- */
 .masthead {
   text-align: center;
-  padding: 8px 0 20px;
+  padding: 8px 0 14px;
 }
 
 .rule {
@@ -97,48 +139,48 @@ body {
   background: linear-gradient(
     90deg,
     transparent 0%,
-    var(--gold) 20%,
-    var(--ink) 50%,
-    var(--gold) 80%,
+    var(--rule-fg) 20%,
+    var(--rule-mid) 50%,
+    var(--rule-fg) 80%,
     transparent 100%
   );
   margin: 12px auto;
   position: relative;
 }
-.rule::before,
-.rule::after {
+.rule::before {
   content: "\2767";
   position: absolute;
   top: -12px;
-  color: var(--gold);
-  background: var(--cream);
+  left: 50%;
+  transform: translateX(-50%);
+  color: var(--rule-fg);
+  background: var(--paper-1);
   padding: 0 10px;
   font-size: 16px;
 }
-.rule::before { left: 50%; transform: translateX(-50%); }
-.rule::after { display: none; }
 
 .eyebrow {
-  font-family: "Libre Caslon Text", Georgia, serif;
-  letter-spacing: 0.4em;
-  text-transform: uppercase;
+  font-family: var(--font-mono);
+  letter-spacing: var(--font-eyebrow-spacing);
+  text-transform: var(--eyebrow-tt);
   font-size: 11px;
   color: var(--ink-soft);
   margin: 6px 0 4px;
 }
 
 .wordmark {
-  font-family: "Italiana", "Cormorant Garamond", serif;
+  font-family: var(--font-display);
   font-weight: 400;
   font-size: clamp(44px, 6vw, 72px);
   letter-spacing: 0.06em;
   margin: 4px 0 6px;
-  color: var(--green-ink);
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.6);
+  color: var(--ink-strong);
+  text-shadow: var(--wordmark-shadow);
+  transition: color 350ms ease;
 }
 
 .tagline {
-  font-family: "Cormorant Garamond", serif;
+  font-family: var(--font-body);
   font-style: italic;
   font-size: clamp(15px, 1.4vw, 18px);
   letter-spacing: 0.04em;
@@ -146,43 +188,103 @@ body {
   margin: 0 0 10px;
 }
 
-/* ============== Main court (3 columns) ============== */
+/* ---------------------------------------------------------------
+   Skin selector bar
+   --------------------------------------------------------------- */
+.skin-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+  margin: 10px auto 18px;
+  padding: 10px;
+  border: 1px solid var(--accent);
+  background: color-mix(in srgb, var(--ink-strong) 6%, transparent);
+}
+.skin-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  background: var(--paper-1);
+  color: var(--ink-strong);
+  border: 1px solid var(--accent);
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: transform 120ms ease, background 200ms ease, box-shadow 200ms ease;
+  position: relative;
+}
+.skin-chip:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.18);
+}
+.skin-chip.active {
+  background: var(--accent);
+  color: var(--paper-1);
+  box-shadow: inset 0 0 0 2px var(--paper-1), 0 0 0 1px var(--accent);
+}
+.chip-dot {
+  width: 14px; height: 14px;
+  border-radius: 50%;
+  border: 1px solid rgba(0,0,0,0.25);
+  flex-shrink: 0;
+}
+.chip-label { font-weight: 700; }
+.chip-key {
+  font-size: 9px;
+  letter-spacing: 0.12em;
+  color: color-mix(in srgb, var(--ink-strong) 60%, transparent);
+  margin-left: 2px;
+  font-family: "JetBrains Mono", monospace;
+}
+.skin-chip.active .chip-key { color: color-mix(in srgb, var(--paper-1) 80%, transparent); }
 
+/* dot colors per chip */
+.dot-old-money      { background: linear-gradient(135deg, #cdb15c 0%, #1d4a2c 100%); }
+.dot-iron-man       { background: linear-gradient(135deg, #ffc400 0%, #c41e1e 100%); }
+.dot-spider-man     { background: linear-gradient(135deg, #dc283c 0%, #0a3d99 100%); }
+.dot-hulk           { background: linear-gradient(135deg, #5fb83a 0%, #7a3aff 100%); }
+.dot-captain-america{ background: linear-gradient(135deg, #ffffff 0%, #dc283c 50%, #0a3d99 100%); }
+.dot-thanos         { background: linear-gradient(135deg, #d4a84b 0%, #a060d8 100%); }
+.dot-black-panther  { background: linear-gradient(135deg, #a06cff 0%, #08080d 100%); }
+.dot-cyber          { background: linear-gradient(135deg, #00f0ff 0%, #ff00aa 100%); }
+
+/* ---------------------------------------------------------------
+   Court (3 columns)
+   --------------------------------------------------------------- */
 .court {
   display: grid;
   grid-template-columns: 1fr auto 1fr;
   gap: 28px;
   align-items: start;
-  margin-top: 18px;
+  margin-top: 8px;
 }
-
 @media (max-width: 960px) {
-  .court {
-    grid-template-columns: 1fr;
-  }
+  .court { grid-template-columns: 1fr; }
   .ledger { order: 2; }
   .ledger-right { order: 3; }
   .board-frame { order: 1; }
 }
 
-/* ============== Ledger (side panels) ============== */
-
-.ledger {
-  padding: 8px 4px;
-  position: relative;
-}
+/* ---------------------------------------------------------------
+   Ledger panels
+   --------------------------------------------------------------- */
+.ledger { padding: 8px 4px; position: relative; }
 
 .ledger-title {
-  font-family: "Italiana", serif;
+  font-family: var(--font-display);
   font-weight: 400;
   font-size: 22px;
   letter-spacing: 0.18em;
   text-transform: uppercase;
   text-align: center;
-  color: var(--green-ink);
+  color: var(--ink-strong);
   margin: 0 0 14px;
   padding-bottom: 8px;
-  border-bottom: 1px solid var(--gold);
+  border-bottom: 1px solid var(--accent);
   position: relative;
 }
 .ledger-title::after {
@@ -191,25 +293,22 @@ body {
   left: 50%;
   bottom: -10px;
   transform: translateX(-50%);
-  background: var(--cream);
+  background: var(--paper-1);
   padding: 0 8px;
-  color: var(--gold);
+  color: var(--accent);
   font-size: 12px;
 }
 
-.ledger-list {
-  margin: 18px 0 0;
-  padding: 0;
-}
+.ledger-list { margin: 18px 0 0; padding: 0; }
 .ledger-row {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
   padding: 8px 4px;
-  border-bottom: 1px dotted rgba(28, 26, 20, 0.35);
+  border-bottom: 1px dotted color-mix(in srgb, var(--ink) 35%, transparent);
 }
 .ledger-row dt {
-  font-family: "Libre Caslon Text", serif;
+  font-family: var(--font-mono);
   text-transform: uppercase;
   letter-spacing: 0.22em;
   font-size: 11px;
@@ -217,60 +316,80 @@ body {
 }
 .ledger-row dd {
   margin: 0;
-  font-family: "Cormorant Garamond", serif;
+  font-family: var(--font-body);
   font-weight: 600;
   font-size: 24px;
-  color: var(--green-ink);
+  color: var(--ink-strong);
   font-variant-numeric: oldstyle-nums;
+  transition: color 220ms ease, transform 200ms ease;
 }
+.ledger-row dd.bump { transform: scale(1.18); color: var(--accent-bright); }
 
+/* Seal */
 .seal {
   margin: 28px auto 0;
-  width: 96px;
-  height: 96px;
+  width: 96px; height: 96px;
   border-radius: 50%;
-  border: 1px solid var(--gold);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  border: 1px solid var(--accent);
+  display: flex; align-items: center; justify-content: center;
   position: relative;
   background:
-    radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.4), transparent 60%),
-    var(--oxblood);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.18), inset 0 0 0 4px var(--oxblood), inset 0 0 0 5px var(--gold);
+    radial-gradient(circle at 30% 30%, rgba(255,255,255,0.4), transparent 60%),
+    var(--accent-2);
+  box-shadow:
+    0 4px 8px rgba(0,0,0,0.25),
+    inset 0 0 0 4px var(--accent-2),
+    inset 0 0 0 5px var(--accent);
 }
 .seal-inner {
-  width: 76px;
-  height: 76px;
+  width: 76px; height: 76px;
   border-radius: 50%;
-  border: 1px dashed rgba(244, 236, 216, 0.45);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  border: 1px dashed color-mix(in srgb, var(--accent-2-ink) 45%, transparent);
+  display: flex; align-items: center; justify-content: center;
 }
 .seal-mono {
-  font-family: "Italiana", serif;
+  font-family: var(--font-display);
   font-size: 24px;
   letter-spacing: 0.1em;
-  color: var(--cream);
-  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+  color: var(--accent-2-ink);
+  text-shadow: 0 1px 0 rgba(0,0,0,0.4);
 }
 
-/* ============== House Rules (right ledger) ============== */
+/* settings */
+.settings { margin-top: 22px; display: flex; justify-content: center; }
+.setting-btn {
+  display: inline-flex; align-items: center; gap: 8px;
+  padding: 8px 14px;
+  background: var(--paper-1);
+  color: var(--ink-strong);
+  border: 1px solid var(--accent);
+  font-family: var(--font-mono);
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  cursor: pointer;
+  transition: background 200ms ease;
+}
+.setting-btn[aria-pressed="false"] { opacity: 0.6; }
+.setting-btn:hover { background: color-mix(in srgb, var(--accent) 12%, var(--paper-1)); }
+.setting-state { font-weight: 700; color: var(--accent); }
 
+/* ---------------------------------------------------------------
+   Rules / controls
+   --------------------------------------------------------------- */
 .rules {
   margin: 14px 8px 22px;
   padding-left: 22px;
-  font-family: "Cormorant Garamond", serif;
+  font-family: var(--font-body);
   font-size: 17px;
   color: var(--ink);
   line-height: 1.55;
 }
 .rules li { margin-bottom: 6px; font-style: italic; }
-.rules li::marker { color: var(--gold); font-weight: 700; }
+.rules li::marker { color: var(--accent); font-weight: 700; }
 
 .controls-title {
-  font-family: "Libre Caslon Text", serif;
+  font-family: var(--font-mono);
   text-transform: uppercase;
   letter-spacing: 0.28em;
   font-size: 11px;
@@ -278,103 +397,133 @@ body {
   text-align: center;
   margin: 14px 0 10px;
   padding-top: 12px;
-  border-top: 1px solid rgba(28, 26, 20, 0.18);
+  border-top: 1px solid color-mix(in srgb, var(--ink) 18%, transparent);
 }
 .keys {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  align-items: center;
-  font-family: "Libre Caslon Text", serif;
-  font-size: 12px;
-  color: var(--ink-soft);
+  list-style: none; padding: 0; margin: 0;
+  display: flex; flex-direction: column; gap: 8px; align-items: center;
+  font-family: var(--font-mono); font-size: 12px; color: var(--ink-soft);
 }
 .keys li { display: flex; align-items: center; gap: 6px; letter-spacing: 0.1em; }
 
 kbd {
   display: inline-block;
-  font-family: "Libre Caslon Text", "Courier New", monospace;
+  font-family: var(--font-mono);
   font-size: 11px;
   padding: 3px 8px;
-  background: var(--cream);
-  color: var(--green-ink);
-  border: 1px solid var(--gold);
+  background: var(--kbd-bg);
+  color: var(--kbd-fg);
+  border: 1px solid var(--accent);
   border-radius: 2px;
-  box-shadow: 0 1px 0 var(--gold), 0 2px 0 rgba(0, 0, 0, 0.05);
+  box-shadow: 0 1px 0 var(--accent), 0 2px 0 rgba(0,0,0,0.05);
   letter-spacing: 0.06em;
   min-width: 18px;
   text-align: center;
 }
 
-/* ============== Board ============== */
-
-.board-frame {
-  display: flex;
-  justify-content: center;
-}
+/* ---------------------------------------------------------------
+   Board
+   --------------------------------------------------------------- */
+.board-frame { display: flex; justify-content: center; }
 
 .board-mat {
   position: relative;
   padding: 18px;
   background:
-    radial-gradient(ellipse at center, var(--green-felt) 0%, var(--green-ink) 80%, var(--green-deep) 100%);
-  border: 1px solid var(--gold);
+    radial-gradient(ellipse at center, var(--board-bg-2) 0%, var(--board-bg-1) 80%, var(--board-bg-3) 100%);
+  border: 1px solid var(--accent);
   box-shadow:
-    inset 0 0 0 4px var(--green-deep),
-    inset 0 0 0 5px var(--gold-soft),
-    inset 0 0 60px rgba(0, 0, 0, 0.45),
-    0 18px 30px -10px rgba(0, 0, 0, 0.45);
+    inset 0 0 0 4px var(--board-bg-3),
+    inset 0 0 0 5px var(--accent-soft),
+    inset 0 0 60px rgba(0,0,0,0.45),
+    0 18px 30px -10px rgba(0,0,0,0.45);
+  transition: background 350ms ease, border-color 350ms ease;
 }
 .board-mat::before {
   content: "";
   position: absolute;
   inset: 6px;
-  border: 1px solid rgba(212, 168, 75, 0.25);
+  border: 1px solid color-mix(in srgb, var(--accent-bright) 25%, transparent);
   pointer-events: none;
+}
+.board-mat.shake { animation: shake 380ms cubic-bezier(.36,.07,.19,.97); }
+@keyframes shake {
+  10%, 90% { transform: translate(-1px, 0); }
+  20%, 80% { transform: translate(2px, 0); }
+  30%, 50%, 70% { transform: translate(-4px, 0); }
+  40%, 60% { transform: translate(4px, 0); }
 }
 
 #board {
   display: block;
-  width: 480px;
-  height: 480px;
-  max-width: 80vw;
-  max-height: 80vw;
+  width: 480px; height: 480px;
+  max-width: 80vw; max-height: 80vw;
   background: transparent;
-  image-rendering: pixelated;
+  position: relative;
+  z-index: 1;
 }
 
-/* ============== Overlay ============== */
+/* FX layer (particles, popups) */
+.fx-layer {
+  position: absolute;
+  inset: 18px;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 4;
+}
+.fx-particle {
+  position: absolute;
+  width: 6px; height: 6px;
+  border-radius: 1px;
+  pointer-events: none;
+  will-change: transform, opacity;
+}
+.fx-popup {
+  position: absolute;
+  font-family: var(--font-display);
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--accent-bright);
+  text-shadow: 0 1px 4px rgba(0,0,0,0.6);
+  pointer-events: none;
+  animation: popupRise 800ms ease-out forwards;
+  letter-spacing: 0.04em;
+}
+@keyframes popupRise {
+  0%   { transform: translate(-50%, 0) scale(0.7); opacity: 0; }
+  20%  { transform: translate(-50%, -10px) scale(1.1); opacity: 1; }
+  100% { transform: translate(-50%, -56px) scale(1.0); opacity: 0; }
+}
 
+/* ---------------------------------------------------------------
+   Overlay
+   --------------------------------------------------------------- */
 .overlay {
   position: absolute;
   inset: 18px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: rgba(15, 42, 29, 0.82);
-  backdrop-filter: blur(2px);
+  display: flex; align-items: center; justify-content: center;
+  background: color-mix(in srgb, var(--board-bg-1) 80%, transparent);
+  backdrop-filter: blur(3px);
   transition: opacity 220ms ease;
   z-index: 5;
 }
-.overlay.hidden {
-  opacity: 0;
-  pointer-events: none;
-}
+.overlay.hidden { opacity: 0; pointer-events: none; }
+
 .overlay-card {
-  background: linear-gradient(180deg, var(--cream) 0%, var(--cream-warm) 100%);
+  background: linear-gradient(180deg, var(--paper-1) 0%, var(--paper-2) 100%);
   color: var(--ink);
   padding: 32px 36px;
   text-align: center;
   max-width: 360px;
-  border: 1px solid var(--gold);
-  box-shadow: 0 0 0 4px var(--cream), 0 0 0 5px var(--gold), 0 18px 28px rgba(0, 0, 0, 0.45);
+  border: 1px solid var(--accent);
+  box-shadow:
+    0 0 0 4px var(--paper-1),
+    0 0 0 5px var(--accent),
+    0 18px 28px rgba(0,0,0,0.45);
   position: relative;
 }
 .overlay-eyebrow {
-  font-family: "Libre Caslon Text", serif;
+  font-family: var(--font-mono);
   text-transform: uppercase;
   letter-spacing: 0.42em;
   font-size: 10px;
@@ -382,53 +531,62 @@ kbd {
   margin: 0 0 6px;
 }
 .overlay-title {
-  font-family: "Italiana", serif;
+  font-family: var(--font-display);
   font-weight: 400;
   font-size: 30px;
   margin: 0 0 12px;
-  color: var(--green-ink);
+  color: var(--ink-strong);
   letter-spacing: 0.02em;
+  line-height: 1.05;
 }
 .overlay-body {
-  font-family: "Cormorant Garamond", serif;
+  font-family: var(--font-body);
   font-size: 17px;
   line-height: 1.55;
   color: var(--ink-soft);
   margin: 0 0 20px;
 }
 .overlay-foot {
-  font-family: "Libre Caslon Text", serif;
+  font-family: var(--font-mono);
   font-size: 11px;
   letter-spacing: 0.12em;
   color: var(--ink-soft);
   margin: 16px 0 0;
 }
 
-/* ============== Crest button ============== */
-
+/* ---------------------------------------------------------------
+   Crest button
+   --------------------------------------------------------------- */
 .crest-btn {
-  font-family: "Italiana", serif;
+  font-family: var(--font-display);
   font-size: 16px;
   letter-spacing: 0.32em;
   text-transform: uppercase;
-  background: var(--green-ink);
-  color: var(--cream);
-  border: 1px solid var(--gold);
+  background: var(--crest-bg);
+  color: var(--crest-fg);
+  border: 1px solid var(--accent);
   padding: 14px 28px;
   cursor: pointer;
   position: relative;
-  box-shadow: 0 0 0 3px var(--cream), 0 0 0 4px var(--gold), 0 6px 14px rgba(0, 0, 0, 0.35);
+  box-shadow:
+    0 0 0 3px var(--paper-1),
+    0 0 0 4px var(--accent),
+    0 6px 14px rgba(0,0,0,0.35);
   transition: transform 120ms ease, background 200ms ease;
 }
 .crest-btn:hover {
-  background: var(--green-felt);
+  background: color-mix(in srgb, var(--crest-bg) 85%, var(--accent));
   transform: translateY(-1px);
 }
 .crest-btn:active { transform: translateY(0); }
-.crest-btn:focus-visible { outline: 2px dashed var(--gold-bright); outline-offset: 6px; }
+.crest-btn:focus-visible {
+  outline: 2px dashed var(--accent-bright);
+  outline-offset: 6px;
+}
 
-/* ============== Touchpad (mobile) ============== */
-
+/* ---------------------------------------------------------------
+   Touchpad (mobile)
+   --------------------------------------------------------------- */
 .touchpad {
   display: none;
   margin: 22px auto 8px;
@@ -439,43 +597,45 @@ kbd {
 .touchpad-row { display: flex; gap: 8px; }
 .touch-btn {
   width: 56px; height: 56px;
-  border: 1px solid var(--gold);
-  background: var(--green-ink);
-  color: var(--cream);
-  font-family: "Italiana", serif;
+  border: 1px solid var(--accent);
+  background: var(--crest-bg);
+  color: var(--crest-fg);
+  font-family: var(--font-display);
   font-size: 22px;
   cursor: pointer;
-  box-shadow: inset 0 0 0 2px var(--cream), 0 4px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 0 0 2px var(--paper-1), 0 4px 0 rgba(0,0,0,0.2);
 }
 .touch-btn:active { transform: translateY(1px); }
-
 @media (max-width: 720px) {
   .touchpad { display: flex; }
   .paper { padding: 28px 16px 20px; }
   .keys { display: none; }
+  .skin-bar { padding: 8px; gap: 6px; }
+  .chip-key { display: none; }
 }
 
-/* ============== Colophon ============== */
-
+/* ---------------------------------------------------------------
+   Colophon
+   --------------------------------------------------------------- */
 .colophon {
   text-align: center;
   margin-top: 28px;
   padding-bottom: 4px;
 }
 .colophon-line {
-  font-family: "Cormorant Garamond", serif;
+  font-family: var(--font-body);
   font-style: italic;
   font-size: 15px;
   color: var(--ink-soft);
   margin: 8px 0 4px;
 }
 .colophon .amp {
-  font-family: "Italiana", serif;
-  color: var(--gold);
+  font-family: var(--font-display);
+  color: var(--accent);
   font-size: 18px;
 }
 .colophon-mono {
-  font-family: "Libre Caslon Text", serif;
+  font-family: var(--font-mono);
   text-transform: uppercase;
   letter-spacing: 0.36em;
   font-size: 10px;
@@ -483,9 +643,388 @@ kbd {
   margin: 0;
 }
 
-/* ============== Subtle paper grain ============== */
+/* =============================================================
+   SKINS
+   ============================================================= */
 
-.paper {
-  position: relative;
+/* ---------- Iron Man ---------- */
+body[data-skin="iron-man"] {
+  --bg-1: #1a0808;
+  --bg-2: #2a0d0a;
+  --bg-3: #0d0404;
+  --bg-spotlight: rgba(255, 196, 0, 0.10);
+  --paper-1: #1a0d0d;
+  --paper-2: #2a1010;
+  --ink:        #f4d97a;
+  --ink-soft:   #c89858;
+  --ink-strong: #ffc400;
+  --accent:        #ffc400;
+  --accent-bright: #ffd84a;
+  --accent-soft:   #d8a020;
+  --accent-2:      #c41e1e;
+  --accent-2-ink:  #ffe88a;
+  --font-display: "Russo One", "Bebas Neue", sans-serif;
+  --font-body:    "Space Grotesk", system-ui, sans-serif;
+  --font-mono:    "JetBrains Mono", monospace;
+  --font-eyebrow-spacing: 0.5em;
+  --wordmark-shadow: 0 0 12px rgba(255, 196, 0, 0.45);
+  --paper-image:
+    radial-gradient(circle at 20% 10%, rgba(255,196,0,0.10), transparent 40%),
+    radial-gradient(circle at 80% 90%, rgba(196,30,30,0.20), transparent 50%),
+    repeating-linear-gradient(135deg, rgba(255,196,0,0.04) 0 2px, transparent 2px 8px);
+  --paper-shadow:
+    0 0 0 1px var(--accent),
+    0 0 0 8px var(--paper-1),
+    0 0 0 9px var(--accent-2),
+    0 30px 60px -20px rgba(0,0,0,0.85);
+  --board-bg-1: #1a0a0a;
+  --board-bg-2: #3a0d0d;
+  --board-bg-3: #0a0202;
+  --board-grid: rgba(255,196,0,0.08);
+  --crest-bg: var(--accent-2);
+  --crest-fg: var(--accent);
+  --kbd-bg: #1a0a0a;
+  --kbd-fg: var(--accent);
+  --skin-name: "Stark Industries";
 }
-.paper > * { position: relative; z-index: 1; }
+body[data-skin="iron-man"] .seal {
+  background:
+    radial-gradient(circle at 50% 50%, #88f8ff 0%, #00d4ff 30%, #003355 70%, #001122 100%);
+  box-shadow:
+    0 0 24px rgba(0,212,255,0.6),
+    inset 0 0 0 4px #001122,
+    inset 0 0 0 5px var(--accent);
+}
+body[data-skin="iron-man"] .seal-inner {
+  border-color: rgba(136,248,255,0.7);
+}
+
+/* ---------- Spider-Man ---------- */
+body[data-skin="spider-man"] {
+  --bg-1: #0a0a1f;
+  --bg-2: #0d1733;
+  --bg-3: #050518;
+  --bg-spotlight: rgba(220, 40, 60, 0.10);
+  --paper-1: #0d1733;
+  --paper-2: #1a2966;
+  --ink:        #f4f4ff;
+  --ink-soft:   #a8b8e8;
+  --ink-strong: #ffffff;
+  --accent:        #dc283c;
+  --accent-bright: #ff5468;
+  --accent-soft:   #aa1a2a;
+  --accent-2:      #0a3d99;
+  --accent-2-ink:  #ffffff;
+  --font-display: "Bangers", "Bebas Neue", sans-serif;
+  --font-body:    "Space Grotesk", system-ui, sans-serif;
+  --font-mono:    "JetBrains Mono", monospace;
+  --eyebrow-tt: uppercase;
+  --wordmark-shadow: 3px 3px 0 var(--accent-2), 6px 6px 0 rgba(0,0,0,0.5);
+  --paper-image:
+    radial-gradient(circle at 25% 15%, rgba(220,40,60,0.15), transparent 35%),
+    radial-gradient(circle at 75% 85%, rgba(10,61,153,0.25), transparent 40%),
+    repeating-linear-gradient(0deg, rgba(255,255,255,0.025) 0 1px, transparent 1px 24px),
+    repeating-linear-gradient(90deg, rgba(255,255,255,0.025) 0 1px, transparent 1px 24px);
+  --board-bg-1: #0a0e26;
+  --board-bg-2: #1a2966;
+  --board-bg-3: #050818;
+  --board-grid: rgba(255,255,255,0.06);
+  --crest-bg: var(--accent);
+  --crest-fg: #ffffff;
+  --kbd-bg: #0a0e26;
+  --kbd-fg: #ffffff;
+  --skin-name: "Friendly Neighborhood";
+}
+
+/* ---------- Hulk ---------- */
+body[data-skin="hulk"] {
+  --bg-1: #0a1f0a;
+  --bg-2: #142a14;
+  --bg-3: #051805;
+  --bg-spotlight: rgba(127, 232, 90, 0.10);
+  --paper-1: #0d1f0d;
+  --paper-2: #1a3a1a;
+  --ink:        #d8f0c8;
+  --ink-soft:   #98c878;
+  --ink-strong: #7fe85a;
+  --accent:        #7fe85a;
+  --accent-bright: #b0ff80;
+  --accent-soft:   #4aa830;
+  --accent-2:      #7a3aff;
+  --accent-2-ink:  #f0e8ff;
+  --font-display: "Bangers", "Russo One", sans-serif;
+  --font-body:    "Space Grotesk", system-ui, sans-serif;
+  --font-mono:    "JetBrains Mono", monospace;
+  --wordmark-shadow: 2px 2px 0 #2a5a1a, 4px 4px 0 var(--accent-2);
+  --paper-image:
+    radial-gradient(circle at 20% 10%, rgba(127,232,90,0.10), transparent 40%),
+    radial-gradient(circle at 80% 90%, rgba(122,58,255,0.18), transparent 50%);
+  --board-bg-1: #081a08;
+  --board-bg-2: #1a3a1a;
+  --board-bg-3: #050f05;
+  --board-grid: rgba(127,232,90,0.10);
+  --crest-bg: var(--accent-2);
+  --crest-fg: var(--accent-bright);
+  --kbd-bg: #0a1a0a;
+  --kbd-fg: var(--accent);
+  --skin-name: "Code Green";
+}
+
+/* ---------- Captain America ---------- */
+body[data-skin="captain-america"] {
+  --bg-1: #0a1340;
+  --bg-2: #0d1a55;
+  --bg-3: #050a25;
+  --bg-spotlight: rgba(220, 40, 60, 0.10);
+  --paper-1: #f4f6ff;
+  --paper-2: #e0e8ff;
+  --ink:        #0a1340;
+  --ink-soft:   #2a3a78;
+  --ink-strong: #dc283c;
+  --accent:        #dc283c;
+  --accent-bright: #ff5468;
+  --accent-soft:   #aa1a2a;
+  --accent-2:      #0a3d99;
+  --accent-2-ink:  #ffffff;
+  --font-display: "Bebas Neue", "Russo One", sans-serif;
+  --font-body:    "Space Grotesk", system-ui, sans-serif;
+  --font-mono:    "JetBrains Mono", monospace;
+  --wordmark-shadow: 0 2px 0 rgba(255,255,255,0.6);
+  --paper-image:
+    radial-gradient(circle at 20% 10%, rgba(220,40,60,0.06), transparent 40%),
+    radial-gradient(circle at 80% 90%, rgba(10,61,153,0.10), transparent 50%),
+    repeating-linear-gradient(180deg, rgba(220,40,60,0.04) 0 12px, transparent 12px 24px);
+  --board-bg-1: #0a1340;
+  --board-bg-2: #15276b;
+  --board-bg-3: #050a25;
+  --board-grid: rgba(255,255,255,0.10);
+  --crest-bg: var(--accent-2);
+  --crest-fg: #ffffff;
+  --kbd-bg: #ffffff;
+  --kbd-fg: var(--accent-2);
+  --skin-name: "Sentinel of Liberty";
+}
+
+/* ---------- Thanos ---------- */
+body[data-skin="thanos"] {
+  --bg-1: #1a0a2a;
+  --bg-2: #2a0d3a;
+  --bg-3: #0d0418;
+  --bg-spotlight: rgba(212, 168, 75, 0.12);
+  --paper-1: #170a26;
+  --paper-2: #2a1542;
+  --ink:        #f0e0ff;
+  --ink-soft:   #c89aef;
+  --ink-strong: #d4a84b;
+  --accent:        #d4a84b;
+  --accent-bright: #ffd870;
+  --accent-soft:   #a07820;
+  --accent-2:      #a060d8;
+  --accent-2-ink:  #1a0a2a;
+  --font-display: "Bebas Neue", serif;
+  --font-body:    "Space Grotesk", system-ui, sans-serif;
+  --font-mono:    "JetBrains Mono", monospace;
+  --wordmark-shadow: 0 0 20px rgba(212,168,75,0.45);
+  --paper-image:
+    radial-gradient(circle at 20% 10%, rgba(212,168,75,0.10), transparent 40%),
+    radial-gradient(circle at 80% 90%, rgba(160,96,216,0.20), transparent 50%);
+  --board-bg-1: #170a26;
+  --board-bg-2: #3a1a55;
+  --board-bg-3: #0a0414;
+  --board-grid: rgba(212,168,75,0.10);
+  --crest-bg: var(--accent-2);
+  --crest-fg: var(--accent);
+  --kbd-bg: #170a26;
+  --kbd-fg: var(--accent);
+  --skin-name: "Perfectly Balanced";
+}
+
+/* ---------- Black Panther ---------- */
+body[data-skin="black-panther"] {
+  --bg-1: #08080d;
+  --bg-2: #0d0a18;
+  --bg-3: #020205;
+  --bg-spotlight: rgba(160, 108, 255, 0.10);
+  --paper-1: #0a0a14;
+  --paper-2: #16162a;
+  --ink:        #d8c8ff;
+  --ink-soft:   #8870c8;
+  --ink-strong: #a06cff;
+  --accent:        #a06cff;
+  --accent-bright: #c89aff;
+  --accent-soft:   #6a3aff;
+  --accent-2:      #3a1a7a;
+  --accent-2-ink:  #d8b8ff;
+  --font-display: "Bebas Neue", "Russo One", sans-serif;
+  --font-body:    "Space Grotesk", system-ui, sans-serif;
+  --font-mono:    "JetBrains Mono", monospace;
+  --wordmark-shadow: 0 0 18px rgba(160,108,255,0.5);
+  --paper-image:
+    radial-gradient(circle at 25% 15%, rgba(160,108,255,0.10), transparent 35%),
+    radial-gradient(circle at 75% 85%, rgba(58,26,122,0.30), transparent 50%);
+  --board-bg-1: #06060a;
+  --board-bg-2: #1a1a2a;
+  --board-bg-3: #020204;
+  --board-grid: rgba(160,108,255,0.08);
+  --crest-bg: #1a1a2a;
+  --crest-fg: var(--accent);
+  --kbd-bg: #0a0a14;
+  --kbd-fg: var(--accent);
+  --skin-name: "Wakanda Forever";
+}
+
+/* ---------- Cyber Modern ---------- */
+body[data-skin="cyber"] {
+  --bg-1: #040814;
+  --bg-2: #080d1f;
+  --bg-3: #02050a;
+  --bg-spotlight: rgba(0, 240, 255, 0.10);
+  --paper-1: rgba(8, 13, 31, 0.85);
+  --paper-2: rgba(15, 25, 55, 0.85);
+  --ink:        #c8e8ff;
+  --ink-soft:   #6a98c8;
+  --ink-strong: #00f0ff;
+  --accent:        #00f0ff;
+  --accent-bright: #88ffff;
+  --accent-soft:   #0066aa;
+  --accent-2:      #ff00aa;
+  --accent-2-ink:  #ffffff;
+  --font-display: "Russo One", "Bebas Neue", sans-serif;
+  --font-body:    "Space Grotesk", system-ui, sans-serif;
+  --font-mono:    "JetBrains Mono", monospace;
+  --paper-radius: 4px;
+  --wordmark-shadow: 0 0 20px rgba(0,240,255,0.6), 0 0 40px rgba(255,0,170,0.3);
+  --paper-image:
+    linear-gradient(180deg, rgba(0,240,255,0.04), transparent 30%, rgba(255,0,170,0.04) 100%),
+    repeating-linear-gradient(0deg, rgba(0,240,255,0.04) 0 1px, transparent 1px 4px);
+  --paper-shadow:
+    0 0 0 1px var(--accent),
+    0 0 30px rgba(0,240,255,0.25),
+    0 0 0 4px rgba(0,240,255,0.1),
+    0 30px 60px -20px rgba(0,0,0,0.85);
+  --board-bg-1: #040814;
+  --board-bg-2: #0a1428;
+  --board-bg-3: #020408;
+  --board-grid: rgba(0,240,255,0.12);
+  --crest-bg: transparent;
+  --crest-fg: var(--accent);
+  --kbd-bg: rgba(0,240,255,0.08);
+  --kbd-fg: var(--accent);
+  --skin-name: "Neo Tokyo 2099";
+}
+body[data-skin="cyber"] .crest-btn {
+  background: linear-gradient(180deg, rgba(0,240,255,0.15), rgba(255,0,170,0.15));
+  box-shadow:
+    inset 0 0 0 1px var(--accent),
+    0 0 0 3px transparent,
+    0 0 0 4px var(--accent),
+    0 0 30px rgba(0,240,255,0.4);
+}
+body[data-skin="cyber"] .skin-chip { backdrop-filter: blur(6px); }
+body[data-skin="cyber"] .skin-chip.active {
+  box-shadow:
+    inset 0 0 0 1px var(--paper-1),
+    0 0 0 1px var(--accent),
+    0 0 18px rgba(0,240,255,0.5);
+}
+body[data-skin="cyber"] .seal {
+  background: radial-gradient(circle at 50% 50%, var(--accent) 0%, var(--accent-soft) 60%, #02060d 100%);
+  box-shadow:
+    0 0 24px rgba(0,240,255,0.55),
+    inset 0 0 0 4px #02060d,
+    inset 0 0 0 5px var(--accent);
+}
+
+/* Universal: dark-paper skins (everything except old-money + captain-america) */
+body[data-skin="iron-man"]      .ledger-title::after,
+body[data-skin="spider-man"]    .ledger-title::after,
+body[data-skin="hulk"]          .ledger-title::after,
+body[data-skin="thanos"]        .ledger-title::after,
+body[data-skin="black-panther"] .ledger-title::after,
+body[data-skin="cyber"]         .ledger-title::after,
+body[data-skin="iron-man"]      .rule::before,
+body[data-skin="spider-man"]    .rule::before,
+body[data-skin="hulk"]          .rule::before,
+body[data-skin="thanos"]        .rule::before,
+body[data-skin="black-panther"] .rule::before,
+body[data-skin="cyber"]         .rule::before {
+  background: var(--paper-1);
+}
+
+/* dark-paper rule mid color (use ink-soft for visibility on dark) */
+body[data-skin="iron-man"],
+body[data-skin="spider-man"],
+body[data-skin="hulk"],
+body[data-skin="thanos"],
+body[data-skin="black-panther"],
+body[data-skin="cyber"] {
+  --rule-mid: color-mix(in srgb, var(--ink-strong) 40%, transparent);
+}
+
+/* Cyber + Iron Man + Hulk: punchy ledger value color */
+body[data-skin="iron-man"]      .ledger-row dd,
+body[data-skin="hulk"]          .ledger-row dd,
+body[data-skin="cyber"]         .ledger-row dd,
+body[data-skin="thanos"]        .ledger-row dd,
+body[data-skin="black-panther"] .ledger-row dd,
+body[data-skin="spider-man"]    .ledger-row dd {
+  color: var(--ink-strong);
+  text-shadow: 0 0 12px color-mix(in srgb, var(--ink-strong) 30%, transparent);
+}
+
+/* dark skins: rules text */
+body[data-skin="iron-man"]      .rules,
+body[data-skin="spider-man"]    .rules,
+body[data-skin="hulk"]          .rules,
+body[data-skin="thanos"]        .rules,
+body[data-skin="black-panther"] .rules,
+body[data-skin="cyber"]         .rules {
+  color: var(--ink);
+}
+
+/* dark skins: dotted divider color in ledger rows */
+body[data-skin="iron-man"]      .ledger-row,
+body[data-skin="spider-man"]    .ledger-row,
+body[data-skin="hulk"]          .ledger-row,
+body[data-skin="thanos"]        .ledger-row,
+body[data-skin="black-panther"] .ledger-row,
+body[data-skin="cyber"]         .ledger-row {
+  border-bottom-color: color-mix(in srgb, var(--accent) 28%, transparent);
+}
+
+/* dark skins: controls top divider */
+body[data-skin="iron-man"]      .controls-title,
+body[data-skin="spider-man"]    .controls-title,
+body[data-skin="hulk"]          .controls-title,
+body[data-skin="thanos"]        .controls-title,
+body[data-skin="black-panther"] .controls-title,
+body[data-skin="cyber"]         .controls-title {
+  border-top-color: color-mix(in srgb, var(--accent) 22%, transparent);
+}
+
+/* hover state on chips for dark skins */
+body[data-skin="iron-man"]      .skin-chip,
+body[data-skin="spider-man"]    .skin-chip,
+body[data-skin="hulk"]          .skin-chip,
+body[data-skin="thanos"]        .skin-chip,
+body[data-skin="black-panther"] .skin-chip,
+body[data-skin="cyber"]         .skin-chip {
+  background: color-mix(in srgb, var(--paper-1) 80%, transparent);
+  color: var(--ink-strong);
+}
+
+/* ==============================================================
+   Skin entrance flourish — pop on switch
+   ============================================================== */
+.paper { animation: paperPop 480ms ease both; }
+@keyframes paperPop {
+  0%   { transform: scale(0.985); filter: brightness(1.05); }
+  100% { transform: scale(1);     filter: brightness(1); }
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .paper { animation: none; }
+  .board-mat.shake { animation: none; }
+  .fx-popup { animation: none; opacity: 0; }
+}
